@@ -8,8 +8,6 @@ To cite the starting page:
 
 >The [[Topics|Topics]] page might serve as an entry point into specific and fleshed out portions of this DB.
 
-Note that 
-
 > [!NOTE]
 > These topics never really aim to be a completely separated part of the DB, but rather _subsets_ which may or may not overlap right now or in the future.
 > 
