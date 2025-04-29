@@ -7,8 +7,9 @@ title: DustBrain
 ---
 This is my personal, _Digital Brain_ / [_Digital Garden_](https://maggieappleton.com/garden-history).
 
-> [!NOTE] DB
+> [!NOTE]
 > I will refer to this as **DB** from now on.
+> 
 > I like it as a simultaneous acronym for _Digital Brain_, _DustBrain_ and _Database_.
 
 It covers a multitude of [[./Topics|Topics]] and information [[Categories|Categories]], although, as with any _Digital Garden_, I'm not imposing any artificial limit on their extent.
