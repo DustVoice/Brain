@@ -1,6 +1,7 @@
 ---
 share: true
-title: index
+filename: index
+title: DustBrain
 ---
 # DustBrain
 
