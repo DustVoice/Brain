@@ -1,4 +1,7 @@
 ---
+share: true
+created: 2025-04-29
+tags: 
 filename: index
 title: DustBrain
 ---
