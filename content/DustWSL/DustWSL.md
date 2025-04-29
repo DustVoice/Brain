@@ -1,6 +1,5 @@
 ---
 share: true
-title: DustWSL
 ---
 
 ```sh title="Test"
