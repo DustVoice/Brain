@@ -13,3 +13,5 @@ It also resembles _classical documentation_ a bit more, specifically because I t
 
 * [[DustWSL|DustWSL]]
 * [[DustDev|DustDev]]
+
+[[Graph test|Graph test]]
