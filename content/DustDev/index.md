@@ -1,3 +1,4 @@
 ---
 share: true
+title: index
 ---

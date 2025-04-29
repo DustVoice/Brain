@@ -1,5 +1,6 @@
 ---
 share: true
+title: index
 ---
 
 ```sh title="Test"
