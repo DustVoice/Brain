@@ -1,8 +1,3 @@
----
-share: true
-tags:
-  - sys-admin
----
 
 To cite the starting page:
 
@@ -13,6 +8,4 @@ To cite the starting page:
 > 
 > It might however still resemble _classical documentation_ a bit more heavily, specifically because I transformed a lot of information contained within these subset of notes from my previous linear technical documentation(s) (see e.g. [my old DustWSL documentation](https://github.com/DustVoice/DustWSL)).
 
-- System Administration #sys-admin
-	* [[./DustWSL/DustWSL|DustWSL]]
-	* [[./DustDev/DustDev|DustDev]]
+- ![[./Brain/System Administration|System Administration]]

@@ -1,5 +1,4 @@
 ---
-share: true
 filename: index
 title: DustBrain
 ---
@@ -17,7 +16,7 @@ There might also be entirely unrelated information contained within this DB, who
 
 To give you some idea about the content within this digital brain, I will probably heavily focus on my area of expertise and work, as well as my many (and admittedly expensive) hobbies, including but not limited to
 - Software Development
-- System Administration
+- [[./Brain/System Administration|System Administration]]
 - Technology in general
 - [[Coffee|Coffee]], mainly [[Espresso|Espresso]]
 - [[Mechanical Keyboard|Mechanical Keyboard]]s
