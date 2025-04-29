@@ -19,8 +19,8 @@ To give you some idea about the content within this digital brain, I will probab
 - Software Development
 - System Administration
 - Technology in general
-- Coffee, mainly _Espresso_
-- Mechanical Keyboards
-- 3D-Printing
-- Stenography, mainly using the _Deutsche Einheitskurzschrift (DEK)_
-- Fountain Pens
+- [[Coffee|Coffee]], mainly [[Espresso|Espresso]]
+- [[Mechanical Keyboard|Mechanical Keyboard]]s
+- [[3D-Printing|3D-Printing]]
+- [[Stenography|Stenography]], mainly using the _[[Deutsche Einheitskurzschrift (DEK)|Deutsche Einheitskurzschrift (DEK)]]_
+- [[Fountain Pen|Fountain Pen]]s
