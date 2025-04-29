@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "DustBrain",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "brain.dustvoice.de",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -61,15 +61,18 @@ const config: QuartzConfig = {
       }),
       Plugin.SyntaxHighlighting({
         theme: {
-          light: "github-light",
-          dark: "github-dark",
+          light: "catppuccin-latte",
+          dark: "catppuccin-macchiato",
         },
         keepBackground: false,
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
-      Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
+      Plugin.CrawlLinks({
+        markdownLinkResolution: "shortest",
+        openLinksInNewTab: true
+      }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
     ],
