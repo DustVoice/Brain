@@ -1,23 +1,18 @@
 ---
 share: true
 ---
+Try themes
 
-```sh title="Test"
-dustvoice@arch$ echo "Now in a cmdline" > world.txt
-```
-
-```shell title="Test"
-dustvoice@arch$ echo "Now in a cmdline" > world.txt
-```
-
-```shellsession title="Test"
-dustvoice@arch$ echo "Now in a cmdline" > world.txt
-```
-
-```shell-session title="Test"
-dustvoice@arch$ echo "Now in a cmdline" > world.txt
-```
-
-```console title="Test"
-dustvoice@arch$ echo "Now in a cmdline" > world.txt
+```console
+$ echo $EDITOR > "test"
+vim
+$ git checkout main
+Switched to branch 'main'
+Your branch is up-to-date with 'origin/main'.
+$ git push
+Everything up-to-date
+$ echo 'All
+> done!'
+All
+done!
 ```
