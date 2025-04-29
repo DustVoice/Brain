@@ -3,7 +3,7 @@ share: true
 ---
 Try themes
 
-```console
+```console title="Shell session 1" caption="This is a caption" showLineNumbers
 $ echo $EDITOR > "test"
 vim
 $ git checkout main
