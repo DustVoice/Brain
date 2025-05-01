@@ -26,15 +26,21 @@ For example: 50g of the KH concentrate within 1L of distilled water (50g concent
 ## Buffer Concentrate (KH)
 
 Add
+
 - 2g of Potassium bicarbonate (KHCO3)
+
 to
+
 - 1L of Distilled Water (H2O)
 
 ## Hardness Concentrate (GH)
 
 Add
+
 - 2.45g of Magnesium Sulfate heptahydrate (MgSO4 * 7 H20), commonly referred to as Epsom Salt
+
 to
+
 - 1L of Distilled Water (H2O)
 
 # Brew Water
@@ -42,7 +48,6 @@ to
 My brew water aims to be at around
 - 20 ppm [[Coffee Brew Water Recipe#^cea932|KH]]
 - 20 ppm [[Coffee Brew Water Recipe#^404a84|GH]]
-- mix thoroughly
 
 ## 1L
 
