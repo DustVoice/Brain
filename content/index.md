@@ -18,11 +18,11 @@ Therefore there may be entirely unrelated information contained within this DB, 
 The aforementioned [[./Topics|Topics]] page might serve as an entry point into specific and fleshed out portions of this DB, while [[Categories|Categories]] and Tags define broader connections between topics and sections.
 
 > [!INFO]+ What is this DB about?
-> To give you some idea about the content within this digital brain, I will probably heavily focus on my area of expertise and work, as well as my many (and admittedly expensive) hobbies, including but not limited to
+> To give you some idea about the content within this DB, I will probably heavily focus on my area of expertise and work, as well as my many (and admittedly expensive) hobbies, including but not limited to
 > - Software Development
 > - [[./Brain/System Administration|System Administration]]
 > - Technology in general
-> - [[Coffee|Coffee]], mainly [[Espresso|Espresso]]
+> - [[./Brain/Coffee|Coffee]], mainly [[Espresso|Espresso]]
 > - [[Mechanical Keyboard|Mechanical Keyboard]]s
 > - [[3D-Printing|3D-Printing]]
 > - [[Stenography|Stenography]], mainly using the _[[Deutsche Einheitskurzschrift (DEK)|Deutsche Einheitskurzschrift (DEK)]]_
