@@ -78,7 +78,7 @@ The [official documentation](https://caddyserver.com/docs/) even provides a [lis
 > For example, I might have a second container running a web server on port `5000`.
 > To serve it under the subdomain `service.dustvoice.de`, I would simply populate the Caddyfile with
 > 
-> ```text title="~/containers/config/Caddyfile /service.dustvoice.de/ /5000/
+> ```text title="~/containers/config/Caddyfile" /service.dustvoice.de/ /5000/
 > service.dustvoice.de {
 > 	reverse_proxy localhost:5000
 > }
