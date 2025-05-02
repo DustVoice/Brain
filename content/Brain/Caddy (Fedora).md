@@ -27,8 +27,8 @@ mkdir -p .config/containers/systemd
 
 If you want to serve a static side from within the Caddy container, also create a directory for each one, following the pattern
 
-```sh /<site-name>/
-mkdir -p ~/containers/caddy/sites/<site-name>
+```sh /{site-name(s)}/
+mkdir -p ~/containers/caddy/sites/{site-name(s)}
 ```
 
 If you don't, you could still consider simply creating the parent directory `~/containers/caddy/sites`, so you don't have to touch the generated [[Caddy (Fedora)#Quadlet file|Quadlet file]].
@@ -78,7 +78,7 @@ The [official documentation](https://caddyserver.com/docs/) even provides a [lis
 > For example, I might have a second container running a web server on port `5000`.
 > To serve it under the subdomain `service.dustvoice.de`, I would simply populate the Caddyfile with
 > 
-> ```text title="~/containers/config/Caddyfile /service.dustvoice.de/ /5000/
+> ```text title="~/containers/config/Caddyfile" /service.dustvoice.de/ /5000/
 > service.dustvoice.de {
 > 	reverse_proxy localhost:5000
 > }
@@ -118,9 +118,9 @@ This results in the following command:
 podlet --file ~/.config/containers/systemd/caddy.container --install --description Caddy podman run --name caddy --restart always -p 1880:80 -p 1443:443 -v ~/containers/caddy/config:/etc/caddy:ro,Z -v ~/containers/caddy/data:/data:Z -v ~/containers/caddy/logs:/var/log/caddy:Z -v ~/containers/caddy/sites:/srv:ro,z docker.io/library/caddy:2.10.0
 ```
 
-It will produce something akin to (where `<user>` is your username, of course)
+It will produce something akin to (where `user` is your username, of course)
 
-```systemd title="~/.config/containers/systemd/caddy.container" /<user>/
+```systemd title="~/.config/containers/systemd/caddy.container" /user/
 [Unit]
 Description=Caddy
 
@@ -129,10 +129,10 @@ ContainerName=caddy
 Image=docker.io/library/caddy:2.10.0
 PublishPort=1880:80
 PublishPort=1443:443
-Volume=/home/<user>/containers/caddy/config:/etc/caddy:ro:Z
-Volume=/home/<user>/containers/caddy/data:/data:Z
-Volume=/home/<user>/containers/caddy/logs:/var/log/caddy:Z
-Volume=/home/<user>/containers/caddy/sites:/srv:ro,z
+Volume=/home/user/containers/caddy/config:/etc/caddy:ro:Z
+Volume=/home/user/containers/caddy/data:/data:Z
+Volume=/home/user/containers/caddy/logs:/var/log/caddy:Z
+Volume=/home/user/containers/caddy/sites:/srv:ro,z
 
 [Service]
 Restart=always
@@ -175,10 +175,10 @@ systemctl --user start caddy
 
 As we didn't use a system-level service, but a rootless approach, all services would be stopped upon logout.
 
-To prevent this, we must `enable-linger` (where `<user>` is your username, of course):
+To prevent this, we must `enable-linger` (where `user` is your username, of course):
 
-```sh /<user>/
-loginctl enable-linger <user>
+```sh /user/
+loginctl enable-linger user
 ```
 
 ## Test it
