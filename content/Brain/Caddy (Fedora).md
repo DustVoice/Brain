@@ -20,7 +20,7 @@ mkdir -p ~/containers/caddy/logs
 We then also need to ensure the directory for storing the Podman Quadlet files is created
 
 ```sh
-mkdir -p .config/containers/systemd
+mkdir -p ~/.config/containers/systemd
 ```
 
 ### Static sites
@@ -72,13 +72,13 @@ The `Caddyfile` is used to describe the functionality of the Caddy instance. It 
 
 The [official documentation](https://caddyserver.com/docs/) even provides a [list of common patterns](https://caddyserver.com/docs/caddyfile/patterns), like e.g., a static file server, or reverse proxying.
 
-> [!example] Reverse Proxy
+> [!example] Example: Reverse Proxy
 > I mostly utilize this central Caddy instance for reverse proxying.
 > 
 > For example, I might have a second container running a web server on port `5000`.
-> To serve it under the subdomain `service.dustvoice.de`, I would simply populate the Caddyfile with
+> To serve it under the subdomain `service.dustvoice.de`, I would simply populate the Caddyfile under `~/containers/caddy/config/Caddyfile` with
 > 
-> ```text title="~/containers/config/Caddyfile" /service.dustvoice.de/ /5000/
+> ```text title="~/containers/caddy/config/Caddyfile" /service.dustvoice.de/ /5000/
 > service.dustvoice.de {
 > 	reverse_proxy localhost:5000
 > }
@@ -88,98 +88,93 @@ The [official documentation](https://caddyserver.com/docs/) even provides a [lis
 
 As mentioned earlier, `podlet` enables you to generate a Quadlet file for a specific `podman` command.
 
-The `podman` command will
-- Store the Quadlet file at the correct location
-	- `--file ~/.config/containers/systemd/caddy.container`
-- Run a new container with the name `caddy`
-	- `podman run --name caddy`
-- Try to restart the container, if it has stopped/crashed/…
-	- `--restart always`
-- Map the outside ports `1880` and `1443`(see [[Caddy (Fedora)#Ports|Ports]]) to Caddy's internal `80` and `443` ports respectively
-	- `-p 1880:80`
-	- `-p 1443:443`
-- Map the outside [[Caddy (Fedora)#Data directories|Data directories]] to the correct internal paths
-	- `-v ~/containers/caddy/config:/etc/caddy:ro,Z`
-	- `-v ~/containers/caddy/data:/data:Z`
-	- `-v ~/containers/caddy/logs:/var/log/caddy:Z`
-	- `-v ~/containers/caddy/sites:/srv:ro,z` _(Remove this, if you would rather not serve static sites from this Caddy instance)_ ^677ece
-- Use the latest caddy image available. **Don't use the `latest` tag!** Read up on [why you shouldn't use the latest tag](https://vsupalov.com/docker-latest-tag/)
-	- `docker.io/library/caddy:2.10.0`
-
-> [!info] What are the `:z` and `:Z` labels?
-> These two labels are specific to [SELinux](https://www.redhat.com/en/topics/linux/what-is-selinux), which is enabled by default on Fedora.
-> Although some people might see it as an inconvenience, you shouldn't simply disable it, especially on a server, as it greatly hardens your system and increases security.
-> 
-> I found a good explanation elaborating these two options a bit in [this blog post](https://blog.ryanmartin.me/selinux-containers).
-
-This results in the following command:
-
 ```sh
-podlet --file ~/.config/containers/systemd/caddy.container --install --description Caddy podman run --name caddy --restart always -p 1880:80 -p 1443:443 -v ~/containers/caddy/config:/etc/caddy:ro,Z -v ~/containers/caddy/data:/data:Z -v ~/containers/caddy/logs:/var/log/caddy:Z -v ~/containers/caddy/sites:/srv:ro,z docker.io/library/caddy:2.10.0
+podlet \
+	--file ~/.config/containers/systemd/ \
+	--install \
+	--name caddy \
+	--description "Caddy" \
+	podman run \
+	--name caddy
+	--restart always \
+	-p 1880:80 \
+	-p 1443:443 \
+	-v ~/containers/caddy/config:/etc/caddy:ro,Z \
+	-v ~/containers/caddy/data:/data:Z \
+	-v ~/containers/caddy/logs:/var/log/caddy:Z \
+	-v ~/containers/caddy/sites:/srv:ro,z \
+	docker.io/library/caddy:2.10.0
 ```
 
-It will produce something akin to (where `user` is your username, of course)
+> [!info]- Detailed command dissection
+> - Use [[./Podman (Fedora)#Podlet|Podman (Fedora) > Podlet]] to generate the file
+> 	- `podlet`
+> - Store the Quadlet file at the correct location
+> 	- `--file ~/.config/containers/systemd/`
+> - Name it `caddy.container`
+> 	- `--name caddy`
+> - Add an `[Install]` section
+> 	- `--install`
+> - Add a `[Unit]` description
+> 	- `--description "Caddy"`
+> - Create a container with the following parameters:
+> 	- `podman run`
+> - Name it caddy
+> 	- `--name caddy`
+> - Try to restart the container, if it has stopped/crashed/…
+> 	- `--restart always`
+> - Map the outside ports `1880` and `1443`(see [[Caddy (Fedora)#Ports|Ports]]) to Caddy's internal `80` and `443` ports respectively
+> 	- `-p 1880:80`
+> 	- `-p 1443:443`
+> - Map the outside [[Caddy (Fedora)#Data directories|Data directories]] to the correct internal paths
+> 	- `-v ~/containers/caddy/config:/etc/caddy:ro,Z`
+> 	- `-v ~/containers/caddy/data:/data:Z`
+> 	- `-v ~/containers/caddy/logs:/var/log/caddy:Z`
+> 	- `-v ~/containers/caddy/sites:/srv:ro,z` _(Remove this, if you would rather not serve static sites from this Caddy instance)_ ^677ece
+> - Use the latest caddy image available. **Don't use the `latest` tag!** Read up on [why you shouldn't use the latest tag](https://vsupalov.com/docker-latest-tag/)
+> 	- `docker.io/library/caddy:2.10.0`
+> 
+> > [!info] What are the `:z` and `:Z` labels?
+> > These two labels are specific to [SELinux](https://www.redhat.com/en/topics/linux/what-is-selinux), which is enabled by default on Fedora.
+> > Although some people might see it as an inconvenience, you shouldn't simply disable it, especially on a server, as it greatly hardens your system and increases security.
+> > 
+> > I found a good explanation elaborating these two options a bit in [this blog post](https://blog.ryanmartin.me/selinux-containers).
 
-```systemd title="~/.config/containers/systemd/caddy.container" /user/
-[Unit]
-Description=Caddy
-
-[Container]
-ContainerName=caddy
-Image=docker.io/library/caddy:2.10.0
-PublishPort=1880:80
-PublishPort=1443:443
-Volume=/home/user/containers/caddy/config:/etc/caddy:ro:Z
-Volume=/home/user/containers/caddy/data:/data:Z
-Volume=/home/user/containers/caddy/logs:/var/log/caddy:Z
-Volume=/home/user/containers/caddy/sites:/srv:ro,z
-
-[Service]
-Restart=always
-
-[Install]
-WantedBy=default.target
-```
+> [!check]- Result
+> It will produce something akin to (where `user` is your username, of course)
+> 
+> ```systemd title="~/.config/containers/systemd/caddy.container" /user/
+> [Unit]
+> Description=Caddy
+> 
+> [Container]
+> ContainerName=caddy
+> Image=docker.io/library/caddy:2.10.0
+> PublishPort=1880:80
+> PublishPort=1443:443
+> Volume=/home/user/containers/caddy/config:/etc/caddy:ro:Z
+> Volume=/home/user/containers/caddy/data:/data:Z
+> Volume=/home/user/containers/caddy/logs:/var/log/caddy:Z
+> Volume=/home/user/containers/caddy/sites:/srv:ro,z
+> 
+> [Service]
+> Restart=always
+> 
+> [Install]
+> WantedBy=default.target
+> ```
 
 ## Boot it up
 
-First off, as Quadlet files are `systemd` service files, we need to reload the daemon.
-As we're running it rootless, we need to specify the `--user` flag.
+![[./Podman (Fedora)#Rootless|Podman (Fedora) > Rootless > Reload the daemon]]
 
-```sh
-systemctl --user daemon-reload
-```
-
-Now enable and start the service
-
-```sh
-systemctl --user enable caddy
-systemctl --user start caddy
-```
-
-
-> [!tip] Check the status
-> You can check the status with either
+![[./Podman (Fedora)#Rootless|Podman (Fedora) > Rootless > Start the service]] 
 > 
-> ```sh
-> systemctl --user status caddy.service
-> ```
-> 
-> or
-> 
-> ```sh
-> journalctl --user -xeu caddy.service
-> ```
+> Replace `name` with `caddy`
 
-## Keep it running
+![[./Podman (Fedora)#Check the status|Podman (Fedora) > Check the status]]
 
-As we didn't use a system-level service, but a rootless approach, all services would be stopped upon logout.
-
-To prevent this, we must `enable-linger` (where `user` is your username, of course):
-
-```sh /user/
-loginctl enable-linger user
-```
+![[./Podman (Fedora)#Keep it running|Podman (Fedora) > Keep it running]]
 
 ## Test it
 
@@ -203,7 +198,7 @@ You can easily create a crude `index.html` file in, for example, `~/containers/c
 
 and add a corresponding entry to your `Caddyfile`
 
-```text title="~/containers/caddy/config/Caddyfile" /dustvoice.de/
+```text title="~/containers/caddy/config/Caddyfile" /test.dustvoice.de/
 test.dustvoice.de {
 	root * /srv/test
 	file_server
@@ -211,3 +206,7 @@ test.dustvoice.de {
 ```
 
 The site should now be accessible through the domain you specified and greet you with a `Hello from Caddy!`.
+
+> [!warning] Consider removing it
+> For security purposes, I would probably remove the `~/containers/caddy/sites/test` folder after testing.
+> Removing the corresponding lines in your `Caddyfile` might be sufficient, but you most likely don't need to test it this way anytime soon again, so why clutter your system.
