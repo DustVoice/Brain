@@ -12,8 +12,7 @@ So the search for a new operating system began. And although _NixOS_, with its d
 
 _OpenSUSE_ was my first choice after longer consideration and research, but I ran into some problems with my hosting provider and the defaults they used for the installation image.
 
-
-> [!example] Example: Btrfs
+> [!example]- Example: Btrfs
 > [Btrfs](https://wiki.archlinux.org/title/Btrfs) was one of my requirements, ensuring quick and easy rollbacks, paired with all the other benefits it offers.
 > 
 > As I use Btrfs almost exclusively on all my machines nowadays, including Arch Linux, this wasn't a requirement I was willing to waive.
