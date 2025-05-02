@@ -196,15 +196,15 @@ You can easily create a crude `index.html` file in, for example, `~/containers/c
 <html>
 	<head></head>
 	<body>
-	<p>Hello from Caddy!</p>
+		<p>Hello from Caddy!</p>
 	</body>
 </html>
 ```
 
 and add a corresponding entry to your `Caddyfile`
 
-```text title="~/containers/config/Caddyfile /dustvoice.de/
-dustvoice.de {
+```text title="~/containers/caddy/config/Caddyfile" /dustvoice.de/
+test.dustvoice.de {
 	root * /srv/test
 	file_server
 }
