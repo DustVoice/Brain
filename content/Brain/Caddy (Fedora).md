@@ -11,29 +11,32 @@ source: https://eshlox.net/run-the-caddy-server-on-fedora-using-podman
 
 First off, create directories in your home directory, where the Caddy configuration, data, and logs are supposed to be stored.
 
-```console
-$ mkdir -p ~/containers/caddy/config
-$ mkdir -p ~/containers/caddy/data
-$ mkdir -p ~/containers/caddy/logs
+```sh
+mkdir -p ~/containers/caddy/config
+mkdir -p ~/containers/caddy/data
+mkdir -p ~/containers/caddy/logs
 ```
 
 We then also need to ensure the directory for storing the Podman Quadlet files is created
 
-```console
-$ mkdir -p .config/containers/systemd
+```sh
+mkdir -p .config/containers/systemd
 ```
+
+### Static sites
 
 If you want to serve a static side from within the Caddy container, also create a directory for each one, following the pattern
 
-```console /<site-name>/
-$ mkdir -p ~/containers/caddy/sites/<site-name>
+```sh /<site-name>/
+mkdir -p ~/containers/caddy/sites/<site-name>
 ```
 
-> [!NOTE]
-> If you would rather not touch the [[Caddy (Fedora)#Quadlet file|Quadlet file]] generated later, you should consider simply creating the parent directory `~/containers/caddy/sites`.
-> If you don't populate the directory, and create corresponding entries in your [[Caddy (Fedora)#Caddyfile|Caddyfile]], it won't be active.
+If you don't, you could still consider simply creating the parent directory `~/containers/caddy/sites`, so you don't have to touch the generated [[Caddy (Fedora)#Quadlet file|Quadlet file]].
+You would need to create corresponding entries in your [[Caddy (Fedora)#Caddyfile|Caddyfile]] anyway, for it to be active.
 
-^cd4e46
+```sh
+mkdir -p ~/containers/caddy/sites
+```
 
 ## Ports
 
@@ -46,21 +49,21 @@ For that, first [[./Firewalld (Fedora)|install and enable firewalld]].
 
 Subsequently, forward the corresponding ports
 
-```console
-$ sudo firewall-cmd --permanent --add-forward-port=port=443:proto=tcp:toport=1443
-$ sudo firewall-cmd --permanent --add-forward-port=port=80:proto=tcp:toport=1880
+```sh
+sudo firewall-cmd --permanent --add-forward-port=port=443:proto=tcp:toport=1443
+sudo firewall-cmd --permanent --add-forward-port=port=80:proto=tcp:toport=1880
 ```
 
 Reload firewalld
 
-```console
-$ sudo firewall-cmd --reload
+```sh
+sudo firewall-cmd --reload
 ```
 
 And check that everything went as planned
 
-```console
-$ sudo firewall-cmd --list-all
+```sh
+sudo firewall-cmd --list-all
 ```
 
 ## Caddyfile
@@ -111,8 +114,8 @@ The `podman` command will
 
 This results in the following command:
 
-```console
-$ podlet --file ~/.config/containers/systemd/caddy.container --install --description Caddy podman run --name caddy --restart always -p 1880:80 -p 1443:443 -v ~/containers/caddy/config:/etc/caddy:ro,Z -v ~/containers/caddy/data:/data:Z -v ~/containers/caddy/logs:/var/log/caddy:Z -v ~/containers/caddy/sites:/srv:ro,z docker.io/library/caddy:2.10.0
+```sh
+podlet --file ~/.config/containers/systemd/caddy.container --install --description Caddy podman run --name caddy --restart always -p 1880:80 -p 1443:443 -v ~/containers/caddy/config:/etc/caddy:ro,Z -v ~/containers/caddy/data:/data:Z -v ~/containers/caddy/logs:/var/log/caddy:Z -v ~/containers/caddy/sites:/srv:ro,z docker.io/library/caddy:2.10.0
 ```
 
 It will produce something akin to (where `<user>` is your username, of course)
@@ -143,29 +146,29 @@ WantedBy=default.target
 First off, as Quadlet files are `systemd` service files, we need to reload the daemon.
 As we're running it rootless, we need to specify the `--user` flag.
 
-```console
-$ systemctl --user daemon-reload
+```sh
+systemctl --user daemon-reload
 ```
 
 Now enable and start the service
 
-```console
-$ systemctl --user enable caddy
-$ systemctl --user start caddy
+```sh
+systemctl --user enable caddy
+systemctl --user start caddy
 ```
 
 
 > [!tip] Check the status
 > You can check the status with either
 > 
-> ```console
-> $ systemctl --user status caddy.service
+> ```sh
+> systemctl --user status caddy.service
 > ```
 > 
 > or
 > 
-> ```console
-> $ journalctl --user -xeu caddy.service
+> ```sh
+> journalctl --user -xeu caddy.service
 > ```
 
 ## Keep it running
@@ -174,8 +177,8 @@ As we didn't use a system-level service, but a rootless approach, all services w
 
 To prevent this, we must `enable-linger` (where `<user>` is your username, of course):
 
-```console /<user>/
-$ loginctl enable-linger <user>
+```sh /<user>/
+loginctl enable-linger <user>
 ```
 
 ## Test it
@@ -185,7 +188,7 @@ Of course, you can proceed with, e.g., setting up a [[./Nextcloud (Fedora)|Nextc
 I find it more convenient to perform a quick test using a simple HTML file.
 
 > [!NOTE]
-> This assumes you [[Caddy (Fedora)#^cd4e46|created the necessary directory]] and [[Caddy (Fedora)#^677ece|configured Caddy to be able to serve static sites]], however.
+> This assumes you [[Caddy (Fedora)#Static sites|created the necessary directory]] and [[Caddy (Fedora)#^677ece|configured Caddy to be able to serve static sites]], however.
 
 You can easily create a crude `index.html` file in, for example, `~/containers/caddy/sites/test`
 
