@@ -14,9 +14,9 @@ It quickly spiraled out of control and before I knew it, I was stuck knees deep 
 
 ## Water
 
-I always knew that water was important for brewing coffee. Even with [[Espresso|Espresso]], which has a much lower ratio of ground coffee to the final water volume, the drink consists mainly of said water.
+I always knew that water was important for brewing coffee. Even with [[./Espresso|Espresso]], which has a much lower ratio of ground coffee to the final water volume, the drink consists mainly of said water.
 
-But only after attending a long cupping session at my [[Maldaner Coffee Roasters|go-to roaster]], with the main focus of this session being brewing water, could I really grasp the impact of it.
+But only after attending a long cupping session at my [[./Maldaner Coffee Roasters|go-to roaster]], with the main focus of this session being brewing water, could I really grasp the impact of it.
 
 I then first started using Volvic, then proceeded with custom water, produced by mixing distilled water with a precise amount of minerals. I used [Barista Hustle's #4 water recipe](https://www.baristahustle.com/diy-water-recipes-redux/) for a long time, until [Lance Hedrick's YouTube video](https://www.youtube.com/watch?v=tiB6TpJRmOs&t=1792s) on that topic prompted me to experiment again.
 See the [[Coffee#How it's going|How it's going > Water]] section below for my current recipe.
@@ -24,31 +24,31 @@ See the [[Coffee#How it's going|How it's going > Water]] section below for my cu
 
 ## Espresso
 
-Currently I mainly focus on [[Espresso|Espresso]] and drinks based on it.
+Currently I mainly focus on [[./Espresso|Espresso]] and drinks based on it.
 
 My equipment consists of the
-- [[Decent DE1XL|Decent DE1XL]]
-- [[Niche Zero|Niche Zero]]
-- [[DF64 Gen2|DF64 Gen2]]
+- [[./Decent DE1XL|Decent DE1XL]]
+- [[./Niche Zero|Niche Zero]]
+- [[./DF64 Gen2|DF64 Gen2]]
 plus accessories like
-- [[Decent Countertop Pitcher Rinser|Decent Countertop Pitcher Rinser]]
-- [[Bookoo Themis Mini Scale|Bookoo Themis Mini Scale]]
-- [[Subminimal Subscale|Subminimal Subscale]]
-- [[Subminimal FlowTip Jug|Subminimal FlowTip Jug]]
+- [[./Decent Countertop Pitcher Rinser|Decent Countertop Pitcher Rinser]]
+- [[./Bookoo Themis Mini Scale|Bookoo Themis Mini Scale]]
+- [[./Subminimal Subscale|Subminimal Subscale]]
+- [[./Subminimal FlowTip Jug|Subminimal FlowTip Jug]]
 and many more.
 
 My machine also uploads all my brews to [visualizer.coffee](https://visualizer.coffee/community?user=DustVoice&min_enjoyment=75&max_enjoyment=100&commit=Search), so feel free to check it out.
 ## Filter
 
 I occasionally also dip my toes into filter(esque) coffee, especially while traveling.
-For doing a filter-style coffee with my machine, I use a [[Filter3|Filter3]]-basket.
+For doing a filter-style coffee with my machine, I use a [[./Filter3|Filter3]]-basket.
 
 While traveling, I mainly use a setup of the
-- [[Aeropress|Aeropress]]
-- [[Comandante C40 MK4|Comandante C40 MK4]]
-- [[Bookoo Themis Mini Scale|Bookoo Themis Mini Scale]]
+- [[./Aeropress|Aeropress]]
+- [[./Comandante C40 MK4|Comandante C40 MK4]]
+- [[./Bookoo Themis Mini Scale|Bookoo Themis Mini Scale]]
 
-This combination allows me to easily cook up a brew without much of a hassle using my [[Aeropress Recipe - Quick And Dirty | "Quick And Dirty" Aeropress recipe]].
+This combination allows me to easily cook up a brew without much of a hassle using my [[./Aeropress Recipe - Quick And Dirty|"Quick And Dirty" Aeropress recipe]].
 
 ## Water
 
