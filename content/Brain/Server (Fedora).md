@@ -76,7 +76,7 @@ You get the deal.
 
 ## Podman
 
-![[./Podman (Fedora)|Podman (Fedora)]]
+![[./Podman (Fedora)#Install|Podman (Fedora) > Install]]
 
 ## Caddy
 
