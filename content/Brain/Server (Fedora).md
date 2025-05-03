@@ -49,7 +49,7 @@ Of course, to utilize a _rootless_ podman setup, I first needed to create a new 
 
 ## Securing of the **S**ecure **Sh**ell
 
-To further secure my server, I then [[./SSH - Key exclusive access|set up my SSH access]] in a way, where only a login using a [[./YubiKey - FIDO2 SSH keys|YubiKey secured SSH key]] is possible.
+To further secure my server, I then [[./SSH - Key exclusive access|set up my SSH access]] in a way, where only a login using a [[./YubiKey - SSH keys|YubiKey secured SSH key]] is possible.
 
 SSH keys are magnitudes more secure ([it's not even close](https://weberblog.net/passwords-vs-private-keys/), additionally the YubiKey secured ones use _Ed25519_ instead of _RSA_ by default) and the YubiKey brings a second factor to the table.
 
