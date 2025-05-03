@@ -47,7 +47,7 @@ I also decided to try something new, compared to nginx and Apache, so I planned 
 
 Of course, to utilize a _rootless_ podman setup, I first needed to create a new user. Using `root` is generally not recommended anyway.
 
-## Securing of the **S**ecure **Sh**ell
+## Secure the SSH
 
 To further secure my server, I then [[./SSH - Key exclusive access|set up my SSH access]] in a way, where only a login using a [[./YubiKey - SSH keys|YubiKey secured SSH key]] is possible.
 
