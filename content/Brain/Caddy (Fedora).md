@@ -27,9 +27,12 @@ mkdir -p ~/.config/containers/systemd
 
 If you want to serve a static side from within the Caddy container, also create a directory for each one, following the pattern
 
-```sh /{site-name(s)}/
+```sh /site-name(s)/
 mkdir -p ~/containers/caddy/sites/{site-name(s)}
 ```
+
+> [!todo] Replace
+> `site-name(s)` : a comma seperated list of directory names for the sites you intend to serve
 
 If you don't, you could still consider simply creating the parent directory `~/containers/caddy/sites`, so you don't have to touch the generated [[Caddy (Fedora)#Quadlet file|Quadlet file]].
 You would need to create corresponding entries in your [[Caddy (Fedora)#Caddyfile|Caddyfile]] anyway, for it to be active.
@@ -166,13 +169,17 @@ podlet \
 
 ## Boot it up
 
-![[./Podman (Fedora)#Rootless|Podman (Fedora) > Rootless > Reload the daemon]]
+![[./Podman (Fedora)#Reload the daemon|Podman (Fedora) > Reload the daemon]]
 
-![[./Podman (Fedora)#Rootless|Podman (Fedora) > Rootless > Start the service]] 
-> 
-> Replace `name` with `caddy`
+![[./Podman (Fedora)#Start the service|Podman (Fedora) > Start the service]] 
+
+> [!todo] Replace
+> `name` : `caddy`
 
 ![[./Podman (Fedora)#Check the status|Podman (Fedora) > Check the status]]
+
+> [!todo] Replace
+> `name` : `caddy`
 
 ![[./Podman (Fedora)#Keep it running|Podman (Fedora) > Keep it running]]
 
