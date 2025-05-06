@@ -457,7 +457,7 @@ The added/modified portions are highlighted, to enable quick expansion of an alr
                 Location http:// https://
         }
         
-        # Cache control
+	    # Cache control
 		@static {
 				file
 				path *.css *.js *.svg *.gif
@@ -513,25 +513,25 @@ The added/modified portions are highlighted, to enable quick expansion of an alr
 
         # .htaccess / data / config / ... shouldn't be accessible from outside
         @forbidden {
-	                    path    /.htaccess
-	                    path    /.user.ini
-	                    path    /.xml
-	                    path    /3rdparty/*
-	                    path    /autotest
-	                    path    /build/*
-	                    path    /config/*
-	                    path    /console
-	                    path    /console.php
-	                    path    /data/*
-	                    path    /db_
-	                    path    /db_structure
-	                    path    /indie
-	                    path    /issue
-	                    path    /lib/*
-	                    path    /occ
-	                    path    /README
-	                    path    /templates/*
-	                    path    /tests/*
+				path    /.htaccess
+				path    /.user.ini
+				path    /.xml
+				path    /3rdparty/*
+				path    /autotest
+				path    /build/*
+				path    /config/*
+				path    /console
+				path    /console.php
+				path    /data/*
+				path    /db_
+				path    /db_structure
+				path    /indie
+				path    /issue
+				path    /lib/*
+				path    /occ
+				path    /README
+				path    /templates/*
+				path    /tests/*
         }
 
         respond @forbidden 404
