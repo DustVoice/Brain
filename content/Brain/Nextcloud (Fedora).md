@@ -68,7 +68,7 @@ First, we tell the [[Nextcloud (Fedora)#^15ddf5|Caddy instance within the pod]] 
         redir /.well-known/caldav /remote.php/dav/ 301
         
         header {
-                Strict-Transport-Security max-age=31536000;
+                Strict-Transport-Security "max-age=31536000;"
         }
         
         # .htaccess / data / config / ... shouldn't be accessible from outside
@@ -422,7 +422,7 @@ If you encounter weird problems or issues, it might be related to too restrictiv
 The file, we expand upon, is the [[#Caddyfile (internal)|internal Caddyfile]] `~/containers/nextcloud/caddy/config/Caddyfile` (the [[#Caddyfile (external)|external one]] solely describes the reverse proxy behavior).
 The added/modified portions are highlighted, to enable quick expansion of an already existing (and hopefully working) file:
 
-```text title="~/containers/nextcloud/caddy/config/Caddyfile" /"max-age=31536000; includeSubDomains; preload"/ {17-27,29-32,35-39,41-43,45-47,49-51,53-87,92,95-96,98,101,103-104,109} 
+```text title="~/containers/nextcloud/caddy/config/Caddyfile" /includeSubDomains;/ /preload/ {19-27,29-32,35-39,41-43,45-47,49-51,53-87,92,95-96,98,101,103-104,109} 
 {
         servers {
                 trusted_proxies static private_ranges
@@ -457,7 +457,7 @@ The added/modified portions are highlighted, to enable quick expansion of an alr
                 Location http:// https://
         }
         
-        # Cache control
+	    # Cache control
 		@static {
 				file
 				path *.css *.js *.svg *.gif
@@ -513,25 +513,25 @@ The added/modified portions are highlighted, to enable quick expansion of an alr
 
         # .htaccess / data / config / ... shouldn't be accessible from outside
         @forbidden {
-	                    path    /.htaccess
-	                    path    /.user.ini
-	                    path    /.xml
-	                    path    /3rdparty/*
-	                    path    /autotest
-	                    path    /build/*
-	                    path    /config/*
-	                    path    /console
-	                    path    /console.php
-	                    path    /data/*
-	                    path    /db_
-	                    path    /db_structure
-	                    path    /indie
-	                    path    /issue
-	                    path    /lib/*
-	                    path    /occ
-	                    path    /README
-	                    path    /templates/*
-	                    path    /tests/*
+				path    /.htaccess
+				path    /.user.ini
+				path    /.xml
+				path    /3rdparty/*
+				path    /autotest
+				path    /build/*
+				path    /config/*
+				path    /console
+				path    /console.php
+				path    /data/*
+				path    /db_
+				path    /db_structure
+				path    /indie
+				path    /issue
+				path    /lib/*
+				path    /occ
+				path    /README
+				path    /templates/*
+				path    /tests/*
         }
 
         respond @forbidden 404
