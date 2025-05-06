@@ -420,9 +420,9 @@ Most of these options aim at _future-proofing_ the installation and, for example
 If you encounter weird problems or issues, it might be related to too restrictive of a config, so you might need to experiment with the introduced options, to determine which caused the error.
 
 The file, we expand upon, is the [[#Caddyfile (internal)|internal Caddyfile]] `~/containers/nextcloud/caddy/config/Caddyfile` (the [[#Caddyfile (external)|external one]] solely describes the reverse proxy behavior).
-The added portions are highlighted, to enable quick expansion of an already existing (and hopefully working) file:
+The added/modified portions are highlighted, to enable quick expansion of an already existing (and hopefully working) file:
 
-```text title="~/containers/nextcloud/caddy/config/Caddyfile" /"max-age=31536000; includeSubDomains; preload"/ {19-27,29-32,35-39,41-43,45-47,49-51,53-87,92,95-96,98,101,103-104,109} 
+```text title="~/containers/nextcloud/caddy/config/Caddyfile" /"max-age=31536000; includeSubDomains; preload"/ {17-27,29-32,35-39,41-43,45-47,49-51,53-87,92,95-96,98,101,103-104,109} 
 {
         servers {
                 trusted_proxies static private_ranges
@@ -440,6 +440,7 @@ The added portions are highlighted, to enable quick expansion of an already exis
         
         header {
                 Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+                
                 # More security hardening headers
                 Referrer-Policy "no-referrer"
                 X-Content-Type-Options "nosniff"
