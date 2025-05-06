@@ -3,13 +3,25 @@ share: true
 created: 2025-05-02 13:33
 tags: 
 ---
-# Using Podman (rootless)
 
+# Disclaimer
+
+> [!danger]
+> ## Proceed with caution, use at your own risk!
+> 
+> This is merely a documentation of my _specific setup_, i.e. what I found works _for me_.
+> 
+> You might have _entirely different_ requirements and expectations of _security_, etc.
+> 
+> ## Always use your **Brain™**
+> 
+> Always read up on _up-to-date_ documentation and _current_ best practices.
+> Inform yourself, research, and treat my documentation as what it truly is: a mere info-dump.
+# Using Podman (rootless)
 
 > [!info] Source
 > This section has been heavily inspired by [Micheal Jack](https://codeberg.org/mjack)'s [nextcloud-quadlet](https://codeberg.org/mjack/nextcloud-quadlets/src/branch/main) repository!
 > I simply adapted his proceeding to my needs, by changing some paths, using my [[./Caddy (Fedora)|monolithic caddy instance]] for reverse proxying, etc.
-
 ^1bda1f
 
 > [!question]- Caddy within Caddy?
@@ -17,7 +29,6 @@ tags:
 > One to serve Nextcloud itself and another one for reverse proxying.
 > 
 > The only difference between my and the original author's approach is that my instance, responsible for reverse proxying, is not part of the Nextcloud pod.
-
 ^15ddf5
 
 ## Prerequisites
@@ -348,9 +359,10 @@ Now we can use Nextcloud's `occ` tool
 > - `$SERVER_IP` : your server's public IP
 > - `$FQDN` : (sub-)domain you chose for this instance
 > - `$REGION` : your region, for example, `DE`
+> - `$CADDY` : hostname of your caddy container (in my guide it's `nextcloud-caddy`)
 
 ```sh /SERVER_IP/ /FQDN/
-php occ config:system:set trusted_domains 0 --value="nextcloud-caddy"
+php occ config:system:set trusted_domains 0 --value="$CADDY"
 php occ config:system:set trusted_domains 1 --value="$SERVER_IP"
 php occ	config:system:set trusted_domains 2 --value="$FQDN"
 php occ	config:system:set trusted_proxies 0 --value="$SERVER_IP"
@@ -373,7 +385,7 @@ php occ maintenance:repair --include-expensive
 php occ db:add-missing-indices
 ```
 
-### Crontab
+## Crontab
 
 In order for the Nextcloud's crontab to be run regularly, we need to deploy a cronjob on the host side.
 
@@ -393,6 +405,136 @@ Save it and check if everything went smoothly
 
 ```sh
 crontab -l
+```
+
+## Hardening
+
+Security should be more than fine, by using rootless containers (even for the reverse proxy caddy), isolating the network, etc.
+Still, security is always a concern and should be one of the top priorities.
+
+As always, though, always refer to up-to-date information and best practices and also consider reading up on the [official upstream Nextcloud documentation](https://docs.nextcloud.com/server/31/admin_manual/installation/harden_server.html).
+The [[#Disclaimer]] applies here, too.
+
+I have collected a couple of additional options for the [[#Caddyfile (internal)|internal Caddyfile]] that should harden the instance even more.
+Most of these options aim at _future-proofing_ the installation and, for example, prevent access to files which _should_ be unproblematic, but _might_ not be (in the future).
+If you encounter weird problems or issues, it might be related to too restrictive of a config, so you might need to experiment with the introduced options, to determine which caused the error.
+
+The file, we expand upon, is the [[#Caddyfile (internal)|internal Caddyfile]] `~/containers/nextcloud/caddy/config/Caddyfile` (the [[#Caddyfile (external)|external one]] solely describes the reverse proxy behavior).
+The added portions are highlighted, to enable quick expansion of an already existing (and hopefully working) file:
+
+```text title="~/containers/nextcloud/caddy/config/Caddyfile" /"max-age=31536000; includeSubDomains; preload"/ {19-27,29-32,35-39,41-43,45-47,49-51,53-87,92,95-96,98,101,103-104,109} 
+{
+        servers {
+                trusted_proxies static private_ranges
+        }
+}
+
+:80 {
+        root * /var/www/html
+        file_server
+
+        php_fastcgi nextcloud-app:9000
+
+        redir /.well-known/carddav /remote.php/dav/ 301
+        redir /.well-known/caldav /remote.php/dav/ 301
+        
+        header {
+                Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+                # More security hardening headers
+                Referrer-Policy "no-referrer"
+                X-Content-Type-Options "nosniff"
+                X-Download-Options "noopen"
+                X-Frame-Options "SAMEORIGIN"
+                X-Permitted-Cross-Domain-Policies "none"
+                X-Robots-Tag "noindex, nofollow"
+                X-XSS-Protection "1; mode=block"
+                # Permissions-Policy "interest-cohort=()"
+                
+                # Remove X-Powered-By header, which is an information leak
+                -X-Powered-By
+                # Replace http with https in any Location header
+                Location http:// https://
+        }
+        
+        # Cache control
+		@static {
+				file
+				path *.css *.js *.svg *.gif
+		}
+		
+		header @static {
+				Cache-Control "max-age=360"
+		}
+		
+		@fonts {
+				path /core/fonts
+		}
+		
+		header @fonts {
+				Cache-Control "max-age=604800"
+		}
+		
+		# gzip encoding
+		encode {
+				gzip 4
+				minimum_length 256
+			
+				match {
+						header Content-Type application/atom+xml*
+						header Content-Type application/javascript*
+						header Content-Type application/json*
+						header Content-Type application/ld+json*
+						header Content-Type application/manifest+json*
+						header Content-Type application/rss+xml*
+						header Content-Type application/vnd.geo+json*
+						header Content-Type application/vnd.ms-fontobject*
+						header Content-Type application/x-font-ttf*
+						header Content-Type application/x-web-app-manifest+json*
+						header Content-Type application/xhtml+xml*
+						header Content-Type application/xml*
+						header Content-Type font/opentype*
+						header Content-Type image/bmp*
+						header Content-Type image/svg+xml*
+						header Content-Type image/x-icon*
+						header Content-Type application/atom+xmlapplication/javascript*
+						# Would this be a good idea?
+						header Content-Type text/*
+						# header Content-Type text/cache-manifest*
+						# header Content-Type text/css*
+						# header Content-Type text/plain*
+						# header Content-Type text/vcard*
+						# header Content-Type text/vnd.rim.location.xloc*
+						# header Content-Type text/vtt*
+						# header Content-Type text/x-component*
+						# header Content-Type text/x-cross-domain-policy*
+				}
+		}
+
+        # .htaccess / data / config / ... shouldn't be accessible from outside
+        @forbidden {
+	                    path    /.htaccess
+	                    path    /.user.ini
+	                    path    /.xml
+	                    path    /3rdparty/*
+	                    path    /autotest
+	                    path    /build/*
+	                    path    /config/*
+	                    path    /console
+	                    path    /console.php
+	                    path    /data/*
+	                    path    /db_
+	                    path    /db_structure
+	                    path    /indie
+	                    path    /issue
+	                    path    /lib/*
+	                    path    /occ
+	                    path    /README
+	                    path    /templates/*
+	                    path    /tests/*
+        }
+
+        respond @forbidden 404
+}
 ```
 
 ## Reboot
