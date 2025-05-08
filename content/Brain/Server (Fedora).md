@@ -3,6 +3,8 @@ share: true
 created: 2025-04-29
 ---
 
+![[./System Administration#Disclaimer|System Administration > Disclaimer]]
+
 # Why Fedora?
 
 I maintained an Arch Linux server for the longest time.
@@ -74,6 +76,26 @@ And `root` SSH access requires an even more elaborate retrieval of an even more 
 
 You get the deal.
 
+### Fail2Ban
+
+You will probably notice, that almost immediately, your `journalctl` will be cluttered with a flood of SSH login attempts.
+
+> [!info]
+> This is fully automated and preys on people just setting up a server, choosing an initial weak password, and so on.
+> It is not a targeted attack agains you specifically.
+> But this level of automation makes it of utmost importance to employ good security measures.
+
+To get rid of this, you can employ [[./Fail2Ban (Fedora)|Fail2Ban (Fedora)]].
+
+After you got it up and running, we simply enable the SSH jail, by creating `/etc/fail2ban/jail.d/sshd.local`:
+
+```conf title="/etc/fail2ban/jail.d/sshd.local"
+[sshd]
+enabled = true
+```
+
+## Rollback
+
 ## Podman
 
 ![[./Podman (Fedora)#Install|Podman (Fedora) > Install]]
@@ -85,3 +107,20 @@ You get the deal.
 ## Nextcloud
 
 [[./Nextcloud (Fedora)#Using Podman (rootless)|Setup Nextcloud]]
+
+## Vaultwarden
+
+> [!missing]- This is currently unused
+> For multiple reasons, including but not limited to
+> - Unconditional availability
+> - Redundancy and frequency of backups
+> - Traffic limitations
+> I currently don't actively use a self-hosted Vaultwarden instance.
+> 
+> I trust Bitwarden much more to have reliable backup and uptime solutions employed, together with the manpower of dedicated taskforces.
+> 
+> Cost is also a non-factor, as even with using Vaultwarden, I kept an active subscription with Bitwarden, simply for supporting the effort.
+> 
+> This documentation serves as a knowledge dump, in case I decide to come back to this.
+
+[[./Vaultwarden (Fedora)|Setup Vaultwarden]]
