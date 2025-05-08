@@ -4,36 +4,25 @@ created: 2025-05-02 13:33
 tags: 
 ---
 
-# Disclaimer
+![[./System Administration#Disclaimer|System Administration > Disclaimer]]
 
-> [!danger]
-> ## Proceed with caution, use at your own risk!
-> 
-> This is merely a documentation of my _specific setup_, i.e. what I found works _for me_.
-> 
-> You might have _entirely different_ requirements and expectations of _security_, etc.
-> 
-> ## Always use your **Brain™**
-> 
-> Always read up on _up-to-date_ documentation and _current_ best practices.
-> Inform yourself, research, and treat my documentation as what it truly is: a mere info-dump.
 # Using Podman (rootless)
 
-> [!info] Source
+> [!info]- Source
 > This section has been heavily inspired by [Micheal Jack](https://codeberg.org/mjack)'s [nextcloud-quadlet](https://codeberg.org/mjack/nextcloud-quadlets/src/branch/main) repository!
 > I simply adapted his proceeding to my needs, by changing some paths, using my [[./Caddy (Fedora)|monolithic caddy instance]] for reverse proxying, etc.
 ^1bda1f
 
 > [!question]- Caddy within Caddy?
 > Note that, similar to the original author (see [[Nextcloud (Fedora)#^1bda1f|above]]), I use two Caddy instances.
-> One to serve Nextcloud itself and another one for reverse proxying.
+> One to serve Nextcloud itself and another one in front of it for reverse proxying.
 > 
 > The only difference between my and the original author's approach is that my instance, responsible for reverse proxying, is not part of the Nextcloud pod.
 ^15ddf5
 
 ## Prerequisites
 
-Make sure you have [[./Podman (Fedora)|podman]] installed and an outside [[./Caddy (Fedora)|monolithic caddy instance]] instance setup.
+Make sure you have [[./Podman (Fedora)|podman]] installed and a _frontend_ [[./Caddy (Fedora)|monolithic caddy instance]] instance set up.
 
 ## Data directories
 
@@ -47,73 +36,79 @@ mkdir -p ~/containers/nextcloud/{data,db,html,caddy/data,caddy/logs}
 
 Next, we need to create the necessary files.
 
-### Caddyfile (internal)
+### Backend Caddyfile
 
-First, we tell the [[Nextcloud (Fedora)#^15ddf5|Caddy instance within the pod]] how to serve the Nextcloud by creating the necessary `Caddyfile` within `~/containers/nextcloud/caddy/config`:
+First, we tell the [[Nextcloud (Fedora)#^15ddf5|Caddy instance within the pod]] (which I'll refer to as the _backend_ instance), how to serve the Nextcloud by creating the necessary `Caddyfile` within `~/containers/nextcloud/caddy/config`:
 
 ```text title="~/containers/nextcloud/caddy/config/Caddyfile"
 {
-        servers {
-                trusted_proxies static private_ranges
-        }
+	servers {
+		trusted_proxies static private_ranges
+	}
 }
 
 :80 {
-        root * /var/www/html
-        file_server
+	root * /var/www/html
+	file_server
 
-        php_fastcgi nextcloud-app:9000
+	php_fastcgi nextcloud-app:9000
 
-        redir /.well-known/carddav /remote.php/dav/ 301
-        redir /.well-known/caldav /remote.php/dav/ 301
-        
-        header {
-                Strict-Transport-Security "max-age=31536000;"
-        }
-        
-        # .htaccess / data / config / ... shouldn't be accessible from outside
-        @forbidden {
-                        path    /.htaccess
-                        path    /data/*
-                        path    /config/*
-                        path    /db_structure
-                        path    /.xml
-                        path    /README
-                        path    /3rdparty/*
-                        path    /lib/*
-                        path    /templates/*
-                        path    /occ
-                        path    /console.php
-        }
+	redir /.well-known/carddav /remote.php/dav/ 301
+	redir /.well-known/caldav /remote.php/dav/ 301
 
-        respond @forbidden 404
+	header {
+		Strict-Transport-Security "max-age=31536000;"
+	}
+
+	# .htaccess / data / config / ... shouldn't be accessible from outside
+	@forbidden {
+		path /.htaccess
+		path /data/*
+		path /config/*
+		path /db_structure
+		path /.xml
+		path /README
+		path /3rdparty/*
+		path /lib/*
+		path /templates/*
+		path /occ
+		path /console.php
+	}
+
+	respond @forbidden 404
 }
 ```
 
-This will serve the Nextcloud on the standard `80` HTTP port, **within the Nextcloud pod**.
-The [[Nextcloud (Fedora)#Pod|pod]] configuration will take care of forwarding an actual _outside/system_ port to this _pod-internal_ one.
+This will
+- serve the Nextcloud on the standard `80` HTTP port
+- for the hostname equal to the name specified for its [[Nextcloud (Fedora)#Caddy|container]]
+- within the Nextcloud pod, or more specifically within it's specified [[Nextcloud (Fedora)#Network|Network]].
 
-### Caddyfile (external)
+The [[Nextcloud (Fedora)#Pod|pod configuration]] will take care of forwarding an actual _outside/system_ port to this _pod-internal_ one.
 
-As mentioned, the _external_ caddy instance is used for reverse proxying. Note that the _internal_ caddy instance expects incoming traffic on port `8080`, as specified in [[Nextcloud (Fedora)#Caddy|Caddy]].
+### Frontend Caddyfile
 
-Therefore, we extend the appropriate [[./Caddy (Fedora)#Caddyfile|Caddy (Fedora) > Caddyfile]] under `~/containers/caddy/config/Caddyfile`
+As mentioned, the _external_ caddy instance (which I will refer to as the _frontend_ instance) is used for reverse proxying. Note that the _backend_ caddy instance expects incoming traffic on port `8080`, as specified in [[Nextcloud (Fedora)#Caddy|its container config]].
 
-```sh title="~/containers/caddy/config/Caddyfile" /FQDN/
-FQDN {
-        redir /.well-known/carddav /remote.php/dav/ 301
-        redir /.well-known/caldav /remote.php/dav/ 301
+Therefore, we simply add a section to the (already present) [[./Caddy (Fedora)#Caddyfile|Caddy (Fedora) > Caddyfile]] under `~/containers/caddy/config/Caddyfile`
 
-        header {
-                Strict-Transport-Security max-age=31536000;
-        }
+```sh title="~/containers/caddy/config/Caddyfile" /NEXTCLOUD_DOMAIN/
+{$NEXTCLOUD_DOMAIN} {
+	import subdomain-log {$NEXTCLOUD_DOMAIN}
 
-        reverse_proxy http://host.containers.internal:8080
+	redir /.well-known/carddav /remote.php/dav/ 301
+	redir /.well-known/caldav /remote.php/dav/ 301
+
+	header {
+		Strict-Transport-Security max-age=31536000;
+	}
+
+	reverse_proxy http://host.containers.internal:8080
 }
 ```
 
-> [!todo] Replace
-> `FQDN` (**F**ully **Q**ualified **D**omain **N**ame) : the (sub-)domain you intend to use for this instance (`subdomain.example.com`). 
+> [!todo] [[./Caddy (Fedora)#Environment variables|Caddy (Fedora) > Environment variables]]
+> `NEXTCLOUD_DOMAIN` : [[./Fully Qualified Domain Name|Fully Qualified Domain Name]] of the Nextcloud instance
 
 > [!question]- How long did it take?
 > Don't ask!
@@ -136,7 +131,7 @@ Network=nextcloud.network
 
 ## Network
 
-As we configured a network for our [[Nextcloud (Fedora)#Pod|pod]], we will need to create the network, too.
+As we configured a network for our [[Nextcloud (Fedora)#Pod|pod configuration]], we will need to create the network, too.
 
 ```systemd title="~/.config/containers/systemd/nextcloud.network"
 [Unit]
@@ -146,10 +141,10 @@ Description=Nextcloud Network
 Label=app=nextcloud
 ```
 
-## Container
+## Containers
 ### Caddy
 
-To set up the internal Caddy instance, which will use the [[Nextcloud (Fedora)#Caddyfile (internal)|previously created Caddyfile]], we simply create a new `~/.config/containers/systemd/nextcloud-caddy.container` file
+To set up the backend Caddy instance, which will use the [[Nextcloud (Fedora)#Backend Caddyfile|previously created Caddyfile]], we simply create a new `~/.config/containers/systemd/nextcloud-caddy.container` file
 
 ```systemd title="~/.config/containers/systemd/nextcloud-caddy.container" /user/
 [Unit]
@@ -175,9 +170,9 @@ WantedBy=default.target
 ```
 
 > [!todo] Replace
-> `user` : your username
+> `user` : username used for running the [[./Podman (Fedora)#Rootless|rootless podman instance]].
 
-This will also forward the _outside/system_ port `8080` to the _inside_ port `80`, specified in the [[Nextcloud (Fedora)#Caddyfile (internal)|aformentioned Caddyfile]].
+This will also forward the _outside/system_ port `8080` to the _inside_ port `80`, specified in the [[Nextcloud (Fedora)#Backend Caddyfile|aformentioned Caddyfile]].
 
 ### Database
 
@@ -239,10 +234,11 @@ WantedBy=default.target
 ```
 
 > [!todo] Replace
-> `user` : your username
+> `user` : username used for running the [[./Podman (Fedora)#Rootless|rootless podman instance]].
 ### Redis
 
-For caching and other tasks, [redis](https://redis.io) is a pretty standard choice. I actually planned to use something different, but ended up using redis anyway, as I could simply copy [this container file](https://codeberg.org/mjack/nextcloud-quadlets/src/branch/main/quadlets/nextcloud-redis.container).
+For caching and other tasks, [redis](https://redis.io) is a pretty standard choice. I actually planned to use [Valkey](https://valkey.io), but ended up using redis for now.
+Simply enough, I simply copied [this container file](https://codeberg.org/mjack/nextcloud-quadlets/src/branch/main/quadlets/nextcloud-redis.container).
 
 Create the file under `~/.config/containers/systemd/nextcloud-redis.container`:
 
@@ -268,7 +264,7 @@ Now we can finally create the _main Nextcloud container_.
 
 Create the file under `~/.config/containers/systemd/nextcloud-app.container`
 
-```systemd title="~/.config/containers/systemd/nextcloud-app.container" /user/ /FQDN/
+```systemd title="~/.config/containers/systemd/nextcloud-app.container" /user/ /NEXTCLOUD_DOMAIN/
 [Unit]
 Description=Nextcloud App
 Wants=nextcloud-db.service nextcloud-redis.service
@@ -288,27 +284,37 @@ Environment=MYSQL_DATABASE=nextcloud
 Environment=MYSQL_USER=nextcloud
 Secret=nextcloud-mariadb-password,type=env,target=MYSQL_PASSWORD
 Environment=REDIS_HOST=nextcloud-redis
-AddHost=FQDN:127.0.0.1
+AddHost=NEXTCLOUD_DOMAIN:127.0.0.1
 
 [Install]
 WantedBy=default.target
 ```
 
 > [!todo] Replace
-> - `user` : your username
-> - `FQDN` : the fully qualified domain name (e.g., `subdomain.example.com`) you want to use for this instance
+> - `user` : username used for running the [[./Podman (Fedora)#Rootless|rootless podman instance]].
+> - `NEXTCLOUD_DOMAIN` : [[./Fully Qualified Domain Name|Fully Qualified Domain Name]] of the Nextcloud instance
 ## Boot it up
+
+### Reload
 
 ![[./Podman (Fedora)#Reload the daemon|Podman (Fedora) > Reload the daemon]]
 
+### Auto-Update
+
 ![[./Podman (Fedora)#Auto-Update|Podman (Fedora) > Auto-Update]]
 
+### Linger
+
 ![[./Podman (Fedora)#Keep it running|Podman (Fedora) > Keep it running]]
+
+### Start
 
 ![[./Podman (Fedora)#Start the service|Podman (Fedora) > Start the service]]
 
 > [!todo] Replace
 > `name` : `nextcloud-pod`
+
+### Status
 
 ![[./Podman (Fedora)#Check the status|Podman (Fedora) > Check the status]]
 
@@ -318,7 +324,9 @@ WantedBy=default.target
 Look for _Started Nextcloud Pod_, to ensure Nextcloud has started successfully.
 You can also check every other container's status by substituting `name` with the container's name.
 
-Following that, you probably still need to restart the _external_ [[./Caddy (Fedora)|monolithic caddy instance]], as we [[Nextcloud (Fedora)#Caddyfile (internal)|modified its Caddyfile previously]]:
+### Restart
+
+Following that, you probably still need to restart the _frontend_ [[./Caddy (Fedora)|monolithic caddy instance]], as we [[Nextcloud (Fedora)#Frontend Caddyfile|modified its Caddyfile previously]]:
 
 ```sh
 systemctl --user restart caddy.service
@@ -326,18 +334,9 @@ systemctl --user restart caddy.service
 
 ## Set it up
 
-You should _(hopefully)_ now be able to access your Nextcloud installer under `https://FQDN.
+You should _(hopefully)_ now be able to access your Nextcloud installer unde the domain you specified
 
-> [!tip]
-> If not, try checking the statuses of the `caddy`, `nextcloud-caddy` and `nextcloud-app` services.
-> 
-> You can also prepend an additional portion in front of all the content to the respective `Caddyfile`s, enabling more verbose error outputs.
-> 
-> ```text
-> {
->         debug
-> }
-> ```
+![[./Caddy (Fedora)#Debug|Caddy (Fedora) > Debug]]
 
 Choose a username for the admin account and generate a **(secure)** password, store it in your password manager and follow the installer.
 
@@ -357,14 +356,14 @@ Now we can use Nextcloud's `occ` tool
 
 > [!todo] Set environment variables
 > - `$SERVER_IP` : your server's public IP
-> - `$FQDN` : (sub-)domain you chose for this instance
+> - `$NEXTCLOUD_DOMAIN` : [[./Fully Qualified Domain Name|Fully Qualified Domain Name]] of this Nextcloud instance
 > - `$REGION` : your region, for example, `DE`
 > - `$CADDY` : hostname of your caddy container (in my guide it's `nextcloud-caddy`)
 
 ```sh /SERVER_IP/ /FQDN/
 php occ config:system:set trusted_domains 0 --value="$CADDY"
 php occ config:system:set trusted_domains 1 --value="$SERVER_IP"
-php occ	config:system:set trusted_domains 2 --value="$FQDN"
+php occ	config:system:set trusted_domains 2 --value="$NEXTCLOUD_DOMAIN"
 php occ	config:system:set trusted_proxies 0 --value="$SERVER_IP"
 php occ config:system:set overwrite.cli.url --value "https://$FQDN"
 php occ config:system:set overwriteprotocol --value "https"
@@ -389,7 +388,7 @@ php occ db:add-missing-indices
 
 In order for the Nextcloud's crontab to be run regularly, we need to deploy a cronjob on the host side.
 
-[[Cron (Fedora)#Install|Make sure you have crontab available]]
+[[./Cron (Fedora)#Install|Make sure you have crontab available]]
 
 ```sh
 crontab -e
@@ -413,131 +412,134 @@ Security should be more than fine, by using rootless containers (even for the re
 Still, security is always a concern and should be one of the top priorities.
 
 As always, though, always refer to up-to-date information and best practices and also consider reading up on the [official upstream Nextcloud documentation](https://docs.nextcloud.com/server/31/admin_manual/installation/harden_server.html).
-The [[#Disclaimer]] applies here, too.
+The [[./System Administration#Disclaimer|System Administration > Disclaimer]] applies here, too.
 
-I have collected a couple of additional options for the [[#Caddyfile (internal)|internal Caddyfile]] that should harden the instance even more.
+I have collected a couple of additional options for the [[Nextcloud (Fedora)#Backend Caddyfile|previously created Caddyfile]] that should harden the instance even more.
 Most of these options aim at _future-proofing_ the installation and, for example, prevent access to files which _should_ be unproblematic, but _might_ not be (in the future).
 If you encounter weird problems or issues, it might be related to too restrictive of a config, so you might need to experiment with the introduced options, to determine which caused the error.
 
-The file, we expand upon, is the [[#Caddyfile (internal)|internal Caddyfile]] `~/containers/nextcloud/caddy/config/Caddyfile` (the [[#Caddyfile (external)|external one]] solely describes the reverse proxy behavior).
-The added/modified portions are highlighted, to enable quick expansion of an already existing (and hopefully working) file:
+The file, we expand upon, is the [[Nextcloud (Fedora)#Backend Caddyfile|previously created Caddyfile]], as the [[Nextcloud (Fedora)#Frontend Caddyfile|frontend one]] solely describes the reverse proxy behavior.
+The added/modified portions are highlighted, to enable quick expansion of an already existing (and hopefully working) `~/containers/nextcloud/caddy/config/Caddyfile` file:
 
-```text title="~/containers/nextcloud/caddy/config/Caddyfile" /includeSubDomains;/ /preload/ {19-27,29-32,35-39,41-43,45-47,49-51,53-87,92,95-96,98,101,103-104,109} 
+```text title="~/containers/nextcloud/caddy/config/Caddyfile" /includeSubDomains;/ /preload/ {19-32,35-87,92,95-96,98,101,103-104,109} 
 {
-        servers {
-                trusted_proxies static private_ranges
-        }
+	servers {
+		trusted_proxies static private_ranges
+	}
 }
 
 :80 {
-        root * /var/www/html
-        file_server
+	root * /var/www/html
+	file_server
 
-        php_fastcgi nextcloud-app:9000
+	php_fastcgi nextcloud-app:9000
 
-        redir /.well-known/carddav /remote.php/dav/ 301
-        redir /.well-known/caldav /remote.php/dav/ 301
-        
-        header {
-                Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
-                
-                # More security hardening headers
-                Referrer-Policy "no-referrer"
-                X-Content-Type-Options "nosniff"
-                X-Download-Options "noopen"
-                X-Frame-Options "SAMEORIGIN"
-                X-Permitted-Cross-Domain-Policies "none"
-                X-Robots-Tag "noindex, nofollow"
-                X-XSS-Protection "1; mode=block"
-                # Permissions-Policy "interest-cohort=()"
-                
-                # Remove X-Powered-By header, which is an information leak
-                -X-Powered-By
-                # Replace http with https in any Location header
-                Location http:// https://
-        }
-        
-	    # Cache control
-		@static {
-				file
-				path *.css *.js *.svg *.gif
-		}
-		
-		header @static {
-				Cache-Control "max-age=360"
-		}
-		
-		@fonts {
-				path /core/fonts
-		}
-		
-		header @fonts {
-				Cache-Control "max-age=604800"
-		}
-		
-		# gzip encoding
-		encode {
-				gzip 4
-				minimum_length 256
-			
-				match {
-						header Content-Type application/atom+xml*
-						header Content-Type application/javascript*
-						header Content-Type application/json*
-						header Content-Type application/ld+json*
-						header Content-Type application/manifest+json*
-						header Content-Type application/rss+xml*
-						header Content-Type application/vnd.geo+json*
-						header Content-Type application/vnd.ms-fontobject*
-						header Content-Type application/x-font-ttf*
-						header Content-Type application/x-web-app-manifest+json*
-						header Content-Type application/xhtml+xml*
-						header Content-Type application/xml*
-						header Content-Type font/opentype*
-						header Content-Type image/bmp*
-						header Content-Type image/svg+xml*
-						header Content-Type image/x-icon*
-						header Content-Type application/atom+xmlapplication/javascript*
-						# Would this be a good idea?
-						header Content-Type text/*
-						# header Content-Type text/cache-manifest*
-						# header Content-Type text/css*
-						# header Content-Type text/plain*
-						# header Content-Type text/vcard*
-						# header Content-Type text/vnd.rim.location.xloc*
-						# header Content-Type text/vtt*
-						# header Content-Type text/x-component*
-						# header Content-Type text/x-cross-domain-policy*
-				}
-		}
+	redir /.well-known/carddav /remote.php/dav/ 301
+	redir /.well-known/caldav /remote.php/dav/ 301
 
-        # .htaccess / data / config / ... shouldn't be accessible from outside
-        @forbidden {
-				path    /.htaccess
-				path    /.user.ini
-				path    /.xml
-				path    /3rdparty/*
-				path    /autotest
-				path    /build/*
-				path    /config/*
-				path    /console
-				path    /console.php
-				path    /data/*
-				path    /db_
-				path    /db_structure
-				path    /indie
-				path    /issue
-				path    /lib/*
-				path    /occ
-				path    /README
-				path    /templates/*
-				path    /tests/*
-        }
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
 
-        respond @forbidden 404
+		# More security hardening headers
+		Referrer-Policy "no-referrer"
+		X-Content-Type-Options "nosniff"
+		X-Download-Options "noopen"
+		X-Frame-Options "SAMEORIGIN"
+		X-Permitted-Cross-Domain-Policies "none"
+		X-Robots-Tag "noindex, nofollow"
+		X-XSS-Protection "1; mode=block"
+		# Permissions-Policy "interest-cohort=()"
+
+		# Remove X-Powered-By header, which is an information leak
+		-X-Powered-By
+		# Replace http with https in any Location header
+		Location http:// https://
+	}
+
+	# Cache control
+	@static {
+		file
+		path *.css *.js *.svg *.gif
+	}
+
+	header @static {
+		Cache-Control "max-age=360"
+	}
+
+	@fonts {
+		path /core/fonts
+	}
+
+	header @fonts {
+		Cache-Control "max-age=604800"
+	}
+
+	# gzip encoding
+	encode {
+		gzip 4
+		minimum_length 256
+
+		match {
+			header Content-Type application/atom+xml*
+			header Content-Type application/javascript*
+			header Content-Type application/json*
+			header Content-Type application/ld+json*
+			header Content-Type application/manifest+json*
+			header Content-Type application/rss+xml*
+			header Content-Type application/vnd.geo+json*
+			header Content-Type application/vnd.ms-fontobject*
+			header Content-Type application/x-font-ttf*
+			header Content-Type application/x-web-app-manifest+json*
+			header Content-Type application/xhtml+xml*
+			header Content-Type application/xml*
+			header Content-Type font/opentype*
+			header Content-Type image/bmp*
+			header Content-Type image/svg+xml*
+			header Content-Type image/x-icon*
+			header Content-Type application/atom+xmlapplication/javascript*
+			# Would this be a good idea?
+			header Content-Type text/*
+			# header Content-Type text/cache-manifest*
+			# header Content-Type text/css*
+			# header Content-Type text/plain*
+			# header Content-Type text/vcard*
+			# header Content-Type text/vnd.rim.location.xloc*
+			# header Content-Type text/vtt*
+			# header Content-Type text/x-component*
+			# header Content-Type text/x-cross-domain-policy*
+		}
+	}
+
+	# .htaccess / data / config / ... shouldn't be accessible from outside
+	@forbidden {
+		path /.htaccess
+		path /.user.ini
+		path /.xml
+		path /3rdparty/*
+		path /autotest
+		path /build/*
+		path /config/*
+		path /console
+		path /console.php
+		path /data/*
+		path /db_
+		path /db_structure
+		path /indie
+		path /issue
+		path /lib/*
+		path /occ
+		path /README
+		path /templates/*
+		path /tests/*
+	}
+
+	respond @forbidden 404
 }
 ```
 
+Of course, you need to at least restart the `nextcloud-caddy.service` if you changed this file after the [[Nextcloud (Fedora)#Reboot|Reboot]] step.
+
+You could in theory also [[./Caddy (Fedora)#Don't terminate TLS|not terminate the TLS chain]].
 ## Reboot
 
 Finally, restart the Nextcloud, just for good measure. It should be lightning quick, too.
