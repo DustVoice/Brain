@@ -87,55 +87,97 @@ The [official documentation](https://caddyserver.com/docs/) even provides a [lis
 > }
 > ```
 
-## Quadlet file
+### Environment variables
 
-As mentioned earlier, `podlet` enables you to generate a Quadlet file for a specific `podman` command.
+I often use environment variables to, for example, specify domains of my sub-sites (the sites this frontend Caddy instance proxies to), etc.
+For this, I specify an `EnvironmentFile` in the [[Caddy (Fedora)#Quadlet file|Quadlet file]].
 
-```sh
-podlet \
-	--file ~/.config/containers/systemd/ \
-	--install \
-	--name caddy \
-	--description "Caddy" \
-	podman run \
-	--name caddy
-	--restart always \
-	-p 1880:80 \
-	-p 1443:443 \
-	-v ~/containers/caddy/config:/etc/caddy:ro,Z \
-	-v ~/containers/caddy/data:/data:Z \
-	-v ~/containers/caddy/logs:/var/log/caddy:Z \
-	-v ~/containers/caddy/sites:/srv:ro,z \
-	docker.io/library/caddy:2.10.0
+You can then specify environment variables within this file using the `NAME=val` pattern,
+for example:
+
+```sh title="~/containers/caddy/caddy.env"
+APP_DOMAIN=app.domain.com
+SECOND_APP_DOMAIN=second.domain.com
 ```
 
-> [!info]- Detailed command dissection
-> - Use [[./Podman (Fedora)#Podlet|Podman (Fedora) > Podlet]] to generate the file
-> 	- `podlet`
-> - Store the Quadlet file at the correct location
-> 	- `--file ~/.config/containers/systemd/`
-> - Name it `caddy.container`
-> 	- `--name caddy`
-> - Add an `[Install]` section
-> 	- `--install`
-> - Add a `[Unit]` description
-> 	- `--description "Caddy"`
-> - Create a container with the following parameters:
-> 	- `podman run`
-> - Name it caddy
-> 	- `--name caddy`
-> - Try to restart the container, if it has stopped/crashed/…
-> 	- `--restart always`
-> - Map the outside ports `1880` and `1443`(see [[Caddy (Fedora)#Ports|Ports]]) to Caddy's internal `80` and `443` ports respectively
-> 	- `-p 1880:80`
-> 	- `-p 1443:443`
-> - Map the outside [[Caddy (Fedora)#Data directories|Data directories]] to the correct internal paths
-> 	- `-v ~/containers/caddy/config:/etc/caddy:ro,Z`
-> 	- `-v ~/containers/caddy/data:/data:Z`
-> 	- `-v ~/containers/caddy/logs:/var/log/caddy:Z`
-> 	- `-v ~/containers/caddy/sites:/srv:ro,z` _(Remove this, if you would rather not serve static sites from this Caddy instance)_ ^677ece
-> - Use the latest caddy image available. **Don't use the `latest` tag!** Read up on [why you shouldn't use the latest tag](https://vsupalov.com/docker-latest-tag/)
-> 	- `docker.io/library/caddy:2.10.0`
+I would then use it in, e.g., my Caddyfile like so
+
+```text title="~/containers/caddy/config/Caddyfile"
+{$APP_DOMAIN} {
+	reverse_proxy localhost:5000
+}
+
+{$SECOND_APP_DOMAIN} {
+	reverse_proxy localhost:6000
+}
+```
+
+
+> [!tip]
+> If you don't want to use said environment file, you simply need to replace all occurences of a variable (`{$VAR_NAME}`) within the `Caddyfile` with the appropriate value.
+
+### Logging
+
+I usually insert a `subdomain-log` macro at the top of my `Caddyfile`s, to quickly enable logging within a subdomain section
+
+```text title="~/containers/caddy/config/Caddyfile"
+(subdomain-log) {
+	log {
+		hostnames {args[0]}
+		output file /var/log/caddy/{args[0]}.log
+	}
+}
+```
+
+I can then simply do
+
+```text title="~/containers/caddy/config/Caddyfile"
+{$APP_DOMAIN} {
+	import subdomain-log {$APP_DOMAIN}
+}
+```
+
+## Quadlet file
+
+We simply need to populate a `caddy.container` file within `~/.config/containers/systemd`:
+
+```systemd title="~/.config/containers/systemd/caddy.container" /user/
+[Unit]
+Description=Caddy
+
+[Container]
+AutoUpdate=registry
+ContainerName=caddy
+Image=docker.io/library/caddy:latest
+PublishPort=1880:80
+PublishPort=1443:443
+Volume=/home/user/containers/caddy/config:/etc/caddy:ro:Z
+Volume=/home/user/containers/caddy/data:/data:Z
+Volume=/home/user/containers/caddy/logs:/var/log/caddy:Z
+Volume=/home/user/containers/caddy/sites:/srv:ro,z
+EnvironmentFile=/home/user/containers/caddy/caddy.env
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+```
+
+> [!info]- Some details
+> - `PublishPort`
+> 	- Map the outside ports `1880` and `1443`(see [[Caddy (Fedora)#Ports|Ports]]) to Caddy's internal `80` and `443` ports respectively
+> 		- `-p 1880:80`
+> 		- `-p 1443:443`
+> - `Volume`
+> 	- Map the outside [[Caddy (Fedora)#Data directories|Data directories]] to the correct internal paths
+> 		- `-v ~/containers/caddy/config:/etc/caddy:ro,Z`
+> 		- `-v ~/containers/caddy/data:/data:Z`
+> 		- `-v ~/containers/caddy/logs:/var/log/caddy:Z`
+> 		- `-v ~/containers/caddy/sites:/srv:ro,z` _(Remove this, if you would rather not serve static sites from this Caddy instance)_ ^677ece
+> - `EnvironmentFile`
+> 	- A file specifying environment variables available within the container following a `VAR_NAME=VALUE` pattern.
+> 	- I often use this for specifying variables used in the [[Caddy (Fedora)#Caddyfile|Caddyfile]] using the `{$VAR_NAME}` syntax. Also see [[Caddy (Fedora)#Environment variables|Environment variables]]
 > 
 > > [!info] What are the `:z` and `:Z` labels?
 > > These two labels are specific to [SELinux](https://www.redhat.com/en/topics/linux/what-is-selinux), which is enabled by default on Fedora.
@@ -143,51 +185,48 @@ podlet \
 > > 
 > > I found a good explanation elaborating these two options a bit in [this blog post](https://blog.ryanmartin.me/selinux-containers).
 
-> [!check]- Result
-> It will produce something akin to (where `user` is your username, of course)
-> 
-> ```systemd title="~/.config/containers/systemd/caddy.container" /user/
-> [Unit]
-> Description=Caddy
-> 
-> [Container]
-> ContainerName=caddy
-> Image=docker.io/library/caddy:2.10.0
-> PublishPort=1880:80
-> PublishPort=1443:443
-> Volume=/home/user/containers/caddy/config:/etc/caddy:ro:Z
-> Volume=/home/user/containers/caddy/data:/data:Z
-> Volume=/home/user/containers/caddy/logs:/var/log/caddy:Z
-> Volume=/home/user/containers/caddy/sites:/srv:ro,z
-> 
-> [Service]
-> Restart=always
-> 
-> [Install]
-> WantedBy=default.target
-> ```
-
 ## Boot it up
 
+### Reload
+
 ![[./Podman (Fedora)#Reload the daemon|Podman (Fedora) > Reload the daemon]]
+
+### Start
 
 ![[./Podman (Fedora)#Start the service|Podman (Fedora) > Start the service]] 
 
 > [!todo] Replace
 > `name` : `caddy`
 
+### Status
+
 ![[./Podman (Fedora)#Check the status|Podman (Fedora) > Check the status]]
 
 > [!todo] Replace
 > `name` : `caddy`
+### Linger
 
 ![[./Podman (Fedora)#Keep it running|Podman (Fedora) > Keep it running]]
 
+### Debug
+
+> [!tip]
+> If something doesn't work right away, try checking the statuses of the `caddy`, and the (pod's)  container service(s).
+> 
+> You can also prepend an additional portion in front of all the content to the respective `Caddyfile`s, enabling more verbose error outputs.
+> 
+> ```text
+> {
+> 	debug
+> }
+> ```
+
+
 ## Test it
 
-Of course, you can proceed with, e.g., setting up a [[./Nextcloud (Fedora)|Nextcloud (Fedora)]] to test the Caddy setup.
+Of course, you can proceed directly with, e.g., setting up a [[./Nextcloud (Fedora)|Nextcloud (Fedora)]] to test the Caddy setup.
 
-I find it more convenient to perform a quick test using a simple HTML file.
+I find it more convenient to perform a quick test, howevew, using a simple HTML file.
 
 > [!NOTE]
 > This assumes you [[Caddy (Fedora)#Static sites|created the necessary directory]] and [[Caddy (Fedora)#^677ece|configured Caddy to be able to serve static sites]], however.
@@ -217,3 +256,15 @@ The site should now be accessible through the domain you specified and greet you
 > [!warning] Consider removing it
 > For security purposes, I would probably remove the `~/containers/caddy/sites/test` folder after testing.
 > Removing the corresponding lines in your `Caddyfile` might be sufficient, but you most likely don't need to test it this way anytime soon again, so why clutter your system.
+
+## Harden
+
+### Don't terminate TLS
+
+In the current scenario, the frontend caddy consumes TLS and proxies to the backend caddy or caddies.
+
+This should be fine, if you trust the local network of your server, or at least your machine if you employed reasonable efforts of setting up, e.g., firewall rules, etc.
+
+An alternative would be to also use TLS encryption between the frontend and backend instances.
+
+The caddy community provides an [excellent post on how to do exactly that](https://caddy.community/t/use-caddy-for-local-https-tls-between-front-end-reverse-proxy-and-lan-hosts/11650).
