@@ -1,16 +1,17 @@
 ---
 share: true
 created: 2025-05-02 13:33
-tags: 
+tags:
+  - fedora
 ---
 
-![[System Administration#Disclaimer|System Administration > Disclaimer]]
+![[Disclaimer (Tech)|Disclaimer (Tech)]]
 
-# Using Podman (rootless)
+# Rootless Podman
 
 ## Prerequisites
 
-Make sure you have [[Podman (Fedora)|podman]] installed and a _frontend_ [[Caddy (Fedora)|Caddy (Fedora)]] instance set up.
+Make sure you have [[Podman (Fedora)|podman]] installed and a _frontend_ [[Caddy|Caddy]] instance set up.
 
 ## Data directories
 
@@ -29,7 +30,7 @@ Next, we need to create the necessary files.
 I use a _frontend_ caddy instance for reverse proxying to Vaultwarden.
 Note that the Vaultwarden container expects incoming traffic on port `8000`, as specified in [[#Vaultwarden|its container config]].
 
-Therefore, we simply add a section to the (already present) [[Caddy (Fedora)#Caddyfile|Caddy (Fedora) > Caddyfile]] under `~/containers/caddy/config/Caddyfile`
+Therefore, we simply add a section to the (already present) [[Caddy#Caddyfile|Caddy > Caddyfile]] under `~/containers/caddy/config/Caddyfile`
 
 ```text title="~/containers/caddy/config/Caddyfile" /FQDN/
 {$VAULTWARDEN_DOMAIN} {
@@ -41,7 +42,7 @@ Therefore, we simply add a section to the (already present) [[Caddy (Fedora)#Cad
 }
 ```
 
-> [!todo] [[Caddy (Fedora)#Environment variables|Caddy (Fedora) > Environment variables]]
+> [!todo] [[Caddy#Environment variables|Caddy > Environment variables]]
 > `VAULTWARDEN_DOMAIN` : [[FQDN|FQDN]] of the Vaultwarden instance
 
 ### Environment file
@@ -128,7 +129,7 @@ WantedBy=default.target
 
 ### Restart
 
-Following that, you probably still need to restart the _frontend_ [[Caddy (Fedora)|Caddy (Fedora)]], as we [[#Frontend Caddyfile|modified its Caddyfile previously]]:
+Following that, you probably still need to restart the _frontend_ [[Caddy|Caddy]], as we [[#Frontend Caddyfile|modified its Caddyfile previously]]:
 
 ```sh
 systemctl --user restart caddy.service
@@ -138,7 +139,7 @@ systemctl --user restart caddy.service
 
 You should _(hopefully)_ now be able to access your Vaultwarden instance.
 
-![[Caddy (Fedora)#Debug|Caddy (Fedora) > Debug]]
+![[Caddy#Debug|Caddy > Debug]]
 
 You can now perform administrative tasks using the admin console, although you'd have to access it from the server directly, as per my [[#^c408d5|advanced Caddyfile]].
 
@@ -203,21 +204,21 @@ The added/modified portions are highlighted, to enable quick expansion of an alr
 ```
 ^c408d5
 
-> [!todo] [[Caddy (Fedora)#Environment variables|Caddy (Fedora) > Environment variables]]
+> [!todo] [[Caddy#Environment variables|Caddy > Environment variables]]
 > `VAULTWARDEN_DOMAIN` : [[FQDN|FQDN]] of the Vaultwarden instance
 
-You could in theory also [[Caddy (Fedora)#Don't terminate TLS|not terminate the TLS chain]].
+You could in theory also [[Caddy#Don't terminate TLS|not terminate the TLS chain]].
 
 ### Disable registration
 
 As you probably don't want _anyone_ to register an account uninvited, you should consider disabling registrations.
 This preserves the _invite_ functionality.
 
-You can either do that through the admin panel, or by setting `SIGNUPS_ALLOWED=false` in the [[Caddy (Fedora)#Environment variables|Caddy (Fedora) > Environment variables]].
+You can either do that through the admin panel, or by setting `SIGNUPS_ALLOWED=false` in the [[Caddy#Environment variables|Caddy > Environment variables]].
 
 ### Disable password hints
 
-To disable password hints, which can definitely compromise security, especially with non-random passwords (which you should of course **never** use), set `SHOW_PASSWORD_HINT=false` in the [[Caddy (Fedora)#Environment variables|Caddy (Fedora) > Environment variables]], or disable it using the admin panel.
+To disable password hints, which can definitely compromise security, especially with non-random passwords (which you should of course **never** use), set `SHOW_PASSWORD_HINT=false` in the [[Caddy#Environment variables|Caddy > Environment variables]], or disable it using the admin panel.
 
 ### Redact token from logs
 

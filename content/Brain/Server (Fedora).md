@@ -102,7 +102,7 @@ enabled = true
 
 ## Caddy
 
-[[Caddy (Fedora)#Using Podman (rootless)|Setup Caddy]]
+[[Caddy#Rootless Podman|Setup Caddy]]
 
 ## Nextcloud
 
@@ -123,4 +123,4 @@ enabled = true
 > 
 > This documentation serves as a knowledge dump, in case I decide to come back to this.
 
-[[Vaultwarden (Fedora)|Setup Vaultwarden]]
+[[Vaultwarden|Setup Vaultwarden]]

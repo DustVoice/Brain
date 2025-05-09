@@ -1,11 +1,12 @@
 ---
 share: true
 created: 2025-05-02 10:47
-tags: 
+tags:
+  - fedora
 source: https://eshlox.net/run-the-caddy-server-on-fedora-using-podman
 ---
 
-# Using Podman (rootless)
+# Rootless Podman
 
 ## Data directories
 
