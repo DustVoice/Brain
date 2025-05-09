@@ -108,7 +108,7 @@ Therefore, we simply add a section to the (already present) [[Caddy (Fedora)#Cad
 ```
 
 > [!todo] [[Caddy (Fedora)#Environment variables|Caddy (Fedora) > Environment variables]]
-> `NEXTCLOUD_DOMAIN` : [[Fully Qualified Domain Name|Fully Qualified Domain Name]] of the Nextcloud instance
+> `NEXTCLOUD_DOMAIN` : [[FQDN|FQDN]] of the Nextcloud instance
 
 > [!question]- How long did it take?
 > Don't ask!
@@ -292,7 +292,7 @@ WantedBy=default.target
 
 > [!todo] Replace
 > - `user` : username used for running the [[Podman (Fedora)#Rootless|rootless podman instance]].
-> - `NEXTCLOUD_DOMAIN` : [[Fully Qualified Domain Name|Fully Qualified Domain Name]] of the Nextcloud instance
+> - `NEXTCLOUD_DOMAIN` : [[FQDN|FQDN]] of the Nextcloud instance
 ## Boot it up
 
 ### Reload
@@ -356,7 +356,7 @@ Now we can use Nextcloud's `occ` tool
 
 > [!todo] Set environment variables
 > - `$SERVER_IP` : your server's public IP
-> - `$NEXTCLOUD_DOMAIN` : [[Fully Qualified Domain Name|Fully Qualified Domain Name]] of this Nextcloud instance
+> - `$NEXTCLOUD_DOMAIN` : [[FQDN|FQDN]] of this Nextcloud instance
 > - `$REGION` : your region, for example, `DE`
 > - `$CADDY` : hostname of your caddy container (in my guide it's `nextcloud-caddy`)
 
