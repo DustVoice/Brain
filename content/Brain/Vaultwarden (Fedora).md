@@ -4,13 +4,13 @@ created: 2025-05-02 13:33
 tags: 
 ---
 
-![[./System Administration#Disclaimer|System Administration > Disclaimer]]
+![[System Administration#Disclaimer|System Administration > Disclaimer]]
 
 # Using Podman (rootless)
 
 ## Prerequisites
 
-Make sure you have [[./Podman (Fedora)|podman]] installed and a _frontend_ [[./Caddy (Fedora)|Caddy (Fedora)]] instance set up.
+Make sure you have [[Podman (Fedora)|podman]] installed and a _frontend_ [[Caddy (Fedora)|Caddy (Fedora)]] instance set up.
 
 ## Data directories
 
@@ -27,9 +27,9 @@ Next, we need to create the necessary files.
 ### Frontend Caddyfile
 
 I use a _frontend_ caddy instance for reverse proxying to Vaultwarden.
-Note that the Vaultwarden container expects incoming traffic on port `8000`, as specified in [[Vaultwarden (Fedora)#Vaultwarden|its container config]].
+Note that the Vaultwarden container expects incoming traffic on port `8000`, as specified in [[#Vaultwarden|its container config]].
 
-Therefore, we simply add a section to the (already present) [[./Caddy (Fedora)#Caddyfile|Caddy (Fedora) > Caddyfile]] under `~/containers/caddy/config/Caddyfile`
+Therefore, we simply add a section to the (already present) [[Caddy (Fedora)#Caddyfile|Caddy (Fedora) > Caddyfile]] under `~/containers/caddy/config/Caddyfile`
 
 ```text title="~/containers/caddy/config/Caddyfile" /FQDN/
 {$VAULTWARDEN_DOMAIN} {
@@ -41,22 +41,22 @@ Therefore, we simply add a section to the (already present) [[./Caddy (Fedora)#C
 }
 ```
 
-> [!todo] [[./Caddy (Fedora)#Environment variables|Caddy (Fedora) > Environment variables]]
-> `VAULTWARDEN_DOMAIN` : [[./Fully Qualified Domain Name|Fully Qualified Domain Name]] of the Vaultwarden instance
+> [!todo] [[Caddy (Fedora)#Environment variables|Caddy (Fedora) > Environment variables]]
+> `VAULTWARDEN_DOMAIN` : [[Fully Qualified Domain Name|Fully Qualified Domain Name]] of the Vaultwarden instance
 
 ### Environment file
 
-In the [[Vaultwarden (Fedora)#Vaultwarden|container file]], we specify an environment file.
+In the [[#Vaultwarden|container file]], we specify an environment file.
 This [specifies environment variables available to the container](https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page#secure-the-admin_token).
 
 > [!danger] Secret information
 > This file will [contain secret information)(https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page#secure-the-admin_token).
-> If you made sure, to [[./Server (Fedora)#Secure the SSH|secure your server from outside access]], you should be fine.
+> If you made sure, to [[Server (Fedora)#Secure the SSH|secure your server from outside access]], you should be fine.
 > Still, you could consider hardening the access to this file even further.
 > You can't however simply only give `root` access to the file, as podman runs _unprivileged_ and won't be able to access the file.
 > _SELinux_ might help in that regard.
 
-Create and initially populate the `vaultwarden.env` file under the [[Vaultwarden (Fedora)#Data directories|previously created directory]] `~/containers/vaultwarden`
+Create and initially populate the `vaultwarden.env` file under the [[#Data directories|previously created directory]] `~/containers/vaultwarden`
 
 ```systemd title="~/containers/vaultwarden/vaultwarden.env"
 DOMAIN='https://VAULTWARDEN_DOMAIN'
@@ -65,10 +65,10 @@ LOG_FILE=/var/log/vaultwarden/vaultwarden.log
 ```
 
 > [!todo] Replace
-> `VAULTWARDEN_DOMAIN` : [[./Fully Qualified Domain Name|Fully Qualified Domain Name]] of this Vaultwarden instance
+> `VAULTWARDEN_DOMAIN` : [[Fully Qualified Domain Name|Fully Qualified Domain Name]] of this Vaultwarden instance
 
 Vaultwarden will then serve the service over this port _within the container_.
-We later redirect an _outside_ port to this in the [[Vaultwarden (Fedora)#Vaultwarden|container config]].
+We later redirect an _outside_ port to this in the [[#Vaultwarden|container config]].
 
 ## Containers
 
@@ -97,38 +97,38 @@ WantedBy=default.target
 ```
 
 > [!todo] Replace
-> - `user` : username used for running the [[./Podman (Fedora)#Rootless|rootless podman instance]].
+> - `user` : username used for running the [[Podman (Fedora)#Rootless|rootless podman instance]].
 ## Boot it up
 
 ### Reload
 
-![[./Podman (Fedora)#Reload the daemon|Podman (Fedora) > Reload the daemon]]
+![[Podman (Fedora)#Reload the daemon|Podman (Fedora) > Reload the daemon]]
 
 ### Auto-Update
 
-![[./Podman (Fedora)#Auto-Update|Podman (Fedora) > Auto-Update]]
+![[Podman (Fedora)#Auto-Update|Podman (Fedora) > Auto-Update]]
 
 ### Linger
 
-![[./Podman (Fedora)#Keep it running|Podman (Fedora) > Keep it running]]
+![[Podman (Fedora)#Keep it running|Podman (Fedora) > Keep it running]]
 
 ### Start
 
-![[./Podman (Fedora)#Start the service|Podman (Fedora) > Start the service]]
+![[Podman (Fedora)#Start the service|Podman (Fedora) > Start the service]]
 
 > [!todo] Replace
 > `name` : `vaultwarden`
 
 ### Status
 
-![[./Podman (Fedora)#Check the status|Podman (Fedora) > Check the status]]
+![[Podman (Fedora)#Check the status|Podman (Fedora) > Check the status]]
 
 > [!todo] Replace
 > `name` : `vaultwarden`
 
 ### Restart
 
-Following that, you probably still need to restart the _frontend_ [[./Caddy (Fedora)|Caddy (Fedora)]], as we [[Vaultwarden (Fedora)#Frontend Caddyfile|modified its Caddyfile previously]]:
+Following that, you probably still need to restart the _frontend_ [[Caddy (Fedora)|Caddy (Fedora)]], as we [[#Frontend Caddyfile|modified its Caddyfile previously]]:
 
 ```sh
 systemctl --user restart caddy.service
@@ -138,17 +138,17 @@ systemctl --user restart caddy.service
 
 You should _(hopefully)_ now be able to access your Vaultwarden instance.
 
-![[./Caddy (Fedora)#Debug|Caddy (Fedora) > Debug]]
+![[Caddy (Fedora)#Debug|Caddy (Fedora) > Debug]]
 
-You can now perform administrative tasks using the admin console, although you'd have to access it from the server directly, as per my [[Vaultwarden (Fedora)#^c408d5|advanced Caddyfile]].
+You can now perform administrative tasks using the admin console, although you'd have to access it from the server directly, as per my [[#^c408d5|advanced Caddyfile]].
 
 ## Hardening
 
 > [!warning]
 > Always refer to up-to-date information and best practices and also consider reading up on the [official upstream Vaultwarden documentation](https://github.com/dani-garcia/vaultwarden/wiki/Hardening-Guide).
-> The [[./System Administration#Disclaimer|System Administration > Disclaimer]] applies here, too.
+> The [[System Administration#Disclaimer|System Administration > Disclaimer]] applies here, too.
 
-The file, we expand upon, is the [[Vaultwarden (Fedora)#Frontend Caddyfile|modified its Caddyfile previously]], as the backend is simply the Vaultwarden container itself (served by Rocket internally).
+The file, we expand upon, is the [[#Frontend Caddyfile| > Frontend Caddyfile]], as the backend is simply the Vaultwarden container itself (served by Rocket internally).
 The added/modified portions are highlighted, to enable quick expansion of an already existing (and hopefully working) `~/containers/caddy/config/Caddyfile` file:
 
 ```text title="~/containers/caddy/config/Caddyfile" {1-8,13-40}
@@ -203,21 +203,21 @@ The added/modified portions are highlighted, to enable quick expansion of an alr
 ```
 ^c408d5
 
-> [!todo] [[./Caddy (Fedora)#Environment variables|Caddy (Fedora) > Environment variables]]
-> `VAULTWARDEN_DOMAIN` : [[./Fully Qualified Domain Name|Fully Qualified Domain Name]] of the Vaultwarden instance
+> [!todo] [[Caddy (Fedora)#Environment variables|Caddy (Fedora) > Environment variables]]
+> `VAULTWARDEN_DOMAIN` : [[Fully Qualified Domain Name|Fully Qualified Domain Name]] of the Vaultwarden instance
 
-You could in theory also [[./Caddy (Fedora)#Don't terminate TLS|not terminate the TLS chain]].
+You could in theory also [[Caddy (Fedora)#Don't terminate TLS|not terminate the TLS chain]].
 
 ### Disable registration
 
 As you probably don't want _anyone_ to register an account uninvited, you should consider disabling registrations.
 This preserves the _invite_ functionality.
 
-You can either do that through the admin panel, or by setting `SIGNUPS_ALLOWED=false` in the [[./Caddy (Fedora)#Environment variables|Caddy (Fedora) > Environment variables]].
+You can either do that through the admin panel, or by setting `SIGNUPS_ALLOWED=false` in the [[Caddy (Fedora)#Environment variables|Caddy (Fedora) > Environment variables]].
 
 ### Disable password hints
 
-To disable password hints, which can definitely compromise security, especially with non-random passwords (which you should of course **never** use), set `SHOW_PASSWORD_HINT=false` in the [[./Caddy (Fedora)#Environment variables|Caddy (Fedora) > Environment variables]], or disable it using the admin panel.
+To disable password hints, which can definitely compromise security, especially with non-random passwords (which you should of course **never** use), set `SHOW_PASSWORD_HINT=false` in the [[Caddy (Fedora)#Environment variables|Caddy (Fedora) > Environment variables]], or disable it using the admin panel.
 
 ### Redact token from logs
 
@@ -269,9 +269,9 @@ ADMIN_RATELIMIT_SECONDS=60
 
 ### Fail2Ban
 
-[[./Fail2Ban (Fedora)|Install and set up Fail2Ban]].
+[[Fail2Ban (Fedora)|Install and set up Fail2Ban]].
 
-First, try logging in with a random username and password and look for a line regarding the failed attempt within the log file `~/containers/vaultwarden/data/vaultwarden.log` (`$LOG_FILE`, specified in the [[Vaultwarden (Fedora)#Environment file|Environment file]]), akin to
+First, try logging in with a random username and password and look for a line regarding the failed attempt within the log file `~/containers/vaultwarden/data/vaultwarden.log` (`$LOG_FILE`, specified in the [[#Environment file| > Environment file]]), akin to
 
 ```log title="~/containers/vaultwarden/data/vaultwarden.log"
 [YYYY-MM-DD hh:mm:ss][vaultwarden::api::identity][ERROR] Username or password is incorrect. Try again. IP: XXX.XXX.XXX.XXX. Username: email@domain.com.
@@ -308,7 +308,7 @@ logpath = /home/user/containers/vaultwarden/logs/vaultwarden.log
 ```
 
 > [!todo] Replace
-> `user` : username used for running the [[./Podman (Fedora)#Rootless|rootless podman instance]].
+> `user` : username used for running the [[Podman (Fedora)#Rootless|rootless podman instance]].
 
 #### SELinux
 
@@ -316,7 +316,7 @@ I ran into some problems with `fail2ban.service` not being able to read the log 
 
 This is a good thing. Normally.
 
-To create policies for that, simply run the [[./Fail2Ban (Fedora)#Restart|Fail2Ban (Fedora) > Restart]] command and immediately after check the output of `journalctl -xe`.
+To create policies for that, simply run the [[Fail2Ban (Fedora)#Restart|Fail2Ban (Fedora) > Restart]] command and immediately after check the output of `journalctl -xe`.
 
 You should see a line containing the keywords `avc` and `denied`.
 Simply copy this line and generate an SELinux policy:
