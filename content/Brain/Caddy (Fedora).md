@@ -34,8 +34,8 @@ mkdir -p ~/containers/caddy/sites/{site-name(s)}
 > [!todo] Replace
 > `site-name(s)` : a comma seperated list of directory names for the sites you intend to serve
 
-If you don't, you could still consider simply creating the parent directory `~/containers/caddy/sites`, so you don't have to touch the generated [[Caddy (Fedora)#Quadlet file|Quadlet file]].
-You would need to create corresponding entries in your [[Caddy (Fedora)#Caddyfile|Caddyfile]] anyway, for it to be active.
+If you don't, you could still consider simply creating the parent directory `~/containers/caddy/sites`, so you don't have to touch the generated [[#Quadlet file| > Quadlet file]].
+You would need to create corresponding entries in your [[#Caddyfile| > Caddyfile]] anyway, for it to be active.
 
 ```sh
 mkdir -p ~/containers/caddy/sites
@@ -48,7 +48,7 @@ There are numerous resolutions.
 I intend to use this Caddy container to exclusively manage _every_ incoming (web) traffic, however.
 That's why I simply decided to forward the ports `80` and `443` to a port my non-privileged user can get a hold of, namely `1880` and `1443`.
 
-For that, first [[./Firewalld (Fedora)|install and enable firewalld]].
+For that, first [[Firewalld (Fedora)|install and enable firewalld]].
 
 Subsequently, forward the corresponding ports
 
@@ -90,7 +90,7 @@ The [official documentation](https://caddyserver.com/docs/) even provides a [lis
 ### Environment variables
 
 I often use environment variables to, for example, specify domains of my sub-sites (the sites this frontend Caddy instance proxies to), etc.
-For this, I specify an `EnvironmentFile` in the [[Caddy (Fedora)#Quadlet file|Quadlet file]].
+For this, I specify an `EnvironmentFile` in the [[#Quadlet file| > Quadlet file]].
 
 You can then specify environment variables within this file using the `NAME=val` pattern,
 for example:
@@ -166,18 +166,18 @@ WantedBy=default.target
 
 > [!info]- Some details
 > - `PublishPort`
-> 	- Map the outside ports `1880` and `1443`(see [[Caddy (Fedora)#Ports|Ports]]) to Caddy's internal `80` and `443` ports respectively
+> 	- Map the outside ports `1880` and `1443`(see [[#Ports| > Ports]]) to Caddy's internal `80` and `443` ports respectively
 > 		- `-p 1880:80`
 > 		- `-p 1443:443`
 > - `Volume`
-> 	- Map the outside [[Caddy (Fedora)#Data directories|Data directories]] to the correct internal paths
+> 	- Map the outside [[#Data directories| > Data directories]] to the correct internal paths
 > 		- `-v ~/containers/caddy/config:/etc/caddy:ro,Z`
 > 		- `-v ~/containers/caddy/data:/data:Z`
 > 		- `-v ~/containers/caddy/logs:/var/log/caddy:Z`
 > 		- `-v ~/containers/caddy/sites:/srv:ro,z` _(Remove this, if you would rather not serve static sites from this Caddy instance)_ ^677ece
 > - `EnvironmentFile`
 > 	- A file specifying environment variables available within the container following a `VAR_NAME=VALUE` pattern.
-> 	- I often use this for specifying variables used in the [[Caddy (Fedora)#Caddyfile|Caddyfile]] using the `{$VAR_NAME}` syntax. Also see [[Caddy (Fedora)#Environment variables|Environment variables]]
+> 	- I often use this for specifying variables used in the [[#Caddyfile| > Caddyfile]] using the `{$VAR_NAME}` syntax. Also see [[#Environment variables| > Environment variables]]
 > 
 > > [!info] What are the `:z` and `:Z` labels?
 > > These two labels are specific to [SELinux](https://www.redhat.com/en/topics/linux/what-is-selinux), which is enabled by default on Fedora.
@@ -189,24 +189,24 @@ WantedBy=default.target
 
 ### Reload
 
-![[./Podman (Fedora)#Reload the daemon|Podman (Fedora) > Reload the daemon]]
+![[Podman (Fedora)#Reload the daemon|Podman (Fedora) > Reload the daemon]]
 
 ### Start
 
-![[./Podman (Fedora)#Start the service|Podman (Fedora) > Start the service]] 
+![[Podman (Fedora)#Start the service|Podman (Fedora) > Start the service]] 
 
 > [!todo] Replace
 > `name` : `caddy`
 
 ### Status
 
-![[./Podman (Fedora)#Check the status|Podman (Fedora) > Check the status]]
+![[Podman (Fedora)#Check the status|Podman (Fedora) > Check the status]]
 
 > [!todo] Replace
 > `name` : `caddy`
 ### Linger
 
-![[./Podman (Fedora)#Keep it running|Podman (Fedora) > Keep it running]]
+![[Podman (Fedora)#Keep it running|Podman (Fedora) > Keep it running]]
 
 ### Debug
 
@@ -224,12 +224,12 @@ WantedBy=default.target
 
 ## Test it
 
-Of course, you can proceed directly with, e.g., setting up a [[./Nextcloud (Fedora)|Nextcloud (Fedora)]] to test the Caddy setup.
+Of course, you can proceed directly with, e.g., setting up a [[Nextcloud (Fedora)|Nextcloud (Fedora)]] to test the Caddy setup.
 
 I find it more convenient to perform a quick test, howevew, using a simple HTML file.
 
 > [!NOTE]
-> This assumes you [[Caddy (Fedora)#Static sites|created the necessary directory]] and [[Caddy (Fedora)#^677ece|configured Caddy to be able to serve static sites]], however.
+> This assumes you [[#Static sites|created the necessary directory]] and [[#^677ece|configured Caddy to be able to serve static sites]], however.
 
 You can easily create a crude `index.html` file in, for example, `~/containers/caddy/sites/test`
 
