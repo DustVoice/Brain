@@ -6,7 +6,7 @@ tags: []
 
 # Install
 
-## #fedora
+## #OS/Fedora
 
 ```sh
 sudo dnf install cronie
