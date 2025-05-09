@@ -52,10 +52,10 @@ This combination allows me to easily cook up a brew without much of a hassle usi
 
 ## Water
 
-I currently use [[Coffee Brew Water Recipe|my own recipe]], although I plan to further reduce the _hardness_ component to prevent scale buildup.
+I currently use [[Brew Water Recipe|my own recipe]], although I plan to further reduce the _hardness_ component to prevent scale buildup.
 
 > [!CAUTION]
-> Note that most machines are not suited for water with this low of a [[Coffee Brew Water Recipe#^a64a0a|ppm]]!
+> Note that most machines are not suited for water with this low of a [[Brew Water Recipe#^a64a0a|ppm]]!
 > 
 > The Decent espresso machine is a little different in that it uses almost no metal tubing etc. internally.
 > It uses mainly Teflon for that and even major components of the group head have been transitioned from brass to PPS.
