@@ -388,7 +388,7 @@ php occ db:add-missing-indices
 
 In order for the Nextcloud's crontab to be run regularly, we need to deploy a cronjob on the host side.
 
-[[Cron (Fedora)#Install|Make sure you have crontab available]]
+Make sure, you have the `crontab` command available, by installing [[Cronie (Fedora)|Cronie (Fedora)]].
 
 ```sh
 crontab -e
