@@ -10,7 +10,7 @@ tags:
 
 > [!info]- Source
 > This section has been heavily inspired by [Micheal Jack](https://codeberg.org/mjack)'s [nextcloud-quadlet](https://codeberg.org/mjack/nextcloud-quadlets/src/branch/main) repository!
-> I simply adapted his proceeding to my needs, by changing some paths, using my [[Caddy (Fedora)|monolithic caddy instance]] for reverse proxying, etc.
+> I simply adapted his proceeding to my needs, by changing some paths, using my [[Caddy|monolithic caddy instance]] for reverse proxying, etc.
 ^1bda1f
 
 > [!question]- Caddy within Caddy?
@@ -22,7 +22,7 @@ tags:
 
 ## Prerequisites
 
-Make sure you have [[Podman (Fedora)|podman]] installed and a _frontend_ [[Caddy (Fedora)|Caddy (Fedora)]] instance set up.
+Make sure you have [[Podman (Fedora)|podman]] installed and a _frontend_ [[Caddy|Caddy]] instance set up.
 
 ## Data directories
 
@@ -90,7 +90,7 @@ The [[#Pod|pod configuration]] will take care of forwarding an actual _outside/s
 
 As mentioned, the _external_ caddy instance (which I will refer to as the _frontend_ instance) is used for reverse proxying. Note that the _backend_ caddy instance expects incoming traffic on port `8080`, as specified in [[#Caddy|its container config]].
 
-Therefore, we simply add a section to the (already present) [[Caddy (Fedora)#Caddyfile|Caddy (Fedora) > Caddyfile]] under `~/containers/caddy/config/Caddyfile`
+Therefore, we simply add a section to the (already present) [[Caddy#Caddyfile|Caddy > Caddyfile]] under `~/containers/caddy/config/Caddyfile`
 
 ```sh title="~/containers/caddy/config/Caddyfile" /NEXTCLOUD_DOMAIN/
 {$NEXTCLOUD_DOMAIN} {
@@ -107,7 +107,7 @@ Therefore, we simply add a section to the (already present) [[Caddy (Fedora)#Cad
 }
 ```
 
-> [!todo] [[Caddy (Fedora)#Environment variables|Caddy (Fedora) > Environment variables]]
+> [!todo] [[Caddy#Environment variables|Caddy > Environment variables]]
 > `NEXTCLOUD_DOMAIN` : [[FQDN|FQDN]] of the Nextcloud instance
 
 > [!question]- How long did it take?
@@ -326,7 +326,7 @@ You can also check every other container's status by substituting `name` with th
 
 ### Restart
 
-Following that, you probably still need to restart the _frontend_ [[Caddy (Fedora)|Caddy (Fedora)]], as we [[#Frontend Caddyfile|modified its Caddyfile previously]]:
+Following that, you probably still need to restart the _frontend_ [[Caddy|Caddy]], as we [[#Frontend Caddyfile|modified its Caddyfile previously]]:
 
 ```sh
 systemctl --user restart caddy.service
@@ -336,7 +336,7 @@ systemctl --user restart caddy.service
 
 You should _(hopefully)_ now be able to access your Nextcloud installer unde the domain you specified
 
-![[Caddy (Fedora)#Debug|Caddy (Fedora) > Debug]]
+![[Caddy#Debug|Caddy > Debug]]
 
 Choose a username for the admin account and generate a **(secure)** password, store it in your password manager and follow the installer.
 
@@ -388,7 +388,7 @@ php occ db:add-missing-indices
 
 In order for the Nextcloud's crontab to be run regularly, we need to deploy a cronjob on the host side.
 
-Make sure, you have the `crontab` command available, by installing [[Cronie (Fedora)|Cronie (Fedora)]].
+Make sure, you have the `crontab` command available, by installing [[Cronie#fedora|Cronie > fedora]].
 
 ```sh
 crontab -e
@@ -539,7 +539,7 @@ The added/modified portions are highlighted, to enable quick expansion of an alr
 
 Of course, you need to at least restart the `nextcloud-caddy.service` if you changed this file after the [[#Reboot| > Reboot]] step.
 
-You could in theory also [[Caddy (Fedora)#Don't terminate TLS|not terminate the TLS chain]].
+You could in theory also [[Caddy#Don't terminate TLS|not terminate the TLS chain]].
 ## Reboot
 
 Finally, restart the Nextcloud, just for good measure. It should be lightning quick, too.
