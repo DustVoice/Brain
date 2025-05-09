@@ -2,7 +2,7 @@
 share: true
 created: 2025-05-02 13:33
 tags:
-  - fedora
+  - OS/Fedora
 ---
 
 ![[Disclaimer (Tech)|Disclaimer (Tech)]]
@@ -11,7 +11,7 @@ tags:
 
 ## Prerequisites
 
-Make sure you have [[Podman (Fedora)|podman]] installed and a _frontend_ [[Caddy|Caddy]] instance set up.
+Make sure you have [[Podman|podman]] installed and a _frontend_ [[Caddy|Caddy]] instance set up.
 
 ## Data directories
 
@@ -52,7 +52,7 @@ This [specifies environment variables available to the container](https://github
 
 > [!danger] Secret information
 > This file will [contain secret information)(https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page#secure-the-admin_token).
-> If you made sure, to [[Server (Fedora)#Secure the SSH|secure your server from outside access]], you should be fine.
+> If you made sure, to [[Fedora Server#Secure the SSH|secure your server from outside access]], you should be fine.
 > Still, you could consider hardening the access to this file even further.
 > You can't however simply only give `root` access to the file, as podman runs _unprivileged_ and won't be able to access the file.
 > _SELinux_ might help in that regard.
@@ -98,31 +98,31 @@ WantedBy=default.target
 ```
 
 > [!todo] Replace
-> - `user` : username used for running the [[Podman (Fedora)#Rootless|rootless podman instance]].
+> - `user` : username used for running the [[Podman#Rootless|rootless podman instance]].
 ## Boot it up
 
 ### Reload
 
-![[Podman (Fedora)#Reload the daemon|Podman (Fedora) > Reload the daemon]]
+![[Podman#Reload the daemon|Podman > Reload the daemon]]
 
 ### Auto-Update
 
-![[Podman (Fedora)#Auto-Update|Podman (Fedora) > Auto-Update]]
+![[Podman#Auto-Update|Podman > Auto-Update]]
 
 ### Linger
 
-![[Podman (Fedora)#Keep it running|Podman (Fedora) > Keep it running]]
+![[Podman#Keep it running|Podman > Keep it running]]
 
 ### Start
 
-![[Podman (Fedora)#Start the service|Podman (Fedora) > Start the service]]
+![[Podman#Start the service|Podman > Start the service]]
 
 > [!todo] Replace
 > `name` : `vaultwarden`
 
 ### Status
 
-![[Podman (Fedora)#Check the status|Podman (Fedora) > Check the status]]
+![[Podman#Check the status|Podman > Check the status]]
 
 > [!todo] Replace
 > `name` : `vaultwarden`
@@ -270,7 +270,7 @@ ADMIN_RATELIMIT_SECONDS=60
 
 ### Fail2Ban
 
-[[Fail2Ban (Fedora)|Install and set up Fail2Ban]].
+[[Fail2Ban|Install and set up Fail2Ban]].
 
 First, try logging in with a random username and password and look for a line regarding the failed attempt within the log file `~/containers/vaultwarden/data/vaultwarden.log` (`$LOG_FILE`, specified in the [[#Environment file| > Environment file]]), akin to
 
@@ -309,7 +309,7 @@ logpath = /home/user/containers/vaultwarden/logs/vaultwarden.log
 ```
 
 > [!todo] Replace
-> `user` : username used for running the [[Podman (Fedora)#Rootless|rootless podman instance]].
+> `user` : username used for running the [[Podman#Rootless|rootless podman instance]].
 
 #### SELinux
 
@@ -317,7 +317,7 @@ I ran into some problems with `fail2ban.service` not being able to read the log 
 
 This is a good thing. Normally.
 
-To create policies for that, simply run the [[Fail2Ban (Fedora)#Restart|Fail2Ban (Fedora) > Restart]] command and immediately after check the output of `journalctl -xe`.
+To create policies for that, simply run the [[Fail2Ban#Restart|Fail2Ban > Restart]] command and immediately after check the output of `journalctl -xe`.
 
 You should see a line containing the keywords `avc` and `denied`.
 Simply copy this line and generate an SELinux policy:
