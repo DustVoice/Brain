@@ -3,7 +3,7 @@ share: true
 created: 2025-04-29
 ---
 
-![[./System Administration#Disclaimer|System Administration > Disclaimer]]
+![[System Administration#Disclaimer|System Administration > Disclaimer]]
 
 # Why Fedora?
 
@@ -30,7 +30,7 @@ Now, a legit question to ask at this point would be:
 
 To be honest, I can't really give an answer. Some years ago, I would've simply installed CentOS and called it a day. But inevitably some time has passed since I last caught up and apparently _Rocky Linux_ is more akin to _CentOS_ nowadays, while _CentOS_ became _CentOS Stream_, sitting more between _Fedora_ and _RHEL_, blah blah blah. In short, it was confusing and a mess at first.
 
-My wish to transition away from a rolling release distribution would've been perfectly met by _Rocky Linux_. **But**, I wanted to consider running a RedHat distro as my main distribution for a while, maybe even on Arch, possibly replacing [[./WSL (Arch)|my long-time WSL setup using Arch Linux]]. For a day-to-day distro, I definitely wanted to be closer to the _bleeding edge_, even if I were to get some blood on my hands. As Fedora seemed to be fine for a server reinstall, too, I chose it to test the waters.
+My wish to transition away from a rolling release distribution would've been perfectly met by _Rocky Linux_. **But**, I wanted to consider running a RedHat distro as my main distribution for a while, maybe even on Arch, possibly replacing [[WSL (Arch)|my long-time WSL setup using Arch Linux]]. For a day-to-day distro, I definitely wanted to be closer to the _bleeding edge_, even if I were to get some blood on my hands. As Fedora seemed to be fine for a server reinstall, too, I chose it to test the waters.
 
 # Setup Philosophy
 
@@ -51,7 +51,7 @@ Of course, to utilize a _rootless_ podman setup, I first needed to create a new 
 
 ## Secure the SSH
 
-To further secure my server, I then [[./SSH - Key exclusive access|set up my SSH access]] in a way, where only a login using a [[./YubiKey - SSH keys|YubiKey secured SSH key]] is possible.
+To further secure my server, I then [[SSH - Key exclusive access|set up my SSH access]] in a way, where only a login using a [[YubiKey - SSH keys|YubiKey secured SSH key]] is possible.
 
 SSH keys are magnitudes more secure ([it's not even close](https://weberblog.net/passwords-vs-private-keys/), additionally the YubiKey secured ones use _Ed25519_ instead of _RSA_ by default) and the YubiKey brings a second factor to the table.
 
@@ -85,7 +85,7 @@ You will probably notice, that almost immediately, your `journalctl` will be clu
 > It is not a targeted attack agains you specifically.
 > But this level of automation makes it of utmost importance to employ good security measures.
 
-To get rid of this, you can employ [[./Fail2Ban (Fedora)|Fail2Ban (Fedora)]].
+To get rid of this, you can employ [[Fail2Ban (Fedora)|Fail2Ban (Fedora)]].
 
 After you got it up and running, we simply enable the SSH jail, by creating `/etc/fail2ban/jail.d/sshd.local`:
 
@@ -98,15 +98,15 @@ enabled = true
 
 ## Podman
 
-![[./Podman (Fedora)#Install|Podman (Fedora) > Install]]
+![[Podman (Fedora)#Install|Podman (Fedora) > Install]]
 
 ## Caddy
 
-[[./Caddy (Fedora)#Using Podman (rootless)|Setup Caddy]]
+[[Caddy (Fedora)#Using Podman (rootless)|Setup Caddy]]
 
 ## Nextcloud
 
-[[./Nextcloud (Fedora)#Using Podman (rootless)|Setup Nextcloud]]
+[[Nextcloud (Fedora)#Using Podman (rootless)|Setup Nextcloud]]
 
 ## Vaultwarden
 
@@ -123,4 +123,4 @@ enabled = true
 > 
 > This documentation serves as a knowledge dump, in case I decide to come back to this.
 
-[[./Vaultwarden (Fedora)|Setup Vaultwarden]]
+[[Vaultwarden (Fedora)|Setup Vaultwarden]]

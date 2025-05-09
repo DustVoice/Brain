@@ -6,7 +6,7 @@ tags:
 
 > [!note] WSL
 > If you're on WSL, make sure, that `ssh-keygen` can access your device.
-> On my Arch Linux setup, I had to create a [[./YubiKey - udev rule|udev rule]].
+> On my Arch Linux setup, I had to create a [[YubiKey - udev rule|udev rule]].
 
 # Generating the keys
 
@@ -32,5 +32,5 @@ ssh-keygen -t ed25519-sk -O resident -O verify-required -C "username@hostname (Y
 Simply choose a path for the key to be saved to and _optionally a password_. As the file is just a key stub, though, you shouldn't need one if you specified `verify-required`. It _should_ be sufficiently protected, provided you have a sufficiently secure PIN and physical access control to your YubiKey.
 
 > [!warning] Resident Keys
-> For my [[./Server (Fedora)#Secure the SSH|server]], I don't use resident keys.
+> For my [[Server (Fedora)#Secure the SSH|server]], I don't use resident keys.
 > Although it might not really be a security concern, I don't have a problem manually deploying the key stub to any PC I want to access my server from.

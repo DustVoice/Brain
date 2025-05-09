@@ -18,8 +18,8 @@ To produce my water, I first create two concentrates.
 This ensures I can accurately weigh in my minerals without the need of a laboratory-grade precision scale.
 My scale has _0.1g precision_, so the **more** minerals I need to weigh in, the lower the impact of slight measuring errors are.
 
-These concentrates also have the benefit to be almost precisely at _1000 [[Coffee Brew Water Recipe#^a64a0a|ppm]]_.
-This enables quick and easy calculation of the _[[Coffee Brew Water Recipe#^cea932|KH]] ppm_ and _[[Coffee Brew Water Recipe#^404a84|GH]] ppm_ in the resulting brew water.
+These concentrates also have the benefit to be almost precisely at _1000 [[#^a64a0a|ppm]]_.
+This enables quick and easy calculation of the _[[#^cea932|KH]] ppm_ and _[[#^404a84|GH]] ppm_ in the resulting brew water.
 
 For example: 50g of the KH concentrate within 1L of distilled water (50g concentrate, 950g distilled water) would result in _50 ppm KH_ within the brew water.
 
@@ -46,15 +46,15 @@ to
 # Brew Water
 
 My brew water aims to be at around
-- 20 ppm [[Coffee Brew Water Recipe#^cea932|KH]]
-- 20 ppm [[Coffee Brew Water Recipe#^404a84|GH]]
+- 20 ppm [[#^cea932|KH]]
+- 20 ppm [[#^404a84|GH]]
 
 ## 1L
 
 If I need to prepare some brew water in a pinch, I
 
-- weigh out 20g of the [[Coffee Brew Water Recipe#Buffer Concentrate (KH)|Buffer Concentrate (KH)]]
-- add 20g of the [[Coffee Brew Water Recipe#Hardness Concentrate (GH)|Hardness Concentrate (GH)]]
+- weigh out 20g of the [[#Buffer Concentrate (KH)| > Buffer Concentrate (KH)]]
+- add 20g of the [[#Hardness Concentrate (GH)| > Hardness Concentrate (GH)]]
 - fill up with distilled water until 1000g = 960g distilled water
 - mix thoroughly
 
@@ -66,7 +66,7 @@ To reduce workload, I often buy 5L jugs of distilled water and directly mix my c
 > This assumes the jugs are accurately filled by the producer!
 
 - remove 200g of distilled water from the 5L jug
-- weigh out 100g of the [[Coffee Brew Water Recipe#Buffer Concentrate (KH)|Buffer Concentrate (KH)]]
-- weigh out 100g of the [[Coffee Brew Water Recipe#Hardness Concentrate (GH)|Hardness Concentrate (GH)]]
+- weigh out 100g of the [[#Buffer Concentrate (KH)| > Buffer Concentrate (KH)]]
+- weigh out 100g of the [[#Hardness Concentrate (GH)| > Hardness Concentrate (GH)]]
 - add both concentrates into the jug
 - mix thoroughly

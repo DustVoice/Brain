@@ -4,17 +4,17 @@ created: 2025-05-02 13:33
 tags: 
 ---
 
-![[./System Administration#Disclaimer|System Administration > Disclaimer]]
+![[System Administration#Disclaimer|System Administration > Disclaimer]]
 
 # Using Podman (rootless)
 
 > [!info]- Source
 > This section has been heavily inspired by [Micheal Jack](https://codeberg.org/mjack)'s [nextcloud-quadlet](https://codeberg.org/mjack/nextcloud-quadlets/src/branch/main) repository!
-> I simply adapted his proceeding to my needs, by changing some paths, using my [[./Caddy (Fedora)|monolithic caddy instance]] for reverse proxying, etc.
+> I simply adapted his proceeding to my needs, by changing some paths, using my [[Caddy (Fedora)|monolithic caddy instance]] for reverse proxying, etc.
 ^1bda1f
 
 > [!question]- Caddy within Caddy?
-> Note that, similar to the original author (see [[Nextcloud (Fedora)#^1bda1f|above]]), I use two Caddy instances.
+> Note that, similar to the original author (see [[#^1bda1f|above]]), I use two Caddy instances.
 > One to serve Nextcloud itself and another one in front of it for reverse proxying.
 > 
 > The only difference between my and the original author's approach is that my instance, responsible for reverse proxying, is not part of the Nextcloud pod.
@@ -22,7 +22,7 @@ tags:
 
 ## Prerequisites
 
-Make sure you have [[./Podman (Fedora)|podman]] installed and a _frontend_ [[./Caddy (Fedora)|monolithic caddy instance]] instance set up.
+Make sure you have [[Podman (Fedora)|podman]] installed and a _frontend_ [[Caddy (Fedora)|Caddy (Fedora)]] instance set up.
 
 ## Data directories
 
@@ -38,7 +38,7 @@ Next, we need to create the necessary files.
 
 ### Backend Caddyfile
 
-First, we tell the [[Nextcloud (Fedora)#^15ddf5|Caddy instance within the pod]] (which I'll refer to as the _backend_ instance), how to serve the Nextcloud by creating the necessary `Caddyfile` within `~/containers/nextcloud/caddy/config`:
+First, we tell the [[#^15ddf5|Caddy instance within the pod]] (which I'll refer to as the _backend_ instance), how to serve the Nextcloud by creating the necessary `Caddyfile` within `~/containers/nextcloud/caddy/config`:
 
 ```text title="~/containers/nextcloud/caddy/config/Caddyfile"
 {
@@ -81,16 +81,16 @@ First, we tell the [[Nextcloud (Fedora)#^15ddf5|Caddy instance within the pod]] 
 
 This will
 - serve the Nextcloud on the standard `80` HTTP port
-- for the hostname equal to the name specified for its [[Nextcloud (Fedora)#Caddy|container]]
-- within the Nextcloud pod, or more specifically within it's specified [[Nextcloud (Fedora)#Network|Network]].
+- for the hostname equal to the name specified for its [[#Caddy|container]]
+- within the Nextcloud pod, or more specifically within it's specified [[#Network| > Network]].
 
-The [[Nextcloud (Fedora)#Pod|pod configuration]] will take care of forwarding an actual _outside/system_ port to this _pod-internal_ one.
+The [[#Pod|pod configuration]] will take care of forwarding an actual _outside/system_ port to this _pod-internal_ one.
 
 ### Frontend Caddyfile
 
-As mentioned, the _external_ caddy instance (which I will refer to as the _frontend_ instance) is used for reverse proxying. Note that the _backend_ caddy instance expects incoming traffic on port `8080`, as specified in [[Nextcloud (Fedora)#Caddy|its container config]].
+As mentioned, the _external_ caddy instance (which I will refer to as the _frontend_ instance) is used for reverse proxying. Note that the _backend_ caddy instance expects incoming traffic on port `8080`, as specified in [[#Caddy|its container config]].
 
-Therefore, we simply add a section to the (already present) [[./Caddy (Fedora)#Caddyfile|Caddy (Fedora) > Caddyfile]] under `~/containers/caddy/config/Caddyfile`
+Therefore, we simply add a section to the (already present) [[Caddy (Fedora)#Caddyfile|Caddy (Fedora) > Caddyfile]] under `~/containers/caddy/config/Caddyfile`
 
 ```sh title="~/containers/caddy/config/Caddyfile" /NEXTCLOUD_DOMAIN/
 {$NEXTCLOUD_DOMAIN} {
@@ -107,8 +107,8 @@ Therefore, we simply add a section to the (already present) [[./Caddy (Fedora)#C
 }
 ```
 
-> [!todo] [[./Caddy (Fedora)#Environment variables|Caddy (Fedora) > Environment variables]]
-> `NEXTCLOUD_DOMAIN` : [[./Fully Qualified Domain Name|Fully Qualified Domain Name]] of the Nextcloud instance
+> [!todo] [[Caddy (Fedora)#Environment variables|Caddy (Fedora) > Environment variables]]
+> `NEXTCLOUD_DOMAIN` : [[Fully Qualified Domain Name|Fully Qualified Domain Name]] of the Nextcloud instance
 
 > [!question]- How long did it take?
 > Don't ask!
@@ -131,7 +131,7 @@ Network=nextcloud.network
 
 ## Network
 
-As we configured a network for our [[Nextcloud (Fedora)#Pod|pod configuration]], we will need to create the network, too.
+As we configured a network for our [[#Pod| > Pod]], we will need to create the network, too.
 
 ```systemd title="~/.config/containers/systemd/nextcloud.network"
 [Unit]
@@ -144,7 +144,7 @@ Label=app=nextcloud
 ## Containers
 ### Caddy
 
-To set up the backend Caddy instance, which will use the [[Nextcloud (Fedora)#Backend Caddyfile|previously created Caddyfile]], we simply create a new `~/.config/containers/systemd/nextcloud-caddy.container` file
+To set up the backend Caddy instance, which will use the [[#Backend Caddyfile|previously created Caddyfile]], we simply create a new `~/.config/containers/systemd/nextcloud-caddy.container` file
 
 ```systemd title="~/.config/containers/systemd/nextcloud-caddy.container" /user/
 [Unit]
@@ -170,9 +170,9 @@ WantedBy=default.target
 ```
 
 > [!todo] Replace
-> `user` : username used for running the [[./Podman (Fedora)#Rootless|rootless podman instance]].
+> `user` : username used for running the [[Podman (Fedora)#Rootless|rootless podman instance]].
 
-This will also forward the _outside/system_ port `8080` to the _inside_ port `80`, specified in the [[Nextcloud (Fedora)#Backend Caddyfile|aformentioned Caddyfile]].
+This will also forward the _outside/system_ port `8080` to the _inside_ port `80`, specified in the [[#Backend Caddyfile|aformentioned Caddyfile]].
 
 ### Database
 
@@ -188,7 +188,7 @@ First, we generate a [Podman Secret]() to be used as the database password.
 > 
 > Humans are not suitable password generators!
 
-We use [[./pwgen (Fedora)|pwgen]] to generate a password and store it in a file, to **not** leak it to our shell history.
+We use [[pwgen (Fedora)|pwgen]] to generate a password and store it in a file, to **not** leak it to our shell history.
 
 ```sh
 pwgen -s 32 1 > pass.txt
@@ -234,7 +234,7 @@ WantedBy=default.target
 ```
 
 > [!todo] Replace
-> `user` : username used for running the [[./Podman (Fedora)#Rootless|rootless podman instance]].
+> `user` : username used for running the [[Podman (Fedora)#Rootless|rootless podman instance]].
 ### Redis
 
 For caching and other tasks, [redis](https://redis.io) is a pretty standard choice. I actually planned to use [Valkey](https://valkey.io), but ended up using redis for now.
@@ -291,32 +291,32 @@ WantedBy=default.target
 ```
 
 > [!todo] Replace
-> - `user` : username used for running the [[./Podman (Fedora)#Rootless|rootless podman instance]].
-> - `NEXTCLOUD_DOMAIN` : [[./Fully Qualified Domain Name|Fully Qualified Domain Name]] of the Nextcloud instance
+> - `user` : username used for running the [[Podman (Fedora)#Rootless|rootless podman instance]].
+> - `NEXTCLOUD_DOMAIN` : [[Fully Qualified Domain Name|Fully Qualified Domain Name]] of the Nextcloud instance
 ## Boot it up
 
 ### Reload
 
-![[./Podman (Fedora)#Reload the daemon|Podman (Fedora) > Reload the daemon]]
+![[Podman (Fedora)#Reload the daemon|Podman (Fedora) > Reload the daemon]]
 
 ### Auto-Update
 
-![[./Podman (Fedora)#Auto-Update|Podman (Fedora) > Auto-Update]]
+![[Podman (Fedora)#Auto-Update|Podman (Fedora) > Auto-Update]]
 
 ### Linger
 
-![[./Podman (Fedora)#Keep it running|Podman (Fedora) > Keep it running]]
+![[Podman (Fedora)#Keep it running|Podman (Fedora) > Keep it running]]
 
 ### Start
 
-![[./Podman (Fedora)#Start the service|Podman (Fedora) > Start the service]]
+![[Podman (Fedora)#Start the service|Podman (Fedora) > Start the service]]
 
 > [!todo] Replace
 > `name` : `nextcloud-pod`
 
 ### Status
 
-![[./Podman (Fedora)#Check the status|Podman (Fedora) > Check the status]]
+![[Podman (Fedora)#Check the status|Podman (Fedora) > Check the status]]
 
 > [!todo] Replace
 > `name` : `nextcloud-pod`
@@ -326,7 +326,7 @@ You can also check every other container's status by substituting `name` with th
 
 ### Restart
 
-Following that, you probably still need to restart the _frontend_ [[./Caddy (Fedora)|monolithic caddy instance]], as we [[Nextcloud (Fedora)#Frontend Caddyfile|modified its Caddyfile previously]]:
+Following that, you probably still need to restart the _frontend_ [[Caddy (Fedora)|Caddy (Fedora)]], as we [[#Frontend Caddyfile|modified its Caddyfile previously]]:
 
 ```sh
 systemctl --user restart caddy.service
@@ -336,7 +336,7 @@ systemctl --user restart caddy.service
 
 You should _(hopefully)_ now be able to access your Nextcloud installer unde the domain you specified
 
-![[./Caddy (Fedora)#Debug|Caddy (Fedora) > Debug]]
+![[Caddy (Fedora)#Debug|Caddy (Fedora) > Debug]]
 
 Choose a username for the admin account and generate a **(secure)** password, store it in your password manager and follow the installer.
 
@@ -356,7 +356,7 @@ Now we can use Nextcloud's `occ` tool
 
 > [!todo] Set environment variables
 > - `$SERVER_IP` : your server's public IP
-> - `$NEXTCLOUD_DOMAIN` : [[./Fully Qualified Domain Name|Fully Qualified Domain Name]] of this Nextcloud instance
+> - `$NEXTCLOUD_DOMAIN` : [[Fully Qualified Domain Name|Fully Qualified Domain Name]] of this Nextcloud instance
 > - `$REGION` : your region, for example, `DE`
 > - `$CADDY` : hostname of your caddy container (in my guide it's `nextcloud-caddy`)
 
@@ -388,7 +388,7 @@ php occ db:add-missing-indices
 
 In order for the Nextcloud's crontab to be run regularly, we need to deploy a cronjob on the host side.
 
-[[./Cron (Fedora)#Install|Make sure you have crontab available]]
+[[Cron (Fedora)#Install|Make sure you have crontab available]]
 
 ```sh
 crontab -e
@@ -412,13 +412,13 @@ Security should be more than fine, by using rootless containers (even for the re
 Still, security is always a concern and should be one of the top priorities.
 
 As always, though, always refer to up-to-date information and best practices and also consider reading up on the [official upstream Nextcloud documentation](https://docs.nextcloud.com/server/31/admin_manual/installation/harden_server.html).
-The [[./System Administration#Disclaimer|System Administration > Disclaimer]] applies here, too.
+The [[System Administration#Disclaimer|System Administration > Disclaimer]] applies here, too.
 
-I have collected a couple of additional options for the [[Nextcloud (Fedora)#Backend Caddyfile|previously created Caddyfile]] that should harden the instance even more.
+I have collected a couple of additional options for the [[#Backend Caddyfile| > Backend Caddyfile]] that should harden the instance even more.
 Most of these options aim at _future-proofing_ the installation and, for example, prevent access to files which _should_ be unproblematic, but _might_ not be (in the future).
 If you encounter weird problems or issues, it might be related to too restrictive of a config, so you might need to experiment with the introduced options, to determine which caused the error.
 
-The file, we expand upon, is the [[Nextcloud (Fedora)#Backend Caddyfile|previously created Caddyfile]], as the [[Nextcloud (Fedora)#Frontend Caddyfile|frontend one]] solely describes the reverse proxy behavior.
+The file, we expand upon, is the [[#Backend Caddyfile| > Backend Caddyfile]], as the [[#Frontend Caddyfile|frontend one]] solely describes the reverse proxy behavior.
 The added/modified portions are highlighted, to enable quick expansion of an already existing (and hopefully working) `~/containers/nextcloud/caddy/config/Caddyfile` file:
 
 ```text title="~/containers/nextcloud/caddy/config/Caddyfile" /includeSubDomains;/ /preload/ {19-32,35-87,92,95-96,98,101,103-104,109} 
@@ -537,9 +537,9 @@ The added/modified portions are highlighted, to enable quick expansion of an alr
 }
 ```
 
-Of course, you need to at least restart the `nextcloud-caddy.service` if you changed this file after the [[Nextcloud (Fedora)#Reboot|Reboot]] step.
+Of course, you need to at least restart the `nextcloud-caddy.service` if you changed this file after the [[#Reboot| > Reboot]] step.
 
-You could in theory also [[./Caddy (Fedora)#Don't terminate TLS|not terminate the TLS chain]].
+You could in theory also [[Caddy (Fedora)#Don't terminate TLS|not terminate the TLS chain]].
 ## Reboot
 
 Finally, restart the Nextcloud, just for good measure. It should be lightning quick, too.
