@@ -42,7 +42,7 @@ Therefore, we simply add a section to the (already present) [[Caddy (Fedora)#Cad
 ```
 
 > [!todo] [[Caddy (Fedora)#Environment variables|Caddy (Fedora) > Environment variables]]
-> `VAULTWARDEN_DOMAIN` : [[Fully Qualified Domain Name|Fully Qualified Domain Name]] of the Vaultwarden instance
+> `VAULTWARDEN_DOMAIN` : [[FQDN|FQDN]] of the Vaultwarden instance
 
 ### Environment file
 
@@ -65,7 +65,7 @@ LOG_FILE=/var/log/vaultwarden/vaultwarden.log
 ```
 
 > [!todo] Replace
-> `VAULTWARDEN_DOMAIN` : [[Fully Qualified Domain Name|Fully Qualified Domain Name]] of this Vaultwarden instance
+> `VAULTWARDEN_DOMAIN` : [[FQDN|FQDN]] of this Vaultwarden instance
 
 Vaultwarden will then serve the service over this port _within the container_.
 We later redirect an _outside_ port to this in the [[#Vaultwarden|container config]].
@@ -204,7 +204,7 @@ The added/modified portions are highlighted, to enable quick expansion of an alr
 ^c408d5
 
 > [!todo] [[Caddy (Fedora)#Environment variables|Caddy (Fedora) > Environment variables]]
-> `VAULTWARDEN_DOMAIN` : [[Fully Qualified Domain Name|Fully Qualified Domain Name]] of the Vaultwarden instance
+> `VAULTWARDEN_DOMAIN` : [[FQDN|FQDN]] of the Vaultwarden instance
 
 You could in theory also [[Caddy (Fedora)#Don't terminate TLS|not terminate the TLS chain]].
 
