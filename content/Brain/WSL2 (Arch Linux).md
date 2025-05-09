@@ -2,7 +2,7 @@
 share: true
 created: 2025-04-29
 tags:
-  - arch
+  - OS/Arch-Linux
 ---
 
 > [!NOTE] Under construction

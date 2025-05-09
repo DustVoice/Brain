@@ -4,9 +4,9 @@ created: 2025-05-02 13:33
 tags: 
 ---
 
-![[System Administration#Disclaimer|System Administration > Disclaimer]]
+![[Disclaimer (Tech)|Disclaimer (Tech)]]
 
-# Using Podman (rootless)
+# Rootless Podman
 
 > [!info]- Source
 > This section has been heavily inspired by [Micheal Jack](https://codeberg.org/mjack)'s [nextcloud-quadlet](https://codeberg.org/mjack/nextcloud-quadlets/src/branch/main) repository!
@@ -22,7 +22,7 @@ tags:
 
 ## Prerequisites
 
-Make sure you have [[Podman (Fedora)|podman]] installed and a _frontend_ [[Caddy|Caddy]] instance set up.
+Make sure you have [[Podman|podman]] installed and a _frontend_ [[Caddy|Caddy]] instance set up.
 
 ## Data directories
 
@@ -170,7 +170,7 @@ WantedBy=default.target
 ```
 
 > [!todo] Replace
-> `user` : username used for running the [[Podman (Fedora)#Rootless|rootless podman instance]].
+> `user` : username used for running the [[Podman#Rootless|rootless podman instance]].
 
 This will also forward the _outside/system_ port `8080` to the _inside_ port `80`, specified in the [[#Backend Caddyfile|aformentioned Caddyfile]].
 
@@ -188,7 +188,7 @@ First, we generate a [Podman Secret]() to be used as the database password.
 > 
 > Humans are not suitable password generators!
 
-We use [[pwgen (Fedora)|pwgen]] to generate a password and store it in a file, to **not** leak it to our shell history.
+We use [[pwgen|pwgen]] to generate a password and store it in a file, to **not** leak it to our shell history.
 
 ```sh
 pwgen -s 32 1 > pass.txt
@@ -234,7 +234,7 @@ WantedBy=default.target
 ```
 
 > [!todo] Replace
-> `user` : username used for running the [[Podman (Fedora)#Rootless|rootless podman instance]].
+> `user` : username used for running the [[Podman#Rootless|rootless podman instance]].
 ### Redis
 
 For caching and other tasks, [redis](https://redis.io) is a pretty standard choice. I actually planned to use [Valkey](https://valkey.io), but ended up using redis for now.
@@ -291,32 +291,32 @@ WantedBy=default.target
 ```
 
 > [!todo] Replace
-> - `user` : username used for running the [[Podman (Fedora)#Rootless|rootless podman instance]].
+> - `user` : username used for running the [[Podman#Rootless|rootless podman instance]].
 > - `NEXTCLOUD_DOMAIN` : [[FQDN|FQDN]] of the Nextcloud instance
 ## Boot it up
 
 ### Reload
 
-![[Podman (Fedora)#Reload the daemon|Podman (Fedora) > Reload the daemon]]
+![[Podman#Reload the daemon|Podman > Reload the daemon]]
 
 ### Auto-Update
 
-![[Podman (Fedora)#Auto-Update|Podman (Fedora) > Auto-Update]]
+![[Podman#Auto-Update|Podman > Auto-Update]]
 
 ### Linger
 
-![[Podman (Fedora)#Keep it running|Podman (Fedora) > Keep it running]]
+![[Podman#Keep it running|Podman > Keep it running]]
 
 ### Start
 
-![[Podman (Fedora)#Start the service|Podman (Fedora) > Start the service]]
+![[Podman#Start the service|Podman > Start the service]]
 
 > [!todo] Replace
 > `name` : `nextcloud-pod`
 
 ### Status
 
-![[Podman (Fedora)#Check the status|Podman (Fedora) > Check the status]]
+![[Podman#Check the status|Podman > Check the status]]
 
 > [!todo] Replace
 > `name` : `nextcloud-pod`
@@ -388,7 +388,7 @@ php occ db:add-missing-indices
 
 In order for the Nextcloud's crontab to be run regularly, we need to deploy a cronjob on the host side.
 
-Make sure, you have the `crontab` command available, by installing [[Cronie#fedora|Cronie > fedora]].
+Make sure, you have the `crontab` command available, by installing [[Cronie#OS/Fedora|Cronie > OS/Fedora]].
 
 ```sh
 crontab -e

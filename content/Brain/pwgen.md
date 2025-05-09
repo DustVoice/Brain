@@ -6,6 +6,8 @@ tags:
 
 # Install
 
+## #OS/Fedora 
+
 ```sh
 sudo dnf install pwgen
 ```

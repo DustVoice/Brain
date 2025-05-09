@@ -2,7 +2,7 @@
 share: true
 created: 2025-05-02 10:47
 tags:
-  - fedora
+  - OS/Fedora
 source: https://eshlox.net/run-the-caddy-server-on-fedora-using-podman
 ---
 
@@ -49,7 +49,7 @@ There are numerous resolutions.
 I intend to use this Caddy container to exclusively manage _every_ incoming (web) traffic, however.
 That's why I simply decided to forward the ports `80` and `443` to a port my non-privileged user can get a hold of, namely `1880` and `1443`.
 
-For that, first [[Firewalld (Fedora)|install and enable firewalld]].
+For that, first [[Firewalld|install and enable firewalld]].
 
 Subsequently, forward the corresponding ports
 
@@ -190,24 +190,24 @@ WantedBy=default.target
 
 ### Reload
 
-![[Podman (Fedora)#Reload the daemon|Podman (Fedora) > Reload the daemon]]
+![[Podman#Reload the daemon|Podman > Reload the daemon]]
 
 ### Start
 
-![[Podman (Fedora)#Start the service|Podman (Fedora) > Start the service]] 
+![[Podman#Start the service|Podman > Start the service]] 
 
 > [!todo] Replace
 > `name` : `caddy`
 
 ### Status
 
-![[Podman (Fedora)#Check the status|Podman (Fedora) > Check the status]]
+![[Podman#Check the status|Podman > Check the status]]
 
 > [!todo] Replace
 > `name` : `caddy`
 ### Linger
 
-![[Podman (Fedora)#Keep it running|Podman (Fedora) > Keep it running]]
+![[Podman#Keep it running|Podman > Keep it running]]
 
 ### Debug
 
@@ -225,7 +225,7 @@ WantedBy=default.target
 
 ## Test it
 
-Of course, you can proceed directly with, e.g., setting up a [[Nextcloud (Fedora)|Nextcloud (Fedora)]] to test the Caddy setup.
+Of course, you can proceed directly with, e.g., setting up a [[Nextcloud|Nextcloud]] to test the Caddy setup.
 
 I find it more convenient to perform a quick test, howevew, using a simple HTML file.
 
