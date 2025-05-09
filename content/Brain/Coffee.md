@@ -48,7 +48,7 @@ While traveling, I mainly use a setup of the
 - [[Comandante C40 MK4|Comandante C40 MK4]]
 - [[Bookoo Themis Mini Scale|Bookoo Themis Mini Scale]]
 
-This combination allows me to easily cook up a brew without much of a hassle using my [[Aeropress Recipe - Quick And Dirty|"Quick And Dirty" Aeropress recipe]].
+This combination allows me to easily cook up a brew without much of a hassle using my [[Aeropress Recipes#Quick and Dirty|"Quick And Dirty" Aeropress recipe]].
 
 ## Water
 
