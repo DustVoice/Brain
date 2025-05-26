@@ -2,9 +2,8 @@
 share: true
 created: 2025-05-01 16:31
 tags:
-  - coffee
-  - espresso
-  - filter-coffee
+  - coffee/filter
+  - coffee/espresso
 ---
 # Glossary
 

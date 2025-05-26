@@ -2,9 +2,8 @@
 share: true
 created: 2025-05-01 16:02
 tags:
-  - coffee
-  - espresso
-  - filter-coffee
+  - coffee/espresso
+  - coffee/filter
 ---
 
 For me, the hobby of the roasted bean juice started small, curious and innocent.

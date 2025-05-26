@@ -1,14 +1,18 @@
 ---
 share: true
 created: 2025-05-01 17:17
-tags: 
+tags:
+  - coffee/filter
 ---
-
-
 
 # Quick and Dirty
 
-- [[Aeropress#Inverted|Aeropress > Inverted]]
+
+> [!NOTE]
+> This recipe is perfect for travelling, as it works with various beans and water compositions.
+> While it might not produce a perfect cup, dialing it in, or rather adjusting to a specific combination of the aforementioned variables can quickly and reliably be done using grind size only.
+
+- [[Aeropress#Inverted|Aeropress > Inverted]] | with bloom
 - [[Coffee Beans|Coffee Beans]] | 15 g | ground
 	- around 24 clicks on a [[Comandante C40 MK4|Comandante C40 MK4]]
 - [[Brew Water Recipe#Brew Water|Brew Water Recipe > Brew Water]] | 220 ml
