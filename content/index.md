@@ -23,6 +23,7 @@ The aforementioned [[Topics|Topics]] page might serve as an entry point into spe
 > - [[System Administration|System Administration]]
 > - Technology in general
 > - [[Coffee|Coffee]], mainly [[Espresso|Espresso]]
+> - [[Sourdough Bread|Sourdough Bread]] baking
 > - [[Mechanical Keyboard|Mechanical Keyboard]]s
 > - [[3D-Printing|3D-Printing]]
 > - [[Stenography|Stenography]], mainly using the _[[Deutsche Einheitskurzschrift (DEK)|Deutsche Einheitskurzschrift (DEK)]]_
