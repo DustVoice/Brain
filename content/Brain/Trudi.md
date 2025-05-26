@@ -13,7 +13,7 @@ tags:
 - **Activity:** Hyperactive
 - **Favorite Food:** [[Wheat Flour (T550)|Wheat Flour (T550)]]
 - **Children:** 3
-- **Visited Countries:** 🇩🇪, 🇵🇱
+- **Visited Countries:** Germany, Poland
 
 # Refreshing
 
