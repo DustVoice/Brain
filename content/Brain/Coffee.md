@@ -6,7 +6,7 @@ tags:
   - coffee/filter
 ---
 
-For me, the hobby of the roasted bean juice started small, curious and innocent.
+For me, the hobby of the *roasted bean juice* started small, curious and innocent.
 It quickly spiraled out of control and before I knew it, I was stuck knees deep in the most fascinating, frustrating, rewarding and cost intensive hobby yet.
 
 # How it started
