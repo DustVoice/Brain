@@ -7,8 +7,7 @@ tags:
 
 # Quick and Dirty
 
-
-> [!NOTE]
+> [!example]-
 > This recipe is perfect for travelling, as it works with various beans and water compositions.
 > While it might not produce a perfect cup, dialing it in, or rather adjusting to a specific combination of the aforementioned variables can quickly and reliably be done using grind size only.
 
