@@ -17,6 +17,8 @@ It has good flavor, a nice crispy crust and a juicy but not too dense inside.
 > As always, retain 10-20% of the total water amount (excluding the starter) and add it as needed at the end of the kneading phase as a [[Bassinage|Bassinage]].
 
 ---
+**Sourdough**
+
 - 45 g [[Sourdough Starter|Sourdough Starter]]
 - 150 g Water, 30-60 °C depending on the temperature of the starter
 - 150 g [[Rye Flour (T997)|Rye Flour (T997)]]
@@ -34,6 +36,8 @@ Let it sit for 8-12 hours at room temperature.
 
 
 ---
+**Main dough**
+
 - 260 g Water, warm
 - 210 g [[Wheat Flour (T550)|Wheat Flour (T550)]]
 - 210 g [[Rye Flour (T997)|Rye Flour (T997)]]
@@ -51,6 +55,8 @@ Knead everything on the lowest setting gently for 5 minutes.
 Let the dough rest in the bowl for 2-3 houts at room temperature.
 
 ---
+**Form the bread**
+
 Dust your kitchen top with [[Rye Flour (T997)|Rye Flour (T997)]].
 
 Put your dough onto it.
@@ -64,6 +70,8 @@ But the dough ball into a proofing basket in the same orientation, with the clos
 Either put it in the fridge for 8-12 hours (it will be fine if you wait longer), or let it rest for another 60-90 minutes at room temperature.
 
 ---
+**Bake**
+
 Preheat your oven at 250 °C (Top/Down Heat).
 
 Turn the bread dough out of the basket onto a baking sheet.
