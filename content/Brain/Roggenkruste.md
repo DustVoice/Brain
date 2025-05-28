@@ -8,7 +8,7 @@ tags:
 
 [[Rye Crust|English Version]]
 
-![[20241008_152145.jpg|20241008_152145.jpg]]
+![[20241008_152145.jpg|200]]
 
 Ein reichhaltiges, aber dennoch balanciertes Roggenmischbrot.
 Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine saftige Krume, die nicht zu dicht und fest ist.
