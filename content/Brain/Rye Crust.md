@@ -38,7 +38,7 @@ Add the flour, mix thoroughly, no need to knead.
 
 Scrape the walls, even it out and cover it.
 
-Let it sit for 8-12 hours at room temperature.
+Let it sit for ==8-12 hours== at room temperature.
 
 > [!NOTE]
 > It should have doubled in size after this time. Wait longer if needed.
@@ -59,9 +59,9 @@ Put the *water* first into the bowl, followed by the *sourdough from the previou
 > [!warning]
 > Don't forget the salt!
 
-Knead everything on the lowest setting gently for 5 minutes.
+Knead everything on the lowest setting gently for ==5 minutes==.
 
-Let the dough rest in the bowl for 2-3 houts at room temperature.
+Let the dough rest in the bowl for ==2-3 hours== at room temperature.
 
 ---
 **Form the bread**
@@ -76,7 +76,7 @@ Turn the dough blob around and work in a circular motion, turning the ball, whil
 
 But the dough ball into a lightly dusted proofing basket in the same orientation, with the closure at the bottom.
 
-Either put it in the fridge for 8-12 hours (it will be fine if you wait longer), or let it rest for another 60-90 minutes at room temperature.
+Either put it in the fridge for ==8-12 hours== (it will be fine if you wait longer), or let it rest for another ==60-90 minutes== at room temperature.
 
 ---
 **Bake**
@@ -87,13 +87,13 @@ Turn the bread dough out of the basket onto a baking sheet.
 
 Put your bread into the oven and immediately add steam to the oven.
 
-Bake for 40 minutes with steam.
+Bake for ==40 minutes== with steam.
 
 Let the steam out of the oven.
 
-Bake for another 10-15 minutes.
+Bake for another ==10-15 minutes==.
 
-Let it cool for at least an hour.
+Let it cool for at least ==an hour==.
 
 > [!tip] Let it sit longer
 > Rye bread is tastier if you let it sit, for example, overnight.
