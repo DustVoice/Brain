@@ -20,7 +20,7 @@ Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine safti
 
 - 45 g [[Sourdough Starter|Anstellgut]]
 - 410 g Wasser
-- 360 g [[Rye Flour (Type 997)|Roggenmehl (Typ 997)]]
+- 360 g [[Rye Flour (Type 997)#T 1150|Roggenmehl]]
 - 210 g [[Wheat Flour (Type 550)|Weizenmehl (Typ 550)]]
 
 # Anweisungen
@@ -39,7 +39,7 @@ Hier bedarf es jedoch keines Knetens.
 
 Die Wände herunterschaben und abdecken.
 
-Für 8-12 Stunden bei Raumtemperatur gären lassen.
+Für ==8-12 Stunden== bei Raumtemperatur gären lassen.
 
 > [!NOTE]
 > Der Sauerteig sollte sich nach der angegebenen Zeit verdoppelt haben.
@@ -60,9 +60,9 @@ Zuerst das _Wasser_ in die Schüssel geben, gefolgt vom _Sauerteig aus dem voran
 > [!warning]
 > Das Salz auf keinen Fall vergessen!
 
-Alles auf der niedrigsten Stufe für 5 Minuten sanft kneten.
+Alles auf der niedrigsten Stufe für ==5 Minuten== sanft kneten.
 
-Den Teig in der Schüssel für 2-3 Stunden bei Raumtemperatur gehen lassen.
+Den Teig in der Schüssel für ==2-3 Stunden== bei Raumtemperatur gehen lassen.
 
 ---
 **Formen**
@@ -78,7 +78,7 @@ Den Teigling nun wenden und unter horizontalem Drehen die Seiten unter den Teigl
 
 Den Teigling mit dem Schluss nach unten (sprich ohne erneutes Wenden) in einen mit [[Rye Flour (Type 997)|Roggenmehl (Typ 997)]] bestäubten Gärkorb geben.
 
-Entweder für 8-12 Stunden (ist nicht schlimm falls etwas länger) im Kühlschrank, oder für weiter 60-90 Minuten bei Raumtemperatur gehen und reifen lassen.
+Entweder für ==8-12 Stunden== (ist nicht schlimm falls etwas länger) im Kühlschrank, oder für weiter ==60-90 Minuten== bei Raumtemperatur gehen und reifen lassen.
 
 Dust your kitchen top with [[Rye Flour (Type 997)|Rye Flour (Type 997)]].
 
@@ -91,13 +91,13 @@ Dein Teigling aus dem Gärkörbchen auf eine Backplatte stürzen.
 
 Das Brot in den Ofen schieben und diesen unmittelbar bedampfen.
 
-Für 40 Minuten backen.
+Für ==40 Minuten== backen.
 
 Den Dampf ablassen.
 
-Für weitere 10-15 Minuten backen.
+Für weitere ==10-15 Minuten== backen.
 
-Mindestens 1 Stunde auf einem Gitter auskühlen lassen.
+Mindestens ==1 Stunde== auf einem Gitter auskühlen lassen.
 
 > [!tip] Warte etwas länger
 > Roggenbrot schmeckt besser, wenn es etwas liegt, z.B. über Nacht.
