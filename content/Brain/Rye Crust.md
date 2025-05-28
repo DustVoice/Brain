@@ -8,7 +8,7 @@ tags:
 
 [[Roggenkruste|Deutsche Version]]
 
-![[20241008_152145.jpg|20241008_152145.jpg]]
+![[20241008_152145.jpg|200]]
 
 A well-balanced rye-wheat-mix bread.
 It has good flavor, a nice crispy crust and a juicy but not too dense inside.
