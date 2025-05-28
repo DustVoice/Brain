@@ -6,87 +6,100 @@ tags:
   - recipe
 ---
 
+[[Rye Crust|English Version]]
+
 ![[20241008_152145.jpg|20241008_152145.jpg]]
 
-*Roggenkruste => Rye Crust*
+Ein reichhaltiges, aber dennoch balanciertes Roggenmischbrot.
+Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine saftige Krume, die nicht zu dicht und fest ist.
 
-A well-balanced rye-wheat-mix bread.
-It has good flavor, a nice crispy crust and a juicy but not too dense inside.
+> [!tip] Wasser
+> Wie immer, ist es empfehlenswert, 10-20% der Gesamtwassermenge (ausgenommen dem Anstellgut) erst einmal zurückzuhalten und dieses langsam nach Bedarf zum Ende der Knetphase als eine [[Bassinage|Bassinage]] hinzuzugeben.
 
-> [!tip] Water
-> As always, retain 10-20% of the total water amount (excluding the starter) and add it as needed at the end of the kneading phase as a [[Bassinage|Bassinage]].
+# Zutaten
+
+- 45 g [[Sourdough Starter|Anstellgut]]
+- 410 g Wasser
+- 360 g [[Rye Flour (Type 997)|Roggenmehl (Typ 997)]]
+- 210 g [[Wheat Flour (Type 550)|Weizenmehl (Typ 550)]]
+
+# Anweisungen
 
 ---
-**Sourdough**
+**Sauerteig**
 
-- 45 g [[Sourdough Starter|Sourdough Starter]]
-- 150 g Water, 30-60 °C depending on the temperature of the starter
-- 150 g [[Rye Flour (T997)|Rye Flour (T997)]]
+- 45 g [[Sourdough Starter|Anstellgut]]
+- 150 g Wasser, 30-60 °C abhängig von der Temperatur des Anstellguts
+- 150 g [[Rye Flour (Type 997)|Roggenmehl (Typ 997)]]
 
-Whisk the starter with the warm water, until it gets a little slushy.
+Das Anstellgut gut mit dem Wasser aufschlämmen.
 
-Add the flour, mix thoroughly, no need to knead.
+Das Mehl hinzufügen und gründlich durchmischen.
+Hier bedarf es jedoch keines Knetens.
 
-Scrape the walls, even it out and cover it.
+Die Wände herunterschaben und abdecken.
 
-Let it sit for 8-12 hours at room temperature.
+Für 8-12 Stunden bei Raumtemperatur gären lassen.
 
 > [!NOTE]
-> It should have doubled in size after this time. Wait longer if needed.
-
+> Der Sauerteig sollte sich nach der angegebenen Zeit verdoppelt haben.
+> Falls nicht, gerne noch etwas länger warten
 
 ---
-**Main dough**
+**Hauptteig**
 
-- 260 g Water, warm
-- 210 g [[Wheat Flour (T550)|Wheat Flour (T550)]]
-- 210 g [[Rye Flour (T997)|Rye Flour (T997)]]
-- 12 g Salt
+- 260 g Wasser, warm
+- 210 g [[Wheat Flour (Type 550)|Weizenmehl (Typ 550)]]
+- 210 g [[Rye Flour (Type 997)|Roggenmehl (Typ 997)]]
+- 12 g Salz
 
-Prepare a kitchen machine with a kneading hook.
+Eine Küchenmaschine mit einem Knethaken vorbereiten.
 
-Put the *water* first into the bowl, followed by the *sourdough from the previous step*, the *flours*, as well as the *salt*.
+Zuerst das _Wasser_ in die Schüssel geben, gefolgt vom _Sauerteig aus dem vorangegangenen Schritt_, den _Mehlen_, sowie dem _Salz_
 
 > [!warning]
-> Don't forget the salt!
+> Das Salz auf keinen Fall vergessen!
 
-Knead everything on the lowest setting gently for 5 minutes.
+Alles auf der niedrigsten Stufe für 5 Minuten sanft kneten.
 
-Let the dough rest in the bowl for 2-3 houts at room temperature.
-
----
-**Form the bread**
-
-Dust your kitchen top with [[Rye Flour (T997)|Rye Flour (T997)]].
-
-Put your dough onto it.
-
-Fold the sides and corners into the middle repeatedly. Don't get too much flour in there yet.
-
-Turn the dough blob around and work in a circular motion, turning the ball, while pushing the sides into the bottom slightly.
-
-But the dough ball into a proofing basket in the same orientation, with the closure at the bottom.
-
-Either put it in the fridge for 8-12 hours (it will be fine if you wait longer), or let it rest for another 60-90 minutes at room temperature.
+Den Teig in der Schüssel für 2-3 Stunden bei Raumtemperatur gehen lassen.
 
 ---
-**Bake**
+**Formen**
 
-Preheat your oven at 250 °C (Top/Down Heat).
+Die Küchenoberfläche mit [[Rye Flour (Type 997)|Roggenmehl (Typ 997)]] bestäuben.
 
-Turn the bread dough out of the basket onto a baking sheet.
+Den Teig darauf geben.
 
-Put your bread into the oven and immediately add steam to the oven.
+Die Seiten und Ecken wiederholt in die Mitte falten.
+Darauf achten, dass bei diesem Schritt noch nicht zu viel Mehl in den Teig gefaltet wird.
 
-Bake for 40 minutes with steam.
+Den Teigling nun wenden und unter horizontalem Drehen die Seiten unter den Teigling ziehen.
 
-Let the steam out of the oven.
+Den Teigling mit dem Schluss nach unten (sprich ohne erneutes Wenden) in einen mit [[Rye Flour (Type 997)|Roggenmehl (Typ 997)]] bestäubten Gärkorb geben.
 
-Bake for another 10-15 minutes.
+Entweder für 8-12 Stunden (ist nicht schlimm falls etwas länger) im Kühlschrank, oder für weiter 60-90 Minuten bei Raumtemperatur gehen und reifen lassen.
 
-Let it cool for at least an hour.
+Dust your kitchen top with [[Rye Flour (Type 997)|Rye Flour (Type 997)]].
 
-> [!tip] Let it sit longer
-> Rye bread is tastier if you let it sit, for example, overnight.
-> The longer you wait and the more patient you are, the tastier it gets.
-> Until it gets hard of course.
+---
+**Backen**
+
+Den Ofen auf 250 °C (Ober-/Unterhitze) vorheizen.
+
+Dein Teigling aus dem Gärkörbchen auf eine Backplatte stürzen.
+
+Das Brot in den Ofen schieben und diesen unmittelbar bedampfen.
+
+Für 40 Minuten backen.
+
+Den Dampf ablassen.
+
+Für weitere 10-15 Minuten backen.
+
+Mindestens 1 Stunde auf einem Gitter auskühlen lassen.
+
+> [!tip] Warte etwas länger
+> Roggenbrot schmeckt besser, wenn es etwas liegt, z.B. über Nacht.
+> Je länger man wartet, je geduldiger man ist, desto besser der Geschmack.
+> Natürlich, bevor es hart wird.
