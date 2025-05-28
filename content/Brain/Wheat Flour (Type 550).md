@@ -1,0 +1,8 @@
+---
+share: true
+created: 2025-05-28 11:27
+tags: 
+aliases:
+  - Weizenmehl (Typ 550)
+---
+
