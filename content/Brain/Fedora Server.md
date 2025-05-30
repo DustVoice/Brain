@@ -30,7 +30,7 @@ Now, a legit question to ask at this point would be:
 
 To be honest, I can't really give an answer. Some years ago, I would've simply installed CentOS and called it a day. But inevitably some time has passed since I last caught up and apparently _Rocky Linux_ is more akin to _CentOS_ nowadays, while _CentOS_ became _CentOS Stream_, sitting more between _Fedora_ and _RHEL_, blah blah blah. In short, it was confusing and a mess at first.
 
-My wish to transition away from a rolling release distribution would've been perfectly met by _Rocky Linux_. **But**, I wanted to consider running a RedHat distro as my main distribution for a while, maybe even on Arch, possibly replacing [[WSL2 (Arch Linux)|my long-time WSL setup using Arch Linux]]. For a day-to-day distro, I definitely wanted to be closer to the _bleeding edge_, even if I were to get some blood on my hands. As Fedora seemed to be fine for a server reinstall, too, I chose it to test the waters.
+My wish to transition away from a rolling release distribution would've been perfectly met by _Rocky Linux_. **But**, I wanted to consider running a RedHat distro as my main distribution for a while, maybe even on Arch, possibly replacing [[Arch Linu WSL|my long-time WSL setup using Arch Linux]]. For a day-to-day distro, I definitely wanted to be closer to the _bleeding edge_, even if I were to get some blood on my hands. As Fedora seemed to be fine for a server reinstall, too, I chose it to test the waters.
 
 # Setup Philosophy
 

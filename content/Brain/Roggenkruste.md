@@ -4,6 +4,7 @@ created: 2025-05-26 22:34
 tags:
   - bread
   - recipe
+source: https://www.marcelpaa.com/rezepte/roggenmisch-krusten-brot/
 ---
 
 [[Rye Crust|English Version]]
