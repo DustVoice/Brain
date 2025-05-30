@@ -23,7 +23,7 @@ wsl.exe --install FedoraLinux-42
 
 ### Tar-based
 
-Download the tarball [from koji](https://koji.fedoraproject.org/koji/packageinfo?packageID=41688,
+Download the tarball [from koji](https://koji.fedoraproject.org/koji/packageinfo?packageID=41688),
 then check your WSL version
 
 ```ps
@@ -78,6 +78,16 @@ From within WSL, do
 
 ```sh /username/
 sudo passwd username
+```
+
+## Set it as the default
+
+If you don't have any other distro installed, you won't have to do anything.
+
+If you do, however, and want to use the Fedora distro by default, just run the following
+
+```ps
+wsl.exe --set-default FedoraLinux-42
 ```
 
 # Just Works™?
