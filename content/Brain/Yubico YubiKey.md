@@ -1,14 +1,17 @@
 ---
 share: true
-created: 2025-05-02 14:03
+created: 2025-05-30 16:33
 tags: 
+aliases:
+  - YubiKey
 ---
+# SSH key
 
 > [!note] WSL
 > If you're on WSL, make sure, that `ssh-keygen` can access your device.
-> On my Arch Linux setup, I had to create a [[YubiKey - udev rule|udev rule]].
+> On my WSL setups, I had to create a [[Yubico YubiKey#`udev` rule|udev rule]].
 
-# Generating the keys
+## Generating a key
 
 We use `ssh-keygen` for that.
 
@@ -34,3 +37,28 @@ Simply choose a path for the key to be saved to and _optionally a password_. As 
 > [!warning] Resident Keys
 > For my [[Fedora Server#Secure the SSH|server]], I don't use resident keys.
 > Although it might not really be a security concern, I don't have a problem manually deploying the key stub to any PC I want to access my server from.
+
+## `udev` rule
+
+Add a `udev` rule in the form of a file `/etc/udev/rules.d/99-yubikey.rules`
+
+```text title="/etc/udev/rules.d/99-yubikey.rules"
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0660", TAG+="uaccess", GROUP="plugdev", ATTRS{idVendor}=="1050", ATTRS{idProduct}=="0406"
+```
+
+> [!note]
+> You might need to change the vendor and product ID.
+> 
+> You can easily check the IDs using `lsusb`.
+> 
+> Simply locate the YubiKey line in the output, and locate the IDs following the pattern: `[Bus IDs]: ID <vendor>:<product> [Name of the device]`
+
+Subsequently, add your user to the `plugdev` group, restart WSL and you should be good to go.
+
+```sh /username/
+sudo groupadd plugdev
+sudo usermod -aG plugdev username
+```
+
+> [!todo] Replace
+> - `username` : Your username

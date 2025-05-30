@@ -9,5 +9,6 @@ In this part, I set up my `$HOME` directory and environment, with all the basi
 1. [[Dotfiles|Dotfiles]]
 2. [[Editor|Editor]]
 3. [[Shell|Shell]]
-4. [[Scripting|Scripting]]
+4. [[Terminal Emulator|Terminal Emulator]]
+5. [[Scripting|Scripting]]
 

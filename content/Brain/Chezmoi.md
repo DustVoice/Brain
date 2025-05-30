@@ -52,3 +52,9 @@ install_cmd -- apply_cmd
 > ```sh
 > sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply DustVoice
 > ```
+
+# Update and refresh externals
+
+```sh
+chezmoi update -R
+```
