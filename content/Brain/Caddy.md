@@ -33,7 +33,7 @@ mkdir -p ~/containers/caddy/sites/{site-name(s)}
 ```
 
 > [!todo] Replace
-> `site-name(s)` : a comma seperated list of directory names for the sites you intend to serve
+> - `site-name(s)` : a comma seperated list of directory names for the sites you intend to serve
 
 If you don't, you could still consider simply creating the parent directory `~/containers/caddy/sites`, so you don't have to touch the generated [[#Quadlet file| > Quadlet file]].
 You would need to create corresponding entries in your [[#Caddyfile| > Caddyfile]] anyway, for it to be active.
@@ -197,14 +197,14 @@ WantedBy=default.target
 ![[Podman#Start the service|Podman > Start the service]] 
 
 > [!todo] Replace
-> `name` : `caddy`
+> - `name` : `caddy`
 
 ### Status
 
 ![[Podman#Check the status|Podman > Check the status]]
 
 > [!todo] Replace
-> `name` : `caddy`
+> - `name` : `caddy`
 ### Linger
 
 ![[Podman#Keep it running|Podman > Keep it running]]

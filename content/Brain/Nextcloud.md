@@ -170,7 +170,7 @@ WantedBy=default.target
 ```
 
 > [!todo] Replace
-> `user` : username used for running the [[Podman#Rootless|rootless podman instance]].
+> - `user` : username used for running the [[Podman#Rootless|rootless podman instance]].
 
 This will also forward the _outside/system_ port `8080` to the _inside_ port `80`, specified in the [[#Backend Caddyfile|aformentioned Caddyfile]].
 
@@ -234,7 +234,7 @@ WantedBy=default.target
 ```
 
 > [!todo] Replace
-> `user` : username used for running the [[Podman#Rootless|rootless podman instance]].
+> - `user` : username used for running the [[Podman#Rootless|rootless podman instance]].
 ### Redis
 
 For caching and other tasks, [redis](https://redis.io) is a pretty standard choice. I actually planned to use [Valkey](https://valkey.io), but ended up using redis for now.
@@ -312,14 +312,14 @@ WantedBy=default.target
 ![[Podman#Start the service|Podman > Start the service]]
 
 > [!todo] Replace
-> `name` : `nextcloud-pod`
+> - `name` : `nextcloud-pod`
 
 ### Status
 
 ![[Podman#Check the status|Podman > Check the status]]
 
 > [!todo] Replace
-> `name` : `nextcloud-pod`
+> - `name` : `nextcloud-pod`
  
 Look for _Started Nextcloud Pod_, to ensure Nextcloud has started successfully.
 You can also check every other container's status by substituting `name` with the container's name.

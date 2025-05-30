@@ -34,7 +34,7 @@ chezmoi init --apply DustVoice
 ```
 
 > [!todo] Replace
-> `DustVoice` : Your GitHub username, if you maintain a fork, or your own `dotfiles` repository
+> - `DustVoice` : Your GitHub username, if you maintain a fork, or your own `dotfiles` repository
 
 Quickly and easily applies a config hosted under `https://github.com/DustVoice/dotfiles`.
 
@@ -45,8 +45,8 @@ install_cmd -- apply_cmd
 ```
 
 > [!todo] Replace
-> `install_cmd` : The appropriate command from the [[#Install| > Install]] section
-> `apply_cmd` : The appropriate command from the [[#Apply| > Apply]] section, without the `chezmoi`
+> - `install_cmd` : The appropriate command from the [[#Install| > Install]] section
+> - `apply_cmd` : The appropriate command from the [[#Apply| > Apply]] section, without the `chezmoi`
 
 > [!example]
 > ```sh
