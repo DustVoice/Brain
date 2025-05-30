@@ -21,7 +21,7 @@ Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine safti
 
 - 45 g [[Sourdough Starter|Anstellgut]]
 - 410 g Wasser
-- 360 g [[Rye Flour (Type 997)#T 1150|Roggenmehl]]
+- 360 g [[Rye Flour (Type 997)#T 1150|Roggenmehl (Typ 997)]]
 - 210 g [[Wheat Flour (Type 550)|Weizenmehl (Typ 550)]]
 
 # Anweisungen
