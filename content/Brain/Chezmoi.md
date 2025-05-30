@@ -8,6 +8,9 @@ tags:
 
 # Install
 
+> [!warning]
+> Make sure you are in your `$HOME` directory when running this command!
+
 ```sh
 sh -c "$(curl -fsLS get.chezmoi.io)"
 ```
