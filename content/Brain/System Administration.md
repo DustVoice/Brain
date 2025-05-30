@@ -10,4 +10,4 @@ Everything _meta_ about using a computer.
 
 - [[Arch Linu WSL|My current WSL setup]] #OS/Arch-Linux 
 - [[Fedora WSL|Fedora WSL attempt]] #OS/Fedora 
-* [[Fedora Server|My current server setup]] #OS/Fedora 
+- [[Fedora Server|My current server setup]] #OS/Fedora 

@@ -29,11 +29,6 @@ winget install usbipd
 > [!tip]
 > Make sure to reopen any shell/terminal and check that `uspipd.exe` is available on your `PATH`.
 
-## #OS/Fedora 
-
-```sh
-sudo dnf install usbip
-```
 
 # Set up
 
