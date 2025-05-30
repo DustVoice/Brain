@@ -66,7 +66,7 @@ LOG_FILE=/var/log/vaultwarden/vaultwarden.log
 ```
 
 > [!todo] Replace
-> `VAULTWARDEN_DOMAIN` : [[FQDN|FQDN]] of this Vaultwarden instance
+> - `VAULTWARDEN_DOMAIN` : [[FQDN|FQDN]] of this Vaultwarden instance
 
 Vaultwarden will then serve the service over this port _within the container_.
 We later redirect an _outside_ port to this in the [[#Vaultwarden|container config]].
@@ -118,14 +118,14 @@ WantedBy=default.target
 ![[Podman#Start the service|Podman > Start the service]]
 
 > [!todo] Replace
-> `name` : `vaultwarden`
+> - `name` : `vaultwarden`
 
 ### Status
 
 ![[Podman#Check the status|Podman > Check the status]]
 
 > [!todo] Replace
-> `name` : `vaultwarden`
+> - `name` : `vaultwarden`
 
 ### Restart
 
@@ -309,7 +309,7 @@ logpath = /home/user/containers/vaultwarden/logs/vaultwarden.log
 ```
 
 > [!todo] Replace
-> `user` : username used for running the [[Podman#Rootless|rootless podman instance]].
+> - `user` : username used for running the [[Podman#Rootless|rootless podman instance]].
 
 #### SELinux
 
