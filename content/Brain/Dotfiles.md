@@ -17,6 +17,12 @@ My dotfile collection grew so much, that I transitioned from a manual approach t
 
 Make sure to [[Chezmoi#Install and Apply|Chezmoi > Install and Apply]] my (or you) dotfile repo to proceed.
 
+> [!note] Reapplying Chezmoi
+> You might have to re[[Chezmoi#Apply|apply]].
+> This is particularly true, after installing, for example, the [[Nushell#Additional Tools|Nushell > Additional Tools]].
+> 
+> This is because there are template sections within my chezmoi files, which check for the availability of a specific command (e.g., `starship`), before inserting it into the _real_ file.
+
 # Neovim
 
 I normally use a [[Neovim|Neovim]] config that makes use of a couple of additional tools, so it might make sense to ensure that they're installed and set up
