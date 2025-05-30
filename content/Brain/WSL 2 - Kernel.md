@@ -54,4 +54,4 @@ The only way I was able to install WSL successfully, was by using the manual ins
 3. Proceed with the setting up the distribution
 
 > [!tip]
-> If `wsl --update` doesn’t work (in addition to `wsl --install [...]`), you might need to repeat this ordeal, when you want to _update_ WSL.
+> If `wsl --update{:ps}` doesn’t work (in addition to `wsl --install [...]{:ps}`), you might need to repeat this ordeal when you want to _update_ WSL.
