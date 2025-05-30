@@ -41,7 +41,7 @@ Well, Nushell **isn’t POSIX-compliant**, and neither does it want to be. Ther
 
 Instead, I include a code snippet in my dotfile’s `~/.bash_profile` that will let `nu` take over any _interactive_ shell, while scripts, etc. that expect a `POSIX` compliant shell can have their way.
 
-```bash title="~/.bash_profile" {1-3}
+```bash title="~/.bash_profile" {1-4}
 if [[ $- == *i* && $(ps --no-header --pid $PPID --format comm) != "nu" && -z ${BASH_EXECUTION_STRING} ]]
 then
   exec nu
