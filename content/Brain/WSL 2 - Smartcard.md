@@ -12,10 +12,10 @@ tags:
 > Previously (especially with WSL v1), this was an absolute pain in the butt! With WSL2 and better support overall, it’s actually not that bad.
 
 > [!todo] Install and Configure
-> - [[usbip|usbip]]
+> - [[usbipd-win|usbipd-win]]
 > - [[GnuPG|GnuPG]]
 
-For [[usbip|usbip]], there should be nothing more to do and should _just work_.
+For [[usbipd-win|usbipd-win]], there should be nothing more to do and should _just work_.
 
 For GPG, most of the configuration is already done by my dotfiles, for example, updating the TTY, which is done in my supplied `~/.bash_profile` file:
 
