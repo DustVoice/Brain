@@ -344,6 +344,8 @@ Choose a username for the admin account and generate a **(secure)** password, st
 
 Most, if not all, of the warnings in your admin dashboard should go away after telling the Nextcloud what domains/proxies to trust.
 
+### Enter the container
+
 First we enter the container
 
 ```sh
@@ -383,6 +385,20 @@ php occ maintenance:repair --include-expensive
 ```sh
 php occ db:add-missing-indices
 ```
+
+### Set maintenance window
+
+Some maintenance tasks only run once a day.
+To prevent them from being run during the main usage time, we can set the start of the maintenance window, as per the [official documentation](https://docs.nextcloud.com/server/31/admin_manual/configuration_server/background_jobs_configuration.html#parameters):
+
+```sh /value/
+php occ config:system:set maintenance_window_start --type=integer --value=1
+```
+
+
+> [!info] `value`
+> The above value for `value` of `1`, means that the aforementioned background job will only be run between _01:00am UTC_ and _05:00am UTC_.
+
 
 ## Crontab
 
