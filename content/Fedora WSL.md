@@ -6,7 +6,7 @@
 
 > [!NOTE] Under construction
 > This subset of the Brain is under construction.
-> It is an attempt to migrate my previous [[Arch Linu WSL\|Arch Linux WSL]] setup to Fedora.
+> It is an attempt to migrate my previous [[Arch Linux WSL\|Arch Linux WSL]] setup to Fedora.
 
 This [[Guide\|Guide]] is an attempt at providing a guide for my [WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install) setup based on [Fedora](https://fedoraproject.org).
 
