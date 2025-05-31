@@ -2,7 +2,7 @@
 {"publish":true,"created":"2025-05-26 22:34","tags":["bread","recipe"],"cssclasses":""}
 ---
 
-
+ re
 [[Rye Crust\|English Version]]
 
 ![[Images/20241008_152145.jpg|200]]
@@ -15,19 +15,19 @@ Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine safti
 
 # Zutaten
 
-- 45 g [[Sourdough Starter\|Anstellgut]]
-- 410 g Wasser
-- 360 g [[Rye Flour (Type 997)#T 1150\|Roggenmehl (Typ 997)]]
-- 210 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
+- [ ] 45 g [[Sourdough Starter\|Anstellgut]]
+- [ ] 410 g Wasser
+- [ ] 360 g [[Rye Flour (Type 997)#T 1150\|Roggenmehl (Typ 997)]]
+- [ ] 210 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
 
 # Anweisungen
 
 ---
 **Sauerteig**
 
-- 45 g [[Sourdough Starter\|Anstellgut]]
-- 150 g Wasser, 30-60 °C abhängig von der Temperatur des Anstellguts
-- 150 g [[Rye Flour (Type 997)\|Roggenmehl (Typ 997)]]
+- [ ] 45 g [[Sourdough Starter\|Anstellgut]]
+- [ ] 150 g Wasser, 30-60 °C abhängig von der Temperatur des Anstellguts
+- [ ] 150 g [[Rye Flour (Type 997)\|Roggenmehl (Typ 997)]]
 
 Das Anstellgut gut mit dem Wasser aufschlämmen.
 
@@ -45,10 +45,11 @@ Für ==8-12 Stunden== bei Raumtemperatur gären lassen.
 ---
 **Hauptteig**
 
-- 260 g Wasser, warm
-- 210 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
-- 210 g [[Rye Flour (Type 997)\|Roggenmehl (Typ 997)]]
-- 12 g Salz
+- [ ] Sauerteig aus dem vorangegangenen Schritt
+- [ ] 260 g Wasser, warm
+- [ ] 210 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
+- [ ] 210 g [[Rye Flour (Type 997)\|Roggenmehl (Typ 997)]]
+- [ ] 12 g Salz
 
 Eine Küchenmaschine mit einem Knethaken vorbereiten.
 
