@@ -59,7 +59,7 @@ Für **8-12 Stunden** bei Raumtemperatur gären lassen.
 
 Eine Küchenmaschine mit einem Knethaken vorbereiten.
 
-Zuerst das ==Wasser=== in die Schüssel geben, gefolgt vom ==Sauerteig== aus dem vorangegangenen Schritt, den ==Mehlen==, sowie dem ==Salz==
+Zuerst das ==Wasser== in die Schüssel geben, gefolgt vom ==Sauerteig== aus dem vorangegangenen Schritt, den ==Mehlen==, sowie dem ==Salz==
 
 > [!warning]
 > Das Salz auf keinen Fall vergessen!

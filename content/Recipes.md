@@ -13,5 +13,21 @@ A categorized index of every recipe in my Brain
 | -------------- | ------------- | ------------------ |
 | Roggenkruste   | [[Rye Crust]] | [[Roggenkruste]]   |
 | Weizenwürzbrot |               | [[Weizenwürzbrot]] |
-|                |               |                    |
 
+# Coffee
+
+## Basics
+
+| Name        | English               | German          |
+| ----------- | --------------------- | --------------- |
+| Brew Water  | [[Brew Water Recipe]] |                 |
+| Schokosirup |                       | [[Schokosirup]] |
+
+## Brew Recipes
+
+### Aeropress
+
+| Name                   | English                              | German |
+| ---------------------- | ------------------------------------ | ------ |
+| Maldaner (Light Roast) | [[Maldaner Light Roast - Aeropress]] |        |
+| Quick And Dirty        | [[Quick and Dirty - Aeropress]]      |        |
