@@ -5,9 +5,6 @@
 Ein reichhaltiges, aber dennoch balanciertes Roggenmischbrot.
 Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine saftige Krume, die nicht zu dicht und fest ist.
 
-> [!tip] Wasser
-> Wie immer, ist es empfehlenswert, 10-20% der Gesamtwassermenge (ausgenommen dem Anstellgut) erst einmal zurückzuhalten und dieses langsam nach Bedarf zum Ende der Knetphase als eine [[Bassinage\|Bassinage]] hinzuzugeben.
-
 # Zutaten
 
 - 35-40 g [[Sourdough Starter\|Anstellgut]]
@@ -33,7 +30,7 @@ Das Anstellgut mit Wasser in eine Schüssel geben und aufschlämmen, d.h. zusamm
 
 Das Roggenmehl dazugeben und alles gründlich miteinander vermischen.
 
-Anschliessend den Vorteig, zudecken und für ==8-12 Stunden== bei Raumtemperatur gären lassen.
+Anschliessend den Vorteig, zudecken und für **8-12 Stunden** bei Raumtemperatur gären lassen.
 
 > [!NOTE]
 > Der Sauerteig sollte sich nach der angegebenen Zeit verdoppelt haben.
@@ -58,18 +55,27 @@ Die Gewürze in einem Mörser gut verreiben.
 - 550 g Wasser
 - 20 g Salz
 
+> [!tip] Wasser
+> Wie immer, ist es empfehlenswert, 10-20% der Gesamtwassermenge (ausgenommen dem Anstellgut) erst einmal zurückzuhalten und dieses langsam nach Bedarf zum Ende der Knetphase als eine [[Bassinage\|Bassinage]] hinzuzugeben.
+>  
+> | Reduktion | Wassermenge (Hauptteig) |
+> | - | - |
+> | 10% | 475 g |
+> | 15% | 437,5 g |
+> | 20% | 400 g |
+
 Die Mehle, das Wasser und das Salz zusammen mit den Gewürzen der Reihe nach in die Küchenmaschine geben.
 
 > [!warning]
 > Das Salz auf keinen Fall vergessen!
 
-Für ==2-3 Minuten== bei kleiner Geschwindigkeit mischen.
+Für **2-3 Minuten** bei kleiner Geschwindigkeit mischen.
 
-Die Knetgeschwindigkeit erhöhen und den Teig für zirka ==15min== kneten.
+Die Knetgeschwindigkeit erhöhen und den Teig für zirka **15 Minuten** kneten.
 
 Ein Teigbecken leicht einfetten.
 
-Anschliessend den Teig in das Teigbecken  geben, zudecken und für ==90min== bei Raumtemperatur aufgehen lassen.
+Anschliessend den Teig in das Teigbecken  geben, zudecken und für **90 Minuten** bei Raumtemperatur aufgehen lassen.
 
 In der Zwischenzeit den Teig einmal dehnen und falten.
 
@@ -90,23 +96,23 @@ Es ist von Vorteil, wenn sich dabei im Teig etwas Spannung aufbaut.
 
 Anschliessend einen runden, großen Gärkorb grosszügig bemehlen und den Teig, mit dem Verschluss nach oben darin absetzen.
 
-Den Teigling zudecken und für ==12-16 Stunden== in den Kühlschrank stellen.
+Den Teigling zudecken und für **12-16 Stunden** in den Kühlschrank stellen.
 
 ---
 **Backen**
 
-Den Backofen (Ober-/Unterhitze) mit einer Backplatte in der unteren Ofenhälfte auf 250 °C vorheizen.
+Den Backofen (Ober-/Unterhitze) mit einer Backplatte in der unteren Ofenhälfte auf **250 °C** vorheizen.
 
 Den Teigling aus dem Gärkorb direkt auf einen bemehlten Brotschieber stürzen (Verschluss ist nun unten).
 
 Anschliessend die Teigoberfläche mit einem scharfen Messer viermal einschneiden, so dass ein Quadrat entsteht.
 
-Den Teigling direkt auf die heisse Backplatte im Ofen schieben, die Backtemperatur auf 220 °C reduzieren und den Ofen bedampfen.
+Den Teigling direkt auf die heisse Backplatte im Ofen schieben, die Backtemperatur auf **220 °C** reduzieren und den Ofen bedampfen.
 
-==25 Minuten== mit Dampf backen.
+**25 Minuten** mit Dampf backen.
 
 Den Dampf ablassen.
 
-Das Brot weitere ==35min== goldbraun backen.
+Das Brot weitere **35 Minuten** goldbraun backen.
 
-Mindestens ==1 Stunde== auskühlen lassen.
+Mindestens **1 Stunde** auskühlen lassen.

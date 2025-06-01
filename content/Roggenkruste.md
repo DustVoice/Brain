@@ -42,22 +42,24 @@ Für **8-12 Stunden** bei Raumtemperatur gären lassen.
 ---
 **Hauptteig**
 
-- Sauerteig aus dem vorangegangenen Schritt
+- Sauerteig (vorheriger Schritt)
 - 260 g Wasser, warm
 - 210 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
 - 210 g [[Rye Flour (Type 997)\|Roggenmehl (Typ 997)]]
 - 12 g Salz
 
-Eine Küchenmaschine mit einem Knethaken vorbereiten.
-
-> [!tip] Wasser
+> [!tip] Wassermenge
 > Wie immer, ist es empfehlenswert, 10-20% der Gesamtwassermenge (ausgenommen dem Anstellgut) erst einmal zurückzuhalten und dieses langsam nach Bedarf zum Ende der Knetphase als eine [[Bassinage\|Bassinage]] hinzuzugeben.
 > 
-> - 220 g Wasser (-10%)
-> - 200 g Wasser (-15%)
-> - 180 g Wasser (-20%)
+> | Reduktion | Wassermenge (Hauptteig) |
+> | - | - |
+> | 10% | 220 g |
+> | 15% | 200 g |
+> | 20% | 180 g |
 
-Zuerst das ==Wasser=== in die Schüssel geben, gefolgt vom ==Sauerteig aus dem vorangegangenen Schritt==, den ==Mehlen==, sowie dem ==Salz==
+Eine Küchenmaschine mit einem Knethaken vorbereiten.
+
+Zuerst das ==Wasser=== in die Schüssel geben, gefolgt vom ==Sauerteig== aus dem vorangegangenen Schritt, den ==Mehlen==, sowie dem ==Salz==
 
 > [!warning]
 > Das Salz auf keinen Fall vergessen!
@@ -80,7 +82,7 @@ Den Teigling nun wenden und unter horizontalem Drehen die Seiten unter den Teigl
 
 Den Teigling mit dem Schluss nach unten (sprich ohne erneutes Wenden) in einen mit [[Rye Flour (Type 997)\|Roggenmehl (Typ 997)]] bestäubten Gärkorb geben.
 
-Entweder für **8-12 Stunden** (ist nicht schlimm falls etwas länger) im Kühlschrank, _oder_ für weiter **60-90 Minuten** bei Raumtemperatur gehen und reifen lassen.
+Entweder für **8-12 Stunden** (ist nicht schlimm falls etwas länger) im Kühlschrank, _oder_ für weitere **60-90 Minuten** bei Raumtemperatur gehen und reifen lassen.
 
 ---
 **Backen**
@@ -93,7 +95,7 @@ Das Brot in den Ofen schieben und diesen unmittelbar bedampfen.
 
 Für **40 Minuten** backen.
 
-Den Dampf ablassen.
+Den Dampf ablassen und die Ofentemperatur auf **210 °C** reduzieren.
 
 Für weitere **10-15 Minuten** backen.
 
