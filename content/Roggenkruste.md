@@ -2,6 +2,7 @@
 {"publish":true,"created":"2025-05-26 22:34","tags":["bread","recipe"],"cssclasses":""}
 ---
 
+# Über
 
 [[Rye Crust\|English Version]]
 
@@ -20,11 +21,11 @@ Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine safti
 # Anweisungen
 
 ---
-**Sauerteig**
-
 - 45 g [[Sourdough Starter\|Anstellgut]]
 - 150 g Wasser, 30-60 °C abhängig von der Temperatur des Anstellguts
 - 150 g [[Rye Flour (Type 997)\|Roggenmehl (Typ 997)]]
+
+## Sauerteig
 
 Das ==Anstellgut== gut mit dem ==Wasser== aufschlämmen.
 
@@ -40,8 +41,6 @@ Für **8-12 Stunden** bei Raumtemperatur gären lassen.
 > Falls nicht, gerne noch etwas länger warten
 
 ---
-**Hauptteig**
-
 - Sauerteig (vorheriger Schritt)
 - 260 g Wasser, warm
 - 210 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
@@ -57,6 +56,8 @@ Für **8-12 Stunden** bei Raumtemperatur gären lassen.
 > | 15% | 200 g |
 > | 20% | 180 g |
 
+## Hauptteig
+
 Eine Küchenmaschine mit einem Knethaken vorbereiten.
 
 Zuerst das ==Wasser== in die Schüssel geben, gefolgt vom ==Sauerteig== aus dem vorangegangenen Schritt, den ==Mehlen==, sowie dem ==Salz==
@@ -69,7 +70,7 @@ Alles auf der niedrigsten Stufe für **5 Minuten** sanft kneten.
 Den Teig in der Schüssel für **2-3 Stunden** bei Raumtemperatur gehen lassen.
 
 ---
-**Formen**
+## Formen
 
 Die Küchenoberfläche mit [[Rye Flour (Type 997)\|Roggenmehl (Typ 997)]] bestäuben.
 
@@ -85,7 +86,7 @@ Den Teigling mit dem Schluss nach unten (sprich ohne erneutes Wenden) in einen m
 Entweder für **8-12 Stunden** (ist nicht schlimm falls etwas länger) im Kühlschrank, _oder_ für weitere **60-90 Minuten** bei Raumtemperatur gehen und reifen lassen.
 
 ---
-**Backen**
+## Backen
 
 Den Ofen auf **250 °C (Ober-/Unterhitze)** vorheizen.
 
