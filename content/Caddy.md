@@ -187,24 +187,66 @@ WantedBy=default.target
 
 ### Reload
 
-![[Podman#Reload the daemon\|Podman#Reload the daemon]]
+## Reload the daemon
+
+As Quadlet files are `systemd` service files, you need to reload the daemon.
+
+```sh
+systemctl --user daemon-reload
+```
+
+This generates appropriate `.service` files.
+
 
 ### Start
 
-![[Podman#Start the service\|Podman#Start the service]] 
+## Start the service
+
+```sh /name/
+systemctl --user start name.service
+```
+ 
 
 > [!todo] Replace
 > - `name` : `caddy`
 
 ### Status
 
-![[Podman#Check the status\|Podman#Check the status]]
+## Check the status
+
+You can check the status of Podman using
+
+```sh
+podman ps
+```
+
+and the status of the service itself using either
+
+```sh /name/
+systemctl --user status name.service
+```
+
+or
+
+```sh /name/
+journalctl --user -xeu name.service
+```
+
 
 > [!todo] Replace
 > - `name` : `caddy`
 ### Linger
 
-![[Podman#Keep it running\|Podman#Keep it running]]
+## Keep it running
+
+As a rootless setup doesn't use a system-level service, all services would be stopped upon logout.
+
+To prevent this, we must `enable-linger` (where `user` is your username, of course):
+
+```sh /user/
+loginctl enable-linger user
+```
+
 
 ### Debug
 

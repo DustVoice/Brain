@@ -5,4 +5,8 @@
 
 Bread baked with [[Sourdough\|Sourdough]], as either the main source of active yeast, or as a flavoring agent, with additional yeast added.
 
-![[Recipes#Sourdough\|Recipes#Sourdough]]
+## Sourdough
+
+| Name         | English       | German           |
+| ------------ | ------------- | ---------------- |
+| Roggenkruste | [[Rye Crust\|Rye Crust]] | [[Roggenkruste\|Roggenkruste]] |
