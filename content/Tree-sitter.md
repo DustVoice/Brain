@@ -3,7 +3,7 @@
 ---
 
 
-Normally, tree-sitter works as-is, without the need for a specific tool, as long as you have [[gcc\|gcc]] installed.
+Normally, tree-sitter works as-is, without the need for a specific tool, as long as you have [[gcc]] installed.
 
 It's nice to have the binary available, though, just in case.
 

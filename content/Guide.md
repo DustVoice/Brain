@@ -36,8 +36,8 @@ It makes it easier to see which packages/tools are supposed to be installed at a
 Optional packages are _italicized_.
 
 > [!todo] Install
-> - [[Podman#OS/Fedora\|Podman#OS/Fedora]]
-> - _[[Caddy\|Caddy]]_
+> - [[Podman#OS/Fedora]]
+> - _[[Caddy]]_
 
 ## Callouts
 

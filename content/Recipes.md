@@ -9,6 +9,9 @@ A categorized index of every recipe in my Brain
 
 ## Sourdough
 
-| Name         | English       | German           |
-| ------------ | ------------- | ---------------- |
-| Roggenkruste | [[Rye Crust\|Rye Crust]] | [[Roggenkruste\|Roggenkruste]] |
+| Name           | English       | German             |
+| -------------- | ------------- | ------------------ |
+| Roggenkruste   | [[Rye Crust]] | [[Roggenkruste]]   |
+| Weizenwürzbrot |               | [[Weizenwürzbrot]] |
+|                |               |                    |
+

@@ -3,7 +3,7 @@
 ---
 
 
-![[Disclaimer (Tech)\|Disclaimer (Tech)]]
+![[Disclaimer (Tech)]]
 
 # Rootless Podman
 
@@ -21,7 +21,7 @@
 
 ## Prerequisites
 
-Make sure you have [[Podman\|podman]] installed and a _frontend_ [[Caddy\|Caddy]] instance set up.
+Make sure you have [[Podman\|podman]] installed and a _frontend_ [[Caddy]] instance set up.
 
 ## Data directories
 
@@ -81,7 +81,7 @@ First, we tell the [[Nextcloud#^15ddf5\|Caddy instance within the pod]] (which I
 This will
 - serve the Nextcloud on the standard `80` HTTP port
 - for the hostname equal to the name specified for its [[Nextcloud#Caddy\|container]]
-- within the Nextcloud pod, or more specifically within it's specified [[Nextcloud#Network\|#Network]].
+- within the Nextcloud pod, or more specifically within it's specified [[Nextcloud#Network]].
 
 The [[Nextcloud#Pod\|pod configuration]] will take care of forwarding an actual _outside/system_ port to this _pod-internal_ one.
 
@@ -89,7 +89,7 @@ The [[Nextcloud#Pod\|pod configuration]] will take care of forwarding an actual 
 
 As mentioned, the _external_ caddy instance (which I will refer to as the _frontend_ instance) is used for reverse proxying. Note that the _backend_ caddy instance expects incoming traffic on port `8080`, as specified in [[Nextcloud#Caddy\|its container config]].
 
-Therefore, we simply add a section to the (already present) [[Caddy#Caddyfile\|Caddy#Caddyfile]] under `~/containers/caddy/config/Caddyfile`
+Therefore, we simply add a section to the (already present) [[Caddy#Caddyfile]] under `~/containers/caddy/config/Caddyfile`
 
 ```sh title="~/containers/caddy/config/Caddyfile" /NEXTCLOUD_DOMAIN/
 {$NEXTCLOUD_DOMAIN} {
@@ -106,8 +106,8 @@ Therefore, we simply add a section to the (already present) [[Caddy#Caddyfile\|C
 }
 ```
 
-> [!todo] [[Caddy#Environment variables\|Caddy#Environment variables]]
-> `NEXTCLOUD_DOMAIN` : [[FQDN\|FQDN]] of the Nextcloud instance
+> [!todo] [[Caddy#Environment variables]]
+> `NEXTCLOUD_DOMAIN` : [[FQDN]] of the Nextcloud instance
 
 > [!question]- How long did it take?
 > Don't ask!
@@ -130,7 +130,7 @@ Network=nextcloud.network
 
 ## Network
 
-As we configured a network for our [[Nextcloud#Pod\|#Pod]], we will need to create the network, too.
+As we configured a network for our [[Nextcloud#Pod]], we will need to create the network, too.
 
 ```systemd title="~/.config/containers/systemd/nextcloud.network"
 [Unit]
@@ -291,31 +291,31 @@ WantedBy=default.target
 
 > [!todo] Replace
 > - `user` : username used for running the [[Podman#Rootless\|rootless podman instance]].
-> - `NEXTCLOUD_DOMAIN` : [[FQDN\|FQDN]] of the Nextcloud instance
+> - `NEXTCLOUD_DOMAIN` : [[FQDN]] of the Nextcloud instance
 ## Boot it up
 
 ### Reload
 
-![[Podman#Reload the daemon\|Podman#Reload the daemon]]
+![[Podman#Reload the daemon]]
 
 ### Auto-Update
 
-![[Podman#Auto-Update\|Podman#Auto-Update]]
+![[Podman#Auto-Update]]
 
 ### Linger
 
-![[Podman#Keep it running\|Podman#Keep it running]]
+![[Podman#Keep it running]]
 
 ### Start
 
-![[Podman#Start the service\|Podman#Start the service]]
+![[Podman#Start the service]]
 
 > [!todo] Replace
 > - `name` : `nextcloud-pod`
 
 ### Status
 
-![[Podman#Check the status\|Podman#Check the status]]
+![[Podman#Check the status]]
 
 > [!todo] Replace
 > - `name` : `nextcloud-pod`
@@ -325,7 +325,7 @@ You can also check every other container's status by substituting `name` with th
 
 ### Restart
 
-Following that, you probably still need to restart the _frontend_ [[Caddy\|Caddy]], as we [[Nextcloud#Frontend Caddyfile\|modified its Caddyfile previously]]:
+Following that, you probably still need to restart the _frontend_ [[Caddy]], as we [[Nextcloud#Frontend Caddyfile\|modified its Caddyfile previously]]:
 
 ```sh
 systemctl --user restart caddy.service
@@ -335,7 +335,7 @@ systemctl --user restart caddy.service
 
 You should _(hopefully)_ now be able to access your Nextcloud installer unde the domain you specified
 
-![[Caddy#Debug\|Caddy#Debug]]
+![[Caddy#Debug]]
 
 Choose a username for the admin account and generate a **(secure)** password, store it in your password manager and follow the installer.
 
@@ -357,7 +357,7 @@ Now we can use Nextcloud's `occ` tool
 
 > [!todo] Set environment variables
 > - `$SERVER_IP` : your server's public IP
-> - `$NEXTCLOUD_DOMAIN` : [[FQDN\|FQDN]] of this Nextcloud instance
+> - `$NEXTCLOUD_DOMAIN` : [[FQDN]] of this Nextcloud instance
 > - `$REGION` : your region, for example, `DE`
 > - `$CADDY` : hostname of your caddy container (in my guide it's `nextcloud-caddy`)
 
@@ -403,7 +403,7 @@ php occ config:system:set maintenance_window_start --type=integer --value=1
 
 In order for the Nextcloud's crontab to be run regularly, we need to deploy a cronjob on the host side.
 
-Make sure, you have the `crontab` command available, by installing [[Cronie#OS/Fedora\|Cronie#OS/Fedora]].
+Make sure, you have the `crontab` command available, by installing [[Cronie#OS/Fedora]].
 
 ```sh
 crontab -e
@@ -427,13 +427,13 @@ Security should be more than fine, by using rootless containers (even for the re
 Still, security is always a concern and should be one of the top priorities.
 
 As always, though, always refer to up-to-date information and best practices and also consider reading up on the [official upstream Nextcloud documentation](https://docs.nextcloud.com/server/31/admin_manual/installation/harden_server.html).
-The [[System Administration#Disclaimer\|System Administration#Disclaimer]] applies here, too.
+The [[System Administration#Disclaimer]] applies here, too.
 
-I have collected a couple of additional options for the [[Nextcloud#Backend Caddyfile\|#Backend Caddyfile]] that should harden the instance even more.
+I have collected a couple of additional options for the [[Nextcloud#Backend Caddyfile]] that should harden the instance even more.
 Most of these options aim at _future-proofing_ the installation and, for example, prevent access to files which _should_ be unproblematic, but _might_ not be (in the future).
 If you encounter weird problems or issues, it might be related to too restrictive of a config, so you might need to experiment with the introduced options, to determine which caused the error.
 
-The file, we expand upon, is the [[Nextcloud#Backend Caddyfile\|#Backend Caddyfile]], as the [[Nextcloud#Frontend Caddyfile\|frontend one]] solely describes the reverse proxy behavior.
+The file, we expand upon, is the [[Nextcloud#Backend Caddyfile]], as the [[Nextcloud#Frontend Caddyfile\|frontend one]] solely describes the reverse proxy behavior.
 The added/modified portions are highlighted, to enable quick expansion of an already existing (and hopefully working) `~/containers/nextcloud/caddy/config/Caddyfile` file:
 
 ```text title="~/containers/nextcloud/caddy/config/Caddyfile" /includeSubDomains;/ /preload/ {19-32,35-87,92,95-96,98,101,103-104,109} 
@@ -552,7 +552,7 @@ The added/modified portions are highlighted, to enable quick expansion of an alr
 }
 ```
 
-Of course, you need to at least restart the `nextcloud-caddy.service` if you changed this file after the [[Nextcloud#Reboot\|#Reboot]] step.
+Of course, you need to at least restart the `nextcloud-caddy.service` if you changed this file after the [[Nextcloud#Reboot]] step.
 
 You could in theory also [[Caddy#Don't terminate TLS\|not terminate the TLS chain]].
 ## Reboot

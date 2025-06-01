@@ -49,7 +49,7 @@ Für **8-12 Stunden** bei Raumtemperatur gären lassen.
 - 12 g Salz
 
 > [!tip] Wassermenge
-> Wie immer, ist es empfehlenswert, 10-20% der Gesamtwassermenge (ausgenommen dem Anstellgut) erst einmal zurückzuhalten und dieses langsam nach Bedarf zum Ende der Knetphase als eine [[Bassinage\|Bassinage]] hinzuzugeben.
+> Wie immer, ist es empfehlenswert, 10-20% der Gesamtwassermenge (ausgenommen dem Anstellgut) erst einmal zurückzuhalten und dieses langsam nach Bedarf zum Ende der Knetphase als eine [[Bassinage]] hinzuzugeben.
 > 
 > | Reduktion | Wassermenge (Hauptteig) |
 > | - | - |

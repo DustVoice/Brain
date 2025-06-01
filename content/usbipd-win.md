@@ -12,12 +12,12 @@ This is either the case _while the device is attached_, or even _as long as it
 # Install
 
 > [!attention]
-> You **need** to perform the [[usbipd-win#Windows\|#Windows]] installation in addition to the distro's specific instructions.
+> You **need** to perform the [[usbipd-win#Windows]] installation in addition to the distro's specific instructions.
 
 ## Windows
 
 First, you need to install the [usbipd-win](https://github.com/dorssel/usbipd-win) software on the Windows side.
-Some [[usbipd-win#GUI\|#GUI]] tools automatically install this.
+Some [[usbipd-win#GUI]] tools automatically install this.
 
 You can also run (from an **elevated** prompt)
 

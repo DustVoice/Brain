@@ -3,11 +3,11 @@
 ---
 
 
-The better [[tmux\|tmux]].
+The better [[tmux]].
 
 # Install
 
-## [[Rust#Cargo\|Rust#Cargo]]
+## [[Rust#Cargo]]
 
 ```sh
 cargo install zellij

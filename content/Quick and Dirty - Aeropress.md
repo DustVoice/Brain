@@ -9,10 +9,10 @@ While it might not produce a perfect cup, dialing it in, or rather adjusting to 
 
 # Ingredients
 
-- [[Aeropress#Inverted\|Aeropress#Inverted]], with bloom
-- 15 g [[Coffee Beans\|Coffee Beans]], ground
-	- around 24 clicks on a [[Comandante C40 MK4\|Comandante C40 MK4]]
-- 220 ml [[Brew Water Recipe#Brew Water\|Brew Water Recipe#Brew Water]]
+- [[Aeropress#Inverted]], with bloom
+- 15 g [[Coffee Beans]], ground
+	- around 24 clicks on a [[Comandante C40 MK4]]
+- 220 ml [[Brew Water Recipe#Brew Water]]
 
 # Directions
 

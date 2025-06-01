@@ -3,5 +3,5 @@
 ---
 
 
-- [[Quick and Dirty - Aeropress\|Quick and Dirty - Aeropress]]
-- [[Maldaner Light Roast - Aeropress\|Maldaner Light Roast - Aeropress]]
+- [[Quick and Dirty - Aeropress]]
+- [[Maldaner Light Roast - Aeropress]]

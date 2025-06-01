@@ -32,8 +32,8 @@ mkdir -p ~/containers/caddy/sites/{site-name(s)}
 > [!todo] Replace
 > - `site-name(s)` : a comma seperated list of directory names for the sites you intend to serve
 
-If you don't, you could still consider simply creating the parent directory `~/containers/caddy/sites`, so you don't have to touch the generated [[Caddy#Quadlet file\|#Quadlet file]].
-You would need to create corresponding entries in your [[Caddy#Caddyfile\|#Caddyfile]] anyway, for it to be active.
+If you don't, you could still consider simply creating the parent directory `~/containers/caddy/sites`, so you don't have to touch the generated [[Caddy#Quadlet file]].
+You would need to create corresponding entries in your [[Caddy#Caddyfile]] anyway, for it to be active.
 
 ```sh
 mkdir -p ~/containers/caddy/sites
@@ -88,7 +88,7 @@ The [official documentation](https://caddyserver.com/docs/) even provides a [lis
 ### Environment variables
 
 I often use environment variables to, for example, specify domains of my sub-sites (the sites this frontend Caddy instance proxies to), etc.
-For this, I specify an `EnvironmentFile` in the [[Caddy#Quadlet file\|#Quadlet file]].
+For this, I specify an `EnvironmentFile` in the [[Caddy#Quadlet file]].
 
 You can then specify environment variables within this file using the `NAME=val` pattern,
 for example:
@@ -164,18 +164,18 @@ WantedBy=default.target
 
 > [!info]- Some details
 > - `PublishPort`
-> 	- Map the outside ports `1880` and `1443`(see [[Caddy#Ports\|#Ports]]) to Caddy's internal `80` and `443` ports respectively
+> 	- Map the outside ports `1880` and `1443`(see [[Caddy#Ports]]) to Caddy's internal `80` and `443` ports respectively
 > 		- `-p 1880:80`
 > 		- `-p 1443:443`
 > - `Volume`
-> 	- Map the outside [[Caddy#Data directories\|#Data directories]] to the correct internal paths
+> 	- Map the outside [[Caddy#Data directories]] to the correct internal paths
 > 		- `-v ~/containers/caddy/config:/etc/caddy:ro,Z`
 > 		- `-v ~/containers/caddy/data:/data:Z`
 > 		- `-v ~/containers/caddy/logs:/var/log/caddy:Z`
 > 		- `-v ~/containers/caddy/sites:/srv:ro,z` _(Remove this, if you would rather not serve static sites from this Caddy instance)_ ^677ece
 > - `EnvironmentFile`
 > 	- A file specifying environment variables available within the container following a `VAR_NAME=VALUE` pattern.
-> 	- I often use this for specifying variables used in the [[Caddy#Caddyfile\|#Caddyfile]] using the `{$VAR_NAME}` syntax. Also see [[Caddy#Environment variables\|#Environment variables]]
+> 	- I often use this for specifying variables used in the [[Caddy#Caddyfile]] using the `{$VAR_NAME}` syntax. Also see [[Caddy#Environment variables]]
 > 
 > > [!info] What are the `:z` and `:Z` labels?
 > > These two labels are specific to [SELinux](https://www.redhat.com/en/topics/linux/what-is-selinux), which is enabled by default on Fedora.
@@ -187,24 +187,24 @@ WantedBy=default.target
 
 ### Reload
 
-![[Podman#Reload the daemon\|Podman#Reload the daemon]]
+![[Podman#Reload the daemon]]
 
 ### Start
 
-![[Podman#Start the service\|Podman#Start the service]] 
+![[Podman#Start the service]] 
 
 > [!todo] Replace
 > - `name` : `caddy`
 
 ### Status
 
-![[Podman#Check the status\|Podman#Check the status]]
+![[Podman#Check the status]]
 
 > [!todo] Replace
 > - `name` : `caddy`
 ### Linger
 
-![[Podman#Keep it running\|Podman#Keep it running]]
+![[Podman#Keep it running]]
 
 ### Debug
 
@@ -222,7 +222,7 @@ WantedBy=default.target
 
 ## Test it
 
-Of course, you can proceed directly with, e.g., setting up a [[Nextcloud\|Nextcloud]] to test the Caddy setup.
+Of course, you can proceed directly with, e.g., setting up a [[Nextcloud]] to test the Caddy setup.
 
 I find it more convenient to perform a quick test, howevew, using a simple HTML file.
 

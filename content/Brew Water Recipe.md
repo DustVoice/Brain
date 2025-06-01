@@ -49,8 +49,8 @@ My brew water aims to be at around
 
 If I need to prepare some brew water in a pinch, I
 
-- weigh out 20g of the [[Brew Water Recipe#Buffer Concentrate (KH)\|#Buffer Concentrate (KH)]]
-- add 20g of the [[Brew Water Recipe#Hardness Concentrate (GH)\|#Hardness Concentrate (GH)]]
+- weigh out 20g of the [[Brew Water Recipe#Buffer Concentrate (KH)]]
+- add 20g of the [[Brew Water Recipe#Hardness Concentrate (GH)]]
 - fill up with distilled water until 1000g = 960g distilled water
 - mix thoroughly
 
@@ -62,7 +62,7 @@ To reduce workload, I often buy 5L jugs of distilled water and directly mix my c
 > This assumes the jugs are accurately filled by the producer!
 
 - remove 200g of distilled water from the 5L jug
-- weigh out 100g of the [[Brew Water Recipe#Buffer Concentrate (KH)\|#Buffer Concentrate (KH)]]
-- weigh out 100g of the [[Brew Water Recipe#Hardness Concentrate (GH)\|#Hardness Concentrate (GH)]]
+- weigh out 100g of the [[Brew Water Recipe#Buffer Concentrate (KH)]]
+- weigh out 100g of the [[Brew Water Recipe#Hardness Concentrate (GH)]]
 - add both concentrates into the jug
 - mix thoroughly

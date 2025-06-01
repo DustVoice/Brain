@@ -5,7 +5,7 @@
 
 # Install
 
-## [[Rust#Cargo\|Rust#Cargo]]
+## [[Rust#Cargo]]
 
 ```sh
 cargo install starship

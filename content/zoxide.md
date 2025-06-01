@@ -10,7 +10,7 @@
 sudo dnf install zoxide
 ```
 
-## [[Rust#Cargo\|Rust#Cargo]]
+## [[Rust#Cargo]]
 
 ```sh
 cargo install zoxide

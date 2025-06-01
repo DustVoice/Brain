@@ -56,7 +56,7 @@ Die Gewürze in einem Mörser gut verreiben.
 - 20 g Salz
 
 > [!tip] Wasser
-> Wie immer, ist es empfehlenswert, 10-20% der Gesamtwassermenge (ausgenommen dem Anstellgut) erst einmal zurückzuhalten und dieses langsam nach Bedarf zum Ende der Knetphase als eine [[Bassinage\|Bassinage]] hinzuzugeben.
+> Wie immer, ist es empfehlenswert, 10-20% der Gesamtwassermenge (ausgenommen dem Anstellgut) erst einmal zurückzuhalten und dieses langsam nach Bedarf zum Ende der Knetphase als eine [[Bassinage]] hinzuzugeben.
 >  
 > | Reduktion | Wassermenge (Hauptteig) |
 > | - | - |

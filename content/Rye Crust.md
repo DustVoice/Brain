@@ -12,19 +12,19 @@ It has good flavor, a nice crispy crust and a juicy but not too dense inside.
 
 # Ingredients
 
-- 45 g [[Sourdough Starter\|Sourdough Starter]]
+- 45 g [[Sourdough Starter]]
 - 410 g Water
-- 360 g [[Rye Flour (Type 997)\|Rye Flour (Type 997)]]
-- 210 g [[Wheat Flour (Type 550)\|Wheat Flour (Type 550)]]
+- 360 g [[Rye Flour (Type 997)]]
+- 210 g [[Wheat Flour (Type 550)]]
 
 # Directions
 
 ---
 **Sourdough**
 
-- 45 g [[Sourdough Starter\|Sourdough Starter]]
+- 45 g [[Sourdough Starter]]
 - 150 g Water, 30-60 °C depending on the temperature of the starter
-- 150 g [[Rye Flour (Type 997)\|Rye Flour (Type 997)]]
+- 150 g [[Rye Flour (Type 997)]]
 
 Whisk the ==starter== with the ==warm water==, until it gets a little slushy.
 
@@ -43,12 +43,12 @@ Let it sit for **8-12 hours** at room temperature.
 
 - Sourdough (previous step)
 - 260 g Water, warm
-- 210 g [[Wheat Flour (Type 550)\|Wheat Flour (Type 550)]]
-- 210 g [[Rye Flour (Type 997)\|Rye Flour (Type 997)]]
+- 210 g [[Wheat Flour (Type 550)]]
+- 210 g [[Rye Flour (Type 997)]]
 - 12 g Salt
 
 > [!tip] Water
-> As always, retain 10-20% of the total water amount (excluding the starter) and add it as needed at the end of the kneading phase as a [[Bassinage\|Bassinage]].
+> As always, retain 10-20% of the total water amount (excluding the starter) and add it as needed at the end of the kneading phase as a [[Bassinage]].
 > 
 > | Retention | Water volume (Main dough) |
 > | - | - |
@@ -70,7 +70,7 @@ Let the dough rest in the bowl for **2-3 hours** at room temperature.
 ---
 **Form the bread**
 
-Dust your kitchen top with [[Rye Flour (Type 997)\|Rye Flour (Type 997)]].
+Dust your kitchen top with [[Rye Flour (Type 997)]].
 
 Put your dough onto it.
 

@@ -3,7 +3,7 @@
 ---
 
 
-![[Disclaimer (Tech)\|Disclaimer (Tech)]]
+![[Disclaimer (Tech)]]
 
 # Why Fedora?
 
@@ -85,7 +85,7 @@ You will probably notice, that almost immediately, your `journalctl` will be clu
 > It is not a targeted attack agains you specifically.
 > But this level of automation makes it of utmost importance to employ good security measures.
 
-To get rid of this, you can employ [[Fail2Ban\|Fail2Ban]].
+To get rid of this, you can employ [[Fail2Ban]].
 
 After you got it up and running, we simply enable the SSH jail, by creating `/etc/fail2ban/jail.d/sshd.local`:
 
@@ -98,7 +98,7 @@ enabled = true
 
 ## Podman
 
-![[Podman#Install\|Podman#Install]]
+![[Podman#Install]]
 
 ## Caddy
 

@@ -5,9 +5,9 @@
 
 In this part, I set up my `$HOME` directory and environment, with all the basic tools needed to actually be able to use my fresh Linux distro (whether in a bare form, or through WSL).
 
-1. [[Dotfiles\|Dotfiles]]
-2. [[Editor\|Editor]]
-3. [[Shell\|Shell]]
-4. [[Terminal Emulator\|Terminal Emulator]]
-5. [[Scripting\|Scripting]]
+1. [[Dotfiles]]
+2. [[Editor]]
+3. [[Shell]]
+4. [[Terminal Emulator]]
+5. [[Scripting]]
 

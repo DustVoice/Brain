@@ -3,4 +3,4 @@
 ---
 
 
-I mainly use [[Yubico YubiKey\|Yubico YubiKey]]s.
+I mainly use [[Yubico YubiKey]]s.

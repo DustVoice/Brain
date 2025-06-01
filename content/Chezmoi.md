@@ -3,7 +3,7 @@
 ---
 
 > [!todo] Install
-> - [[Git\|Git]]
+> - [[Git]]
 
 # Install
 
@@ -15,7 +15,7 @@ sh -c "$(curl -fsLS get.chezmoi.io)"
 ```
 
 > [!tip]
-> You can also [[Chezmoi#Install and Apply\|#Install and Apply]] in a single command!
+> You can also [[Chezmoi#Install and Apply]] in a single command!
 
 > [!NOTE]
 > Also refer to the [official documentation](https://www.chezmoi.io/install/)
@@ -47,8 +47,8 @@ install_cmd -- apply_cmd
 ```
 
 > [!todo] Replace
-> - `install_cmd` : The appropriate command from the [[Chezmoi#Install\|#Install]] section
-> - `apply_cmd` : The appropriate command from the [[Chezmoi#Apply\|#Apply]] section, without the `chezmoi`
+> - `install_cmd` : The appropriate command from the [[Chezmoi#Install]] section
+> - `apply_cmd` : The appropriate command from the [[Chezmoi#Apply]] section, without the `chezmoi`
 
 > [!example]
 > ```sh

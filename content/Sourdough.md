@@ -3,7 +3,7 @@
 ---
 
 
-Normally, you set up a sourdough using a [[Sourdough Starter\|Sourdough Starter]], some flour and water.
+Normally, you set up a sourdough using a [[Sourdough Starter]], some flour and water.
 You can use yeast too, instead of sourdough starter, but I try to avoid using “pure” yeast, if I can.
 
 The right ratio of starter to flour and water changes with each recipe, as well as the ratio of sourdough to the full dough.

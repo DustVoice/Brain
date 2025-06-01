@@ -32,7 +32,7 @@ To set up a smart card, first make sure it appears in `lsusb`.
 Then make sure it also shows in `gpg --card-status{:sh}`.
 This command _should_ output some information about the present smart card. If the output looks like the desert scene out of an old western movie, it’s probably not being recognized correctly.
 
-To use the smart card, we need to make sure [[pcsc\|pcsc]] which manages the smart card, as well as [[ccid\|ccid]], which is a generic CCID driver, are available, configured, [[pcsc#Enable\|enabled]] and [[pcsc#Start\|started]].
+To use the smart card, we need to make sure [[pcsc]] which manages the smart card, as well as [[ccid]], which is a generic CCID driver, are available, configured, [[pcsc#Enable\|enabled]] and [[pcsc#Start\|started]].
 
 ### Register
 
