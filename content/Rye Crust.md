@@ -2,6 +2,7 @@
 {"publish":true,"created":"2025-05-26 22:34","tags":["bread","recipe"],"cssclasses":""}
 ---
 
+# Description
 
 [[Roggenkruste\|Deutsche Version]]
 
@@ -36,7 +37,6 @@ Let it sit for **8-12 hours** at room temperature.
 
 > [!NOTE]
 > It should have doubled in size after this time. Wait longer if needed.
-
 
 ---
 **Main dough**

@@ -2,6 +2,8 @@
 {"publish":true,"created":"2025-05-28 11:28","tags":["bread","recipe"],"cssclasses":""}
 ---
 
+# Beschreibung
+
 Ein reichhaltiges, aber dennoch balanciertes Roggenmischbrot.
 Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine saftige Krume, die nicht zu dicht und fest ist.
 
@@ -35,7 +37,6 @@ Anschliessend den Vorteig, zudecken und für **8-12 Stunden** bei Raumtemperatur
 > [!NOTE]
 > Der Sauerteig sollte sich nach der angegebenen Zeit verdoppelt haben.
 > Falls nicht, gerne noch etwas länger warten
-
 
 ---
 **Gewürze**
