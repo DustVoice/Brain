@@ -66,7 +66,7 @@ Die Gewürze in einem Mörser gut verreiben.
 
 Die Mehle, das Wasser und das Salz zusammen mit den Gewürzen der Reihe nach in die Küchenmaschine geben.
 
-> [!warning]
+> [!warning] Salz
 > Das Salz auf keinen Fall vergessen!
 
 Für **2-3 Minuten** bei kleiner Geschwindigkeit mischen.

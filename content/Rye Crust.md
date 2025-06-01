@@ -60,7 +60,7 @@ Prepare a kitchen machine with a kneading hook.
 
 Put the ==water== first into the bowl, followed by the ==sourdough== from the previous step, the ==flours==, as well as the ==salt==.
 
-> [!warning]
+> [!warning] Salt
 > Don't forget the salt!
 
 Knead everything on the lowest setting gently for **5 minutes**.
