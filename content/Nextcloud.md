@@ -3,19 +3,7 @@
 ---
 
 
-
-
-> [!danger]
-> ## Proceed with caution, use at your own risk!
-> 
-> This is merely a documentation of my _specific setup_, i.e. what I found works _for me_.
-> 
-> You might have _entirely different_ requirements and expectations of _security_, etc.
-> 
-> ## Always use your **Brain™**
-> 
-> Always read up on _up-to-date_ documentation and _current_ best practices.
-> Inform yourself, research, and treat my documentation as what it truly is: a mere info-dump.
+![[Disclaimer (Tech)\|Disclaimer (Tech)]]
 
 # Rootless Podman
 
@@ -308,74 +296,26 @@ WantedBy=default.target
 
 ### Reload
 
-## Reload the daemon
-
-As Quadlet files are `systemd` service files, you need to reload the daemon.
-
-```sh
-systemctl --user daemon-reload
-```
-
-This generates appropriate `.service` files.
-
+![[Podman#Reload the daemon\|Podman#Reload the daemon]]
 
 ### Auto-Update
 
-## Auto-Update
-
-If you enabled the auto update feature using the `AutoUpdate` key in the `.container` file, you still need to enable the auto update timer
-
-```sh
-systemctl --user enable --now podman-auto-update.timer
-```
+![[Podman#Auto-Update\|Podman#Auto-Update]]
 
 ### Linger
 
-## Keep it running
-
-As a rootless setup doesn't use a system-level service, all services would be stopped upon logout.
-
-To prevent this, we must `enable-linger` (where `user` is your username, of course):
-
-```sh /user/
-loginctl enable-linger user
-```
-
+![[Podman#Keep it running\|Podman#Keep it running]]
 
 ### Start
 
-## Start the service
-
-```sh /name/
-systemctl --user start name.service
-```
-
+![[Podman#Start the service\|Podman#Start the service]]
 
 > [!todo] Replace
 > - `name` : `nextcloud-pod`
 
 ### Status
 
-## Check the status
-
-You can check the status of Podman using
-
-```sh
-podman ps
-```
-
-and the status of the service itself using either
-
-```sh /name/
-systemctl --user status name.service
-```
-
-or
-
-```sh /name/
-journalctl --user -xeu name.service
-```
-
+![[Podman#Check the status\|Podman#Check the status]]
 
 > [!todo] Replace
 > - `name` : `nextcloud-pod`
@@ -395,20 +335,7 @@ systemctl --user restart caddy.service
 
 You should _(hopefully)_ now be able to access your Nextcloud installer unde the domain you specified
 
-### Debug
-
-> [!tip]
-> If something doesn't work right away, try checking the statuses of the `caddy`, and the (pod's)  container service(s).
-> 
-> You can also prepend an additional portion in front of all the content to the respective `Caddyfile`s, enabling more verbose error outputs.
-> 
-> ```text
-> {
-> 	debug
-> }
-> ```
-
-
+![[Caddy#Debug\|Caddy#Debug]]
 
 Choose a username for the admin account and generate a **(secure)** password, store it in your password manager and follow the installer.
 
