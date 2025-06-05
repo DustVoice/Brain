@@ -78,7 +78,7 @@ Ein Teigbecken leicht einfetten.
 
 Anschliessend den Teig in das Teigbecken  geben, zudecken und für **90 Minuten** bei Raumtemperatur aufgehen lassen.
 
-In der Zwischenzeit den Teig einmal dehnen und falten.
+In der Zwischenzeit den Teig einmal [[Dehnen und Falten]].
 
 ---
 **Formen**
