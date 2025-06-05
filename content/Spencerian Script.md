@@ -5,13 +5,13 @@
 
 # Inspiration
 
-## Overview
-
-![[Attachments/Pasted image 20250605232547.png]][^1]
-
 ## Simplistic
 
 ![[Attachments/Pasted image 20250605232636.png]][^3]
+
+## Rounded
+
+![[Attachments/Pasted image 20250605232547.png]][^1]
 
 ## Fancy
 
