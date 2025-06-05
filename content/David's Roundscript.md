@@ -5,4 +5,4 @@
 
 My own Round script, based mainly on [[CJ Roundscript]].
 
-![[20250605_223654.jpg]]
+![[Attachments/20250605_223654.jpg]]

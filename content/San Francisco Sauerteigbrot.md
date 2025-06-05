@@ -3,7 +3,7 @@
 ---
 
 
-![[Pasted image 20250605231523.png|200]][^1]
+![[Attachments/Pasted image 20250605231523.png|200]][^1]
 
 # Beschreibung
 
@@ -12,7 +12,7 @@
 
 # Zutaten
 
-- 8 g [[Sourdough Starter\|Anstellgut]]
+- 8 g [[Anstellgut]]
 - 210 g Wasser
 	- hiervon 150 g schon im Voraus kalt stellen
 	- +10-15 g für die [[Bassinage]]
@@ -24,11 +24,11 @@
 ---
 **Sauerteig**
 
-- 8 g [[Sourdough Starter\|Anstellgut]]
+- 8 g [[Anstellgut]]
 - 60 g Wasser, 30-60 °C abhängig von der Temperatur des Anstellguts
 - 60 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
 
-Das Wasser zum ==Anstellgut== in eine Schüssel geben und etwas aufschlämmen.
+Das Wasser zum ==Anstellgut== in eine Schüssel geben und etwas [[Anstellgut#Aufschlämmen\|aufschlämmen]].
 
 Das Mehl hinzugeben und alles klumpenfrei vermischen.
 

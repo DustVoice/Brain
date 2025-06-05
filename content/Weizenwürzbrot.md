@@ -9,7 +9,7 @@ Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine safti
 
 # Zutaten
 
-- 35-40 g [[Sourdough Starter\|Anstellgut]]
+- 35-40 g [[Anstellgut]]
 - 500 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
 - 300 g [[Rye Flour (Type 1150)\|Roggenmehl (Typ 1150)]]
 - 200 g [[Whole Wheat Flour\|Weizenvollkornmehl]]
@@ -24,11 +24,11 @@ Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine safti
 ---
 **Sauerteig-Vorteig**
 
-- 35-40 g [[Sourdough Starter\|Anstellgut]]
+- 35-40 g [[Anstellgut]]
 - 200 g Wasser
 - 200 g [[Rye Flour (Type 1150)\|Roggenmehl (Typ 1150)]]
 
-Das Anstellgut mit Wasser in eine Schüssel geben und aufschlämmen, d.h. zusammen vermischen.
+Das Anstellgut mit Wasser in eine Schüssel geben und [[Anstellgut#Aufschlämmen\|aufschlämmen]].
 
 Das Roggenmehl dazugeben und alles gründlich miteinander vermischen.
 

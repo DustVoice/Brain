@@ -3,18 +3,16 @@
 ---
 
 
-![[Images/20241008_152145.jpg|200]]
+[[Rye Crust\|English Version]]
 
 # Beschreibung
-
-[[Rye Crust\|English Version]]
 
 Ein reichhaltiges, aber dennoch balanciertes Roggenmischbrot.
 Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine saftige Krume, die nicht zu dicht und fest ist.
 
 # Zutaten
 
-- 45 g [[Sourdough Starter\|Anstellgut]]
+- 45 g [[Anstellgut]]
 - 410 g Wasser
 - 360 g [[Rye Flour (Type 997)#T 1150\|Roggenmehl (Typ 997)]]
 - 210 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
@@ -24,11 +22,11 @@ Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine safti
 ---
 **Sauerteig**
 
-- 45 g [[Sourdough Starter\|Anstellgut]]
+- 45 g [[Anstellgut]]
 - 150 g Wasser, 30-60 °C abhängig von der Temperatur des Anstellguts
 - 150 g [[Rye Flour (Type 997)\|Roggenmehl (Typ 997)]]
 
-Das ==Anstellgut== gut mit dem ==Wasser== aufschlämmen.
+Das ==Anstellgut== gut mit dem ==Wasser== [[Anstellgut#Aufschlämmen\|aufschlämmen]].
 
 Das ==Mehl== hinzufügen und gründlich durchmischen.
 Hier bedarf es jedoch keines Knetens.
