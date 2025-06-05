@@ -8,10 +8,9 @@
 # Beschreibung
 
 > [!quote]
-> Mit seiner unverwechselbaren, leicht säuerlichen Note und der goldbraunen, knusprigen Kruste bringt dieses San Francisco Sourdoughbread den authentischen Geschmack der amerikanischen Kultstadt direkt auf deinen Tisch.
+> Mit seiner unverwechselbaren, leicht säuerlichen Note und der goldbraunen, knusprigen Kruste bringt dieses San Francisco Sourdoughbread den authentischen Geschmack der amerikanischen Kultstadt direkt auf deinen Tisch. 
 > 
-> ---
-> _[Marcel Paa](https://www.marcelpaa.com/rezepte/san-francisco-sourdoughbread/)_
+> -- [Marcel Paa](https://www.marcelpaa.com/rezepte/san-francisco-sourdoughbread/)
 
 # Zutaten
 
