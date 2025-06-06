@@ -14,6 +14,8 @@
 sudo dnf install pcsc-lite
 ```
 
+# Configure
+
 ## Polkit
 
 You need to add a polkit rule `/etc/polkit-1/rules.d/99-pcscd.rules`, to allow the users of the `smartcard` group access to the smart card

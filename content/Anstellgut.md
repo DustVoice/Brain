@@ -16,7 +16,7 @@ Meistens wird ein solch angesetzter Sauer(vor)teig bei Raumtemperatur gehen und 
 
 # Aufschlämmen
 
-Wenn man wie ich ein festes Anstellgut verwendet (ca. TA 150 - 170), sollte man dieses vor der Zugabe von Mehl, mit dem Wasser etwas [[Anstellgut#Aufschlämmen\|aufschlämmen]].
+Wenn man wie ich ein festes Anstellgut verwendet (ca. TA 150 - 170), sollte man dieses vor der Zugabe von Mehl, mit dem Wasser etwas aufschlämmen.
 
 Dies garantiert eine gleichmäßige Verteilung des Anstellguts im Sauerteigansatz.
 
