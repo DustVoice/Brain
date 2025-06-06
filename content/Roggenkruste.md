@@ -1,13 +1,12 @@
 ---
-{"publish":true,"created":"2025-05-26 22:34","tags":["bread","recipe"],"cssclasses":""}
+{"publish":true,"created":"2025-05-26 22:34","tags":["bread","recipe"],"cssclasses":"cards"}
 ---
 
+![[Attachments/20250606_165659.jpg|400]]
 
 [[Rye Crust\|English Version]]
 
 # Beschreibung
-
-![[Attachments/20241008_152145.jpg|200]]
 
 Ein reichhaltiges, aber dennoch balanciertes Roggenmischbrot.
 Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine saftige Krume, die nicht zu dicht und fest ist.
@@ -55,7 +54,8 @@ Für **8-12 Stunden** bei Raumtemperatur gären lassen.
 > 
 > | Gesamtwassermenge | 5 % | 10 % | 15 % | 20 % |
 > | - | - | - | - | - |
-> | 410 g | 41 g | 82 g | 123 g | 164 g |
+> | 410 g | 20,5 g | 41 g | 61,5 g | 82 g |
+
 
 Eine Küchenmaschine mit einem Knethaken vorbereiten.
 
