@@ -59,11 +59,9 @@ Die Gewürze in einem Mörser gut verreiben.
 > [!tip] Wasser
 > Wie immer, ist es empfehlenswert, 10-20% der Gesamtwassermenge (ausgenommen dem Anstellgut) erst einmal zurückzuhalten und dieses langsam nach Bedarf zum Ende der Knetphase als eine [[Bassinage]] hinzuzugeben.
 >  
-> | Reduktion | Wassermenge (Hauptteig) |
-> | - | - |
-> | 10% | 475 g |
-> | 15% | 437,5 g |
-> | 20% | 400 g |
+> | Gesamtwassermenge | 5 % | 10 % | 15 % | 20 % |
+> | - | - | - | - | - |
+> | 750 g | 37,5 g | 75 g | 112,5 g | 150 g |
 
 Die Mehle, das Wasser und das Salz zusammen mit den Gewürzen der Reihe nach in die Küchenmaschine geben.
 

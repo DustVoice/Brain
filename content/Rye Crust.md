@@ -51,11 +51,9 @@ Let it sit for **8-12 hours** at room temperature.
 > [!tip] Water
 > As always, retain 10-20% of the total water amount (excluding the starter) and add it as needed at the end of the kneading phase as a [[Bassinage]].
 > 
-> | Retention | Water volume (Main dough) |
-> | - | - |
-> | 10% | 220 g |
-> | 15% | 200 g |
-> | 20% | 180 g |
+> | Total Water Amount | 5 % | 10 % | 15 % | 20 % |
+> | - | - | - | - | - |
+> | 410 g | 20.5 g | 41 g | 61.5 g | 82 g |
 
 Prepare a kitchen machine with a kneading hook.
 

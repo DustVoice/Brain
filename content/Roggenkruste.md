@@ -53,11 +53,9 @@ Für **8-12 Stunden** bei Raumtemperatur gären lassen.
 > [!tip] Wassermenge
 > Wie immer, ist es empfehlenswert, 10-20% der Gesamtwassermenge (ausgenommen dem Anstellgut) erst einmal zurückzuhalten und dieses langsam nach Bedarf zum Ende der Knetphase als eine [[Bassinage]] hinzuzugeben.
 > 
-> | Reduktion | Wassermenge (Hauptteig) |
-> | - | - |
-> | 10% | 220 g |
-> | 15% | 200 g |
-> | 20% | 180 g |
+> | Gesamtwassermenge | 5 % | 10 % | 15 % | 20 % |
+> | - | - | - | - | - |
+> | 410 g | 41 g | 82 g | 123 g | 164 g |
 
 Eine Küchenmaschine mit einem Knethaken vorbereiten.
 
