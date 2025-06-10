@@ -29,3 +29,19 @@ Set up [[win32yank]] and make sure that your Windows `PATH` (or specifically win
 ## Native clipboard
 
 Set up [[Clipboard Handling]].
+
+# [[Copilot]]
+
+In my [[Dotfiles]], specifically in my Neovim configuration, I configure [[Copilot]].
+
+If you have a GitHub account, Copilot should be available to you.
+
+To authenticate with Copilot, you simply have to
+
+1. Run `:Copilot auth` within Neovim.
+2. Copy the displayed one-time-code.
+3. Go to https://github.com/login/device.
+4. Log into your GitHub account.
+5. Paste the previously copied one-time-code.
+6. Return to your Neovim instance.
+7. Wait until the popup closes.
