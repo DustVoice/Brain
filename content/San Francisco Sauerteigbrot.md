@@ -101,11 +101,11 @@ Den Teigling direkt auf den heißen Backstahl abschieben.
 
 Die Ofentemperatur auf **220 °C** reduzieren und den Ofen bedampfen.
 
-**20 Minuten** mit Dampf backen.
+**15 Minuten** mit Dampf backen.
 
 Den Dampf ablassen.
 
-Weitere **25-30 Minuten** ausbacken.
+Weitere **20-25 Minuten** ausbacken.
 
 Das Brot auf einem Gitter mindestens **1 Stunde** gut auskühlen lassen.
 

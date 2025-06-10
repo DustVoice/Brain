@@ -105,10 +105,18 @@ curl https://fedoraproject.org
 To make WSL proxy-aware, I needed to
 
 1. Add the exports to the `~/.bashrc`
-```sh title="~/.bashrc" {1-3}
-export http_proxy=http://<hostname>:<port>
-export https_proxy=$http_proxy
-export ftp_proxy=$http_proxy
+```sh title="~/.bashrc" {1-11} /<hostname>/ /<port>/
+PROXY_URL="http://<hostname>:<port>"
+export all_proxy="$PROXY_URL"
+export http_proxy="$PROXY_URL"
+export https_proxy="$PROXY_URL"
+export ftp_proxy="$PROXY_URL"
+export no_proxy="127.0.0.1,0.0.0.0,localhost"
+export ALL_PROXY="$PROXY_URL"
+export HTTP_PROXY="$PROXY_URL"
+export HTTPS_PROXY="$PROXY_URL"
+export FTP_PROXY="$PROXY_URL"
+export NO_PROXY="$no_proxy"
 ```
 2. Source it
 ```sh
@@ -116,7 +124,7 @@ source ~/.bashrc
 ```
 3. Allow `sudo` to pass these environment variables through by setting the `env_keep` property in `/etc/sudoers.d/proxy`
 ```text title="/etc/sudoers.d/proxy"
-Defaults env_keep += "http_proxy https_proxy ftp_proxy"
+Defaults env_keep += "all_proxy http_proxy https_proxy ftp_proxy no_proxy ALL_PROXY HTTP_PROXY HTTPS_PROXY FTP_PROXY NO_PROXY"
 ```
 
 Rerunning the `curl`-command should now produce a response, and your system should update just fine.

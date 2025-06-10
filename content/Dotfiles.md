@@ -24,13 +24,15 @@ Make sure to [[Chezmoi#Install and Apply]] my (or you) dotfile repo to proceed.
 
 # Neovim
 
-I normally use a [[Neovim]] config that makes use of a couple of additional tools, so it might make sense to ensure that they're installed and set up
+I normally use a [[Neovim]] config that makes use of a couple of additional tools, so it might make sense to ensure that they're installed and set up.
 
 > [!todo] Install and Configure
 > - [[wget]]
 > - [[ripgrep]]
 > - [[fd]]
 > - [[fzf]]
+> - [[xz]]
+> - [[Jujutsu]]
 > - [[NodeJS]]
 > - [[Python]]
 > - [[Tree-sitter]]
