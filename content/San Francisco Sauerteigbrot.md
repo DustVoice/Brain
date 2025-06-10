@@ -60,11 +60,15 @@ Das ==Wasser== als [[Bassinage]] nach und nach schluckweise unter den Teig knete
 
 Den Teig in ein leicht gefettetes Teigbecken geben und zudecken.
 
-Für **2 Stunden** bei Raumtemperatur aufgehen lassen.
+Bei Raumtemperatur **30 Minuten** gehen lassen.
 
-Nach **30 Minuten** [[Dehnen und Falten]]**.
+[[Dehnen und Falten]].
 
-Nach weiteren **30 Minuten** [[Dehnen und Falten]]
+Weitere **30 Minuten** gehen lassen.
+
+[[Dehnen und Falten]].
+
+**1 weitere Stunde** gehen lassen.
 
 ---
 **Formen**

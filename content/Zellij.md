@@ -7,7 +7,7 @@ The better [[tmux]].
 
 # Install
 
-## [[Rust#Cargo]]
+## [[Cargo]]
 
 ```sh
 cargo install zellij

@@ -5,7 +5,7 @@
 
 # Install
 
-## [[Rust#Cargo]]
+## [[Cargo]]
 
 ```sh
 cargo install eza

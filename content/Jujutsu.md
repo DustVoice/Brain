@@ -5,10 +5,8 @@
 
 # Install
 
-## [[Rust#Cargo]]
+## [[Cargo#binstall]]
 
 ```sh
-cargo install jujutsu
+cargo binstall --strategies crate-meta-data jj-cli
 ```
-
-
