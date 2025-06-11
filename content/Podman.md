@@ -24,6 +24,12 @@ systemctl --user daemon-reload
 
 This generates appropriate `.service` files.
 
+## Enable the service
+
+```sh
+systemctl --user enable name.service
+```
+
 ## Start the service
 
 ```sh /name/
