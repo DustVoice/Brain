@@ -49,7 +49,7 @@ In the [[Vaultwarden#Vaultwarden\|container file]], we specify an environment fi
 This [specifies environment variables available to the container](https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page#secure-the-admin_token).
 
 > [!danger] Secret information
-> This file will [contain secret information)(https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page#secure-the-admin_token).
+> This file will [contain secret information](https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page#secure-the-admin_token).
 > If you made sure, to [[Fedora Server#Secure the SSH\|secure your server from outside access]], you should be fine.
 > Still, you could consider hardening the access to this file even further.
 > You can't however simply only give `root` access to the file, as podman runs _unprivileged_ and won't be able to access the file.
