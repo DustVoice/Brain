@@ -1,5 +1,5 @@
 ---
-{"publish":true,"lang":"en","created":"2025-05-30 14:34","cssclasses":""}
+{"publish":true,"aliases":"jj","lang":"en","created":"2025-05-30 14:34","cssclasses":""}
 ---
 
 
