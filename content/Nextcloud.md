@@ -31,11 +31,7 @@ First off, create all the necessary directories:
 mkdir -p ~/containers/nextcloud/{data,db,html,caddy/data,caddy/logs}
 ```
 
-## Files
-
-Next, we need to create the necessary files.
-
-### Backend Caddyfile
+## Backend Caddyfile
 
 First, we tell the [[Nextcloud#^15ddf5\|Caddy instance within the pod]] (which I'll refer to as the _backend_ instance), how to serve the Nextcloud by creating the necessary `Caddyfile` within `~/containers/nextcloud/caddy/config`:
 
@@ -85,13 +81,13 @@ This will
 
 The [[Nextcloud#Pod\|pod configuration]] will take care of forwarding an actual _outside/system_ port to this _pod-internal_ one.
 
-### Frontend Caddyfile
+## Frontend Caddyfile
 
 As mentioned, the _external_ caddy instance (which I will refer to as the _frontend_ instance) is used for reverse proxying. Note that the _backend_ caddy instance expects incoming traffic on port `8080`, as specified in [[Nextcloud#Caddy\|its container config]].
 
 Therefore, we simply add a section to the (already present) [[Caddy#Caddyfile]] under `~/containers/caddy/config/Caddyfile`
 
-```sh title="~/containers/caddy/config/Caddyfile" /NEXTCLOUD_DOMAIN/
+```sh title="~/containers/caddy/config/Caddyfile" {1-12} /NEXTCLOUD_DOMAIN/
 {$NEXTCLOUD_DOMAIN} {
 	import subdomain-log {$NEXTCLOUD_DOMAIN}
 
@@ -205,7 +201,7 @@ podman secret create nextcloud-mariadb-password pass.txt
 > Please remember to purge the password file afterwards!
 > You can store the password securely in a password manager if you want, but you shouldn't have unencrypted plaintext passwords on your system.
 
-#### Unit file
+#### Container File
 
 Create the `~/.config/containers/systemd/nextcloud-db.container` file
 
@@ -234,6 +230,7 @@ WantedBy=default.target
 
 > [!todo] Replace
 > - `user` : username used for running the [[Podman#Rootless\|rootless podman instance]].
+
 ### Redis
 
 For caching and other tasks, [redis](https://redis.io) is a pretty standard choice. I actually planned to use [Valkey](https://valkey.io), but ended up using redis for now.
@@ -241,7 +238,7 @@ Simply enough, I simply copied [this container file](https://codeberg.org/mjack/
 
 Create the file under `~/.config/containers/systemd/nextcloud-redis.container`:
 
-```systemd title="~/.config/containers/systemd/nextcloud-db.container"
+```systemd title="~/.config/containers/systemd/nextcloud-redis.container"
 [Unit]
 Description=Nextcloud Redis
 
@@ -292,6 +289,7 @@ WantedBy=default.target
 > [!todo] Replace
 > - `user` : username used for running the [[Podman#Rootless\|rootless podman instance]].
 > - `NEXTCLOUD_DOMAIN` : [[FQDN]] of the Nextcloud instance
+
 ## Boot it up
 
 ### Reload
@@ -333,7 +331,7 @@ systemctl --user restart caddy.service
 
 ## Set it up
 
-You should _(hopefully)_ now be able to access your Nextcloud installer unde the domain you specified
+You should _(hopefully)_ now be able to access your Nextcloud installer under the [[FQDN]] you specified
 
 ![[Caddy#Debug]]
 

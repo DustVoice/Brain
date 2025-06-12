@@ -19,19 +19,17 @@ First off, create all the necessary directories:
 mkdir -p ~/containers/vaultwarden/{data,env}
 ```
 
-## Files
-
-Next, we need to create the necessary files.
-
-### Frontend Caddyfile
+## Frontend Caddyfile
 
 I use a _frontend_ caddy instance for reverse proxying to Vaultwarden.
 Note that the Vaultwarden container expects incoming traffic on port `8000`, as specified in [[Vaultwarden#Vaultwarden\|its container config]].
 
 Therefore, we simply add a section to the (already present) [[Caddy#Caddyfile]] under `~/containers/caddy/config/Caddyfile`
 
-```text title="~/containers/caddy/config/Caddyfile" /FQDN/
+```text title="~/containers/caddy/config/Caddyfile" {1-9} /FQDN/
 {$VAULTWARDEN_DOMAIN} {
+	import subdomain-log {$VAULTWARDEN_DOMAIN}
+	
 	reverse_proxy http://host.containers.internal:8000 {
 		# Send the true remote IP to Rocket, so that Vaultwarden can put this in the
 		# log, so that fail2ban can ban the correct IP.
@@ -43,9 +41,14 @@ Therefore, we simply add a section to the (already present) [[Caddy#Caddyfile]] 
 > [!todo] [[Caddy#Environment variables]]
 > `VAULTWARDEN_DOMAIN` : [[FQDN]] of the Vaultwarden instance
 
-### Environment file
+## Containers
 
-In the [[Vaultwarden#Vaultwarden\|container file]], we specify an environment file.
+### Vaultwarden
+
+We can now simply create a _main Vaultwarden container_.
+
+#### Environment File
+
 This [specifies environment variables available to the container](https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page#secure-the-admin_token).
 
 > [!danger] Secret information
@@ -69,11 +72,7 @@ LOG_FILE=/var/log/vaultwarden/vaultwarden.log
 Vaultwarden will then serve the service over this port _within the container_.
 We later redirect an _outside_ port to this in the [[Vaultwarden#Vaultwarden\|container config]].
 
-## Containers
-
-### Vaultwarden
-
-We simply create a _main Vaultwarden container_.
+#### Container File
 
 Create the file under `~/.config/containers/systemd/vaultwarden.container`
 
@@ -86,9 +85,9 @@ After=network-online.target
 AutoUpdate=registry
 Image=ghcr.io/dani-garcia/vaultwarden:latest
 Exec=/start.sh
-EnvironmentFile=/home/dustvoice/containers/vaultwarden/vaultwarden.env
-Volume=/home/dustvoice/containers/vaultwarden/data:/data:Z
-Volume=/home/dustvoice/containers/vaultwarden/logs:/var/log/vaultwarden:z
+EnvironmentFile=/home/user/containers/vaultwarden/vaultwarden.env
+Volume=/home/user/containers/vaultwarden/data:/data:Z
+Volume=/home/user/containers/vaultwarden/logs:/var/log/vaultwarden:z
 PublishPort=8000:8080
 
 [Install]
@@ -97,6 +96,7 @@ WantedBy=default.target
 
 > [!todo] Replace
 > - `user` : username used for running the [[Podman#Rootless\|rootless podman instance]].
+
 ## Boot it up
 
 ### Reload

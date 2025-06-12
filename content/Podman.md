@@ -24,6 +24,14 @@ systemctl --user daemon-reload
 
 This generates appropriate `.service` files.
 
+> [!tip]
+> Sometimes, this can fail and _not_ generate a `.service` file.
+> To debug this, immediately drop into the user journal, to see any error messages
+>  
+> ```sh /;/
+> systemctl --user daemon-reload --no-block; journalctl --user -f
+> ```
+
 ## Enable the service
 
 ```sh
@@ -56,6 +64,14 @@ or
 journalctl --user -xeu name.service
 ```
 
+> [!tip]
+> Sometimes, the non-service-specific journal can be helpful in debugging a problem.
+> In that case, simply restart the service and immediately drop into the journal:
+> 
+> ```sh /;/
+> systemctl --user restart name.service --no-block; journalctl --user -f
+> ```
+
 ## Keep it running
 
 As a rootless setup doesn't use a system-level service, all services would be stopped upon logout.
@@ -68,7 +84,7 @@ loginctl enable-linger user
 
 ## Auto-Update
 
-If you enabled the auto update feature using the `AutoUpdate` key in the `.container` file, you still need to enable the auto update timer
+If you enabled the auto-update feature using the `AutoUpdate` key in the `.container` file, you still need to enable the auto-update timer
 
 ```sh
 systemctl --user enable --now podman-auto-update.timer
