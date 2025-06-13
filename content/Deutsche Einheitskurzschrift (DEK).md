@@ -95,112 +95,132 @@
 
 ### Kürzel
 
-|                                                                                                                                                                                                                             Maschinenschrift | Handschrift         |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | ------------------- |
-|                                                                                                                                                                                                                                          all | ![[Attachments/DEK/all.jpg]]        |
-|                                                                                                                                                                                                                                          als | ![[Attachments/DEK/als.jpg]]        |
-|                                                                                                                                                                                                                                         also | ![[Attachments/DEK/also.jpg]]       |
-|                                                                                                                                                                                                                                        ander | ![[Attachments/DEK/ander.jpg]]      |
-|                                                                                                                                                                                                                                         ant- | ![[Attachments/DEK/ant.jpg]]        |
-|                                                                                                                                                                                                                                          auf | ![[Attachments/DEK/auf.jpg]]        |
-|                                                                                                                                                                                                                                          auf | ![[Attachments/DEK/auf.jpg]]        |
-|                                                                                                                                                                                                                        besonder<br>besonders | ![[Attachments/DEK/besonders.jpg]]  |
-|                                                                                                                                                                                                                                          bis | ![[Attachments/DEK/bis.jpg]]        |
-|                                                                                                                                                                                                                                          da- | ![[Attachments/DEK/da.jpg]]         |
-|                                                                                                                                                                                                                                          dar | ![[Attachments/DEK/dar.jpg]]        |
-|                                                                                                                                                                                                                                  das<br>dass | ![[Attachments/DEK/dass.jpg]]       |
-|                                                                                                                                                                                                                                         d.h. | ![[Attachments/DEK/d.h..jpg]]       |
-|                                                                                                                                                                                                                                          dem | ![[Attachments/DEK/dem.jpg]]        |
-|                                                                                                                                                                                                                                          den | ![[Attachments/DEK/den.jpg]]        |
-|                                                                                                                                                                                                                                          der | ![[Attachments/DEK/der.jpg]]        |
-|                                                                                                                                                                                                                                          des | ![[Attachments/DEK/des.jpg]]        |
-|                                                                                                                                                                                                                                       dessen | ![[Attachments/DEK/dessen.jpg]]     |
-|                                                                                                                                                                                                                                      deutsch | ![[Attachments/DEK/deutsch.jpg]]    |
-|                                                                                                                                                                                                                                          die | ![[Attachments/DEK/die.jpg]]        |
-|                                                                                                                                                                                                                                         dies | ![[Attachments/DEK/dies.jpg]]       |
-|                                                                                                                                                                                                                                         doch | ![[Attachments/DEK/doch.jpg]]       |
-|                                                                                                                                                                                                                                Dr.<br>Doktor | ![[Attachments/DEK/Dr..jpg]]        |
-|                                                                                                                                                                                                                                        durch | ![[Attachments/DEK/durch.jpg]]      |
-| eine<br>einem<br>einen<br>einer<br>eines<br>deine<br>deinem<br>deinen<br>deiner<br>deines<br>keine<br>keinem<br>keinen<br>keiner<br>keines<br>meine<br>meinem<br>meinen<br>meiner<br>meines<br>seine<br>seinem<br>seinen<br>seiner<br>seines | ![[Attachments/DEK/eine.jpg]]       |
-|                                                                                                                                                                                                                                         ent- | ![[Attachments/DEK/ent.jpg]]        |
-|                                                                                                                                                                                                                                        er(-) | ![[Attachments/DEK/er.jpg]]         |
-|                                                                                                                                                                                                                                           es | ![[Attachments/DEK/es.jpg]]         |
-|                                                                                                                                                                                                                                         fort | ![[Attachments/DEK/fort.jpg]]       |
-|                                                                                                                                                                                                                                          für | ![[Attachments/DEK/für.jpg]]        |
-|                                                                                                                                                                                                                                          ge- | ![[Attachments/DEK/ge.jpg]]         |
-|                                                                                                                                                                                                                                        gegen | ![[Attachments/DEK/gegen.jpg]]      |
-|                                                                                                                                                                                                                        hab...<br>hast<br>hat | ![[Attachments/DEK/hat.jpg]]        |
-|                                                                                                                                                                                                                                        -haft | ![[Attachments/DEK/haft.jpg]]       |
-|                                                                                                                                                                                                                                       hat... | ![[Attachments/DEK/hat.jpg]]        |
-|                                                                                                                                                                                                                                      hätt... | ![[Attachments/DEK/hätt.jpg]]       |
-|                                                                                                                                                                                                                                        -heit | ![[Attachments/DEK/heit.jpg]]       |
-|                                                                                                                                                                                                                                          her | ![[Attachments/DEK/her.jpg]]        |
-|                                                                                                                                                                                                                                          hin | ![[Attachments/DEK/hin.jpg]]        |
-|                                                                                                                                                                                                                                      hint... | ![[Attachments/DEK/hint.jpg]]       |
-|                                                                                                                                                                                                                                          ich | ![[Attachments/DEK/ich.jpg]]        |
-|                                                                                                                                                                                                                                           in | ![[Attachments/DEK/in.jpg]]         |
-|                                                                                                                                                                                                                                          ist | ![[Attachments/DEK/ist.jpg]]        |
-|                                                                                                                                                                                                                               kann<br>kannst | ![[Attachments/DEK/kannst.jpg]]     |
-|                                                                                                                                                                                                                                      könn... | ![[Attachments/DEK/könn.jpg]]       |
-|                                                                                                                                                                                                                                     konnt... | ![[Attachments/DEK/konnt.jpg]]      |
-|                                                                                                                                                                                                                                        -keit | ![[Attachments/DEK/keit.jpg]]       |
-|                                                                                                                                                                                                                                         kon- | ![[Attachments/DEK/kon.jpg]]        |
-|                                                                                                                                                                                                                                        -lich | ![[Attachments/DEK/lich.jpg]]       |
-|                                                                                                                                                                                                                                        miss- | ![[Attachments/DEK/miss.jpg]]       |
-|                                                                                                                                                                                                                                  mit<br>mitt | ![[Attachments/DEK/mitt.jpg]]       |
-|                                                                                                                                                                                                                                        nicht | ![[Attachments/DEK/nicht.jpg]]      |
-|                                                                                                                                                                                                                              niedr<br>nieder | ![[Attachments/DEK/nieder.jpg]]     |
-|                                                                                                                                                                                                                                         noch | ![[Attachments/DEK/noch.jpg]]       |
-|                                                                                                                                                                                                                                          nur | ![[Attachments/DEK/nur.jpg]]        |
-|                                                                                                                                                                                                                                  ohn<br>ohne | ![[Attachments/DEK/ohne.jpg]]       |
-|                                                                                                                                                                                                                                        rück- | ![[Attachments/DEK/rück.jpg]]       |
-|                                                                                                                                                                                                                                      -schaft | ![[Attachments/DEK/schaft.jpg]]     |
-|                                                                                                                                                                                                                                        schon | ![[Attachments/DEK/schon.jpg]]      |
-|                                                                                                                                                                                                                                          sei | ![[Attachments/DEK/sei.jpg]]        |
-|                                                                                                                                                                                                                                       selbst | ![[Attachments/DEK/selbst.jpg]]     |
-|                                                                                                                                                                                                                                         sich | ![[Attachments/DEK/sich.jpg]]       |
-|                                                                                                                                                                                                                                          sie | ![[Attachments/DEK/sie.jpg]]        |
-|                                                                                                                                                                                                                                         sind | ![[Attachments/DEK/sind.jpg]]       |
-|                                                                                                                                                                                                                                           so | ![[Attachments/DEK/so.jpg]]         |
-|                                                                                                                                                                                                                                        solch | ![[Attachments/DEK/solch.jpg]]      |
-|                                                                                                                                                                                                                               soll<br>sollst | ![[Attachments/DEK/sollst.jpg]]     |
-|                                                                                                                                                                                                                 sonder<br>sondern<br>sonders | ![[Attachments/DEK/sondern.jpg]]    |
-|                                                                                                                                                                                                                              -tum<br>-tüm... | ![[Attachments/DEK/tum.jpg]]        |
-|                                                                                                                                                                                                                                  übr<br>über | ![[Attachments/DEK/über.jpg]]       |
-|                                                                                                                                                                                                                                          un- | ![[Attachments/DEK/un.jpg]]         |
-|                                                                                                                                                                                                                                          und | ![[Attachments/DEK/und.jpg]]        |
-|                                                                                                                                                                                                                                         usw. | ![[Attachments/DEK/usw.jpg]]        |
-|                                                                                                                                                                                                                                         -ung | ![[Attachments/DEK/ung.jpg]]        |
-|                                                                                                                                                                                                                                       -l-ung | ![[Attachments/DEK/lung.jpg]]       |
-|                                                                                                                                                                                                                                       -r-ung | ![[Attachments/DEK/rung.jpg]]       |
-|                                                                                                                                                                                                                                          uns | ![[Attachments/DEK/uns.jpg]]        |
-|                                                                                                                                                                                                                                        unser | ![[Attachments/DEK/unser.jpg]]      |
-|                                                                                                                                                                                                                                        unter | ![[Attachments/DEK/unter.jpg]]      |
-|                                                                                                                                                                                                                                         ver- | ![[Attachments/DEK/ver.jpg]]        |
-|                                                                                                                                                                                                                                   vielleicht | ![[Attachments/DEK/vielleicht.jpg]] |
-|                                                                                                                                                                                                                                         voll | ![[Attachments/DEK/voll.jpg]]       |
-|                                                                                                                                                                                                                                      völl... | ![[Attachments/DEK/völl.jpg]]       |
-|                                                                                                                                                                                                                                          vom | ![[Attachments/DEK/vom.jpg]]        |
-|                                                                                                                                                                                                                                          von | ![[Attachments/DEK/von.jpg]]        |
-|                                                                                                                                                                                                                                          vor | ![[Attachments/DEK/vor.jpg]]        |
-|                                                                                                                                                                                                                                         wenn | ![[Attachments/DEK/wenn.jpg]]       |
-|                                                                                                                                                                                                                                      werd... | ![[Attachments/DEK/werd.jpg]]       |
-|                                                                                                                                                                                                                               widr<br>wieder | ![[Attachments/DEK/wieder.jpg]]     |
-|                                                                                                                                                                                                                               will<br>willst | ![[Attachments/DEK/willst.jpg]]     |
-|                                                                                                                                                                                                                                      woll... | ![[Attachments/DEK/woll.jpg]]       |
-|                                                                                                                                                                                                                                          wir | ![[Attachments/DEK/wir.jpg]]        |
-|                                                                                                                                                                                                                                wird<br>wirst | ![[Attachments/DEK/wird.jpg]]       |
-|                                                                                                                                                                                                                                           wo | ![[Attachments/DEK/wo.jpg]]         |
-|                                                                                                                                                                                                                                       worden | ![[Attachments/DEK/worden.jpg]]     |
-|                                                                                                                                                                                                                                wurd<br>wurde | ![[Attachments/DEK/wurde.jpg]]      |
-|                                                                                                                                                                                                                                würd<br>würde | ![[Attachments/DEK/würde.jpg]]      |
-|                                                                                                                                                                                                                                         zer- | ![[Attachments/DEK/zer.jpg]]        |
-|                                                                                                                                                                                                                                           zu | ![[Attachments/DEK/zu.jpg]]         |
-|                                                                                                                                                                                                                                       zurück | ![[Attachments/DEK/zurück.jpg]]     |
-|                                                                                                                                                                                                                                          zum | ![[Attachments/DEK/zum.jpg]]        |
-|                                                                                                                                                                                                                                          zur | ![[Attachments/DEK/zur.jpg]]        |
-|                                                                                                                                                                                                                                     zusammen | ![[Attachments/DEK/zusammen.jpg]]   |
-|                                                                                                                                                                                                                                     zwischen | ![[Attachments/DEK/zwischen.jpg]]   |
+#### a
+
+| | | | | | | |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| ![[all.jpg\|25]]<br><br>all | ![[als.jpg\|25]]<br><br>als | ![[also.jpg\|25]]<br><br>also | ![[ander.jpg\|25]]<br><br>ander | ![[ant.jpg\|25]]<br><br>ant- | ![[auf.jpg\|25]]<br><br>auf | ![[auf.jpg\|25]]<br><br>auf |
+
+#### b
+
+| | |
+| :--: | :--: |
+| ![[besonders.jpg\|25]]<br><br>besonder<br>besonders | ![[bis.jpg\|25]]<br><br>bis |
+
+#### d
+
+| | | | | | | | | | | | | | | |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| ![[da.jpg\|25]]<br><br>da- | ![[dar.jpg\|25]]<br><br>dar | ![[dass.jpg\|25]]<br><br>das<br>dass | ![[d.h..jpg\|25]]<br><br>d.h. | ![[dem.jpg\|25]]<br><br>dem | ![[den.jpg\|25]]<br><br>den | ![[der.jpg\|25]]<br><br>der | ![[des.jpg\|25]]<br><br>des | ![[dessen.jpg\|25]]<br><br>dessen | ![[deutsch.jpg\|25]]<br><br>deutsch | ![[die.jpg\|25]]<br><br>die | ![[dies.jpg\|25]]<br><br>dies | ![[doch.jpg\|25]]<br><br>doch | ![[Dr..jpg\|25]]<br><br>Dr.<br>Doktor | ![[durch.jpg\|25]]<br><br>durch |
+
+#### e
+
+| | | | |
+| :--: | :--: | :--: | :--: |
+| ![[eine.jpg\|25]]<br><br>eine<br>einem, einen, einer, eines<br>deine, deinem, deinen, deiner, deines<br>keine, keinem, keinen, keiner, keines<br>meine, meinem, meinen, meiner, meines<br>seine, seinem, seinen, seiner, seines | ![[ent.jpg\|25]]<br><br>ent- | ![[er.jpg\|25]]<br><br>er(-) | ![[es.jpg\|25]]<br><br>es |
+
+#### f
+
+| | |
+| :--: | :--: |
+| ![[fort.jpg\|25]]<br><br>fort | ![[für.jpg\|25]]<br><br>für |
+
+#### g
+
+| | |
+| :--: | :--: |
+| ![[ge.jpg\|25]]<br><br>ge- | ![[gegen.jpg\|25]]<br><br>gegen |
+
+#### h
+
+| | | | | | | | |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| ![[hat.jpg\|25]]<br><br>hab...<br>hast<br>hat | ![[haft.jpg\|25]]<br><br>-haft | ![[hat.jpg\|25]]<br><br>hat... | ![[hätt.jpg\|25]]<br><br>hätt... | ![[heit.jpg\|25]]<br><br>-heit | ![[her.jpg\|25]]<br><br>her | ![[hin.jpg\|25]]<br><br>hin | ![[hint.jpg\|25]]<br><br>hint... |
+
+#### i
+
+| | | |
+| :--: | :--: | :--: |
+| ![[ich.jpg\|25]]<br><br>ich | ![[in.jpg\|25]]<br><br>in | ![[ist.jpg\|25]]<br><br>ist |
+
+#### k
+
+| | | | | |
+| :--: | :--: | :--: | :--: | :--: |
+| ![[kannst.jpg\|25]]<br><br>kann<br>kannst | ![[könn.jpg\|25]]<br><br>könn... | ![[konnt.jpg\|25]]<br><br>konnt... | ![[keit.jpg\|25]]<br><br>-keit | ![[kon.jpg\|25]]<br><br>kon- |
+
+#### l
+
+| |
+| :--: |
+| ![[lich.jpg\|25]]<br><br>-lich |
+| ![[miss.jpg\|25]]<br><br>miss- |
+
+#### m
+
+| |
+| :--: |
+| ![[mitt.jpg\|25]]<br><br>mit<br>mitt |
+
+#### n
+
+| | | | |
+| :--: | :--: | :--: | :--: |
+| ![[nicht.jpg\|25]]<br><br>nicht | ![[nieder.jpg\|25]]<br><br>niedr<br>nieder | ![[noch.jpg\|25]]<br><br>noch | ![[nur.jpg\|25]]<br><br>nur |
+
+#### o
+
+| |
+| :--: |
+| ![[ohne.jpg\|25]]<br><br>ohn<br>ohne |
+
+#### r
+
+| |
+| :--: |
+| ![[rück.jpg\|25]]<br><br>rück- |
+
+#### s
+
+| | | | | | | | | | | |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| ![[schaft.jpg\|25]]<br><br>-schaft | ![[schon.jpg\|25]]<br><br>schon | ![[sei.jpg\|25]]<br><br>sei | ![[selbst.jpg\|25]]<br><br>selbst | ![[sich.jpg\|25]]<br><br>sich | ![[sie.jpg\|25]]<br><br>sie | ![[sind.jpg\|25]]<br><br>sind | ![[so.jpg\|25]]<br><br>so | ![[solch.jpg\|25]]<br><br>solch | ![[sollst.jpg\|25]]<br><br>soll<br>sollst | ![[sondern.jpg\|25]]<br><br>sonder<br>sondern<br>sonders |
+
+#### t
+
+| |
+| :--: |
+| ![[tum.jpg\|25]]<br><br>-tum<br>-tüm... |
+
+#### ü
+
+| |
+| :--: |
+| ![[über.jpg\|25]]<br><br>übr<br>über |
+
+#### u
+
+| | | | | | | | | |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| ![[un.jpg\|25]]<br><br>un- | ![[und.jpg\|25]]<br><br>und | ![[usw.jpg\|25]]<br><br>usw. | ![[ung.jpg\|25]]<br><br>-ung | ![[lung.jpg\|25]]<br><br>-l-ung | ![[rung.jpg\|25]]<br><br>-r-ung | ![[uns.jpg\|25]]<br><br>uns | ![[unser.jpg\|25]]<br><br>unser | ![[unter.jpg\|25]]<br><br>unter |
+
+#### v
+
+| | | | | | | |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| ![[ver.jpg\|25]]<br><br>ver- | ![[vielleicht.jpg\|25]]<br><br>vielleicht | ![[voll.jpg\|25]]<br><br>voll | ![[völl.jpg\|25]]<br><br>völl... | ![[vom.jpg\|25]]<br><br>vom | ![[von.jpg\|25]]<br><br>von | ![[vor.jpg\|25]]<br><br>vor |
+
+#### w
+
+| | | | | | | | | | | |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| ![[wenn.jpg\|25]]<br><br>wenn | ![[werd.jpg\|25]]<br><br>werd... | ![[wieder.jpg\|25]]<br><br>widr<br>wieder | ![[willst.jpg\|25]]<br><br>will<br>willst | ![[woll.jpg\|25]]<br><br>woll... | ![[wir.jpg\|25]]<br><br>wir | ![[wird.jpg\|25]]<br><br>wird<br>wirst | ![[wo.jpg\|25]]<br><br>wo | ![[worden.jpg\|25]]<br><br>worden | ![[wurde.jpg\|25]]<br><br>wurd<br>wurde | ![[würde.jpg\|25]]<br><br>würd<br>würde |
+
+#### z
+
+| | | | | | | |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| ![[zer.jpg\|25]]<br><br>zer- | ![[zu.jpg\|25]]<br><br>zu | ![[zurück.jpg\|25]]<br><br>zurück | ![[zum.jpg\|25]]<br><br>zum | ![[zur.jpg\|25]]<br><br>zur | ![[zusammen.jpg\|25]]<br><br>zusammen | ![[zwischen.jpg\|25]]<br><br>zwischen |
 
 
 ## Regeln
