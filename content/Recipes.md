@@ -14,6 +14,7 @@ A categorized index of every recipe in my Brain
 | Roggenkruste                 | [[Rye Crust]] | [[Roggenkruste]]                |
 | Weizenwürzbrot               |               | [[Weizenwürzbrot]]              |
 | San Francisco Sourdoughbread |               | [[San Francisco Sauerteigbrot]] |
+| Vollkorn Bâtard Brot         |               | [[Vollkorn Bâtard Brot]]        |
 
 # Coffee
 

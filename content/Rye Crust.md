@@ -43,16 +43,13 @@ Let it sit for **8-12 hours** at room temperature.
 
 - Sourdough (previous step)
 - 260 g Water, warm
+	- 220 g = 10% Reduction
+	- 180 g = 20% Reduction
 - 210 g [[Wheat Flour (Type 550)]]
 - 210 g [[Rye Flour (Type 997)]]
 - 12 g Salt
 
-> [!tip] Water
-> As always, retain 10-20% of the total water amount (excluding the starter) and add it as needed at the end of the kneading phase as a [[Bassinage]].
-> 
-> | Total Water Amount | 5 % | 10 % | 15 % | 20 % |
-> | - | - | - | - | - |
-> | 410 g | 20.5 g | 41 g | 61.5 g | 82 g |
+![[Sourdough Bread#Wassermenge]]
 
 Prepare a kitchen machine with a kneading hook.
 
@@ -95,9 +92,4 @@ Let the steam out of the oven.
 
 Bake for another **10-15 minutes**.
 
-Let it cool for at least **1 hour**.
-
-> [!tip] Let it sit longer
-> Rye bread is tastier if you let it sit, for example, overnight.
-> The longer you wait and the more patient you are, the tastier it gets.
-> Until it gets hard of course.
+![[Sourdough Bread#Let it cool]]

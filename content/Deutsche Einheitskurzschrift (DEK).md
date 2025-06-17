@@ -7,225 +7,134 @@
 ## Zeichen
 
 ### Vokale
-
-| Maschinenschrift | Handschrift |
-| ---------------: | ----------- |
-|                a | ![[Attachments/DEK/a.jpg]]  |
-|               au | ![[Attachments/DEK/au.jpg]] |
-|                ä | ![[Attachments/DEK/ä.jpg]]  |
-|               äu | ![[Attachments/DEK/äu.jpg]] |
-|           e<br>ä | ![[Attachments/DEK/e.jpg]]  |
-|         ei<br>ai | ![[Attachments/DEK/ei.jpg]] |
-|               eu | ![[Attachments/DEK/eu.jpg]] |
-|                i | ![[Attachments/DEK/i.jpg]]  |
-|                o | ![[Attachments/DEK/o.jpg]]  |
-|                ö | ![[Attachments/DEK/ö.jpg]]  |
-|                u | ![[Attachments/DEK/u.jpg]]  |
-|                ü | ![[Attachments/DEK/ü.jpg]]  |
-|                y | ![[Attachments/DEK/y.jpg]]  |
+| ![[Attachments/DEK/a.jpg]] | ![[Attachments/DEK/au.jpg]] | ![[Attachments/DEK/ä.jpg]] | ![[Attachments/DEK/äu.jpg]] | ![[Attachments/DEK/e.jpg]] | ![[Attachments/DEK/ei.jpg]] | ![[Attachments/DEK/eu.jpg]] | ![[Attachments/DEK/i.jpg]] | ![[Attachments/DEK/o.jpg]] | ![[Attachments/DEK/ö.jpg]] | ![[Attachments/DEK/u.jpg]] | ![[Attachments/DEK/ü.jpg]] | ![[Attachments/DEK/y.jpg]] |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| a | au | ä | äu | e, ä | ei, ai | eu | i | o | ö | u | ü | y |
 
 ### Konsonanten(folgen)
-
-| Maschinenschrift | Handschrift   |
-| ---------------: | ------------- |
-|                b | ![[Attachments/DEK/b.jpg]]    |
-|               br | ![[Attachments/DEK/br.jpg]]   |
-|                c | ![[Attachments/DEK/c.jpg]]    |
-|               ch | ![[Attachments/DEK/ch.jpg]]   |
-|              cht | ![[Attachments/DEK/cht.jpg]]  |
-|               cr | ![[Attachments/DEK/cr.jpg]]   |
-|                d | ![[Attachments/DEK/d.jpg]]    |
-|               dr | ![[Attachments/DEK/dr.jpg]]   |
-|                f | ![[Attachments/DEK/f.jpg]]    |
-|               fr | ![[Attachments/DEK/fr.jpg]]   |
-|                g | ![[Attachments/DEK/g.jpg]]    |
-|               gr | ![[Attachments/DEK/gr.jpg]]   |
-|                h | ![[Attachments/DEK/h.jpg]]    |
-|                j | ![[Attachments/DEK/j.jpg]]    |
-|                k | ![[Attachments/DEK/k.jpg]]    |
-|               kr | ![[Attachments/DEK/kr.jpg]]   |
-|                l | ![[Attachments/DEK/l.jpg]]    |
-|                m | ![[Attachments/DEK/m.jpg]]    |
-|               mp | ![[Attachments/DEK/mp.jpg]]   |
-|              mpf | ![[Attachments/DEK/mpf.jpg]]  |
-|                n | ![[Attachments/DEK/n.jpg]]    |
-|               nd | ![[Attachments/DEK/nd.jpg]]   |
-|              ndr | ![[Attachments/DEK/ndr.jpg]]  |
-|               ng | ![[Attachments/DEK/ng.jpg]]   |
-|                p | ![[Attachments/DEK/p.jpg]]    |
-|               pf | ![[Attachments/DEK/pf.jpg]]   |
-|              pfr | ![[Attachments/DEK/pfr.jpg]]  |
-|               pr | ![[Attachments/DEK/pr.jpg]]   |
-|               qu | ![[Attachments/DEK/qu.jpg]]   |
-|                r | ![[Attachments/DEK/r.jpg]]    |
-|               rd | ![[Attachments/DEK/rd.jpg]]   |
-|               rr | ![[Attachments/DEK/rr.jpg]]   |
-|               rs | ![[Attachments/DEK/rs.jpg]]   |
-|                s | ![[Attachments/DEK/s.jpg]]    |
-|              sch | ![[Attachments/DEK/sch.jpg]]  |
-|             schm | ![[Attachments/DEK/schm.jpg]] |
-|             schn | ![[Attachments/DEK/schn.jpg]] |
-|             schr | ![[Attachments/DEK/schr.jpg]] |
-|             schw | ![[Attachments/DEK/schw.jpg]] |
-|               sp | ![[Attachments/DEK/sp.jpg]]   |
-|              spr | ![[Attachments/DEK/spr.jpg]]  |
-|               ss | ![[Attachments/DEK/ss.jpg]]   |
-|               st | ![[Attachments/DEK/st.jpg]]   |
-|              str | ![[Attachments/DEK/str.jpg]]  |
-|                t | ![[Attachments/DEK/t.jpg]]    |
-|               tr | ![[Attachments/DEK/tr.jpg]]   |
-|                v | ![[Attachments/DEK/v.jpg]]    |
-|                w | ![[Attachments/DEK/w.jpg]]    |
-|               wr | ![[Attachments/DEK/wr.jpg]]   |
-|                x | ![[Attachments/DEK/x.jpg]]    |
-|                y | ![[Attachments/DEK/y.jpg]]    |
-|                z | ![[Attachments/DEK/z.jpg]]    |
-|               zr | ![[Attachments/DEK/zr.jpg]]   |
-|               zw | ![[Attachments/DEK/zw.jpg]]   |
+| ![[Attachments/DEK/b.jpg]] | ![[Attachments/DEK/br.jpg]] | ![[Attachments/DEK/c.jpg]] | ![[Attachments/DEK/ch.jpg]] | ![[Attachments/DEK/cht.jpg]] | ![[Attachments/DEK/cr.jpg]] | ![[Attachments/DEK/d.jpg]] | ![[Attachments/DEK/dr.jpg]] | ![[Attachments/DEK/f.jpg]] | ![[Attachments/DEK/fr.jpg]] | ![[Attachments/DEK/g.jpg]] | ![[Attachments/DEK/gr.jpg]] | ![[Attachments/DEK/h.jpg]] | ![[Attachments/DEK/j.jpg]] | ![[Attachments/DEK/k.jpg]] | ![[Attachments/DEK/kr.jpg]] | ![[Attachments/DEK/l.jpg]] | ![[Attachments/DEK/m.jpg]] | ![[Attachments/DEK/mp.jpg]] | ![[Attachments/DEK/mpf.jpg]] | ![[Attachments/DEK/n.jpg]] | ![[Attachments/DEK/nd.jpg]] | ![[Attachments/DEK/ndr.jpg]] | ![[Attachments/DEK/ng.jpg]] | ![[Attachments/DEK/p.jpg]] | ![[Attachments/DEK/pf.jpg]] | ![[Attachments/DEK/pfr.jpg]] | ![[Attachments/DEK/pr.jpg]] | ![[Attachments/DEK/qu.jpg]] | ![[Attachments/DEK/r.jpg]] | ![[Attachments/DEK/rd.jpg]] | ![[Attachments/DEK/rr.jpg]] | ![[Attachments/DEK/rs.jpg]] | ![[Attachments/DEK/s.jpg]] | ![[Attachments/DEK/sch.jpg]] | ![[Attachments/DEK/schm.jpg]] | ![[Attachments/DEK/schn.jpg]] | ![[Attachments/DEK/schr.jpg]] | ![[Attachments/DEK/schw.jpg]] | ![[Attachments/DEK/sp.jpg]] | ![[Attachments/DEK/spr.jpg]] | ![[Attachments/DEK/ss.jpg]] | ![[Attachments/DEK/st.jpg]] | ![[Attachments/DEK/str.jpg]] | ![[Attachments/DEK/t.jpg]] | ![[Attachments/DEK/tr.jpg]] | ![[Attachments/DEK/v.jpg]] | ![[Attachments/DEK/w.jpg]] | ![[Attachments/DEK/wr.jpg]] | ![[Attachments/DEK/x.jpg]] | ![[Attachments/DEK/y.jpg]] | ![[Attachments/DEK/z.jpg]] | ![[Attachments/DEK/zr.jpg]] | ![[Attachments/DEK/zw.jpg]] |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| b | br | c | ch | cht | cr | d | dr | f | fr | g | gr | h | j | k | kr | l | m | mp | mpf | n | nd | ndr | ng | p | pf | pfr | pr | qu | r | rd | rr | rs | s | sch | schm | schn | schr | schw | sp | spr | ss | st | str | t | tr | v | w | wr | x | y | z | zr | zw |
 
 ### Silbenzeichen
-
-| Maschinenschrift | Handschrift  |
-| ---------------: | ------------ |
-|       ein<br>ain | ![[Attachments/DEK/ein.jpg]] |
-|       eit<br>ait | ![[Attachments/DEK/eit.jpg]] |
-|               ey | ![[Attachments/DEK/ey.jpg]]  |
-|              ion | ![[Attachments/DEK/ion.jpg]] |
-|        ur<br>uhr | ![[Attachments/DEK/uhr.jpg]] |
+| ![[Attachments/DEK/ein.jpg]] | ![[Attachments/DEK/eit.jpg]] | ![[Attachments/DEK/ey.jpg]] | ![[Attachments/DEK/ion.jpg]] | ![[Attachments/DEK/uhr.jpg]] |
+| :----------: | :----------: | :---------: | :----------: | :----------: |
+|   ein, ain   |   eit, ait   |     ey      |     ion      |   ur, uhr    |
 
 ### Kürzel
 
 #### a
-
-| | | | | | | |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| ![[all.jpg\|25]]<br><br>all | ![[als.jpg\|25]]<br><br>als | ![[also.jpg\|25]]<br><br>also | ![[ander.jpg\|25]]<br><br>ander | ![[ant.jpg\|25]]<br><br>ant- | ![[auf.jpg\|25]]<br><br>auf | ![[auf.jpg\|25]]<br><br>auf |
+| ![[all.jpg\|25]] | ![[als.jpg\|25]] | ![[also.jpg\|50]] | ![[ander.jpg\|25]] | ![[ant.jpg\|25]] | ![[auf.jpg\|25]] | ![[auf.jpg\|25]] |
+| :-------------------------: | :-------------------------: | :---------------------------: | :-----------------------------: | :--------------------------: | :-------------------------: | :-------------------------: |
+| all | als | also | ander | ant- | auf | auf |
 
 #### b
-
-| | |
-| :--: | :--: |
-| ![[besonders.jpg\|25]]<br><br>besonder<br>besonders | ![[bis.jpg\|25]]<br><br>bis |
+| ![[besonders.jpg\|25]] | ![[bis.jpg\|25]] |
+| :--------------------: | :--------------: |
+|  besonder, besonders   |       bis        |
 
 #### d
-
-| | | | | | | | | | | | | | | |
+| ![[da.jpg\|25]] | ![[dar.jpg\|25]] | ![[dass.jpg\|25]] | ![[d.h..jpg\|25]] | ![[dem.jpg\|25]] | ![[den.jpg\|25]] | ![[der.jpg\|25]] | ![[des.jpg\|25]] | ![[dessen.jpg\|25]] | ![[deutsch.jpg\|25]] | ![[die.jpg\|25]] | ![[dies.jpg\|25]] | ![[doch.jpg\|25]] | ![[Dr..jpg\|25]] | ![[durch.jpg\|25]] |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| ![[da.jpg\|25]]<br><br>da- | ![[dar.jpg\|25]]<br><br>dar | ![[dass.jpg\|25]]<br><br>das<br>dass | ![[d.h..jpg\|25]]<br><br>d.h. | ![[dem.jpg\|25]]<br><br>dem | ![[den.jpg\|25]]<br><br>den | ![[der.jpg\|25]]<br><br>der | ![[des.jpg\|25]]<br><br>des | ![[dessen.jpg\|25]]<br><br>dessen | ![[deutsch.jpg\|25]]<br><br>deutsch | ![[die.jpg\|25]]<br><br>die | ![[dies.jpg\|25]]<br><br>dies | ![[doch.jpg\|25]]<br><br>doch | ![[Dr..jpg\|25]]<br><br>Dr.<br>Doktor | ![[durch.jpg\|25]]<br><br>durch |
+| da- | dar | das, dass | d.h. | dem | den | der | des | dessen | deutsch | die | dies | doch | Dr., Doktor | durch |
 
 #### e
-
-| | | | |
-| :--: | :--: | :--: | :--: |
-| ![[eine.jpg\|25]]<br><br>eine<br>einem, einen, einer, eines<br>deine, deinem, deinen, deiner, deines<br>keine, keinem, keinen, keiner, keines<br>meine, meinem, meinen, meiner, meines<br>seine, seinem, seinen, seiner, seines | ![[ent.jpg\|25]]<br><br>ent- | ![[er.jpg\|25]]<br><br>er(-) | ![[es.jpg\|25]]<br><br>es |
+|                                                                                           ![[eine.jpg\|50]]                                                                                            | ![[ent.jpg\|25]] | ![[er.jpg\|25]] | ![[es.jpg\|25]] |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------: | :-------------: | :-------------: |
+| eine, einem, einen, einer, eines, deine, deinem, deinen, deiner, deines, keine, keinem, keinen, keiner, keines, meine, meinem, meinen, meiner, meines, seine, seinem, seinen, seiner, seines |       ent-       |      er(-)      |       es        |
 
 #### f
-
-| | |
+| ![[fort.jpg\|25]] | ![[für.jpg\|25]] |
 | :--: | :--: |
-| ![[fort.jpg\|25]]<br><br>fort | ![[für.jpg\|25]]<br><br>für |
+| fort | für |
 
 #### g
-
-| | |
-| :--: | :--: |
-| ![[ge.jpg\|25]]<br><br>ge- | ![[gegen.jpg\|25]]<br><br>gegen |
+| ![[ge.jpg\|50]] | ![[gegen.jpg\|25]] |
+| :-------------: | :----------------: |
+|       ge-       |       gegen        |
 
 #### h
-
-| | | | | | | | |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| ![[hat.jpg\|25]]<br><br>hab...<br>hast<br>hat | ![[haft.jpg\|25]]<br><br>-haft | ![[hat.jpg\|25]]<br><br>hat... | ![[hätt.jpg\|25]]<br><br>hätt... | ![[heit.jpg\|25]]<br><br>-heit | ![[her.jpg\|25]]<br><br>her | ![[hin.jpg\|25]]<br><br>hin | ![[hint.jpg\|25]]<br><br>hint... |
+| ![[hat.jpg\|25]] | ![[haft.jpg\|25]] | ![[hat.jpg\|25]] | ![[hätt.jpg\|50]] | ![[heit.jpg\|25]] | ![[her.jpg\|25]] | ![[hin.jpg\|25]] | ![[hint.jpg\|25]] |
+| :-------------------------------------------: | :----------------------------: | :----------------------------: | :------------------------------: | :----------------------------: | :-------------------------: | :-------------------------: | :------------------------------: |
+| hab..., hast, hat | -haft | hat... | hätt... | -heit | her | hin | hint... |
 
 #### i
-
-| | | |
+| ![[ich.jpg\|25]] | ![[in.jpg\|25]] | ![[ist.jpg\|25]] |
 | :--: | :--: | :--: |
-| ![[ich.jpg\|25]]<br><br>ich | ![[in.jpg\|25]]<br><br>in | ![[ist.jpg\|25]]<br><br>ist |
+| ich | in | ist |
 
 #### k
-
-| | | | | |
-| :--: | :--: | :--: | :--: | :--: |
-| ![[kannst.jpg\|25]]<br><br>kann<br>kannst | ![[könn.jpg\|25]]<br><br>könn... | ![[konnt.jpg\|25]]<br><br>konnt... | ![[keit.jpg\|25]]<br><br>-keit | ![[kon.jpg\|25]]<br><br>kon- |
+| ![[kannst.jpg\|25]] | ![[könn.jpg\|50]] | ![[konnt.jpg\|25]] | ![[keit.jpg\|50]] | ![[kon.jpg\|50]] |
+| :---------------------------------------: | :------------------------------: | :--------------------------------: | :----------------------------: | :--------------------------: |
+| kann, kannst | könn... | konnt... | -keit | kon- |
 
 #### l
-
-| |
-| :--: |
-| ![[lich.jpg\|25]]<br><br>-lich |
-| ![[miss.jpg\|25]]<br><br>miss- |
+| ![[lich.jpg\|25]] | ![[miss.jpg\|25]] |
+| :--: | :--: |
+| -lich | miss- |
 
 #### m
-
-| |
+| ![[mitt.jpg\|25]] |
 | :--: |
-| ![[mitt.jpg\|25]]<br><br>mit<br>mitt |
+| mit, mitt |
 
 #### n
-
-| | | | |
-| :--: | :--: | :--: | :--: |
-| ![[nicht.jpg\|25]]<br><br>nicht | ![[nieder.jpg\|25]]<br><br>niedr<br>nieder | ![[noch.jpg\|25]]<br><br>noch | ![[nur.jpg\|25]]<br><br>nur |
+| ![[nicht.jpg\|25]] | ![[nieder.jpg\|25]] | ![[noch.jpg\|25]] | ![[nur.jpg\|25]] |
+| :-----------------------------: | :----------------------------------------: | :---------------------------: | :-------------------------: |
+| nicht | niedr, nieder | noch | nur |
 
 #### o
-
-| |
-| :--: |
-| ![[ohne.jpg\|25]]<br><br>ohn<br>ohne |
+| ![[ohne.jpg\|50]] |
+| :----------------------------------: |
+| ohn, ohne |
 
 #### r
-
-| |
+| ![[rück.jpg\|25]] |
 | :--: |
-| ![[rück.jpg\|25]]<br><br>rück- |
+| rück- |
 
 #### s
-
-| | | | | | | | | | | |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| ![[schaft.jpg\|25]]<br><br>-schaft | ![[schon.jpg\|25]]<br><br>schon | ![[sei.jpg\|25]]<br><br>sei | ![[selbst.jpg\|25]]<br><br>selbst | ![[sich.jpg\|25]]<br><br>sich | ![[sie.jpg\|25]]<br><br>sie | ![[sind.jpg\|25]]<br><br>sind | ![[so.jpg\|25]]<br><br>so | ![[solch.jpg\|25]]<br><br>solch | ![[sollst.jpg\|25]]<br><br>soll<br>sollst | ![[sondern.jpg\|25]]<br><br>sonder<br>sondern<br>sonders |
+| ![[schaft.jpg\|25]] | ![[schon.jpg\|25]] | ![[sei.jpg\|50]] | ![[selbst.jpg\|25]] | ![[sich.jpg\|25]] | ![[sie.jpg\|25]] | ![[sind.jpg\|25]] | ![[so.jpg\|50]] | ![[solch.jpg\|25]] | ![[sollst.jpg\|25]] | ![[sondern.jpg\|25]] |
+| :--------------------------------: | :-----------------------------: | :-------------------------: | :-------------------------------: | :---------------------------: | :-------------------------: | :---------------------------: | :-----------------------: | :-----------------------------: | :---------------------------------------: | :------------------------------------------------------: |
+| -schaft | schon | sei | selbst | sich | sie | sind | so | solch | soll, sollst | sonder, sondern, sonders |
 
 #### t
-
-| |
+| ![[tum.jpg\|25]] |
 | :--: |
-| ![[tum.jpg\|25]]<br><br>-tum<br>-tüm... |
+| -tum, -tüm... |
 
 #### ü
-
-| |
+| ![[über.jpg\|25]] |
 | :--: |
-| ![[über.jpg\|25]]<br><br>übr<br>über |
+| übr, über |
 
 #### u
-
-| | | | | | | | | |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| ![[un.jpg\|25]]<br><br>un- | ![[und.jpg\|25]]<br><br>und | ![[usw.jpg\|25]]<br><br>usw. | ![[ung.jpg\|25]]<br><br>-ung | ![[lung.jpg\|25]]<br><br>-l-ung | ![[rung.jpg\|25]]<br><br>-r-ung | ![[uns.jpg\|25]]<br><br>uns | ![[unser.jpg\|25]]<br><br>unser | ![[unter.jpg\|25]]<br><br>unter |
+| ![[un.jpg\|25]] | ![[und.jpg\|25]] | ![[usw.jpg\|50]] | ![[ung.jpg\|25]] | ![[lung.jpg\|25]] | ![[rung.jpg\|25]] | ![[uns.jpg\|25]] | ![[unser.jpg\|25]] | ![[unter.jpg\|25]] |
+| :------------------------: | :-------------------------: | :--------------------------: | :--------------------------: | :-----------------------------: | :-----------------------------: | :-------------------------: | :-----------------------------: | :-----------------------------: |
+| un- | und | usw. | -ung | -l-ung | -r-ung | uns | unser | unter |
 
 #### v
-
-| | | | | | | |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| ![[ver.jpg\|25]]<br><br>ver- | ![[vielleicht.jpg\|25]]<br><br>vielleicht | ![[voll.jpg\|25]]<br><br>voll | ![[völl.jpg\|25]]<br><br>völl... | ![[vom.jpg\|25]]<br><br>vom | ![[von.jpg\|25]]<br><br>von | ![[vor.jpg\|25]]<br><br>vor |
+| ![[ver.jpg\|25]] | ![[vielleicht.jpg\|50]] | ![[voll.jpg\|50]] | ![[völl.jpg\|50]] | ![[vom.jpg\|25]] | ![[von.jpg\|25]] | ![[vor.jpg\|50]] |
+| :--------------------------: | :---------------------------------------: | :---------------------------: | :------------------------------: | :-------------------------: | :-------------------------: | :-------------------------: |
+| ver- | vielleicht | voll | völl... | vom | von | vor |
 
 #### w
-
-| | | | | | | | | | | |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| ![[wenn.jpg\|25]]<br><br>wenn | ![[werd.jpg\|25]]<br><br>werd... | ![[wieder.jpg\|25]]<br><br>widr<br>wieder | ![[willst.jpg\|25]]<br><br>will<br>willst | ![[woll.jpg\|25]]<br><br>woll... | ![[wir.jpg\|25]]<br><br>wir | ![[wird.jpg\|25]]<br><br>wird<br>wirst | ![[wo.jpg\|25]]<br><br>wo | ![[worden.jpg\|25]]<br><br>worden | ![[wurde.jpg\|25]]<br><br>wurd<br>wurde | ![[würde.jpg\|25]]<br><br>würd<br>würde |
+| ![[wenn.jpg\|25]] | ![[werd.jpg\|25]] | ![[wieder.jpg\|25]] | ![[willst.jpg\|25]] | ![[woll.jpg\|50]] | ![[wir.jpg\|25]] | ![[wird.jpg\|25]] | ![[wo.jpg\|50]] | ![[worden.jpg\|50]] | ![[wurde.jpg\|25]] | ![[würde.jpg\|25]] |
+| :---------------------------: | :------------------------------: | :---------------------------------------: | :---------------------------------------: | :------------------------------: | :-------------------------: | :------------------------------------: | :-----------------------: | :-------------------------------: | :-------------------------------------: | :-------------------------------------: |
+| wenn | werd... | widr, wieder | will, willst | woll... | wir | wird, wirst | wo | worden | wurd, wurde | würd, würde |
 
 #### z
-
-| | | | | | | |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| ![[zer.jpg\|25]]<br><br>zer- | ![[zu.jpg\|25]]<br><br>zu | ![[zurück.jpg\|25]]<br><br>zurück | ![[zum.jpg\|25]]<br><br>zum | ![[zur.jpg\|25]]<br><br>zur | ![[zusammen.jpg\|25]]<br><br>zusammen | ![[zwischen.jpg\|25]]<br><br>zwischen |
+| ![[zer.jpg\|25]] | ![[zu.jpg\|50]] | ![[zurück.jpg\|50]] | ![[zum.jpg\|25]] | ![[zur.jpg\|25]] | ![[zusammen.jpg\|50]] | ![[zwischen.jpg\|50]] |
+| :--------------------------: | :-----------------------: | :-------------------------------: | :-------------------------: | :-------------------------: | :-----------------------------------: | :-----------------------------------: |
+| zer- | zu | zurück | zum | zur | zusammen | zwischen |
 
 
 ## Regeln
 
 # Übersicht (Handschrift)
+
+> [!note] Hinweis
+> Diese Auflistung ist unvollständig
 
 ![[Attachments/DEK_1.jpg]]
 ![[Attachments/DEK_2.jpg]]

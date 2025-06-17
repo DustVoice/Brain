@@ -45,17 +45,13 @@ Für **8-12 Stunden** bei Raumtemperatur gären lassen.
 
 - Sauerteig (vorheriger Schritt)
 - 260 g Wasser, warm
+	- 220 g = 10 % Reduktion
+	- 180 g = 20 % Reduktion
 - 210 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
 - 210 g [[Rye Flour (Type 997)\|Roggenmehl (Typ 997)]]
 - 12 g Salz
 
-> [!tip] Wassermenge
-> Wie immer, ist es empfehlenswert, 10-20% der Gesamtwassermenge (ausgenommen dem Anstellgut) erst einmal zurückzuhalten und dieses langsam nach Bedarf zum Ende der Knetphase als eine [[Bassinage]] hinzuzugeben.
-> 
-> | Gesamtwassermenge | 5 % | 10 % | 15 % | 20 % |
-> | - | - | - | - | - |
-> | 410 g | 20,5 g | 41 g | 61,5 g | 82 g |
-
+![[Sauerteigbrot#Wassermenge]]
 
 Eine Küchenmaschine mit einem Knethaken vorbereiten.
 
@@ -101,7 +97,4 @@ Für weitere **10-15 Minuten** backen.
 
 Mindestens **1 Stunde** auf einem Gitter auskühlen lassen.
 
-> [!tip] Warte etwas länger
-> Roggenbrot schmeckt besser, wenn es etwas liegt, z.B. über Nacht.
-> Je länger man wartet, je geduldiger man ist, desto besser der Geschmack.
-> Natürlich, bevor es hart wird.
+![[Sauerteigbrot#Auskühlen]]

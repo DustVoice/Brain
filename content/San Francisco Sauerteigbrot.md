@@ -41,7 +41,11 @@ Den Vorteig zudecken und **12-16 Stunden** bei Raumtemperatur gehen lassen.
 
 - 240 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
 - 150 g Wasser, eiskalt
+	- 130 g = 10 % Reduktion
+	- 110 g = 20 % Reduktion
 - 6 g Salz
+
+![[Sauerteigbrot#Wassermenge]]
 
 ==Mehl==, ==Wasser== und ==Salz== in der Küchenmaschine **2-3 Minuten** vermischen.
 
@@ -111,6 +115,6 @@ Den Dampf ablassen.
 
 Weitere **20-25 Minuten** ausbacken.
 
-Das Brot auf einem Gitter mindestens **1 Stunde** gut auskühlen lassen.
+![[Sauerteigbrot#Auskühlen]]
 
 [^1]: Quelle: https://www.marcelpaa.com/rezepte/san-francisco-sourdoughbread/

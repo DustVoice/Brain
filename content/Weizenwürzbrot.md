@@ -54,15 +54,11 @@ Die Gewürze in einem Mörser gut verreiben.
 - 200 g [[Whole Wheat Flour\|Weizenvollkornmehl]]
 - 100 g [[Rye Flour (Type 1150)\|Roggenmehl (Typ 1150)]]
 - 550 g Wasser
+	- 475 g = 10 % Reduktion
+	- 400 g = 20 % Reduktion
 - 20 g Salz
 
-> [!tip] Wasser
-> Wie immer, ist es empfehlenswert, 10-20% der Gesamtwassermenge (ausgenommen dem Anstellgut) erst einmal zurückzuhalten und dieses langsam nach Bedarf zum Ende der Knetphase als eine [[Bassinage]] hinzuzugeben.
->  
-> | Gesamtwassermenge | 5 % | 10 % | 15 % | 20 % |
-> | - | - | - | - | - |
-> | 750 g | 37,5 g | 75 g | 112,5 g | 150 g |
-
+![[Sauerteigbrot#Wassermenge]]
 Die Mehle, das Wasser und das Salz zusammen mit den Gewürzen der Reihe nach in die Küchenmaschine geben.
 
 > [!warning] Salz
@@ -114,4 +110,4 @@ Den Dampf ablassen.
 
 Das Brot weitere **35 Minuten** goldbraun backen.
 
-Mindestens **1 Stunde** auskühlen lassen.
+![[Sauerteigbrot#Auskühlen]]
