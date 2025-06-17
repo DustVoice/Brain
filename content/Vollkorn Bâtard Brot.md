@@ -11,10 +11,12 @@
 
 # Zutaten
 
-- 150 g Saaten / Kerne, nach Wahl
-	- Kürbiskerne
-	- Sesamsamen
-	- Leinsamen
+- 150 g Saaten / Kerne, nach Wahl, z.B.:
+	- 50 g Walnusskerne
+	- 30 g Sonnenblumenkerne
+	- 30 g Cashew Kerne
+	- 20 g Leinsamen
+	- 20 g Sesamsamen
 - 90-120 g [[Anstellgut]]
 - 500 g [[Whole Wheat Flour\|Weizenvollkornmehl]]
 - 450 g Wasser, kalt
