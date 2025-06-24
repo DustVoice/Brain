@@ -2,7 +2,7 @@
 {"publish":true,"created":"2025-05-26 22:34","tags":["bread","recipe"],"cssclasses":"cards"}
 ---
 
-![[Attachments/20250606_165659.jpg|400]]
+![[Brain/Attachments/20250606_165659.jpg|400]]
 
 [[Rye Crust\|English Version]]
 
@@ -15,8 +15,9 @@ Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine safti
 
 - 45 g [[Anstellgut]]
 - 410 g Wasser
-- 360 g [[Rye Flour (Type 997)#T 1150\|Roggenmehl (Typ 997)]]
-- 210 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
+- 360 g [[Rye Flour (Type 997)#T 1150\|Roggenmehl (Typ 997)]] #buy 
+- 210 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]] #buy 
+- 12 g Salz
 
 # Anweisungen
 
@@ -45,13 +46,10 @@ Für **8-12 Stunden** bei Raumtemperatur gären lassen.
 
 - Sauerteig (vorheriger Schritt)
 - 260 g Wasser, warm
-	- 220 g = 10 % Reduktion
-	- 180 g = 20 % Reduktion
+	- 10 % [[Sauerteigbrot#Zurückhalten]]: 40 g
 - 210 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
 - 210 g [[Rye Flour (Type 997)\|Roggenmehl (Typ 997)]]
 - 12 g Salz
-
-![[Sauerteigbrot#Wassermenge]]
 
 Eine Küchenmaschine mit einem Knethaken vorbereiten.
 
@@ -76,7 +74,7 @@ Darauf achten, dass bei diesem Schritt noch nicht zu viel Mehl in den Teig gefal
 
 Den Teigling nun wenden und unter horizontalem Drehen die Seiten unter den Teigling ziehen.
 
-Den Teigling mit dem Schluss nach unten (sprich ohne erneutes Wenden) in einen mit [[Rye Flour (Type 997)\|Roggenmehl (Typ 997)]] bestäubten Gärkorb geben.
+Den Teigling mit dem Schluss nach unten (sprich ohne erneutes Wenden) in einen mit [[Rye Flour (Type 997)\|Roggenmehl (Typ 997)]] bestäubten [[Gärkorb]] geben.
 
 Entweder für **8-12 Stunden** (ist nicht schlimm falls etwas länger) im Kühlschrank, _oder_ für weitere **60-90 Minuten** bei Raumtemperatur gehen und reifen lassen.
 

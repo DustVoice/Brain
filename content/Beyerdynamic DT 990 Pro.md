@@ -5,4 +5,4 @@
 
 # Manual
 
-![[Attachments/20250609_155505.jpg]]
+![[Brain/Attachments/20250609_155505.jpg]]

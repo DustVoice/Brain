@@ -10,9 +10,9 @@ Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine safti
 # Zutaten
 
 - 35-40 g [[Anstellgut]]
-- 500 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
-- 300 g [[Rye Flour (Type 1150)\|Roggenmehl (Typ 1150)]]
-- 200 g [[Whole Wheat Flour\|Weizenvollkornmehl]]
+- 500 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]] #buy 
+- 300 g [[Rye Flour (Type 1150)\|Roggenmehl (Typ 1150)]] #buy
+- 200 g [[Whole Wheat Flour\|Weizenvollkornmehl]] #buy
 - 750 g Wasser
 - 20 g Salz
 - 1 g Anis
@@ -58,7 +58,7 @@ Die Gewürze in einem Mörser gut verreiben.
 	- 400 g = 20 % Reduktion
 - 20 g Salz
 
-![[Sauerteigbrot#Wassermenge]]
+![[Sauerteigbrot#Zurückhalten]]
 Die Mehle, das Wasser und das Salz zusammen mit den Gewürzen der Reihe nach in die Küchenmaschine geben.
 
 > [!warning] Salz
@@ -89,7 +89,7 @@ Es ist von Vorteil, wenn sich dabei im Teig etwas Spannung aufbaut.
 > [!tip]
 > Damit sich die Teigkugel am unteren Ende gut verschliesst, sollte bei diesem Arbeitsschritt kein, bis nur ganz wenig Mehl verwendet werden.
 
-Anschliessend einen runden, großen Gärkorb grosszügig bemehlen und den Teig, mit dem Verschluss nach oben darin absetzen.
+Anschliessend einen runden, großen [[Gärkorb]] grosszügig bemehlen und den Teig, mit dem Verschluss nach oben darin absetzen.
 
 Den Teigling zudecken und für **12-16 Stunden** in den Kühlschrank stellen.
 

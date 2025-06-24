@@ -5,6 +5,6 @@
 
 # Manual
 
-![[Attachments/Free Byrd.pdf]]
+![[Brain/Attachments/Free Byrd.pdf]]
 
 

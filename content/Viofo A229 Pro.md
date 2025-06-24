@@ -7,18 +7,18 @@
 
 ## Bedienoberfläche
 
-![[Attachments/Viofo_1.jpg]]
+![[Brain/Attachments/Viofo_1.jpg]]
 
-![[Attachments/Viofo_2.jpg]]
+![[Brain/Attachments/Viofo_2.jpg]]
 
 ## Formatieren
 
-![[Attachments/Viofo_3.jpg]]
+![[Brain/Attachments/Viofo_3.jpg]]
 
 ## Dateisystem
 
-![[Attachments/Viofo_4.jpg]]
+![[Brain/Attachments/Viofo_4.jpg]]
 
 ## Firmwareupgrade
 
-![[Attachments/Viofo_5.jpg]]
+![[Brain/Attachments/Viofo_5.jpg]]

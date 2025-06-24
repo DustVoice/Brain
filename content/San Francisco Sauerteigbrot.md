@@ -3,7 +3,7 @@
 ---
 
 
-![[Attachments/Pasted image 20250605231523.png|200]][^1]
+![[Brain/Attachments/Pasted image 20250605231523.png|200]][^1]
 
 # Beschreibung
 
@@ -18,7 +18,7 @@
 - 210 g Wasser
 	- hiervon 150 g schon im Voraus kalt stellen
 	- +10-15 g für die [[Bassinage]]
-- 300 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
+- 300 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]] #buy
 - 6 g Salz
 
 # Anweisungen
@@ -45,7 +45,7 @@ Den Vorteig zudecken und **12-16 Stunden** bei Raumtemperatur gehen lassen.
 	- 110 g = 20 % Reduktion
 - 6 g Salz
 
-![[Sauerteigbrot#Wassermenge]]
+![[Sauerteigbrot#Zurückhalten]]
 
 ==Mehl==, ==Wasser== und ==Salz== in der Küchenmaschine **2-3 Minuten** vermischen.
 
@@ -92,7 +92,7 @@ Von links und rechts leicht in die Länge ziehen und in die Mitte falten.
 
 Die Teiglinge straff länglich formen.
 
-Mit dem Verschluss nach oben in einen länglichen Gärkorb mit bemehltem Bezug legen.
+Mit dem Verschluss nach oben in einen länglichen [[Gärkorb]] mit bemehltem Bezug legen.
 
 Die Teiglinge zudecken und für **24 Stunden** in den Kühlschrank geben.
 

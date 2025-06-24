@@ -7,19 +7,19 @@
 
 ## Simplistic
 
-![[Attachments/Pasted image 20250605232636.png]][^3]
+![[Brain/Attachments/Pasted image 20250605232636.png]][^3]
 
 ## Rounded
 
-![[Attachments/Pasted image 20250605232547.png]][^1]
+![[Brain/Attachments/Pasted image 20250605232547.png]][^1]
 
 ## Fancy
 
-![[Attachments/Pasted image 20250605232653.png]][^4]
+![[Brain/Attachments/Pasted image 20250605232653.png]][^4]
 
 ## Uppercase Variations
 
-![[Attachments/Pasted image 20250605232616.png]][^2]
+![[Brain/Attachments/Pasted image 20250605232616.png]][^2]
 
 
 

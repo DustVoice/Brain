@@ -132,10 +132,8 @@
 
 ## Regeln
 
-# Übersicht (Handschrift)
+# Übungen
 
-> [!note] Hinweis
-> Diese Auflistung ist unvollständig
+## [Der Taucher (Schiller)](https://www.stenogenerator.de/literatur_stenografie__schiller.htm)
 
-![[Attachments/DEK_1.jpg]]
-![[Attachments/DEK_2.jpg]]
+![[Brain/Attachments/DEK/Der Taucher (Schiller) - A4 UT.pdf]]

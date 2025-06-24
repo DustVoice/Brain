@@ -9,7 +9,7 @@ Bread baked with [[Sourdough]], as either the main source of active yeast, or as
 
 ## Tips
 
-## Water Amount
+## Retention
 
 > [!tip]
 > As always, retain 10-20% of the total water amount (excluding the starter) and add it as needed at the end of the kneading phase as a [[Bassinage]].

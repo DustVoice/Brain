@@ -2,7 +2,7 @@
 {"publish":true,"created":"2025-05-26 22:34","tags":["bread","recipe"],"cssclasses":""}
 ---
 
-![[Attachments/20250606_165659.jpg|400]]
+![[Brain/Attachments/20250606_165659.jpg|400]]
 
 [[Roggenkruste\|Deutsche Version]]
 
@@ -15,8 +15,9 @@ It has good flavor, a nice crispy crust and a juicy but not too dense inside.
 
 - 45 g [[Sourdough Starter]]
 - 410 g Water
-- 360 g [[Rye Flour (Type 997)]]
-- 210 g [[Wheat Flour (Type 550)]]
+- 360 g [[Rye Flour (Type 997)]] #buy 
+- 210 g [[Wheat Flour (Type 550)]] #buy 
+- 12 g Salt
 
 # Directions
 
@@ -43,13 +44,10 @@ Let it sit for **8-12 hours** at room temperature.
 
 - Sourdough (previous step)
 - 260 g Water, warm
-	- 220 g = 10% Reduction
-	- 180 g = 20% Reduction
+	- 10 % [[Sourdough Bread#Retention]]: 40 g
 - 210 g [[Wheat Flour (Type 550)]]
 - 210 g [[Rye Flour (Type 997)]]
 - 12 g Salt
-
-![[Sourdough Bread#Wassermenge]]
 
 Prepare a kitchen machine with a kneading hook.
 

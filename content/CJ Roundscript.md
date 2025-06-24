@@ -9,10 +9,10 @@ This is a cursive script, developed and used by [CJ's Creative Studio](https://w
 - https://youtu.be/c3GpuQX5tk0?si=g1vDbYiFiCQwNb4e
 
 [YouTube Video](https://www.youtube.com/watch?v=9uWXrcTuzJE&list=PLGelO7Baay-_OozIWl2otskgfsikJb5ed&index=135) Screenshot:
-![[Attachments/Pasted image 20250605223856.png]]
+![[Brain/Attachments/Pasted image 20250605223856.png]]
 
 My Handwritten Version ([[Lamy Dialog CC]], [[Lamy Blue]]):
-![[Attachments/20250605_223958.jpg]]
+![[Brain/Attachments/20250605_223958.jpg]]
 
 > [!tip]
 > I have developed [[David's Roundscript\|my own script based on this script]], while changin up some Uppercase and Lowercase letters

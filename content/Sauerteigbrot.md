@@ -9,7 +9,7 @@ Brot, welches mit [[Sauerteig]] gebacken wird, entweder als alleiniges Triebmitt
 
 ## Tipps
 
-## Wassermenge
+## Zurückhalten
 
 > [!tip]
 > Es ist häufig empfehlenswert, erst einmal etwa 10-20 % der ==Gesamtwassermenge== (ausgenommen der Wassermenge im [[Anstellgut]]) zurückzuhalten.

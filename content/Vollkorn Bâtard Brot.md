@@ -2,7 +2,7 @@
 {"publish":true,"created":"2025-06-16 17:59","tags":["recipe"],"cssclasses":""}
 ---
 
-![[Attachments/Pasted image 20250616175953.png]]
+![[Brain/Attachments/Pasted image 20250616175953.png]]
 
 # Beschreibung
 
@@ -11,14 +11,14 @@
 
 # Zutaten
 
-- 150 g Saaten / Kerne, nach Wahl, z.B.:
+- 150 g Saaten / Kerne, nach Wahl, z.B.: #buy
 	- 50 g Walnusskerne
 	- 30 g Sonnenblumenkerne
 	- 30 g Cashew Kerne
 	- 20 g Leinsamen
 	- 20 g Sesamsamen
 - 90-120 g [[Anstellgut]]
-- 500 g [[Whole Wheat Flour\|Weizenvollkornmehl]]
+- 500 g [[Whole Wheat Flour\|Weizenvollkornmehl]] #buy
 - 450 g Wasser, kalt
 - 10 g Salz
 
@@ -43,7 +43,7 @@ Vor der weiteren Verwendung gut auskühlen lassen.
 	- 360 g = 20 % Reduktion
 - 10 g Salz
 
-![[Sauerteigbrot#Wassermenge]]
+![[Sauerteigbrot#Zurückhalten]]
 
 Das ==Anstellgut==, das ==Mehl==, das ==Salz== und die im letzten Schritt angerösteten ==Saaten / Kerne== zusammen mit dem ==Wasser== in die Küchenmaschine geben.
 
@@ -81,7 +81,7 @@ Auf eine bemehlte Arbeitsfläche geben.
 
 Den Teigling straff länglich formen.
 
-Mit dem Verschluss nach oben in einen länglichen Gärkorb mit Bezug legen und zudecken.
+Mit dem Verschluss nach oben in einen länglichen [[Gärkorb]] mit Bezug legen und zudecken.
 
 **1 Stunde** bei Raumtemperatur gehen lassen.
 
