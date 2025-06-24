@@ -53,8 +53,6 @@ Description=Piler Pod
 [Pod]
 PodName=piler
 Network=piler.network
-PublishPort=8125:25
-PublishPort=8180:80
 ```
 
 ## Ports
@@ -132,13 +130,13 @@ Populate MariaDB's default config file under `~/containers/piler/db/conf/piler.c
 
 ```txt title="~/containers/piler/db/conf/piler.cnf"
 [mariadb]
+
 innodb_buffer_pool_size = 256M
 innodb_flush_log_at_trx_commit=1
 innodb_log_buffer_size=64M
 innodb_log_file_size=64M
 innodb_read_io_threads=4
 innodb_write_io_threads=4
-innodb_log_files_in_group=2
 
 innodb_file_per_table
 ```
@@ -165,12 +163,13 @@ Description=Piler Database
 
 [Container]
 Pod=piler.pod
+Network=piler.network
 Label=app=piler
 ContainerName=piler-db
 AutoUpdate=registry
 Image=docker.io/library/mariadb:11.6.2
 AddCapability=chown dac_override setuid setgid
-DropCapability=ALLn
+DropCapability=ALL
 EnvironmentFile=/home/user/containers/piler/db/db.env
 Secret=piler-mariadb-password,type=env,target=MYSQL_PASSWORD
 Exec='--character-set-server=utf8mb4' '--collation-server=utf8mb4_unicode_ci'
@@ -196,6 +195,7 @@ Description=Piler Memcached
 
 [Container]
 Pod=piler.pod
+Network=piler.network
 Label=app=piler
 AutoUpdate=registry
 ContainerName=piler-memcached
@@ -299,9 +299,9 @@ index audit1
 
 searchd
 {
-    listen                  = 127.0.0.1:9312
-    listen                  = 127.0.0.1:9306:mysql
-    listen                  = 127.0.0.1:9307:mysql_readonly
+    listen                  = piler-manticore:9312
+    listen                  = piler-manticore:9306:mysql
+    listen                  = piler-manticore:9307:mysql_readonly
     log                     = /var/lib/manticore/manticore.log
     binlog_max_log_size     = 256M
     binlog_path             = /var/lib/manticore
@@ -330,6 +330,7 @@ Description=Piler Manticore
 
 [Container]
 Pod=piler.pod
+Network=piler.network
 Label=app=piler
 AutoUpdate=registry
 ContainerName=piler-manticore
@@ -356,9 +357,9 @@ This [specifies environment variables available to the container](https://github
 Create and initially populate the `app.env` file under the [[Piler#Data directories\|previously created directory]] `~/containers/piler/app`
 
 ```systemd title="~/containers/piler/app/app.env"
-MANTICORE_HOSTNAME=127.0.0.1
-MEMCACHED_HOSTNAME=127.0.0.1
-MYSQL_HOSTNAME=127.0.0.1
+MANTICORE_HOSTNAME=piler-manticore
+MEMCACHED_HOSTNAME=piler-memcached
+MYSQL_HOSTNAME=piler-db
 MYSQL_DATABASE=piler
 MYSQL_USER=piler
 MYSQL_USERNAME=piler
@@ -381,6 +382,7 @@ After=piler-db.service piler-memcached.service piler-manticore.service
 
 [Container]
 Label=app=piler
+Network=piler.network
 AutoUpdate=registry
 Pod=piler.pod
 ContainerName=piler-app
@@ -395,6 +397,8 @@ HealthTimeout=3s
 RunInit=true
 Volume=/home/user/containers/piler/app/etc:/etc/piler:Z
 Volume=/home/user/containers/piler/app/store:/var/piler/store:Z
+PublishPort=8125:25
+PublishPort=8180:80
 
 [Service]
 MemoryMax=512M
