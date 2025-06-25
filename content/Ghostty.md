@@ -7,6 +7,19 @@
 
 ## #OS/Fedora 
 
+Either use [[Terra]] or [[Copr]].
+I recently ran into problems with the [[Copr]] version, so I switched to [[Terra]].
+
+### [[Terra]]
+
+Make sure it is [[Terra#Setup]], then
+
+```sh
+dnf install ghostty
+```
+
+### [[Copr]]
+
 ```sh
 sudo dnf copr enable pgdev/ghostty
 sudo dnf install ghostty

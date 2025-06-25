@@ -35,6 +35,15 @@ Simply choose a path for the key to be saved to and _optionally a password_. As 
 > For my [[Fedora Server#Secure the SSH\|server]], I don't use resident keys.
 > Although it might not really be a security concern, I don't have a problem manually deploying the key stub to any PC I want to access my server from.
 
+Depending on whether you chose the default name or not, you might have to add the key to the ssh-agent
+
+```sh /PRIVATE_KEY_FILE/
+ssh-add ~/.ssh/PRIVATE_KEY_FILE
+```
+
+> [!todo] Replace
+> - `PRIVATE_KEY_FILE`: The filename you chose previously
+
 ## `udev` rule
 
 Add a `udev` rule in the form of a file `/etc/udev/rules.d/99-yubikey.rules`
