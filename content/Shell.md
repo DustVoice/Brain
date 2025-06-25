@@ -5,4 +5,4 @@
 
 A shell is your interface to the computer. Or a beautiful vacation souvenir.
 
-I'm little unorthodox, in that I use [[Nushell]], which is neither POSIX compliant, nor behaving like any other shell. That's why I like it.
+I'm a little unorthodox, in that I use [[fish]] (and [[Nushell]] complementarily), which are neither POSIX compliant nor behave like any other shell. That's why I like it.

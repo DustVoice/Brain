@@ -18,7 +18,7 @@ Make sure to [[Chezmoi#Install and Apply]] my (or you) dotfile repo to proceed.
 
 > [!note] Reapplying Chezmoi
 > You might have to re[[Chezmoi#Apply\|apply]].
-> This is particularly true, after installing, for example, the [[Nushell#Additional Tools]].
+> This is particularly true, after installing, for example, the [[fish#Additional Tools]].
 > 
 > This is because there are template sections within my chezmoi files, which check for the availability of a specific command (e.g., `starship`), before inserting it into the _real_ file.
 

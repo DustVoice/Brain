@@ -31,16 +31,15 @@ My specific [[Dotfiles]], use various tools, so it's best to make sure they're a
 
 # Login Shell
 
-> [!tip]
-> This is included automagically with my [[Dotfiles]], once you have the `nu` command available on your `PATH` and re[[Chezmoi#Apply\|apply]] chezmoi!
-
 If you remember correctly, we set the login shell to `bash` when creating the custom user, so you might wonder why we didn’t directly set it to `nu`.
 
 Well, Nushell **isn’t POSIX-compliant**, and neither does it want to be. Therefore, running `nu` as a login shell might not be the absolute best experience you’ll ever have.
 
-Instead, I include a code snippet in my dotfile’s `~/.bash_profile` that will let `nu` take over any _interactive_ shell, while scripts, etc. that expect a `POSIX` compliant shell can have their way.
+Instead, I include a code snippet at the bottom of my `~/.bashrc`, below the interactive check `[[ $- == *i* ]]`, which will let `nu` take over any _interactive_ shell, while scripts, etc. that expect a `POSIX` compliant shell can have their way.
 
-```bash title="~/.bash_profile" {1-4}
+```bash title="~/.bashrc" {3-7}
+[[ $- == *i* ]] || return
+
 if [[ $- == *i* && $(ps --no-header --pid $PPID --format comm) != "nu" && -z ${BASH_EXECUTION_STRING} ]]
 then
   exec nu

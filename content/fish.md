@@ -24,9 +24,20 @@ And although I ship my custom config with my [[Dotfiles]], requiring [[fish#Addi
 sudo dnf install fish
 ```
 
+# Update Completions
+
+You might also want to update completions (automagically), especially after installing new software.
+
+```fish
+fish_update_completions
+```
+
 # Plugins
 
 There's also a plugin manager for fish, called [[Fisher]].
+
+> [!todo] Setup
+> - [[Fisher]]
 
 For my dotfiles I usually install the following plugins
 
@@ -201,3 +212,21 @@ My specific [[Dotfiles]], use various tools, so it's best to make sure they're a
 > - [[zoxide]]
 > - _[[Zellij]]_
 
+# Login Shell
+
+If you follow a [[System Administration]] [[Guide]], I normally set the login shell to `bash` when creating the custom user, so you might wonder why I don’t directly set it to `fish`.
+
+Well, fish **isn’t POSIX-compliant**, and neither does it want to be. Therefore, running `fish` as a login shell might not be the absolute best experience you’ll ever have.
+
+Instead, I include a code snippet at the bottom of my `~/.bashrc`, below the interactive check `[[ $- == *i* ]]`, which will let `fish` take over any _interactive_ shell, while scripts, etc. that expect a `POSIX` compliant shell can have their way.
+
+```bash title="~/.bashrc" {3-8}
+[[ $- == *i* ]] || return
+
+if [[ $(ps --no-header --pid=$PPID --format=comm) != "fish" && -z ${BASH_EXECUTION_STRING} && ${SHLVL} == 1 ]]
+then
+	shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=''
+	FISH_BIN=$(command -v fish)
+	[ -x $FISH_BIN ] && SHELL=$FISH_BIN exec $FISH_BIN $LOGIN_OPTION
+fi
+```
