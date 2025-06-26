@@ -208,7 +208,7 @@ fisher install kapsmudit/plugin-jj
 My specific [[Dotfiles]], use various tools, so it's best to make sure they're available and set up.
 
 > [!todo] Install
-> - [[Starship]]
+> - [[oh-my-posh]]
 > - [[zoxide]]
 > - _[[Zellij]]_
 
@@ -223,10 +223,10 @@ Instead, I include a code snippet at the bottom of my `~/.bashrc`, below the in
 ```bash title="~/.bashrc" {3-8}
 [[ $- == *i* ]] || return
 
-if [[ $(ps --no-header --pid=$PPID --format=comm) != "fish" && -z ${BASH_EXECUTION_STRING} && ${SHLVL} == 1 ]]
+if [[ $(ps --no-header --pid=$PPID --format=comm) != "fish" && -z ${BASH_EXECUTION_STRING} && ${SHLVL} == 1 ]]
 then
-	shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=''
-	FISH_BIN=$(command -v fish)
-	[ -x $FISH_BIN ] && SHELL=$FISH_BIN exec $FISH_BIN $LOGIN_OPTION
+        shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=''
+        FISH_BIN=$(command -v fish)
+        [ -x "$FISH_BIN" ] && SHELL=${FISH_BIN} exec $FISH_BIN "$LOGIN_OPTION"
 fi
 ```

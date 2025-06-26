@@ -17,4 +17,5 @@ My specific [[Dotfiles]], use various tools, so it's best to make sure they're a
 
 > [!todo] Install
 > - [[Difftastic]]
+> - [[Watchman]]
 > - _[[Mergiraf]]_
