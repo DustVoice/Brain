@@ -22,15 +22,16 @@ Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine safti
 # Anweisungen
 
 ---
-**Sauerteig-Vorteig**
 
-- 35-40 g [[Anstellgut]]
+- 35-40 g Anstellgut
 - 200 g Wasser
-- 200 g [[Rye Flour (Type 1150)\|Roggenmehl (Typ 1150)]]
+- 200 g Roggenmehl
 
-Das Anstellgut mit Wasser in eine Schüssel geben und [[Anstellgut#Aufschlämmen\|aufschlämmen]].
+## Sauerteig-Vorteig
 
-Das Roggenmehl dazugeben und alles gründlich miteinander vermischen.
+Das ==Anstellgut== mit ==Wasser== in eine Schüssel geben und [[Anstellgut#Aufschlämmen\|aufschlämmen]].
+
+Das ==Roggenmehl== dazugeben und alles gründlich miteinander vermischen.
 
 Anschliessend den Vorteig, zudecken und für **8-12 Stunden** bei Raumtemperatur gären lassen.
 
@@ -39,27 +40,27 @@ Anschliessend den Vorteig, zudecken und für **8-12 Stunden** bei Raumtemperatur
 > Falls nicht, gerne noch etwas länger warten
 
 ---
-**Gewürze**
 
 - 1 g Anis
 - 1 g Kümmel
 - 1 g Fenchelsamen
 
+## Gewürze
+
 Die Gewürze in einem Mörser gut verreiben.
 
 ---
-**Hauptteig**
 
-- 500 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
-- 200 g [[Whole Wheat Flour\|Weizenvollkornmehl]]
-- 100 g [[Rye Flour (Type 1150)\|Roggenmehl (Typ 1150)]]
+- 500 g Weizenmehl
+- 200 g Weizenvollkornmehl
+- 100 g Roggenmehl
 - 550 g Wasser
-	- 475 g = 10 % Reduktion
-	- 400 g = 20 % Reduktion
+	- 10 % [[Sauerteigbrot#Zurückhalten]]: 75 g
 - 20 g Salz
 
-![[Sauerteigbrot#Zurückhalten]]
-Die Mehle, das Wasser und das Salz zusammen mit den Gewürzen der Reihe nach in die Küchenmaschine geben.
+## Hauptteig
+
+Die ==Mehle==, das ==Wasser== und das ==Salz== zusammen mit den ==Gewürzen== der Reihe nach in die Küchenmaschine geben.
 
 > [!warning] Salz
 > Das Salz auf keinen Fall vergessen!
@@ -75,7 +76,8 @@ Anschliessend den Teig in das Teigbecken  geben, zudecken und für **90 Minuten*
 In der Zwischenzeit den Teig einmal [[Dehnen und Falten]].
 
 ---
-**Formen**
+
+## Formen
 
 Den Teig auf eine leicht bemehlte Arbeitsfläche geben und 2-3 mal über die Arbeitsfläche schleifen, um eine glatte Oberfläche zu bekommen.
 
@@ -94,7 +96,8 @@ Anschliessend einen runden, großen [[Gärkorb]] grosszügig bemehlen und den Te
 Den Teigling zudecken und für **12-16 Stunden** in den Kühlschrank stellen.
 
 ---
-**Backen**
+
+## Backen
 
 Den Backofen (Ober-/Unterhitze) mit einer Backplatte in der unteren Ofenhälfte auf **250 °C** vorheizen.
 

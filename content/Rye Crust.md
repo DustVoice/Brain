@@ -22,11 +22,12 @@ It has good flavor, a nice crispy crust and a juicy but not too dense inside.
 # Directions
 
 ---
-**Sourdough**
 
-- 45 g [[Sourdough Starter]]
+- 45 g Sourdough Starter
 - 150 g Water, 30-60 °C depending on the temperature of the starter
-- 150 g [[Rye Flour (Type 997)]]
+- 150 g Rye Flour
+
+## Sourdough
 
 Whisk the ==starter== with the ==warm water==, until it gets a little slushy.
 
@@ -40,14 +41,15 @@ Let it sit for **8-12 hours** at room temperature.
 > It should have doubled in size after this time. Wait longer if needed.
 
 ---
-**Main dough**
 
 - Sourdough (previous step)
 - 260 g Water, warm
 	- 10 % [[Sourdough Bread#Retention]]: 40 g
-- 210 g [[Wheat Flour (Type 550)]]
-- 210 g [[Rye Flour (Type 997)]]
+- 210 g Wheat Flour
+- 210 g Rye Flour
 - 12 g Salt
+
+## Main dough
 
 Prepare a kitchen machine with a kneading hook.
 
@@ -61,9 +63,10 @@ Knead everything on the lowest setting gently for **5 minutes**.
 Let the dough rest in the bowl for **2-3 hours** at room temperature.
 
 ---
-**Form the bread**
 
-Dust your kitchen top with [[Rye Flour (Type 997)]].
+## Form the bread
+
+Dust your kitchen top with some of the Rye Flour.
 
 Put your dough onto it.
 
@@ -78,7 +81,7 @@ Either put it in the fridge for **8-12 hours** (it will be fine if you wait long
 ---
 **Bake**
 
-Preheat your oven at **250 °C** (Top/Down Heat).
+Preheat your oven to **250 °C** (Top/Down Heat).
 
 Turn the bread dough out of the basket onto a baking sheet.
 

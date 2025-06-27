@@ -25,25 +25,24 @@
 # Anweisungen
 
 ---
-**Saaten**
 
 - 150 g Saaten / Kerne, nach Wahl
+
+## Saaten
 
 Die ==Saaten / Kerne== in einer Pfanne auf dem Herd ca. **10 Minuten** rösten.
 
 Vor der weiteren Verwendung gut auskühlen lassen.
 
 ---
-**Hauptteig**
 
 - 90-120 g [[Anstellgut]]
 - 500 g [[Whole Wheat Flour\|Weizenvollkornmehl]]
 - 450 g Wasser, kalt
-	- 405 g = 10 % Reduktion
-	- 360 g = 20 % Reduktion
+	- 10 % [[Sauerteigbrot#Zurückhalten]]: 45 g
 - 10 g Salz
 
-![[Sauerteigbrot#Zurückhalten]]
+## Hauptteig
 
 Das ==Anstellgut==, das ==Mehl==, das ==Salz== und die im letzten Schritt angerösteten ==Saaten / Kerne== zusammen mit dem ==Wasser== in die Küchenmaschine geben.
 
@@ -69,7 +68,8 @@ Weitere **2-3 Stunden** gehen lassen, insgesamt also **3-4 Stunden**.
 Den Teig **12-24 Stunden** im Kühlschrank ruhen lassen.
 
 ---
-**Formen**
+
+## Formen
 
 Den Teig aus dem Kühlschrank nehmen.
 
@@ -86,7 +86,8 @@ Mit dem Verschluss nach oben in einen länglichen [[Gärkorb]] mit Bezug legen u
 **1 Stunde** bei Raumtemperatur gehen lassen.
 
 ---
-**Backen**
+
+## Backen
 
 Den Ofen auf **250 °C Ober-/Unterhitze** mit einem Backstahl oder umgedrehtem Backblech im unteren Bereich vorheizen.
 

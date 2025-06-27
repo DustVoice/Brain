@@ -2,7 +2,7 @@
 {"publish":true,"created":"2025-05-26 22:34","tags":["bread","recipe"],"cssclasses":"cards"}
 ---
 
-![[Brain/Attachments/20250606_165659.jpg|400]]
+![[Brain/Attachments/20250623_201426 1.jpg|400]]
 
 [[Rye Crust\|English Version]]
 
@@ -22,18 +22,19 @@ Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine safti
 # Anweisungen
 
 ---
-**Sauerteig**
 
-- 45 g [[Anstellgut]]
+- 45 g Anstellgut
 - 150 g Wasser, 30-60 °C abhängig von der Temperatur des Anstellguts
-- 150 g [[Rye Flour (Type 997)\|Roggenmehl (Typ 997)]]
+- 150 g Roggenmehl
+
+## Sauerteig
 
 Das ==Anstellgut== gut mit dem ==Wasser== [[Anstellgut#Aufschlämmen\|aufschlämmen]].
 
 Das ==Mehl== hinzufügen und gründlich durchmischen.
 Hier bedarf es jedoch keines Knetens.
 
-Die Wände herunterschaben und abdecken.
+Die Wände herunter schaben und abdecken.
 
 Für **8-12 Stunden** bei Raumtemperatur gären lassen.
 
@@ -42,14 +43,15 @@ Für **8-12 Stunden** bei Raumtemperatur gären lassen.
 > Falls nicht, gerne noch etwas länger warten
 
 ---
-**Hauptteig**
 
 - Sauerteig (vorheriger Schritt)
 - 260 g Wasser, warm
 	- 10 % [[Sauerteigbrot#Zurückhalten]]: 40 g
-- 210 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
-- 210 g [[Rye Flour (Type 997)\|Roggenmehl (Typ 997)]]
+- 210 g Weizenmehl
+- 210 g Roggenmehl
 - 12 g Salz
+
+## Hauptteig
 
 Eine Küchenmaschine mit einem Knethaken vorbereiten.
 
@@ -63,23 +65,25 @@ Alles auf der niedrigsten Stufe für **5 Minuten** sanft kneten.
 Den Teig in der Schüssel für **2-3 Stunden** bei Raumtemperatur gehen lassen.
 
 ---
-**Formen**
 
-Die Küchenoberfläche mit [[Rye Flour (Type 997)\|Roggenmehl (Typ 997)]] bestäuben.
+## Formen
+
+Die Küchenoberfläche mit dem ==Roggenmehl== bestäuben.
 
 Den Teig darauf geben.
 
 Die Seiten und Ecken wiederholt in die Mitte falten.
-Darauf achten, dass bei diesem Schritt noch nicht zu viel Mehl in den Teig gefaltet wird.
+Darauf achten, dass bei diesem Schritt nicht zu viel Mehl in den Teig gefaltet wird.
 
 Den Teigling nun wenden und unter horizontalem Drehen die Seiten unter den Teigling ziehen.
 
-Den Teigling mit dem Schluss nach unten (sprich ohne erneutes Wenden) in einen mit [[Rye Flour (Type 997)\|Roggenmehl (Typ 997)]] bestäubten [[Gärkorb]] geben.
+Den Teigling mit dem Schluss nach unten (sprich ohne erneutes Wenden) in einen mit dem ==Roggenmehl== bestäubten [[Gärkorb]] geben.
 
 Entweder für **8-12 Stunden** (ist nicht schlimm falls etwas länger) im Kühlschrank, _oder_ für weitere **60-90 Minuten** bei Raumtemperatur gehen und reifen lassen.
 
 ---
-**Backen**
+
+## Backen
 
 Den Ofen auf **250 °C (Ober-/Unterhitze)** vorheizen.
 

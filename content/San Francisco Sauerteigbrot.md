@@ -24,37 +24,38 @@
 # Anweisungen
 
 ---
-**Sauerteig**
 
 - 8 g [[Anstellgut]]
 - 60 g Wasser, 30-60 °C abhängig von der Temperatur des Anstellguts
 - 60 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
 
-Das Wasser zum ==Anstellgut== in eine Schüssel geben und etwas [[Anstellgut#Aufschlämmen\|aufschlämmen]].
+## Sauerteig
 
-Das Mehl hinzugeben und alles klumpenfrei vermischen.
+Das ==Wasser== zum ==Anstellgut== in eine Schüssel geben und etwas [[Anstellgut#Aufschlämmen\|aufschlämmen]].
+
+Das ==Mehl== hinzugeben und alles klumpenfrei vermischen.
 
 Den Vorteig zudecken und **12-16 Stunden** bei Raumtemperatur gehen lassen.
 
 ---
-**Saltolyse**
 
 - 240 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
 - 150 g Wasser, eiskalt
-	- 130 g = 10 % Reduktion
+	- 10 % [[Sauerteigbrot#Zurückhalten]]: 20 g
 	- 110 g = 20 % Reduktion
 - 6 g Salz
 
-![[Sauerteigbrot#Zurückhalten]]
+## Saltolyse
 
 ==Mehl==, ==Wasser== und ==Salz== in der Küchenmaschine **2-3 Minuten** vermischen.
 
 Dann **2-3 Stunden** quellen lassen.
 
 ---
-**Hauptteig**
 
 - 10-15 g Wasser (für die [[Bassinage]])
+
+## Hauptteig
 
 Den Sauerteig-Vorteig zum Saltolyse-Teig in die Küchenmaschine geben.
 
@@ -75,7 +76,8 @@ Weitere **30 Minuten** gehen lassen.
 **1 weitere Stunde** gehen lassen.
 
 ---
-**Formen**
+
+## Formen
 
 Nach der [[Stockgare]], den Teig auf eine bemehlte Arbeitsfläche geben.
 
@@ -97,7 +99,8 @@ Mit dem Verschluss nach oben in einen länglichen [[Gärkorb]] mit bemehltem Bez
 Die Teiglinge zudecken und für **24 Stunden** in den Kühlschrank geben.
 
 ---
-**Backen**
+
+## Backen
 
 Den Backofen mit einem Backstahl in der unteren Ofenhälfte auf **250 °C Ober-/Unterhitze** vorheizen.
 
