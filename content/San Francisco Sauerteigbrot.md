@@ -20,6 +20,8 @@
 	- +10-15 g für die [[Bassinage]]
 - 300 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]] #buy
 - 6 g Salz
+- Teigbecken
+- [[Gärkorb#Länglich]], mit Bezug
 
 # Anweisungen
 
@@ -63,7 +65,7 @@ Alles zusammen ca. **10 Minuten** auf _mittlerer Geschwindigkeit_ kneten.
 
 Das ==Wasser== als [[Bassinage]] nach und nach schluckweise unter den Teig kneten, bis es vollständig aufgenommen wurde.
 
-Den Teig in ein leicht gefettetes Teigbecken geben und zudecken.
+Den Teig in das leicht gefettete ==Teigbecken== geben und zudecken.
 
 Bei Raumtemperatur **30 Minuten** gehen lassen.
 
@@ -94,7 +96,7 @@ Von links und rechts leicht in die Länge ziehen und in die Mitte falten.
 
 Die Teiglinge straff länglich formen.
 
-Mit dem Verschluss nach oben in einen länglichen [[Gärkorb]] mit bemehltem Bezug legen.
+Mit dem Verschluss nach oben in den länglichen ==Gärkorb== mit bemehltem Bezug legen.
 
 Die Teiglinge zudecken und für **24 Stunden** in den Kühlschrank geben.
 

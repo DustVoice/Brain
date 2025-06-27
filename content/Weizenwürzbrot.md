@@ -18,6 +18,8 @@ Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine safti
 - 1 g Anis
 - 1 g Kümmel
 - 1 g Fenchelsamen
+- Teigbecken
+- [[Gärkorb#Rund]], groß
 
 # Anweisungen
 
@@ -67,13 +69,15 @@ Die ==Mehle==, das ==Wasser== und das ==Salz== zusammen mit den ==Gewürzen== de
 
 Für **2-3 Minuten** bei kleiner Geschwindigkeit mischen.
 
-Die Knetgeschwindigkeit erhöhen und den Teig für zirka **15 Minuten** kneten.
+Die Knetgeschwindigkeit erhöhen und den Teig für circa **15 Minuten** kneten.
 
-Ein Teigbecken leicht einfetten.
+Das ==Teigbecken== leicht einfetten.
 
-Anschliessend den Teig in das Teigbecken  geben, zudecken und für **90 Minuten** bei Raumtemperatur aufgehen lassen.
+Anschließend den Teig in das Teigbecken  geben, zudecken und für **30 Minuten** bei Raumtemperatur aufgehen lassen.
 
-In der Zwischenzeit den Teig einmal [[Dehnen und Falten]].
+Den Teig einmal [[Dehnen und Falten]].
+
+Weitere **60 Minuten** gehen lassen.
 
 ---
 
@@ -91,7 +95,7 @@ Es ist von Vorteil, wenn sich dabei im Teig etwas Spannung aufbaut.
 > [!tip]
 > Damit sich die Teigkugel am unteren Ende gut verschliesst, sollte bei diesem Arbeitsschritt kein, bis nur ganz wenig Mehl verwendet werden.
 
-Anschliessend einen runden, großen [[Gärkorb]] grosszügig bemehlen und den Teig, mit dem Verschluss nach oben darin absetzen.
+Anschließend den runden, großen ==Gärkorb== großzügig bemehlen und den Teig, mit dem Verschluss nach oben, darin absetzen.
 
 Den Teigling zudecken und für **12-16 Stunden** in den Kühlschrank stellen.
 

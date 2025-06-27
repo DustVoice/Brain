@@ -4,7 +4,7 @@
 
 *Image goes here*
 
-[[Templates/Recipe\|Deutsche Version]]
+[[Templates/Rezept\|Deutsche Version]]
 
 # Description
 
@@ -13,10 +13,13 @@
 > 
 > -- [Amanda's cooking corner](link)
 
-# Ingredients
+My own comment
+
+# Overview
 
 - 150 g [[Ingredient 1]]
 - 20 g [[Ingredient 2]]
+- wooden bowl
 
 # Directions
 
@@ -42,4 +45,4 @@ With an empty line between everything.
 
 Further instructions.
 
-Using ==Ingredient 1== and ==Ingredient 2==, stir for **1 hour** until its **100 °C**.
+Stir ==Ingredient 1== and ==Ingredient 2== in a ==wooden bowl== for **1 hour** until everything has **100 °C**.

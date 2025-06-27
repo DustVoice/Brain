@@ -11,13 +11,14 @@
 A well-balanced rye-wheat-mix bread.
 It has good flavor, a nice crispy crust and a juicy but not too dense inside.
 
-# Ingredients
+# Overview
 
 - 45 g [[Sourdough Starter]]
 - 410 g Water
 - 360 g [[Rye Flour (Type 997)]] #buy 
 - 210 g [[Wheat Flour (Type 550)]] #buy 
 - 12 g Salt
+- Proofing Basket, round
 
 # Directions
 
@@ -74,7 +75,7 @@ Fold the sides and corners into the middle repeatedly. Don't get too much flour 
 
 Turn the dough blob around and work in a circular motion, turning the ball, while pushing the sides into the bottom slightly.
 
-But the dough ball into a lightly dusted proofing basket in the same orientation, with the closure at the bottom.
+But the dough ball into a lightly dusted ==proofing basket== in the same orientation, with the closure at the bottom.
 
 Either put it in the fridge for **8-12 hours** (it will be fine if you wait longer), or let it rest for another **60-90 minutes** at room temperature.
 

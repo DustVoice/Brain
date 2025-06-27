@@ -11,13 +11,14 @@
 Ein reichhaltiges, aber dennoch balanciertes Roggenmischbrot.
 Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine saftige Krume, die nicht zu dicht und fest ist.
 
-# Zutaten
+# Übersicht
 
 - 45 g [[Anstellgut]]
 - 410 g Wasser
 - 360 g [[Rye Flour (Type 997)#T 1150\|Roggenmehl (Typ 997)]] #buy 
 - 210 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]] #buy 
 - 12 g Salz
+- [[Gärkorb#Rund]]
 
 # Anweisungen
 
@@ -77,7 +78,7 @@ Darauf achten, dass bei diesem Schritt nicht zu viel Mehl in den Teig gefaltet w
 
 Den Teigling nun wenden und unter horizontalem Drehen die Seiten unter den Teigling ziehen.
 
-Den Teigling mit dem Schluss nach unten (sprich ohne erneutes Wenden) in einen mit dem ==Roggenmehl== bestäubten [[Gärkorb]] geben.
+Den Teigling mit dem Schluss nach unten (sprich ohne erneutes Wenden) in den mit dem ==Roggenmehl== bestäubten ==Gärkorb== geben.
 
 Entweder für **8-12 Stunden** (ist nicht schlimm falls etwas länger) im Kühlschrank, _oder_ für weitere **60-90 Minuten** bei Raumtemperatur gehen und reifen lassen.
 

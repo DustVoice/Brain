@@ -21,6 +21,8 @@
 - 500 g [[Whole Wheat Flour\|Weizenvollkornmehl]] #buy
 - 450 g Wasser, kalt
 - 10 g Salz
+- Teigbecken
+- [[Gärkorb#Länglich]], mit Bezug
 
 # Anweisungen
 
@@ -53,7 +55,7 @@ Die Knetgeschwindigkeit erhöhen und bei _mittlerer Geschwindigkeit_ etwa **15 M
 > [!note] Hinweis
 > So lange kneten, bis sich der (anfangs noch relativ flüssige) Teig vom Kübelrand löst.
 
-In ein leicht gefettetes Teigbecken geben und zudecken.
+In das leicht gefettete ==Teigbecken== geben und zudecken.
 
 **30 Minuten** bei Raumtemperatur gehen lassen.
 
@@ -81,7 +83,7 @@ Auf eine bemehlte Arbeitsfläche geben.
 
 Den Teigling straff länglich formen.
 
-Mit dem Verschluss nach oben in einen länglichen [[Gärkorb]] mit Bezug legen und zudecken.
+Mit dem Verschluss nach oben in den länglichen ==Gärkorb== mit Bezug legen und zudecken.
 
 **1 Stunde** bei Raumtemperatur gehen lassen.
 

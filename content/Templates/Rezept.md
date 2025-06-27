@@ -4,7 +4,7 @@
 
 *Hier Bild einfügen*
 
-[[Templates/Rezept\|English Version]]
+[[Templates/Recipe\|English Version]]
 
 # Beschreibung
 
@@ -13,10 +13,13 @@
 > 
 > -- [Annelieses Backstube](link)
 
-# Zutaten
+Eigener Kommentar
+
+# Übersicht
 
 - 150 g [[Zutat 1]]
 - 20 g [[Zutat 2]]
+- Holzschüssel
 
 # Anweisungen
 
@@ -42,4 +45,4 @@ Mit einer Leerzeile zwischen allem.
 
 Weitere Instruktionen.
 
-Mit ==Zutat 1== und ==Zutat 2==, **1 Stunde** rühren bis alles **100 °C** hat.
+==Zutat 1== und ==Zutat 2== in einer ==Holzschüssel== **1 Stunde** rühren bis alles **100 °C** hat.
