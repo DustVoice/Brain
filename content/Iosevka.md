@@ -7,6 +7,9 @@
 
 # Install
 
+> [!tip]
+> If you're only using this within terminal applications and not in a GUI application like [[Emacs]], for example, you should be able to get away with only installing the `term` variant(s).
+
 ## #OS/Fedora 
 
 ### Normal Fonts
@@ -21,5 +24,5 @@ sudo dnf install iosevka-fonts iosevka-term-fonts iosevka-aile-fonts
 Make sure you have [[Terra#Setup\|Terra set up]].
 
 ```sh
-sudo dnf install iosevkaterm-nerd-fonts
+sudo dnf install iosevka-nerd-fonts iosevkaterm-nerd-fonts
 ```
