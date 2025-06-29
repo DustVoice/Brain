@@ -42,13 +42,13 @@ Quickly and easily applies a config hosted under `https://github.com/DustVoice/d
 
 # Install and Apply
 
-```sh /install_cmd/ /apply_cmd/
-install_cmd -- apply_cmd
+```sh /$install_cmd/ /$apply_cmd/
+$install_cmd -- $apply_cmd
 ```
 
 > [!todo] Replace
-> - `install_cmd` : The appropriate command from the [[Chezmoi#Install]] section
-> - `apply_cmd` : The appropriate command from the [[Chezmoi#Apply]] section, without the `chezmoi`
+> - `$install_cmd` : The appropriate command from the [[Chezmoi#Install]] section
+> - `$apply_cmd` : The appropriate command from the [[Chezmoi#Apply]] section, without the `chezmoi`
 
 > [!example]
 > ```sh

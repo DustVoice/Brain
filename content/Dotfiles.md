@@ -3,7 +3,7 @@
 ---
 
 
-> [!question] What are dotfiles?
+> [!question] What are  p dotfiles?
 > The files used to configure settings of applications, which are often the main _personalization_ component of a Linux installation, are often referred to as _dotfiles_.
 > 
 > This is because most of these files' filename (or the folders they are contained in) starts with a dot.
@@ -20,7 +20,7 @@ Make sure to [[Chezmoi#Install and Apply]] my (or you) dotfile repo to proceed.
 > You might have to re[[Chezmoi#Apply\|apply]].
 > This is particularly true, after installing, for example, the [[fish#Additional Tools]].
 > 
-> This is because there are template sections within my chezmoi files, which check for the availability of a specific command (e.g., `starship`), before inserting it into the _real_ file.
+> This is because there are template sections within my chezmoi files, which check for the availability of a specific command (e.g., `oh-my-posh` / [[oh-my-posh]]), before inserting it into the _real_ file.
 
 # Neovim
 

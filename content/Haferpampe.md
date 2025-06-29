@@ -13,8 +13,8 @@ Pampige Overnight Oats
 
 - 40 g Haferflocken, kernig
 - 5 g Chiasamen
-- 115 g Pflanzenmilch
-- 20 g Naturjoghurt
+- 100 g Pflanzenmilch
+- 10 g Naturjoghurt
 - 1 Schuss Vanilleextrakt
 - 1 Schuss Schokotropfen
 

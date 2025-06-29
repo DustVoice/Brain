@@ -24,6 +24,14 @@ And although I ship my custom config with my [[Dotfiles]], requiring [[fish#Addi
 sudo dnf install fish
 ```
 
+## [[Homebrew]]
+
+If the latest `fish` shell isn't available for your distribution or version, you can try installing it using [[Homebrew]]:
+
+```sh
+brew install fish
+```
+
 # Update Completions
 
 You might also want to update completions (automagically), especially after installing new software.
@@ -32,6 +40,15 @@ You might also want to update completions (automagically), especially after inst
 fish_update_completions
 ```
 
+# Additional Tools
+
+My specific [[Dotfiles]], use various tools, so it's best to make sure they're available and set up.
+
+> [!todo] Install
+> - [[oh-my-posh]]
+> - [[zoxide]]
+> - _[[Zellij]]_
+
 # Plugins
 
 There's also a plugin manager for fish, called [[Fisher]].
@@ -39,20 +56,37 @@ There's also a plugin manager for fish, called [[Fisher]].
 > [!todo] Setup
 > - [[Fisher]]
 
-For my dotfiles I usually install the following plugins
+> [!note]
+> After deploying my [[Dotfiles]], as well as installing [[Fisher]], I usually install the following plugins.
+> 
+> - [[fish#Catppuccin]]
+> 	- You still have to [[fish#Save it]]!
+> - [[fish#Sponge]]
+> - [[fish#Pufferfish]]
+> - [[fish#Replay]]
+> - [[fish#Eza]]
+> - [[fish#fzf]]
+> - [[fish#jj]]
 
-## [Catppuccin](https://github.com/catppuccin/fish)
+## Catppuccin
 
-My theme of choice
+[Catppuccin](https://github.com/catppuccin/fish) is my theme of choice. Everywhere.
+
+### Install
 
 ```fish
 fisher install catppuccin/fish
+```
+
+### Save it
+
+```fish
 fish_config theme save "Catppuccin Macchiato"
 ```
 
-## [Sponge](https://github.com/meaningful-ooo/sponge)
+## Sponge
 
-To keep my typos out of the shell history
+To keep my typos out of the shell history, I use [Sponge](https://github.com/meaningful-ooo/sponge).
 
 ```fish
 fisher install meaningful-ooo/sponge
@@ -61,9 +95,9 @@ fisher install meaningful-ooo/sponge
 > [!info]- Effect
 > Deletes typos from the command history, but always keeps the last 2 commands alive.
 
-## [Pufferfish](https://github.com/nickeb96/puffer-fish)
+## Pufferfish
 
-Some text expansion. See the [project's GitHub](https://github.com/nickeb96/puffer-fish) for more information.
+Some neat text expansion. See the [project's GitHub](https://github.com/nickeb96/puffer-fish) for more information.
 
 ```fish
 fisher install nickeb96/puffer-fish
@@ -84,9 +118,9 @@ fisher install nickeb96/puffer-fish
 > | `sudo dnf install nushell` | Command attempt |
 > | `cargo install !$` | Reuse last argument |
 
-## [Replay](https://github.com/jorgebucaran/replay.fish)
+## Replay
 
-Enables you to execute bash snippets and proceed with an up-to-date environment.
+[Replay](https://github.com/jorgebucaran/replay.fish) enables you to execute bash snippets and proceed with an up-to-date environment.
 
 ```fish
 fisher install jorgebucaran/replay.fish
@@ -101,9 +135,9 @@ fisher install jorgebucaran/replay.fish
 > /home/users/jb
 > ```
 
-## [Eza](https://github.com/plttn/fish-eza)
+## Eza
 
-[[eza]] integration. Make sure the dependencies are set up
+[fish-eza](https://github.com/plttn/fish-eza) is a neat little [[eza]] integration. Make sure the dependencies are set up
 
 > [!todo] Install
 > - [[eza]]
@@ -140,9 +174,9 @@ fisher install plttn/fish-eza
 > |`aai`|`--all --binary --all --icons`|
 > |`aaid`|`--all --binary --all --icons --only-dirs`|
 
-## [fzf](https://github.com/PatrickF1/fzf.fish)
+## fzf
 
-[[fzf]] integration. Make sure the dependencies are set up
+[fzf.fish](https://github.com/PatrickF1/fzf.fish) is a nice [[fzf]] integration. Make sure the dependencies are set up beforehand
 
 > [!todo] Install
 > - [[fzf]]
@@ -163,9 +197,9 @@ fisher install PatrickF1/fzf.fish
 > | Ctrl+Alt+P | Search Processes  |
 > | Ctrl+V     | Search Variables  |
 
-## [jj](https://github.com/kapsmudit/plugin-jj)
+## jj
 
-[[Jujutsu]] integration.
+[plugin-jj](https://github.com/kapsmudit/plugin-jj) for some [[Jujutsu]] integration.
 
 ```fish
 fisher install kapsmudit/plugin-jj
@@ -203,14 +237,14 @@ fisher install kapsmudit/plugin-jj
 > |jrb|jj rebase|
 > |ja|jj abandon|
 
-# Additional Tools
+## Abbreviation Tips
 
-My specific [[Dotfiles]], use various tools, so it's best to make sure they're available and set up.
+[fish-abbreviation-tips](https://github.com/gazorby/fish-abbreviation-tips) is a really useful tool to get into the habit of using _your_ and _your plugin's_ abbreviations.
+Because, if you don't use them, you might as well get rid of them.
 
-> [!todo] Install
-> - [[oh-my-posh]]
-> - [[zoxide]]
-> - _[[Zellij]]_
+```fish
+fisher install gazorby/fish-abbreviation-tips
+```
 
 # Login Shell
 

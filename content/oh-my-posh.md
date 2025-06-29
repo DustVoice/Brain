@@ -11,6 +11,9 @@ I use it with [[fish]], as it seems to be smoother and with better integration.
 
 ## #OS/Fedora 
 
+> [!todo] Install
+> - [[unzip]]
+
 Make sure `~/bin` or `~/.local/bin` available and in your `$PATH`, then:
 
 ```sh
