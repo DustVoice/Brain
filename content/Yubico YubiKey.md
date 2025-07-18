@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"YubiKey","created":"2025-05-30 16:33","cssclasses":""}
+{"publish":true,"aliases":"YubiKey","created":"2025-05-30 16:33","modified":"2025-06-25T09:39:01.794+02:00","cssclasses":""}
 ---
 
 # SSH key

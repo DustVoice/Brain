@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-05-02 13:33","cssclasses":""}
+{"publish":true,"created":"2025-05-02 13:33","modified":"2025-06-30T14:20:23.725+02:00","cssclasses":""}
 ---
 
 
@@ -122,6 +122,7 @@ Description=Nextcloud Pod
 [Pod]
 PodName=nextcloud
 Network=nextcloud.network
+PublishPort=8080:80
 ```
 
 ## Network
@@ -134,6 +135,8 @@ Description=Nextcloud Network
 
 [Network]
 Label=app=nextcloud
+DisableDNS=false
+Internal=false
 ```
 
 ## Containers
@@ -153,12 +156,10 @@ Label=app=nextcloud
 AutoUpdate=registry
 ContainerName=nextcloud-caddy
 Image=docker.io/caddy:latest
-Network=nextcloud.network
 Volume=/home/user/containers/nextcloud/caddy/data:/data:Z
 Volume=/home/user/containers/nextcloud/caddy/config:/etc/caddy:Z
 Volume=/home/user/containers/nextcloud/caddy/logs:/var/log/caddy:Z
 Volume=/home/user/containers/nextcloud/html:/var/www/html:ro,z
-PublishPort=8080:80
 
 [Install]
 WantedBy=default.target
@@ -215,7 +216,6 @@ Label=app=nextcloud
 AutoUpdate=registry
 ContainerName=nextcloud-db
 Image=docker.io/library/mariadb:10.11
-Network=nextcloud.network
 Volume=/home/user/containers/nextcloud/db:/var/lib/mysql:Z
 Environment=MARIADB_RANDOM_ROOT_PASSWORD=1
 Environment=MARIADB_AUTO_UPGRADE=1
@@ -248,7 +248,6 @@ Label=app=nextcloud
 AutoUpdate=registry
 ContainerName=nextcloud-redis
 Image=docker.io/library/redis:alpine
-Network=nextcloud.network
 
 [Install]
 WantedBy=default.target
@@ -272,7 +271,6 @@ AutoUpdate=registry
 Pod=nextcloud.pod
 ContainerName=nextcloud-app
 Image=docker.io/library/nextcloud:fpm-alpine
-Network=nextcloud.network
 Volume=/home/user/containers/nextcloud/data:/var/www/html/data:Z
 Volume=/home/user/containers/nextcloud/html:/var/www/html/:Z
 Environment=MYSQL_HOST=nextcloud-db

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-05-26 22:17","cssclasses":""}
+{"publish":true,"created":"2025-05-26 22:17","modified":"2025-06-10T13:04:43.736+02:00","cssclasses":""}
 ---
 
 [[Anstellgut\|Deutsche Version]]

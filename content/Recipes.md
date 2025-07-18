@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-05-28 12:06","cssclasses":""}
+{"publish":true,"created":"2025-05-28 12:06","modified":"2025-07-17T18:49:00.305+02:00","cssclasses":""}
 ---
 
 
@@ -15,6 +15,7 @@ A categorized index of every recipe in my Brain
 | Weizenwürzbrot               |               | [[Weizenwürzbrot]]              |
 | San Francisco Sourdoughbread |               | [[San Francisco Sauerteigbrot]] |
 | Vollkorn Bâtard Brot         |               | [[Vollkorn Bâtard Brot]]        |
+| Pane Cafone                  |               | [[Pane Cafone]]                 |
 
 # Coffee
 

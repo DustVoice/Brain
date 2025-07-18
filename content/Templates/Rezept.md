@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-06-05 22:43","tags":["recipe"],"cssclasses":""}
+{"publish":true,"created":"2025-06-05 22:43","modified":"2025-06-27T12:16:54.839+02:00","tags":["recipe"],"cssclasses":""}
 ---
 
 *Hier Bild einfügen*

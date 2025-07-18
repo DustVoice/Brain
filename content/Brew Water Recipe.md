@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-05-01 16:31","tags":["coffee/filter","coffee/espresso"],"cssclasses":""}
+{"publish":true,"created":"2025-05-01 16:31","modified":"2025-05-31T00:09:29.689+02:00","tags":["coffee/filter","coffee/espresso"],"cssclasses":""}
 ---
 
 # Glossary

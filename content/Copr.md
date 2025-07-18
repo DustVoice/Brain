@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-06-10 14:23","cssclasses":""}
+{"publish":true,"created":"2025-06-10 14:23","modified":"2025-06-10T19:50:06.929+02:00","cssclasses":""}
 ---
 
 

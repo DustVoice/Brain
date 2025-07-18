@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-05-02 13:33","cssclasses":""}
+{"publish":true,"created":"2025-05-02 13:33","modified":"2025-06-30T22:26:09.987+02:00","cssclasses":""}
 ---
 
 
@@ -53,6 +53,8 @@ Description=Piler Pod
 [Pod]
 PodName=piler
 Network=piler.network
+PublishPort=8125:25
+PublishPort=8180:80
 ```
 
 ## Ports
@@ -87,6 +89,8 @@ Description=Piler Network
 
 [Network]
 Label=app=piler
+DisableDNS=false
+Internal=false
 ```
 
 ## Containers
@@ -163,7 +167,6 @@ Description=Piler Database
 
 [Container]
 Pod=piler.pod
-Network=piler.network
 Label=app=piler
 ContainerName=piler-db
 AutoUpdate=registry
@@ -195,7 +198,6 @@ Description=Piler Memcached
 
 [Container]
 Pod=piler.pod
-Network=piler.network
 Label=app=piler
 AutoUpdate=registry
 ContainerName=piler-memcached
@@ -330,7 +332,6 @@ Description=Piler Manticore
 
 [Container]
 Pod=piler.pod
-Network=piler.network
 Label=app=piler
 AutoUpdate=registry
 ContainerName=piler-manticore
@@ -382,7 +383,6 @@ After=piler-db.service piler-memcached.service piler-manticore.service
 
 [Container]
 Label=app=piler
-Network=piler.network
 AutoUpdate=registry
 Pod=piler.pod
 ContainerName=piler-app
@@ -397,8 +397,6 @@ HealthTimeout=3s
 RunInit=true
 Volume=/home/user/containers/piler/app/etc:/etc/piler:Z
 Volume=/home/user/containers/piler/app/store:/var/piler/store:Z
-PublishPort=8125:25
-PublishPort=8180:80
 
 [Service]
 MemoryMax=512M
@@ -449,3 +447,9 @@ systemctl --user restart caddy.service
 ## Set it up
 
 You should _(hopefully)_ now be able to access your Piler instance under the [[FQDN]] you specified.
+
+The default login data is:
+
+| Username    | Password   |
+| ----------- | ---------- |
+| admin@local | pilerrocks |

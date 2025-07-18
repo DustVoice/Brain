@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-06-05 23:45","cssclasses":""}
+{"publish":true,"created":"2025-06-05 23:45","modified":"2025-06-06T17:08:25.676+02:00","cssclasses":""}
 ---
 
 [[Sourdough Starter\|English Version]]

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-05-30 14:16","cssclasses":""}
+{"publish":true,"created":"2025-05-30 14:16","modified":"2025-06-29T22:18:31.105+02:00","cssclasses":""}
 ---
 
 > [!todo] Install
