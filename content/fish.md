@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-06-25 06:53","modified":"2025-06-30T01:09:33.775+02:00","cssclasses":""}
+{"publish":true,"created":"2025-06-25 06:53","modified":"2025-07-30T22:05:25.925+02:00","cssclasses":""}
 ---
 
 
@@ -134,6 +134,14 @@ fisher install jorgebucaran/replay.fish
 > $ pwd
 > /home/users/jb
 > ```
+
+## Bass
+
+An alternative to [[fish#Replay]] is [bass](https://github.com/edc/bass).
+
+```fish
+fisher install edc/bass
+```
 
 ## Eza
 

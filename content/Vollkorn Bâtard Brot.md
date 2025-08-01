@@ -2,7 +2,7 @@
 {"publish":true,"created":"2025-06-16 17:59","modified":"2025-06-27T12:13:33.171+02:00","tags":["recipe"],"cssclasses":""}
 ---
 
-![[Brain/Attachments/Pasted image 20250616175953.png]]
+![[Attachments/Pasted image 20250616175953.png]]
 
 # Beschreibung
 

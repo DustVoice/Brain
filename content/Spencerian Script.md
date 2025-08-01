@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-06-05 23:25","modified":"2025-06-06T02:32:45.011+02:00","cssclasses":""}
+{"publish":true,"created":"2025-06-05 23:25","modified":"2025-06-13T09:48:02.740+02:00","cssclasses":""}
 ---
 
 
@@ -7,19 +7,19 @@
 
 ## Simplistic
 
-![[Brain/Attachments/Pasted image 20250605232636.png]][^3]
+![[Attachments/Pasted image 20250605232636.png]][^3]
 
 ## Rounded
 
-![[Brain/Attachments/Pasted image 20250605232547.png]][^1]
+![[Attachments/Pasted image 20250605232547.png]][^1]
 
 ## Fancy
 
-![[Brain/Attachments/Pasted image 20250605232653.png]][^4]
+![[Attachments/Pasted image 20250605232653.png]][^4]
 
 ## Uppercase Variations
 
-![[Brain/Attachments/Pasted image 20250605232616.png]][^2]
+![[Attachments/Pasted image 20250605232616.png]][^2]
 
 
 

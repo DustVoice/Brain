@@ -136,4 +136,4 @@
 
 ## [Der Taucher (Schiller)](https://www.stenogenerator.de/literatur_stenografie__schiller.htm)
 
-![[Brain/Attachments/DEK/Der Taucher (Schiller) - A4 UT.pdf]]
+![[Attachments/DEK/Der Taucher (Schiller) - A4 UT.pdf]]

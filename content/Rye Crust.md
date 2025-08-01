@@ -2,7 +2,7 @@
 {"publish":true,"created":"2025-05-26 22:34","modified":"2025-06-27T12:05:02.987+02:00","tags":["bread","recipe"],"cssclasses":""}
 ---
 
-![[Brain/Attachments/20250606_165659.jpg|400]]
+![[Attachments/20250606_165659.jpg|400]]
 
 [[Roggenkruste\|Deutsche Version]]
 

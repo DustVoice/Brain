@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Brain","created":"2025-04-29","modified":"2025-05-31T00:09:29.791+02:00","cssclasses":""}
+{"publish":true,"title":"Brain","created":"2025-04-29","modified":"2025-06-13T09:47:53.994+02:00","cssclasses":""}
 ---
 
 This is my personal, _Digital Brain_ / [_Digital Garden_](https://maggieappleton.com/garden-history).

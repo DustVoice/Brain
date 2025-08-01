@@ -1,5 +1,5 @@
 ---
-{"publish":true,"lang":"de","created":"2025-06-09 15:51","modified":"2025-06-10T10:16:20.432+02:00","cssclasses":""}
+{"publish":true,"lang":"de","created":"2025-06-09 15:51","modified":"2025-06-13T09:48:09.094+02:00","cssclasses":""}
 ---
 
 
@@ -7,18 +7,18 @@
 
 ## Bedienoberfläche
 
-![[Brain/Attachments/Viofo_1.jpg]]
+![[Attachments/Viofo_1.jpg]]
 
-![[Brain/Attachments/Viofo_2.jpg]]
+![[Attachments/Viofo_2.jpg]]
 
 ## Formatieren
 
-![[Brain/Attachments/Viofo_3.jpg]]
+![[Attachments/Viofo_3.jpg]]
 
 ## Dateisystem
 
-![[Brain/Attachments/Viofo_4.jpg]]
+![[Attachments/Viofo_4.jpg]]
 
 ## Firmwareupgrade
 
-![[Brain/Attachments/Viofo_5.jpg]]
+![[Attachments/Viofo_5.jpg]]

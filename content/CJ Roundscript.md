@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-06-05 22:32","modified":"2025-06-05T22:41:48.174+02:00","cssclasses":""}
+{"publish":true,"created":"2025-06-05 22:32","modified":"2025-06-13T09:47:58.469+02:00","cssclasses":""}
 ---
 
 
@@ -9,10 +9,10 @@ This is a cursive script, developed and used by [CJ's Creative Studio](https://w
 - https://youtu.be/c3GpuQX5tk0?si=g1vDbYiFiCQwNb4e
 
 [YouTube Video](https://www.youtube.com/watch?v=9uWXrcTuzJE&list=PLGelO7Baay-_OozIWl2otskgfsikJb5ed&index=135) Screenshot:
-![[Brain/Attachments/Pasted image 20250605223856.png]]
+![[Attachments/Pasted image 20250605223856.png]]
 
 My Handwritten Version ([[Lamy Dialog CC]], [[Lamy Blue]]):
-![[Brain/Attachments/20250605_223958.jpg]]
+![[Attachments/20250605_223958.jpg]]
 
 > [!tip]
 > I have developed [[David's Roundscript\|my own script based on this script]], while changin up some Uppercase and Lowercase letters

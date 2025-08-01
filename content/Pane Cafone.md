@@ -1,8 +1,8 @@
 ---
-{"publish":true,"created":"2025-06-05 22:43","modified":"2025-07-18T23:22:33.423+02:00","tags":["recipe"],"cssclasses":""}
+{"publish":true,"created":"2025-06-05 22:43","modified":"2025-07-23T13:54:43.157+02:00","tags":["recipe"],"cssclasses":""}
 ---
 
-![[Brain/Attachments/20250718_232151.jpg|400]]
+![[Attachments/20250718_232151.jpg|400]]
 
 # Beschreibung
 

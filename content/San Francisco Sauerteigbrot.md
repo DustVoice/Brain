@@ -3,7 +3,7 @@
 ---
 
 
-![[Brain/Attachments/Pasted image 20250605231523.png|200]][^1]
+![[Attachments/Pasted image 20250605231523.png|200]][^1]
 
 # Beschreibung
 

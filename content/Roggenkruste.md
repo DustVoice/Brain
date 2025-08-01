@@ -2,7 +2,7 @@
 {"publish":true,"created":"2025-05-26 22:34","modified":"2025-06-27T12:06:04.751+02:00","tags":["bread","recipe"],"cssclasses":"cards"}
 ---
 
-![[Brain/Attachments/20250623_201426 1.jpg|400]]
+![[Attachments/20250623_201426 1.jpg|400]]
 
 [[Rye Crust\|English Version]]
 

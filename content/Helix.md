@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-07-30 17:44","modified":"2025-07-30T17:54:47.831+02:00","cssclasses":""}
+{"publish":true,"created":"2025-07-30 17:44","modified":"2025-08-01T09:48:25.394+02:00","cssclasses":""}
 ---
 
 
@@ -14,6 +14,22 @@ It aims to be a no-nonsense approach to LSP and [[Tree-sitter]] integration, com
 
 ```sh
 brew install helix
+```
+
+## [[Snap]]
+
+> [!note]
+> You can add the option `--edge`, to use the _latest/edge_ channel instead of the default _latest/stable_ one.
+
+```sh
+sudo snap install helix --classic
+```
+
+## [[Flatpak]]
+
+```sh
+sudo flatpak install flathub com.helix_editor.Helix
+sudo flatpak run com.helix_editor.Helix
 ```
 
 ## #OS/Fedora 
