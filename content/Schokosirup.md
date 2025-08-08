@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-06-01 16:15","modified":"2025-06-13T09:47:55.722+02:00","tags":["recipe"],"cssclasses":""}
+{"publish":true,"created":"2025-06-01 16:15","modified":"2025-06-18T10:05:57.566+02:00","tags":["recipe"],"cssclasses":""}
 ---
 
 # Zutaten

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-05-30 14:57","modified":"2025-05-31T00:09:29.798+02:00","cssclasses":""}
+{"publish":true,"created":"2025-05-30 14:57","modified":"2025-08-08T20:18:30.683+02:00","cssclasses":""}
 ---
 
 
@@ -36,6 +36,10 @@ Installing packages globally through `pip` isn’t the most optimal thing, esp
 
 It is [generally preferred](https://wiki.archlinux.org/title/Python#Arch_Repositories) to install the specific package through the official repositories or AUR, where the package name often follows the `python-<package_name>` scheme.
 
+## Use a project manager
+
+A project manager, like [[uv]] simplifies the development process immensely.
+
 # Install in an environment
 
 Another way is to utilize virtual environments.
@@ -61,8 +65,22 @@ bash Miniforge3.sh
 6. `conda init`, if your shell supports it
 7. `rm Miniforge3.sh` the installation script
 
+
+> [!NOTE]
+> If you're using my [[Dotfiles]] together with [[fish]], you don't have to let conda populate your init file, as the appropriate code is already included with them, upon detection of the `~/miniforge3` 
+
 Now when you wish to activate an environment, you can simply use
 
 ```sh /env_name/
 conda activate env_name
 ```
+
+# Additional Tools
+
+You probably also want some additional tools to use with Python itself.
+
+> [!todo] Install
+> - [[ty]]
+> - [[ruff]]
+> - [[jedi]]
+> - [[pylsp]]

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-07-31 15:26","modified":"2025-08-01T08:42:52.452+02:00","cssclasses":""}
+{"publish":true,"created":"2025-07-31 15:26","modified":"2025-07-31T16:33:05.563+02:00","cssclasses":""}
 ---
 
 [Yazi](https://yazi-rs.github.io) is a terminal file manager, written in [[Rust]].

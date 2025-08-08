@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-04-29","modified":"2025-06-13T09:47:54.743+02:00","tags":["OS/Arch-Linux"],"cssclasses":""}
+{"publish":true,"created":"2025-04-29","modified":"2025-05-31T00:09:29.677+02:00","tags":["OS/Arch-Linux"],"cssclasses":""}
 ---
 
 
