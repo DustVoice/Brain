@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-08-27 12:43","modified":"2025-08-28T02:36:43.691+02:00","cssclasses":""}
+{"publish":true,"created":"2025-08-27 12:43","modified":"2025-08-28T02:47:10.051+02:00","cssclasses":""}
 ---
 
 Gütermann ist ein Produzent von Qualitäts-Nähgarnen.
@@ -17,7 +17,6 @@ Die Grafik stammt von [diesem exzellenten Blog-Post](https://www.naehratgeber.de
 ## Auflistung
 
 Nachfolgend habe ich eine Gegenüberstellung der am weitest verbreitendsten Farben des Allesnähers sowie ihre jeweilige Zugehörigkeit zu verschiedenen Sets aufgelistet, vor Allem um bei der Kaufentscheidung der jeweiligen Sets zu assistieren.
-
 
 | Bild                                    | Col. | 48er Set | 30er Set | 20er Set |
 | --------------------------------------- | ---- | :------: | :------: | :------: |
