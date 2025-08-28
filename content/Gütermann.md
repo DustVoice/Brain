@@ -1,6 +1,7 @@
 ---
-{"publish":true,"created":"2025-08-27 12:43","modified":"2025-08-28T02:56:13.579+02:00","cssclasses":""}
+{"publish":true,"created":"2025-08-27 12:43","modified":"2025-08-28T03:03:16.411+02:00","cssclasses":""}
 ---
+
 
 Gütermann ist ein Produzent von Qualitäts-Nähgarnen.
 
