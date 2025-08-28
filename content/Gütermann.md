@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-08-27 12:43","modified":"2025-08-28T03:24:04.259+02:00","cssclasses":""}
+{"publish":true,"created":"2025-08-27 12:43","modified":"2025-08-28T13:42:38.069+02:00","cssclasses":""}
 ---
 
 
@@ -11,7 +11,7 @@ Der Gütermann Allesnäher ist ein synthetisches Garn welches hervorragende Eige
 Es ist extrem reißfest aber gleichzeitig gut zu vernähen.
 
 Eine Grafik zum Aufbau des Garns konnte ich nur für das vergleichbare Konkurrenzprodukt [[Madeira Aerofill]] finden:
-![[Attachments/Madeira_aerofill.jpg|400]]
+![[Attachments/Aerofill.jpg|400]]
 
 Die Grafik stammt von [diesem exzellenten Blog-Post](https://www.naehratgeber.de/woran-erkenne-ich-gutes-naehgarn-welches-garn-passt-zu-meinem-projekt-3018/).
 
@@ -19,8 +19,8 @@ Die Grafik stammt von [diesem exzellenten Blog-Post](https://www.naehratgeber.de
 
 Nachfolgend habe ich eine Gegenüberstellung der am weitest verbreitendsten Farben des Allesnähers sowie ihre jeweilige Zugehörigkeit zu verschiedenen Sets aufgelistet, vor Allem um bei der Kaufentscheidung der jeweiligen Sets zu assistieren.
 
-| Bild                                    | Col. | 48er Set | 30er Set | 20er Set |
-| --------------------------------------- | ---- | :------: | :------: | :------: |
+| Bild                        | Col. | 48er Set | 30er Set | 20er Set |
+| --------------------------- | ---- | :------: | :------: | :------: |
 | ![[guetallesn_1.png\|150]]  | 000  |    ✅     |    ✅     |    ✅     |
 | ![[guetallesn_22.png\|150]] | 694  |    ✅     |    ✅     |          |
 | ![[guetallesn_16.png\|150]] | 727  |    ✅     |    ✅     |          |
