@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-08-27 12:43","modified":"2025-08-28T03:03:16.411+02:00","cssclasses":""}
+{"publish":true,"created":"2025-08-27 12:43","modified":"2025-08-28T03:10:25.423+02:00","cssclasses":""}
 ---
 
 
@@ -11,7 +11,7 @@ Der Gütermann Allesnäher ist ein synthetisches Garn welches hervorragende Eige
 Es ist extrem reißfest aber gleichzeitig gut zu vernähen.
 
 Eine Grafik zum Aufbau des Garns konnte ich nur für das vergleichbare Konkurrenzprodukt [[Madeira Aerofill]] finden:
-![[Attachments/Pasted image 20250827125019.jpg|400]]
+![[Attachments/Madeira_aerofill.jpg|400]]
 
 Die Grafik stammt von [diesem exzellenten Blog-Post](https://www.naehratgeber.de/woran-erkenne-ich-gutes-naehgarn-welches-garn-passt-zu-meinem-projekt-3018/).
 
