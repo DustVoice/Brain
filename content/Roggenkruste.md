@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-05-26 22:34","modified":"2025-09-14T21:56:30.213+02:00","tags":["bread","recipes"],"cssclasses":"cards"}
+{"publish":true,"created":"2025-05-26 22:34","modified":"2025-09-14T23:49:53.662+02:00","tags":["bread","recipes"],"cssclasses":"cards"}
 ---
 
 ![[Attachments/20250623_201426 1.jpg|400]]
