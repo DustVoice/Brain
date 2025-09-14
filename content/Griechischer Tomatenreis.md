@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-06-05 22:43","modified":"2025-06-28T17:23:57.600+02:00","tags":["recipe"],"cssclasses":""}
+{"publish":true,"created":"2025-06-05 22:43","modified":"2025-09-14T21:56:47.828+02:00","tags":["recipes"],"cssclasses":""}
 ---
 
 
@@ -21,13 +21,14 @@ Super leckere Beilage zu jeglichen Fleisch- und Grillgerichten
 
 # Anweisungen
 
-1. ==Zwiebeln== und ==Knoblauch== mit dem ==Olivenöl== in einem ausreichend großen Topf **5 Minuten** andünsten.
-2. ==Tomatenmark== in den Topf geben und kurz mitbraten.
-3. Die ==stückigen Tomaten== und das Lorbeerblatt hinzugeben.
-4. Mit Salz, Pfeffer und ==Oregano== würzen.
-5. **5-10 Minuten** einkochen lassen.
-6. Mit der ==Gemüsebrühe== aufgießen.
-7. Den ==Naturreis== ebenfalls hinzugeben und gut uumrühre.
-8. Zum Kochen bringen, dann direkt den Deckel drauf, Temperatur reduzieren und **15-20 Minuten** köcheln lassen.
-9. Den Topf vom Herd nehmen, umrühren, ggf. abschmecken und nochmal **5 Minuten** zugedeckt ruhen lassen.
-10. Das Lorbeerblatt vor dem Servieren entfernen.
+1. Den Reis waschen, bis das Wasser klar ist.
+2. ==Zwiebeln== und ==Knoblauch== mit dem ==Olivenöl== in einem ausreichend großen Topf **5 Minuten** andünsten.
+3. ==Tomatenmark== in den Topf geben und kurz mitbraten.
+4. Die ==stückigen Tomaten== und das Lorbeerblatt hinzugeben.
+5. Mit Salz, Pfeffer und ==Oregano== würzen.
+6. **5-10 Minuten** einkochen lassen.
+7. Mit der ==Gemüsebrühe== aufgießen.
+8. Den ==Naturreis== ebenfalls hinzugeben und gut umrühren.
+9. Zum Kochen bringen, dann direkt den Deckel drauf, Temperatur reduzieren und **15-20 Minuten** köcheln lassen.
+10. Den Topf vom Herd nehmen, umrühren, ggf. abschmecken und nochmal **5 Minuten** zugedeckt ruhen lassen.
+11. Das Lorbeerblatt vor dem Servieren entfernen.
