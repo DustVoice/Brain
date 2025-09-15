@@ -1,11 +1,11 @@
 ---
-{"publish":true,"created":"2025-05-01 17:15","modified":"2025-05-31T00:09:29.675+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-01 17:15","modified":"2025-09-15T14:53:05.776+02:00","cssclasses":""}
 ---
 
 
-# Methods
+## Methods
 
-## Normal
+### Normal
 
 The “intended” way of brewing an Aeropress _(whatever that's supposed to mean)_
 
@@ -38,9 +38,9 @@ The “intended” way of brewing an Aeropress _(whatever that's supposed to mea
 17. Turn the Aeropress around and set it aside
 18. Enjoy
 
-## Inverted
+### Inverted
 
-Brew without bypass. The _hip_ way to brew, but subjectively better. 
+Brew without bypass. The _hip_ way to brew, but subjectively better.
 
 1. Set up a scale
 2. Put your intended coffee vessel, suitable for pressing onto, aside

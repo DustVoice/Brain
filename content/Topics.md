@@ -1,15 +1,15 @@
 ---
-{"publish":true,"created":"2025-04-29","modified":"2025-05-31T00:25:28.893+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-04-29","modified":"2025-09-15T14:55:13.629+02:00","cssclasses":""}
 ---
 
 
 To cite the starting page:
 
->The [[Topics]] page might serve as an entry point into specific and fleshed out portions of this brain.
+> The [[Topics]] page might serve as an entry point into specific and fleshed out portions of this brain.
 
 > [!NOTE]
 > These topics never really aim to be a completely separated part of the vrain, but rather _subsets_ which may or may not overlap right now or in the future.
-> 
+>
 > It might however still resemble _classical documentation_ a bit more heavily, specifically because I transformed a lot of information contained within these subsets of notes from my previous linear technical documentation(s) (see, e.g., [my old DustWSL documentation](https://github.com/DustVoice/DustWSL)).
 
 - [[System Administration]]

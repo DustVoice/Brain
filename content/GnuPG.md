@@ -1,11 +1,11 @@
 ---
-{"publish":true,"created":"2025-05-30 17:21","modified":"2025-05-31T00:09:29.686+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 17:21","modified":"2025-09-15T14:55:13.852+02:00","cssclasses":""}
 ---
 
 
-# Install
+## Install
 
-## #OS/Fedora 
+### #OS/Fedora
 
 > [!note]
 > Should already be installed and up-to-date
@@ -14,18 +14,19 @@
 sudo dnf install gnupg
 ```
 
-# Setup
+## Setup
 
 Initialize a keyring by issuing a command that expects it
 
 > [!example]
+>
 > ```sh
 > gpg -K
 > ```
 
-## Smart Card
+### Smart Card
 
-### Get it working
+#### Get it working
 
 To set up a smart card, first make sure it appears in `lsusb`.
 
@@ -34,7 +35,7 @@ This command _should_ output some information about the present smart card. If
 
 To use the smart card, we need to make sure [[pcsc]] which manages the smart card, as well as [[ccid]], which is a generic CCID driver, are available, configured, [[pcsc#Enable\|enabled]] and [[pcsc#Start\|started]].
 
-### Register
+#### Register
 
 The final thing to do now, is to register the smart card and the key to `gpg`.
 
@@ -48,6 +49,6 @@ The easiest way for me, since I have set the _URL of the public key_ attribute
 6. `save` the changes
 7. Confirm everything worked by using `gpg -K`
 
-### Pinentry
+#### Pinentry
 
 You might want to install a [[Pinentry\|GUI pinentry]].

@@ -1,25 +1,25 @@
 ---
-{"publish":true,"created":"2025-05-30 16:21","modified":"2025-06-27T13:38:27.271+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 16:21","modified":"2025-09-15T14:55:13.826+02:00","cssclasses":""}
 ---
 
 
 [Iosevka](https://github.com/be5invis/Iosevka) is my current everyday font. I like that it isn't as wide and has nice distinction between similar looking letters.
 
-# Install
+## Install
 
 > [!tip]
 > If you're only using this within terminal applications and not in a GUI application like [[Emacs]], for example, you should be able to get away with only installing the `term` variant(s).
 
-## #OS/Fedora 
+### #OS/Fedora
 
-### Normal Fonts
+#### Normal Fonts
 
 ```sh
 sudo dnf copr enable peterwu/iosevka
 sudo dnf install iosevka-fonts iosevka-term-fonts iosevka-aile-fonts
 ```
 
-### Nerd Fonts
+#### Nerd Fonts
 
 Make sure you have [[Terra#Setup\|Terra set up]].
 

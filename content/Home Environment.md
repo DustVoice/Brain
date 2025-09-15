@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-05-30 13:47","modified":"2025-05-31T00:09:29.682+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 13:47","modified":"2025-09-15T14:55:13.836+02:00","cssclasses":""}
 ---
 
 
@@ -10,4 +10,3 @@ In this part, I set up my `$HOME` directory and environment, with all the basi
 3. [[Shell]]
 4. [[Terminal Emulator]]
 5. [[Scripting]]
-

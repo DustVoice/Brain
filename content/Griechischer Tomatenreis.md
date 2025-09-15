@@ -1,13 +1,13 @@
 ---
-{"publish":true,"created":"2025-06-05 22:43","modified":"2025-09-14T21:56:47.828+02:00","tags":["recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-05 22:43","modified":"2025-09-15T14:55:13.850+02:00","tags":["recipes"],"cssclasses":""}
 ---
 
 
-# Beschreibung
+## Beschreibung
 
 Super leckere Beilage zu jeglichen Fleisch- und Grillgerichten
 
-# Übersicht
+## Übersicht
 
 - 200 g Naturreis, [[Reis waschen\|gründlich gewaschen]]
 - 1 Zwiebel, fein gehackt
@@ -19,7 +19,7 @@ Super leckere Beilage zu jeglichen Fleisch- und Grillgerichten
 - 1 TL Oregano, getrocknet
 - 500 ml Gemüsebrühe
 
-# Anweisungen
+## Anweisungen
 
 1. Den Reis waschen, bis das Wasser klar ist.
 2. ==Zwiebeln== und ==Knoblauch== mit dem ==Olivenöl== in einem ausreichend großen Topf **5 Minuten** andünsten.

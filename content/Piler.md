@@ -1,17 +1,17 @@
 ---
-{"publish":true,"created":"2025-05-02 13:33","modified":"2025-06-30T22:26:09.987+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-02 13:33","modified":"2025-09-15T14:55:13.762+02:00","cssclasses":""}
 ---
 
 
 ![[Disclaimer (Tech)]]
 
-# Rootless Podman
+## Rootless Podman
 
-## Prerequisites
+### Prerequisites
 
 Make sure you have [[Podman\|podman]] installed and a _frontend_ [[Caddy]] instance set up.
 
-## Data directories
+### Data directories
 
 First off, create all the necessary directories:
 
@@ -21,7 +21,7 @@ mkdir -p ~/containers/piler/{db/conf,db/data}
 mkdir -p ~/containers/piler/{manticore/conf,manticore/data}
 ```
 
-## Frontend Caddyfile
+### Frontend Caddyfile
 
 As mentioned, the _external_ caddy instance (which I will refer to as the _frontend_ instance) is used for reverse proxying. Note that Piler expects incoming (`HTTP`) traffic on port `8180`, as specified in [[Piler#Pod\|its pod file]].
 
@@ -42,7 +42,7 @@ Therefore, we simply add a section to the (already present) [[Caddy#Caddyfile]] 
 > [!todo] [[Caddy#Environment variables]]
 > `PILER_DOMAIN` : [[FQDN]] of the Piler instance
 
-## Pod
+### Pod
 
 Create the `~/.config/containers/systemd/piler.pod` file
 
@@ -57,7 +57,7 @@ PublishPort=8125:25
 PublishPort=8180:80
 ```
 
-## Ports
+### Ports
 
 As you can see, we just published the container ports `80` and `25` to the system ports `8180` and `8125` respectively.
 
@@ -79,7 +79,7 @@ And check that everything went as planned
 sudo firewall-cmd --list-all
 ```
 
-## Network
+### Network
 
 As we configured a network for our [[Piler#Pod]], we will need to create the network, too.
 
@@ -93,19 +93,19 @@ DisableDNS=false
 Internal=false
 ```
 
-## Containers
+### Containers
 
-### Database
+#### Database
 
 Of course, Piler requires a database. We'll use [MariaDB](https://mariadb.org), as it's the default, per the [official `docker-compose.yaml`](https://github.com/jsuto/piler/blob/master/docker/docker-compose.yaml)
 
-#### Podman Secret
+##### Podman Secret
 
 First, we generate a [Podman Secret]() to be used as the database password.
 
 > [!warning]
 > You should always **generate** this password!
-> 
+>
 > Humans are not suitable password generators!
 
 We use [[pwgen\|pwgen]] to generate a password and store it in a file, to **not** leak it to our shell history.
@@ -123,12 +123,12 @@ This generates a single 32 character long password.
 
 > [!tip]
 > If you want to store the password securely in a password manager, you can simply retrieve the secret using
-> 
+>
 > ```sh
 > podman secret inspect piler-mariadb-password --showsecret
 > ```
 
-#### Config File
+##### Config File
 
 Populate MariaDB's default config file under `~/containers/piler/db/conf/piler.cnf`, according to the [upstream file](https://github.com/jsuto/piler/blob/master/docker/piler.cnf):
 
@@ -145,7 +145,7 @@ innodb_write_io_threads=4
 innodb_file_per_table
 ```
 
-#### Environment File
+##### Environment File
 
 This [specifies environment variables available to the container](https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page#secure-the-admin_token).
 
@@ -157,7 +157,7 @@ MYSQL_USER=piler
 MYSQL_RANDOM_ROOT_PASSWORD=yes
 ```
 
-#### Container File
+##### Container File
 
 Create the `~/.config/containers/systemd/piler-db.container` file
 
@@ -186,7 +186,7 @@ WantedBy=default.target
 > [!todo] Replace
 > - `user` : username used for running the [[Podman#Rootless\|rootless podman instance]].
 
-### Memcached
+#### Memcached
 
 For caching, we use `memcached`.
 
@@ -208,18 +208,18 @@ Exec=-m 64
 WantedBy=default.target
 ```
 
-### Manticore
+#### Manticore
 
 To provide a good search experience, Piler uses Manticore.
 
-#### Config File
+##### Config File
 
 > [!caution] Config file name
 > Normally, the filename for the config should be `manticore.conf`.
 > I, however, was unable to get it up and running.
-> 
+>
 > Upon further investigation, it seems as if the [docker image](https://hub.docker.com/layers/manticoresearch/manticore/latest/images/sha256-638de83aa45fde32b0af7e359cce6620edb8effd95eb266e347c1fbb95e7da23) is faulty, in that the `searchd` parameter defining the config file is hard-coded to `manticore.conf.sh`.
-> 
+>
 > So for now, I chose to simply rename the file accordingly.
 
 Populate Manticore's config file under `~/containers/piler/manticore/conf/manticore.conf.sh`, according to the [upstream file](https://github.com/jsuto/piler/blob/master/docker/manticore.conf):
@@ -322,7 +322,7 @@ searchd
 }
 ```
 
-#### Container File
+##### Container File
 
 Create the file under `~/.config/containers/systemd/piler-manticore.container`:
 
@@ -347,11 +347,11 @@ WantedBy=default.target
 > [!todo] Replace
 > - `user` : username used for running the [[Podman#Rootless\|rootless podman instance]].
 
-### Piler
+#### Piler
 
 Now we can finally create the _main Piler container_.
 
-#### Environment File
+##### Environment File
 
 This [specifies environment variables available to the container](https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page#secure-the-admin_token).
 
@@ -371,7 +371,7 @@ RT=1
 > [!todo] Replace
 > - `PILER_DOMAIN` : [[FQDN]] of the Piler instance
 
-#### Container File
+##### Container File
 
 Create the file under `~/.config/containers/systemd/piler-app.container`
 
@@ -408,35 +408,35 @@ WantedBy=default.target
 > [!todo] Replace
 > - `user` : username used for running the [[Podman#Rootless\|rootless podman instance]].
 
-## Boot it up
+### Boot it up
 
-### Reload
+#### Reload
 
 ![[Podman#Reload the daemon]]
 
-### Auto-Update
+#### Auto-Update
 
 ![[Podman#Auto-Update]]
 
-### Linger
+#### Linger
 
 ![[Podman#Keep it running]]
 
-### Start
+#### Start
 
 ![[Podman#Start the service]]
 
 > [!todo] Replace
 > - `name` : `piler-pod`
 
-### Status
+#### Status
 
 ![[Podman#Check the status]]
 
 > [!todo] Replace
 > - `name` : `piler-pod`
 
-### Restart
+#### Restart
 
 Following that, you probably still need to restart the _frontend_ [[Caddy]], as we [[Piler#Frontend Caddyfile\|modified its Caddyfile previously]]:
 
@@ -444,7 +444,7 @@ Following that, you probably still need to restart the _frontend_ [[Caddy]], as 
 systemctl --user restart caddy.service
 ```
 
-## Set it up
+### Set it up
 
 You should _(hopefully)_ now be able to access your Piler instance under the [[FQDN]] you specified.
 

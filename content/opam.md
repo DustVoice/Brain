@@ -1,17 +1,17 @@
 ---
-{"publish":true,"created":"2025-08-06 13:52","modified":"2025-08-06T14:04:46.511+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-08-06 13:52","modified":"2025-09-15T14:55:13.777+02:00","cssclasses":""}
 ---
 
 
-# Install
+## Install
 
-## #OS/Fedora 
+### #OS/Fedora
 
 ```sh
 sudo dnf install ocaml ocaml-findlib opam
 ```
 
-## Generic Linux
+### Generic Linux
 
 Normally it is recommended to install opam using the following shell script snippet, to get the latest version, etc.
 
@@ -28,8 +28,7 @@ You need to have a few dependencies installed though, so make sure to install th
 > - [[unzip]]
 > - [[bubblewrap]]
 
-# Initialize
-
+## Initialize
 
 > [!NOTE]
 > If you use my [[Dotfiles]], together with [[fish]], I already include the relevant `eval` statement the following command wants to add to the config file.

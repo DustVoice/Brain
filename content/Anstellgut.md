@@ -1,10 +1,10 @@
 ---
-{"publish":true,"created":"2025-06-05 23:45","modified":"2025-06-06T17:08:25.676+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-05 23:45","modified":"2025-09-15T14:52:59.482+02:00","cssclasses":""}
 ---
 
 [[Sourdough Starter\|English Version]]
 
-# Allgemeines
+## Allgemeines
 
 Ich habe natürlich [[Trudi\|mein eigenes Anstellgut]], welches ich mithilfe von [Marcel Paa's Anleitung](https://www.marcelpaa.com/rezepte/sauerteig-herstellen-zuechten/) vor einiger Zeit kultiviert habe.
 
@@ -14,7 +14,7 @@ Anstellgut wird zum _Anstellen_ eines Sauerteigs verwendet, dient also als Start
 Diese Starterkultur(en) vermehrt sich durch die in Form von Wasser und Mehl zugeführte Nahrung im (Vor-)Teig.
 Meistens wird ein solch angesetzter Sauer(vor)teig bei Raumtemperatur gehen und verdoppeln gelassen, um eine maximale Hefeaktivität und somit Triebfähigkeit des Teigs zu gewährleisten.
 
-# Aufschlämmen
+## Aufschlämmen
 
 Wenn man wie ich ein festes Anstellgut verwendet (ca. TA 150 - 170), sollte man dieses vor der Zugabe von Mehl, mit dem Wasser etwas aufschlämmen.
 

@@ -1,11 +1,11 @@
 ---
-{"publish":true,"created":"2025-08-27 12:43","modified":"2025-08-31T20:13:18.151+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-08-27 12:43","modified":"2025-09-15T14:55:13.843+02:00","cssclasses":""}
 ---
 
 
 Gütermann ist ein Produzent von Qualitäts-Nähgarnen.
 
-# Allesnäher
+## Allesnäher
 
 Der Gütermann Allesnäher ist ein synthetisches Garn welches hervorragende Eigenschaften beim Vernähen in den verschiedensten Materialien beweist.
 Es ist extrem reißfest aber gleichzeitig gut zu vernähen.
@@ -15,7 +15,7 @@ Eine Grafik zum Aufbau des Garns konnte ich nur für das vergleichbare Konkurren
 
 Die Grafik stammt von [diesem exzellenten Blog-Post](https://www.naehratgeber.de/woran-erkenne-ich-gutes-naehgarn-welches-garn-passt-zu-meinem-projekt-3018/).
 
-## Auflistung
+### Auflistung
 
 Nachfolgend habe ich eine Gegenüberstellung der am weitest verbreitendsten Farben des Allesnähers sowie ihre jeweilige Zugehörigkeit zu verschiedenen Sets aufgelistet, vor Allem um bei der Kaufentscheidung der jeweiligen Sets zu assistieren.
 

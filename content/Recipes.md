@@ -1,13 +1,13 @@
 ---
-{"publish":true,"created":"2025-05-28 12:06","modified":"2025-07-17T18:49:00.305+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-28 12:06","modified":"2025-09-15T14:55:13.734+02:00","cssclasses":""}
 ---
 
 
 A categorized index of every recipe in my Brain
 
-# Bread
+## Bread
 
-## Sourdough
+### Sourdough
 
 | Name                         | English       | German                          |
 | ---------------------------- | ------------- | ------------------------------- |
@@ -17,18 +17,18 @@ A categorized index of every recipe in my Brain
 | Vollkorn Bâtard Brot         |               | [[Vollkorn Bâtard Brot]]        |
 | Pane Cafone                  |               | [[Pane Cafone]]                 |
 
-# Coffee
+## Coffee
 
-## Basics
+### Basics
 
 | Name        | English               | German          |
 | ----------- | --------------------- | --------------- |
 | Brew Water  | [[Brew Water Recipe]] |                 |
 | Schokosirup |                       | [[Schokosirup]] |
 
-## Brew Recipes
+### Brew Recipes
 
-### Aeropress
+#### Aeropress
 
 | Name                   | English                              | German |
 | ---------------------- | ------------------------------------ | ------ |

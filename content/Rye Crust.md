@@ -1,26 +1,26 @@
 ---
-{"publish":true,"created":"2025-05-26 22:34","modified":"2025-09-14T23:49:57.768+02:00","tags":["bread","recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-26 22:34","modified":"2025-09-15T14:56:52.973+02:00","tags":["bread","recipes"],"cssclasses":""}
 ---
 
 ![[Attachments/20250606_165659.jpg|400]]
 
 [[Roggenkruste\|Deutsche Version]]
 
-# Description
+## Description
 
 A well-balanced rye-wheat-mix bread.
 It has good flavor, a nice crispy crust and a juicy but not too dense inside.
 
-# Overview
+## Overview
 
 - 45 g [[Sourdough Starter]]
 - 410 g Water
-- 360 g [[Rye Flour (Type 997)]] #buy 
-- 210 g [[Wheat Flour (Type 550)]] #buy 
+- 360 g [[Rye Flour (Type 997)]] #buy
+- 210 g [[Wheat Flour (Type 550)]] #buy
 - 12 g Salt
 - Proofing Basket, round
 
-# Directions
+## Directions
 
 ---
 
@@ -28,7 +28,7 @@ It has good flavor, a nice crispy crust and a juicy but not too dense inside.
 - 150 g Water, 30-60 °C depending on the temperature of the starter
 - 150 g Rye Flour
 
-## Sourdough
+### Sourdough
 
 Whisk the ==starter== with the ==warm water==, until it gets a little slushy.
 
@@ -50,7 +50,7 @@ Let it sit for **8-12 hours** at room temperature.
 - 210 g Rye Flour
 - 12 g Salt
 
-## Main dough
+### Main dough
 
 Prepare a kitchen machine with a kneading hook.
 
@@ -65,7 +65,7 @@ Let the dough rest in the bowl for **2-3 hours** at room temperature.
 
 ---
 
-## Form the bread
+### Form the bread
 
 Dust your kitchen top with some of the Rye Flour.
 
@@ -80,6 +80,7 @@ But the dough ball into a lightly dusted ==proofing basket== in the same orienta
 Either put it in the fridge for **8-12 hours** (it will be fine if you wait longer), or let it rest for another **60-90 minutes** at room temperature.
 
 ---
+
 **Bake**
 
 Preheat your oven to **250 °C** (Top/Down Heat).

@@ -1,15 +1,15 @@
 ---
-{"publish":true,"created":"2025-06-16 17:59","modified":"2025-09-14T23:49:44.869+02:00","tags":["recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-16 17:59","modified":"2025-09-15T14:55:13.608+02:00","tags":["recipes"],"cssclasses":""}
 ---
 
 ![[Attachments/Pasted image 20250616175953.png]]
 
-# Beschreibung
+## Beschreibung
 
 > [!cite]
 > Dieses rustikale Vollkorn-Bâtard-Brot vereint kräftige Aromen, gesunde Zutaten und französische Backtradition. Aussen knusprig, innen herrlich saftig – perfekt für bewusste Geniesser und alle, die echtes Brot lieben.
 
-# Zutaten
+## Zutaten
 
 - 150 g Saaten / Kerne, nach Wahl, z.B.: #buy
 	- 50 g Walnusskerne
@@ -24,13 +24,13 @@
 - Teigbecken
 - [[Gärkorb#Länglich]], mit Bezug
 
-# Anweisungen
+## Anweisungen
 
 ---
 
 - 150 g Saaten / Kerne, nach Wahl
 
-## Saaten
+### Saaten
 
 Die ==Saaten / Kerne== in einer Pfanne auf dem Herd ca. **10 Minuten** rösten.
 
@@ -44,7 +44,7 @@ Vor der weiteren Verwendung gut auskühlen lassen.
 	- 10 % [[Sauerteigbrot#Zurückhalten]]: 45 g
 - 10 g Salz
 
-## Hauptteig
+### Hauptteig
 
 Das ==Anstellgut==, das ==Mehl==, das ==Salz== und die im letzten Schritt angerösteten ==Saaten / Kerne== zusammen mit dem ==Wasser== in die Küchenmaschine geben.
 
@@ -71,7 +71,7 @@ Den Teig **12-24 Stunden** im Kühlschrank ruhen lassen.
 
 ---
 
-## Formen
+### Formen
 
 Den Teig aus dem Kühlschrank nehmen.
 
@@ -89,7 +89,7 @@ Mit dem Verschluss nach oben in den länglichen ==Gärkorb== mit Bezug legen und
 
 ---
 
-## Backen
+### Backen
 
 Den Ofen auf **250 °C Ober-/Unterhitze** mit einem Backstahl oder umgedrehtem Backblech im unteren Bereich vorheizen.
 

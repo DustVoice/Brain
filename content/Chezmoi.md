@@ -1,11 +1,12 @@
 ---
-{"publish":true,"created":"2025-05-30 14:16","modified":"2025-06-29T22:18:31.105+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 14:16","modified":"2025-09-15T14:55:13.947+02:00","cssclasses":""}
 ---
+
 
 > [!todo] Install
 > - [[Git]]
 
-# Install
+## Install
 
 > [!warning]
 > Make sure you are in your `$HOME` directory when running this command!
@@ -20,16 +21,17 @@ sh -c "$(curl -fsLS get.chezmoi.io)"
 > [!NOTE]
 > Also refer to the [official documentation](https://www.chezmoi.io/install/)
 
-## Install into `~/.local/bin`
+### Install into `~/.local/bin`
 
 ```sh "/lb"
 sh -c "$(curl -fsLS get.chezmoi.io/lb)"
 ```
 
-## System Package
-### Arch Linux
+### System Package
 
-# Apply
+#### Arch Linux
+
+## Apply
 
 ```sh /DustVoice/
 chezmoi init --apply DustVoice
@@ -40,7 +42,7 @@ chezmoi init --apply DustVoice
 
 Quickly and easily applies a config hosted under `https://github.com/DustVoice/dotfiles`.
 
-# Install and Apply
+## Install and Apply
 
 ```sh /$install_cmd/ /$apply_cmd/
 $install_cmd -- $apply_cmd
@@ -51,11 +53,12 @@ $install_cmd -- $apply_cmd
 > - `$apply_cmd` : The appropriate command from the [[Chezmoi#Apply]] section, without the `chezmoi`
 
 > [!example]
+>
 > ```sh
 > sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply DustVoice
 > ```
 
-# Update and refresh externals
+## Update and refresh externals
 
 ```sh
 chezmoi update -R

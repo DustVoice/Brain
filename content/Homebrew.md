@@ -1,11 +1,11 @@
 ---
-{"publish":true,"created":"2025-06-29 22:42","modified":"2025-08-01T10:03:51.648+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-29 22:42","modified":"2025-09-15T14:55:13.831+02:00","cssclasses":""}
 ---
 
 
-# Install
+## Install
 
-## #OS/Fedora 
+### #OS/Fedora
 
 ```sh
 sudo dnf group install 'Development Tools'
@@ -16,9 +16,9 @@ sudo dnf install procps-ng curl file
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-# Configure
+## Configure
 
-## [[fish]]
+### [[fish]]
 
 Normally you would have to run
 

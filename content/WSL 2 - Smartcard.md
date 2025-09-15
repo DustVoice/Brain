@@ -1,13 +1,13 @@
 ---
-{"publish":true,"created":"2025-05-30 13:50","modified":"2025-09-14T21:28:08.191+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 13:50","modified":"2025-09-15T14:55:13.576+02:00","cssclasses":""}
 ---
 
 
 > [!info]
 > I use a [[Smartcard]] for many recurring and non-recurring tasks in my workflow.
-> 
+>
 > Therefore, they need to be accessible from within WSL, for me to use WSL as a complete replacement of a Windows dev setup.
-> 
+>
 > Previously (especially with WSL v1), this was an absolute pain in the butt! With WSL2 and better support overall, it’s actually not that bad.
 
 > [!todo] Install and Configure

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-06-05 22:59","modified":"2025-06-05T23:04:34.096+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-05 22:59","modified":"2025-09-15T14:55:13.908+02:00","cssclasses":""}
 ---
 
 
@@ -11,5 +11,5 @@ Marcel Paa, verwendet diese Methode bei einem Großteil seiner Brote auf seinem 
 
 > [!note] Hinweis
 > Es wird generell empfohlen, in Abständen von ca. **30 Minuten** zu dehnen und zu falten.
-> 
+>
 > Weiterhin ist es generell empfehlenswert, den Teig ca. **1 Stunde** vor dem weiterverarbeiten nicht mehr zu dehnen und zu falten.

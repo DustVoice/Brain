@@ -1,17 +1,17 @@
 ---
-{"publish":true,"created":"2025-05-02 13:33","modified":"2025-06-12T13:46:50.610+02:00","tags":["OS/Fedora"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-02 13:33","modified":"2025-09-15T14:55:13.614+02:00","tags":["OS/Fedora"],"cssclasses":""}
 ---
 
 
 ![[Disclaimer (Tech)]]
 
-# Rootless Podman
+## Rootless Podman
 
-## Prerequisites
+### Prerequisites
 
 Make sure you have [[Podman\|podman]] installed and a _frontend_ [[Caddy]] instance set up.
 
-## Data directories
+### Data directories
 
 First off, create all the necessary directories:
 
@@ -19,7 +19,7 @@ First off, create all the necessary directories:
 mkdir -p ~/containers/vaultwarden/{data,env}
 ```
 
-## Frontend Caddyfile
+### Frontend Caddyfile
 
 I use a _frontend_ caddy instance for reverse proxying to Vaultwarden.
 Note that the Vaultwarden container expects incoming traffic on port `8000`, as specified in [[Vaultwarden#Vaultwarden\|its container config]].
@@ -41,13 +41,13 @@ Therefore, we simply add a section to the (already present) [[Caddy#Caddyfile]] 
 > [!todo] [[Caddy#Environment variables]]
 > `VAULTWARDEN_DOMAIN` : [[FQDN]] of the Vaultwarden instance
 
-## Containers
+### Containers
 
-### Vaultwarden
+#### Vaultwarden
 
 We can now simply create a _main Vaultwarden container_.
 
-#### Environment File
+##### Environment File
 
 This [specifies environment variables available to the container](https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page#secure-the-admin_token).
 
@@ -72,7 +72,7 @@ LOG_FILE=/var/log/vaultwarden/vaultwarden.log
 Vaultwarden will then serve the service over this port _within the container_.
 We later redirect an _outside_ port to this in the [[Vaultwarden#Vaultwarden\|container config]].
 
-#### Container File
+##### Container File
 
 Create the file under `~/.config/containers/systemd/vaultwarden.container`
 
@@ -97,35 +97,35 @@ WantedBy=default.target
 > [!todo] Replace
 > - `user` : username used for running the [[Podman#Rootless\|rootless podman instance]].
 
-## Boot it up
+### Boot it up
 
-### Reload
+#### Reload
 
 ![[Podman#Reload the daemon]]
 
-### Auto-Update
+#### Auto-Update
 
 ![[Podman#Auto-Update]]
 
-### Linger
+#### Linger
 
 ![[Podman#Keep it running]]
 
-### Start
+#### Start
 
 ![[Podman#Start the service]]
 
 > [!todo] Replace
 > - `name` : `vaultwarden`
 
-### Status
+#### Status
 
 ![[Podman#Check the status]]
 
 > [!todo] Replace
 > - `name` : `vaultwarden`
 
-### Restart
+#### Restart
 
 Following that, you probably still need to restart the _frontend_ [[Caddy]], as we [[Vaultwarden#Frontend Caddyfile\|modified its Caddyfile previously]]:
 
@@ -133,7 +133,7 @@ Following that, you probably still need to restart the _frontend_ [[Caddy]], as 
 systemctl --user restart caddy.service
 ```
 
-### Set it up
+#### Set it up
 
 You should _(hopefully)_ now be able to access your Vaultwarden instance.
 
@@ -141,7 +141,7 @@ You should _(hopefully)_ now be able to access your Vaultwarden instance.
 
 You can now perform administrative tasks using the admin console, although you'd have to access it from the server directly, as per my [[Vaultwarden#^c408d5\|advanced Caddyfile]].
 
-## Hardening
+### Hardening
 
 > [!warning]
 > Always refer to up-to-date information and best practices and also consider reading up on the [official upstream Vaultwarden documentation](https://github.com/dani-garcia/vaultwarden/wiki/Hardening-Guide).
@@ -200,6 +200,7 @@ The added/modified portions are highlighted, to enable quick expansion of an alr
 	}
 }
 ```
+
 ^c408d5
 
 > [!todo] [[Caddy#Environment variables]]
@@ -207,18 +208,18 @@ The added/modified portions are highlighted, to enable quick expansion of an alr
 
 You could in theory also [[Caddy#Don't terminate TLS\|not terminate the TLS chain]].
 
-### Disable registration
+#### Disable registration
 
 As you probably don't want _anyone_ to register an account uninvited, you should consider disabling registrations.
 This preserves the _invite_ functionality.
 
 You can either do that through the admin panel, or by setting `SIGNUPS_ALLOWED=false` in the [[Caddy#Environment variables]].
 
-### Disable password hints
+#### Disable password hints
 
 To disable password hints, which can definitely compromise security, especially with non-random passwords (which you should of course **never** use), set `SHOW_PASSWORD_HINT=false` in the [[Caddy#Environment variables]], or disable it using the admin panel.
 
-### Redact token from logs
+#### Redact token from logs
 
 According to the [official hardening guide](https://github.com/dani-garcia/vaultwarden/wiki/Hardening-Guide#access-logs-contain-access_token-parameter), the `access_token` parameter should be redacted from logs.
 
@@ -246,14 +247,14 @@ log {
 }
 ```
 
-### Rate limit login attempts
+#### Rate limit login attempts
 
 To prevent brute-force attacks, a rate limit at which login attempts can be made, should be employed.
 After the limit is hit, you'd need to wait the specified time before being able to try again.
 
 > [!info] MFA
 > When using Multi-Factor-Authentication (or colloquially referred to as 2FA / Two-Factor-Authentication), the client _uses two requests_.
-> 
+>
 > To match a value of _5 requests_ before the timeout is hit, I increased this value to 10.
 > This should not be a problem, as the number of passwords an attacker would need to try to reliably brute-force my password (with an entropy of over 80 bits), is _much, much, much_ higher.
 
@@ -266,7 +267,7 @@ ADMIN_RATELIMIT_MAX_BURST=10
 ADMIN_RATELIMIT_SECONDS=60
 ```
 
-### Fail2Ban
+#### Fail2Ban
 
 [[Fail2Ban\|Install and set up Fail2Ban]].
 
@@ -281,7 +282,7 @@ First, try logging in with a random username and password and look for a line re
 > _However_, as Fail2Ban is installed at `root`-level, Fail2Ban would have a hard time quering the journal using `systemctl --user`.
 > I found it more convenient to use a log file, as `root` can definitely read the user-owned file.
 
-#### Filter
+##### Filter
 
 Create a new file `vaultwarden.local` under Fail2Ban's filter directory `/etc/fail2ban/filter.d`
 
@@ -294,7 +295,7 @@ failregex = ^.*?Username or password is incorrect\. Try again\. IP: <ADDR>\. Use
 ignoreregex =
 ```
 
-#### Jail
+##### Jail
 
 Create a new file `vaultwarden.local` under Fail2Ban's jail directory `/etc/fail2ban/jail.d`
 
@@ -309,9 +310,9 @@ logpath = /home/user/containers/vaultwarden/logs/vaultwarden.log
 > [!todo] Replace
 > - `user` : username used for running the [[Podman#Rootless\|rootless podman instance]].
 
-#### SELinux
+##### SELinux
 
-I ran into some problems with `fail2ban.service` not being able to read the log file, because of SELinux. 
+I ran into some problems with `fail2ban.service` not being able to read the log file, because of SELinux.
 
 This is a good thing. Normally.
 
@@ -337,12 +338,12 @@ I had to repeat this process once more, as another permission was missing, which
 > [!question]- Use `systemd`?
 > Fail2Ban is also capable of using `systemd` instead of log files.
 > The only difficulty is that all my Systemd processes run in user mode.
-> 
+>
 > I haven't yet found a solution of hooking into the user-specific Systemd journals.
-> 
+>
 > It would probably be a cleaner way to do the tracking, though.
 
-### Hiding under a subdirectory
+#### Hiding under a subdirectory
 
 > [!info]- I decided against it
 > Although the [official hardening guide](https://github.com/dani-garcia/vaultwarden/wiki/Hardening-Guide#hiding-under-a-subdir) argues that this is not _security through obscurity_, but rather _defense in depth_, I would disagree.
@@ -351,7 +352,7 @@ I had to repeat this process once more, as another permission was missing, which
 > I, the same as many others, thoroughly disagree that _security through obscurity_ should be considered an effective security measure in our day and age.
 > And although it might not hurt, I categorically try to avoid fooling myself on the effectiveness of employed measures, giving me a false sense of security.
 > I'd rather focus on real and effective measures instead.
-> 
+>
 > The way I see it, _defense in depth_ is already provided with my setup and adding another layer by using subdirectories.
 > Using subdirectories, in my opinion, definitely qualifies as _security through obscurity_, adds no real security, is redundant, and confuses me more than a potential attacker.
 > As it solely and specifically counts on an attacker not finding a _specific subdirectory_ the instance is hosted under, I could effectively use a randomly generated subdomain for nearly the same effect.

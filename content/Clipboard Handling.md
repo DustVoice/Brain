@@ -1,14 +1,13 @@
 ---
-{"publish":true,"created":"2025-05-30 15:19","modified":"2025-05-31T00:09:29.735+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 15:19","modified":"2025-09-15T14:55:13.942+02:00","cssclasses":""}
 ---
 
 
 I normally make sure `wl-clipboard` is installed for _Wayland_ and `xsel` for _X11_.
 
-# Install
+## Install
 
-## #OS/Fedora 
-
+### #OS/Fedora
 
 > [!NOTE]
 > Should already be present by default

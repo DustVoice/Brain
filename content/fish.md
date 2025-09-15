@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-06-25 06:53","modified":"2025-07-30T22:05:25.925+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-25 06:53","modified":"2025-09-15T14:55:13.868+02:00","cssclasses":""}
 ---
 
 
@@ -16,15 +16,15 @@ I, however, don't necessarily need these specific variables to be present on oth
 In other words, it **Just Works™**, at least when it comes to the features specified above, without the need for an elaborate setup like with [[ZSH]], for example.
 And although I ship my custom config with my [[Dotfiles]], requiring [[fish#Additional Tools]], fish is highly usable out of the box, with sane defaults and easy configuration.
 
-# Install
+## Install
 
-## #OS/Fedora 
+### #OS/Fedora
 
 ```sh
 sudo dnf install fish
 ```
 
-## [[Homebrew]]
+### [[Homebrew]]
 
 If the latest `fish` shell isn't available for your distribution or version, you can try installing it using [[Homebrew]]:
 
@@ -32,7 +32,7 @@ If the latest `fish` shell isn't available for your distribution or version, you
 brew install fish
 ```
 
-# Update Completions
+## Update Completions
 
 You might also want to update completions (automagically), especially after installing new software.
 
@@ -40,7 +40,7 @@ You might also want to update completions (automagically), especially after inst
 fish_update_completions
 ```
 
-# Additional Tools
+## Additional Tools
 
 My specific [[Dotfiles]], use various tools, so it's best to make sure they're available and set up.
 
@@ -49,7 +49,7 @@ My specific [[Dotfiles]], use various tools, so it's best to make sure they're a
 > - [[zoxide]]
 > - _[[Zellij]]_
 
-# Plugins
+## Plugins
 
 There's also a plugin manager for fish, called [[Fisher]].
 
@@ -58,7 +58,7 @@ There's also a plugin manager for fish, called [[Fisher]].
 
 > [!note]
 > After deploying my [[Dotfiles]], as well as installing [[Fisher]], I usually install the following plugins.
-> 
+>
 > - [[fish#Catppuccin]]
 > 	- You still have to [[fish#Save it]]!
 > - [[fish#Sponge]]
@@ -68,23 +68,23 @@ There's also a plugin manager for fish, called [[Fisher]].
 > - [[fish#fzf]]
 > - [[fish#jj]]
 
-## Catppuccin
+### Catppuccin
 
 [Catppuccin](https://github.com/catppuccin/fish) is my theme of choice. Everywhere.
 
-### Install
+#### Install
 
 ```fish
 fisher install catppuccin/fish
 ```
 
-### Save it
+#### Save it
 
 ```fish
 fish_config theme save "Catppuccin Macchiato"
 ```
 
-## Sponge
+### Sponge
 
 To keep my typos out of the shell history, I use [Sponge](https://github.com/meaningful-ooo/sponge).
 
@@ -95,7 +95,7 @@ fisher install meaningful-ooo/sponge
 > [!info]- Effect
 > Deletes typos from the command history, but always keeps the last 2 commands alive.
 
-## Pufferfish
+### Pufferfish
 
 Some neat text expansion. See the [project's GitHub](https://github.com/nickeb96/puffer-fish) for more information.
 
@@ -118,7 +118,7 @@ fisher install nickeb96/puffer-fish
 > | `sudo dnf install nushell` | Command attempt |
 > | `cargo install !$` | Reuse last argument |
 
-## Replay
+### Replay
 
 [Replay](https://github.com/jorgebucaran/replay.fish) enables you to execute bash snippets and proceed with an up-to-date environment.
 
@@ -127,6 +127,7 @@ fisher install jorgebucaran/replay.fish
 ```
 
 > [!info]- Example
+>
 > ```shell-session
 > $ pwd
 > /home/users/jb/replay.fish
@@ -135,7 +136,7 @@ fisher install jorgebucaran/replay.fish
 > /home/users/jb
 > ```
 
-## Bass
+### Bass
 
 An alternative to [[fish#Replay]] is [bass](https://github.com/edc/bass).
 
@@ -143,7 +144,7 @@ An alternative to [[fish#Replay]] is [bass](https://github.com/edc/bass).
 fisher install edc/bass
 ```
 
-## Eza
+### Eza
 
 [fish-eza](https://github.com/plttn/fish-eza) is a neat little [[eza]] integration. Make sure the dependencies are set up
 
@@ -167,7 +168,7 @@ fisher install plttn/fish-eza
 > |`lo`|`eza --group --header --group-directories-first --oneline`|
 
 > [!info]- Alias suffixes
-> 
+>
 > |Extend suffix|Default options|
 > |---|---|
 > |`a`|`--all --binary`|
@@ -182,7 +183,7 @@ fisher install plttn/fish-eza
 > |`aai`|`--all --binary --all --icons`|
 > |`aaid`|`--all --binary --all --icons --only-dirs`|
 
-## fzf
+### fzf
 
 [fzf.fish](https://github.com/PatrickF1/fzf.fish) is a nice [[fzf]] integration. Make sure the dependencies are set up beforehand
 
@@ -205,7 +206,7 @@ fisher install PatrickF1/fzf.fish
 > | Ctrl+Alt+P | Search Processes  |
 > | Ctrl+V     | Search Variables  |
 
-## jj
+### jj
 
 [plugin-jj](https://github.com/kapsmudit/plugin-jj) for some [[Jujutsu]] integration.
 
@@ -245,7 +246,7 @@ fisher install kapsmudit/plugin-jj
 > |jrb|jj rebase|
 > |ja|jj abandon|
 
-## Abbreviation Tips
+### Abbreviation Tips
 
 [fish-abbreviation-tips](https://github.com/gazorby/fish-abbreviation-tips) is a really useful tool to get into the habit of using _your_ and _your plugin's_ abbreviations.
 Because, if you don't use them, you might as well get rid of them.
@@ -254,7 +255,7 @@ Because, if you don't use them, you might as well get rid of them.
 fisher install gazorby/fish-abbreviation-tips
 ```
 
-# Login Shell
+## Login Shell
 
 If you follow a [[System Administration]] [[Guide]], I normally set the login shell to `bash` when creating the custom user, so you might wonder why I don’t directly set it to `fish`.
 

@@ -1,13 +1,13 @@
 ---
-{"publish":true,"created":"2025-06-10 14:08","modified":"2025-06-10T14:09:55.877+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-10 14:08","modified":"2025-09-15T14:55:13.834+02:00","cssclasses":""}
 ---
 
 
 A dynamic Wayland compositor
 
-# Install
+## Install
 
-## #OS/Fedora 
+### #OS/Fedora
 
 You can either install the public repo version
 

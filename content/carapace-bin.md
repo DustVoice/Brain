@@ -1,11 +1,11 @@
 ---
-{"publish":true,"created":"2025-05-30 15:40","modified":"2025-05-31T00:09:29.803+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 15:40","modified":"2025-09-15T14:54:19.212+02:00","cssclasses":""}
 ---
 
 
-# Install
+## Install
 
-## #OS/Fedora 
+### #OS/Fedora
 
 Add a repo file under `/etc/yum.repos.d/fury.repo`
 

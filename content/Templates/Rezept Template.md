@@ -1,16 +1,14 @@
 ---
-{"publish":true,"created":"<% tp.date.now() %>","modified":"2025-09-14T23:36:12.568+02:00","tags":["recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"<% tp.date.now() %>","modified":"2025-09-15T14:55:13.648+02:00","tags":["recipes"],"cssclasses":""}
 ---
 
 
-# Beschreibung
+## Beschreibung
 
-
-
-# Zutaten
+## Zutaten
 
 - 
 
-# Anweisungen
+## Anweisungen
 
 - 

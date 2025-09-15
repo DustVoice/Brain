@@ -1,14 +1,14 @@
 ---
-{"publish":true,"created":"2025-06-10 14:08","modified":"2025-06-10T14:15:39.737+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-10 14:08","modified":"2025-09-15T14:55:13.789+02:00","cssclasses":""}
 ---
 
 
 > [!cite]
 > A scrollable-tiling Wayland compositor.
 
-# Install
+## Install
 
-## #OS/Fedora 
+### #OS/Fedora
 
 Use the [[Copr]] repository:
 

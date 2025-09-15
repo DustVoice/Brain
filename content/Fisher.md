@@ -1,11 +1,12 @@
 ---
-{"publish":true,"created":"2025-06-25 12:47","modified":"2025-06-30T00:52:42.954+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-25 12:47","modified":"2025-09-15T14:55:13.872+02:00","cssclasses":""}
 ---
+
 
 > [!cite]
 > A plugin manager for [Fish](https://fishshell.com/)—your friendly interactive shell. [Snag fresh plugins!](https://github.com/jorgebucaran/awsm.fish#readme)
 
-# Install
+## Install
 
 From within a [[fish]] shell, run:
 
@@ -13,7 +14,7 @@ From within a [[fish]] shell, run:
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 ```
 
-# Update
+## Update
 
 From within a [[fish]] shell, run:
 
@@ -21,7 +22,7 @@ From within a [[fish]] shell, run:
 fisher update
 ```
 
-# Plugins
+## Plugins
 
 The [awsm.fish repository](https://github.com/jorgebucaran/awsm.fish#readme) maintains a list of plugins.
 Apart from that, there's no central plugin repository.

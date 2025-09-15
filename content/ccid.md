@@ -1,11 +1,11 @@
 ---
-{"publish":true,"created":"2025-05-30 17:31","modified":"2025-05-31T00:09:29.799+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 17:31","modified":"2025-09-15T14:54:39.481+02:00","cssclasses":""}
 ---
 
 
-# Install
+## Install
 
-## #OS/Fedora 
+### #OS/Fedora
 
 > [!note]
 > Should already be present

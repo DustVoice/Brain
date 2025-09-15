@@ -1,11 +1,11 @@
 ---
-{"publish":true,"created":"2025-05-02 13:33","modified":"2025-06-30T14:20:23.725+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-02 13:33","modified":"2025-09-15T14:55:13.793+02:00","cssclasses":""}
 ---
 
 
 ![[Disclaimer (Tech)]]
 
-# Rootless Podman
+## Rootless Podman
 
 > [!info]- Source
 > This section has been heavily inspired by [Micheal Jack](https://codeberg.org/mjack)'s [nextcloud-quadlet](https://codeberg.org/mjack/nextcloud-quadlets/src/branch/main) repository!
@@ -15,15 +15,15 @@
 > [!question]- Caddy within Caddy?
 > Note that, similar to the original author (see [[Nextcloud#^1bda1f\|above]]), I use two Caddy instances.
 > One to serve Nextcloud itself and another one in front of it for reverse proxying.
-> 
+>
 > The only difference between my and the original author's approach is that my instance, responsible for reverse proxying, is not part of the Nextcloud pod.
 ^15ddf5
 
-## Prerequisites
+### Prerequisites
 
 Make sure you have [[Podman\|podman]] installed and a _frontend_ [[Caddy]] instance set up.
 
-## Data directories
+### Data directories
 
 First off, create all the necessary directories:
 
@@ -31,7 +31,7 @@ First off, create all the necessary directories:
 mkdir -p ~/containers/nextcloud/{data,db,html,caddy/data,caddy/logs}
 ```
 
-## Backend Caddyfile
+### Backend Caddyfile
 
 First, we tell the [[Nextcloud#^15ddf5\|Caddy instance within the pod]] (which I'll refer to as the _backend_ instance), how to serve the Nextcloud by creating the necessary `Caddyfile` within `~/containers/nextcloud/caddy/config`:
 
@@ -81,7 +81,7 @@ This will
 
 The [[Nextcloud#Pod\|pod configuration]] will take care of forwarding an actual _outside/system_ port to this _pod-internal_ one.
 
-## Frontend Caddyfile
+### Frontend Caddyfile
 
 As mentioned, the _external_ caddy instance (which I will refer to as the _frontend_ instance) is used for reverse proxying. Note that the _backend_ caddy instance expects incoming traffic on port `8080`, as specified in [[Nextcloud#Caddy\|its container config]].
 
@@ -107,11 +107,11 @@ Therefore, we simply add a section to the (already present) [[Caddy#Caddyfile]] 
 
 > [!question]- How long did it take?
 > Don't ask!
-> 
+>
 > I won't admit how long it took me to realize, that my _Main Caddy_ container can't communicate with a _completely differnt caddy container, in a different pod, on a different network_ using `localhost:8080`.
 > Thanks to [this excellent blog post](https://www.baeldung.com/linux/rootless-podman-communication-containers#host-port-publication), I was finally enlightened and released from my suffering.
 
-## Pod
+### Pod
 
 Create the `~/.config/containers/systemd/nextcloud.pod` file
 
@@ -125,7 +125,7 @@ Network=nextcloud.network
 PublishPort=8080:80
 ```
 
-## Network
+### Network
 
 As we configured a network for our [[Nextcloud#Pod]], we will need to create the network, too.
 
@@ -139,8 +139,9 @@ DisableDNS=false
 Internal=false
 ```
 
-## Containers
-### Caddy
+### Containers
+
+#### Caddy
 
 To set up the backend Caddy instance, which will use the [[Nextcloud#Backend Caddyfile\|previously created Caddyfile]], we simply create a new `~/.config/containers/systemd/nextcloud-caddy.container` file
 
@@ -170,18 +171,18 @@ WantedBy=default.target
 
 This will also forward the _outside/system_ port `8080` to the _inside_ port `80`, specified in the [[Nextcloud#Backend Caddyfile\|aformentioned Caddyfile]].
 
-### Database
+#### Database
 
 Of course, Nextcloud requires a database. We'll use [MariaDB](https://mariadb.org), as it's one of the recommended choices for Nextcloud, [according to the official documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_database/linux_database_configuration.html).
 Apart from a performance standpoint, it doesn't really matter, since we won't _clutter_ our system by using a containerized approach.
 
-#### Podman Secret
+##### Podman Secret
 
 First, we generate a [Podman Secret]() to be used as the database password.
 
 > [!warning]
 > You should always **generate** this password!
-> 
+>
 > Humans are not suitable password generators!
 
 We use [[pwgen\|pwgen]] to generate a password and store it in a file, to **not** leak it to our shell history.
@@ -202,7 +203,7 @@ podman secret create nextcloud-mariadb-password pass.txt
 > Please remember to purge the password file afterwards!
 > You can store the password securely in a password manager if you want, but you shouldn't have unencrypted plaintext passwords on your system.
 
-#### Container File
+##### Container File
 
 Create the `~/.config/containers/systemd/nextcloud-db.container` file
 
@@ -231,7 +232,7 @@ WantedBy=default.target
 > [!todo] Replace
 > - `user` : username used for running the [[Podman#Rootless\|rootless podman instance]].
 
-### Redis
+#### Redis
 
 For caching and other tasks, [redis](https://redis.io) is a pretty standard choice. I actually planned to use [Valkey](https://valkey.io), but ended up using redis for now.
 Simply enough, I simply copied [this container file](https://codeberg.org/mjack/nextcloud-quadlets/src/branch/main/quadlets/nextcloud-redis.container).
@@ -253,7 +254,7 @@ Image=docker.io/library/redis:alpine
 WantedBy=default.target
 ```
 
-### Nextcloud
+#### Nextcloud
 
 Now we can finally create the _main Nextcloud container_.
 
@@ -288,38 +289,38 @@ WantedBy=default.target
 > - `user` : username used for running the [[Podman#Rootless\|rootless podman instance]].
 > - `NEXTCLOUD_DOMAIN` : [[FQDN]] of the Nextcloud instance
 
-## Boot it up
+### Boot it up
 
-### Reload
+#### Reload
 
 ![[Podman#Reload the daemon]]
 
-### Auto-Update
+#### Auto-Update
 
 ![[Podman#Auto-Update]]
 
-### Linger
+#### Linger
 
 ![[Podman#Keep it running]]
 
-### Start
+#### Start
 
 ![[Podman#Start the service]]
 
 > [!todo] Replace
 > - `name` : `nextcloud-pod`
 
-### Status
+#### Status
 
 ![[Podman#Check the status]]
 
 > [!todo] Replace
 > - `name` : `nextcloud-pod`
- 
+
 Look for _Started Nextcloud Pod_, to ensure Nextcloud has started successfully.
 You can also check every other container's status by substituting `name` with the container's name.
 
-### Restart
+#### Restart
 
 Following that, you probably still need to restart the _frontend_ [[Caddy]], as we [[Nextcloud#Frontend Caddyfile\|modified its Caddyfile previously]]:
 
@@ -327,7 +328,7 @@ Following that, you probably still need to restart the _frontend_ [[Caddy]], as 
 systemctl --user restart caddy.service
 ```
 
-## Set it up
+### Set it up
 
 You should _(hopefully)_ now be able to access your Nextcloud installer under the [[FQDN]] you specified
 
@@ -335,11 +336,11 @@ You should _(hopefully)_ now be able to access your Nextcloud installer under th
 
 Choose a username for the admin account and generate a **(secure)** password, store it in your password manager and follow the installer.
 
-## Remove the warnings
+### Remove the warnings
 
 Most, if not all, of the warnings in your admin dashboard should go away after telling the Nextcloud what domains/proxies to trust.
 
-### Enter the container
+#### Enter the container
 
 First we enter the container
 
@@ -349,7 +350,7 @@ podman exec -it -u www-data nextcloud-app /bin/sh
 
 Now we can use Nextcloud's `occ` tool
 
-### Trust
+#### Trust
 
 > [!todo] Set environment variables
 > - `$SERVER_IP` : your server's public IP
@@ -369,19 +370,19 @@ php occ config:system:set proxyexclude 1 --value="localhost"
 php occ config:system:set proxyexclude 2 --value="127.0.0.1
 ```
 
-### Mime type migrations
+#### Mime type migrations
 
 ```sh
 php occ maintenance:repair --include-expensive
 ```
 
-### Add missing indices
+#### Add missing indices
 
 ```sh
 php occ db:add-missing-indices
 ```
 
-### Set maintenance window
+#### Set maintenance window
 
 Some maintenance tasks only run once a day.
 To prevent them from being run during the main usage time, we can set the start of the maintenance window, as per the [official documentation](https://docs.nextcloud.com/server/31/admin_manual/configuration_server/background_jobs_configuration.html#parameters):
@@ -390,12 +391,10 @@ To prevent them from being run during the main usage time, we can set the start 
 php occ config:system:set maintenance_window_start --type=integer --value=1
 ```
 
-
 > [!info] `value`
 > The above value for `value` of `1`, means that the aforementioned background job will only be run between _01:00am UTC_ and _05:00am UTC_.
 
-
-## Crontab
+### Crontab
 
 In order for the Nextcloud's crontab to be run regularly, we need to deploy a cronjob on the host side.
 
@@ -417,7 +416,7 @@ Save it and check if everything went smoothly
 crontab -l
 ```
 
-## Hardening
+### Hardening
 
 Security should be more than fine, by using rootless containers (even for the reverse proxy caddy), isolating the network, etc.
 Still, security is always a concern and should be one of the top priorities.
@@ -551,7 +550,8 @@ The added/modified portions are highlighted, to enable quick expansion of an alr
 Of course, you need to at least restart the `nextcloud-caddy.service` if you changed this file after the [[Nextcloud#Reboot]] step.
 
 You could in theory also [[Caddy#Don't terminate TLS\|not terminate the TLS chain]].
-## Reboot
+
+### Reboot
 
 Finally, restart the Nextcloud, just for good measure. It should be lightning quick, too.
 

@@ -1,11 +1,11 @@
 ---
-{"publish":true,"created":"2025-08-06 14:20","modified":"2025-08-06T14:21:56.085+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-08-06 14:20","modified":"2025-09-15T14:55:13.776+02:00","cssclasses":""}
 ---
 
 
-# Install
+## Install
 
-## [[Cargo#binstall]]
+### [[Cargo#binstall]]
 
 ```sh
 cargo binstall openscad-lsp

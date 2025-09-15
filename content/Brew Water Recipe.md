@@ -1,13 +1,15 @@
 ---
-{"publish":true,"created":"2025-05-01 16:31","modified":"2025-09-14T23:49:38.204+02:00","tags":["coffee/filter","coffee/espresso"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-01 16:31","modified":"2025-09-15T14:54:23.762+02:00","tags":["coffee/espresso","coffee/filter"],"cssclasses":""}
 ---
 
-# Glossary
+
+## Glossary
 
 - **ppm** refers to **p**arts-**p**er-**m**illion and is generally used to describe the concentration of some component within a unit of brew water ^a64a0a
 - **KH** is often referred to as the **C**arbonate **H**ardness, as it has to do with the amount of Bi-Carbonates present in the water. It is the main component acting as a _buffering agent_ for buffering acidity.  ^cea932
 - **GH** is often referred to as the **G**eneral **H**ardness. It is the thing most people mean, when saying a particular water is _hard_. It is also the main cause of scale buildup. ^404a84
-# Concentrates
+
+## Concentrates
 
 To produce my water, I first create two concentrates.
 
@@ -19,7 +21,7 @@ This enables quick and easy calculation of the _[[Brew Water Recipe#^cea932\|KH]
 
 For example: 50g of the KH concentrate within 1L of distilled water (50g concentrate, 950g distilled water) would result in _50 ppm KH_ within the brew water.
 
-## Buffer Concentrate (KH)
+### Buffer Concentrate (KH)
 
 Add
 
@@ -29,7 +31,7 @@ to
 
 - 1L of Distilled Water (H2O)
 
-## Hardness Concentrate (GH)
+### Hardness Concentrate (GH)
 
 Add
 
@@ -39,13 +41,13 @@ to
 
 - 1L of Distilled Water (H2O)
 
-# Brew Water
+## Brew Water
 
 My brew water aims to be at around
 - 20 ppm [[Brew Water Recipe#^cea932\|KH]]
 - 20 ppm [[Brew Water Recipe#^404a84\|GH]]
 
-## 1L
+### 1L
 
 If I need to prepare some brew water in a pinch, I
 
@@ -54,11 +56,11 @@ If I need to prepare some brew water in a pinch, I
 - fill up with distilled water until 1000g = 960g distilled water
 - mix thoroughly
 
-## 5L
+### 5L
 
 To reduce workload, I often buy 5L jugs of distilled water and directly mix my concentrates into there.
 
-> [!NOTE] 
+> [!NOTE]
 > This assumes the jugs are accurately filled by the producer!
 
 - remove 200g of distilled water from the 5L jug

@@ -1,16 +1,16 @@
 ---
-{"publish":true,"created":"2025-05-30 16:17","modified":"2025-06-25T07:06:02.118+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 16:17","modified":"2025-09-15T14:55:13.857+02:00","cssclasses":""}
 ---
 
 
-# Install
+## Install
 
-## #OS/Fedora 
+### #OS/Fedora
 
 Either use [[Terra]] or [[Copr]].
 I recently ran into problems with the [[Copr]] version, so I switched to [[Terra]].
 
-### [[Terra]]
+#### [[Terra]]
 
 Make sure it is [[Terra#Setup]], then
 
@@ -18,7 +18,7 @@ Make sure it is [[Terra#Setup]], then
 dnf install ghostty
 ```
 
-### [[Copr]]
+#### [[Copr]]
 
 ```sh
 sudo dnf copr enable pgdev/ghostty

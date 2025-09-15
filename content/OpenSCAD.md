@@ -1,13 +1,13 @@
 ---
-{"publish":true,"created":"2025-08-07 11:06","modified":"2025-08-08T20:03:50.441+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-08-07 11:06","modified":"2025-09-15T14:55:13.771+02:00","cssclasses":""}
 ---
 
 
 A programmatic CAD tool using solids (instead of BREP/boundary representation).
 
-# Install
+## Install
 
-## #OS/Fedora 
+### #OS/Fedora
 
 ```sh
 sudo dnf install openscad

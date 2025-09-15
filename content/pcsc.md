@@ -1,11 +1,11 @@
 ---
-{"publish":true,"created":"2025-05-30 17:30","modified":"2025-06-06T17:13:17.521+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 17:30","modified":"2025-09-15T14:55:13.764+02:00","cssclasses":""}
 ---
 
 
-# Install
+## Install
 
-## #OS/Fedora 
+### #OS/Fedora
 
 > [!note]
 > Should already be present
@@ -14,9 +14,9 @@
 sudo dnf install pcsc-lite
 ```
 
-# Configure
+## Configure
 
-## Polkit
+### Polkit
 
 You need to add a polkit rule `/etc/polkit-1/rules.d/99-pcscd.rules`, to allow the users of the `smartcard` group access to the smart card
 
@@ -62,13 +62,13 @@ sudo usermod -aG smartcard username
 
 Restart your login session
 
-# Enable
+## Enable
 
 ```sh
 sudo systemctl enable pcscd
 ```
 
-# Start
+## Start
 
 ```sh
 sudo systemctl start pcscd

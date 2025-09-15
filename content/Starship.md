@@ -1,23 +1,23 @@
 ---
-{"publish":true,"created":"2025-05-30 15:41","modified":"2025-06-26T08:29:55.268+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 15:41","modified":"2025-09-15T14:55:13.674+02:00","cssclasses":""}
 ---
 
 
-# Install
+## Install
 
-## [[Cargo]]
+### [[Cargo]]
 
 ```sh
 cargo install starship
 ```
 
-# Extensions
+## Extensions
 
-## [starship-jj](https://gitlab.com/lanastara_foss/starship-jj)
+### [starship-jj](https://gitlab.com/lanastara_foss/starship-jj)
 
 [[Jujutsu]] integration for Starship.
 
-### Install
+#### Install
 
 Use [[Cargo#binstall]]
 
@@ -25,7 +25,7 @@ Use [[Cargo#binstall]]
 cargo binstall starship-jj
 ```
 
-### Use
+#### Use
 
 Add the following entry to (the end of) your `starship.toml`:
 
@@ -42,6 +42,7 @@ when = true
 Then add it using `${custom.jj}` to your prompt's `format` entry.
 
 > [!example]-
+>
 > ```toml title="~/.config/starship.toml {3}
 > format="""
 > [...]

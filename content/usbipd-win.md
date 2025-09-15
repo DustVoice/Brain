@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-05-30 16:36","modified":"2025-05-31T00:09:29.814+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 16:36","modified":"2025-09-15T14:55:13.619+02:00","cssclasses":""}
 ---
 
 
@@ -9,12 +9,12 @@ Forwarding or sharing sockets, or similar, is an absolute nightmare, so this ena
 The only downside is that the device won’t be available on Windows anymore.
 This is either the case _while the device is attached_, or even _as long as it’s bound_ (see below for further explanation). This I can live with, as my whole development environment lives within WSL anyway.
 
-# Install
+## Install
 
 > [!attention]
 > You **need** to perform the [[usbipd-win#Windows]] installation in addition to the distro's specific instructions.
 
-## Windows
+### Windows
 
 First, you need to install the [usbipd-win](https://github.com/dorssel/usbipd-win) software on the Windows side.
 Some [[usbipd-win#GUI]] tools automatically install this.
@@ -28,13 +28,12 @@ winget install usbipd
 > [!tip]
 > Make sure to reopen any shell/terminal and check that `uspipd.exe` is available on your `PATH`.
 
-
-# Set up
+## Set up
 
 > [!note]
 > You might need to perform some or even all of the following steps using **elevated** rights.
 
-## GUI
+### GUI
 
 The process can be greatly simplified, by installing downloading [wsl-usb-manager](https://github.com/nickbeth/wsl-usb-manager) on the Windows side.
 
@@ -44,7 +43,7 @@ The process can be greatly simplified, by installing downloading [wsl-usb-manag
 
 You can do everything you desire from within the GUI, even set up auto attachments, without a hassle.
 
-## CLI
+### CLI
 
 First, list available devices using
 
@@ -83,13 +82,13 @@ usbipd.exe attach -w -a -b BUSID
 
 > [!note]
 > The `bind` procedure is persistent between reboots. The `attach` procedure however isn’t, necessitating a reattachement.
-> 
+>
 > This also means forcing the `bind` using `-f` makes it unavailable _until_ you explicitly do an `unbind`, when `attach` on the contrary, reinstates control to Windows whenever the device is no longer connected to WSL.
 
 > [!tip]
 > You can easily check if this worked by observing the `usbipd.exe` command output, or by utilizing `lsusb` from the [`usbutils`](https://archlinux.org/packages/core/x86_64/usbutils/) package.
 
-# FIDO2
+## FIDO2
 
 Despite all this, some utilities, for example `ssh-keygen`, utilize a direct smart card access using, e.g., the `/dev/hidraw` devices the USB/IP setup produces.
 

@@ -1,10 +1,10 @@
 ---
-{"publish":true,"created":"2025-06-10T13:45:36.367+02:00","modified":"2025-09-12T11:05:01.846+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-10T13:45:36.367+02:00","modified":"2025-09-15T14:54:33.112+02:00","cssclasses":""}
 ---
 
 Cargo is [[Rust]]'s superb package manager and can be used both for installing rust packages and managing a crate's dependencies.
 
-# binstall
+## binstall
 
 If you would rather not compile every package you `install` with `cargo` from source, you can utilize `cargo-binstall`.
 
@@ -18,7 +18,7 @@ Then replace `cargo install` with `cargo binstall` for every installation comman
 
 Note that there has to be a binary package available.
 
-# update
+## update
 
 Cargo doesn't have a native update command.
 Normally you would simply perform another _install_ command instead.

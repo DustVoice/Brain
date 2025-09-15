@@ -1,19 +1,19 @@
 ---
-{"publish":true,"created":"2025-06-05 22:43","modified":"2025-09-14T23:49:41.729+02:00","tags":["recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-05 22:43","modified":"2025-09-15T14:55:13.768+02:00","tags":["recipes"],"cssclasses":""}
 ---
 
 ![[Attachments/20250718_232151.jpg|400]]
 
-# Beschreibung
+## Beschreibung
 
 > [!cite]
 > Ein Pane Cafone ist ein traditionelles Brot aus Kampanien, das durch seine rustikale Kruste und seinen weichen, luftigen Kern besticht.
-> 
+>
 > -- [Marcel Paa](https://www.marcelpaa.com/rezepte/pane-cafone/)
 
 Passt hervorragend zu Gegrilltem
 
-# Übersicht
+## Übersicht
 
 - 400 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
 - 200 g [[Hartweizenmehl]]
@@ -23,7 +23,7 @@ Passt hervorragend zu Gegrilltem
 - Leicht gefettetes Teigbecken
 - [[Gärkorb#Länglich\|Länglicher Gärkorb]], bemehlter Bezug
 
-# Anweisungen
+## Anweisungen
 
 ---
 
@@ -31,7 +31,7 @@ Passt hervorragend zu Gegrilltem
 - 200 g Wasser, ca. 35 Grad warm
 - 200 g Weizenmehl
 
-## Sauerteig
+### Sauerteig
 
 Zuerst das ==Anstellgut== mit dem ==Wasser== [[Anstellgut#Aufschlämmen]].
 
@@ -50,7 +50,7 @@ Abgedeckt **8 - 12 Stunden** bei Raumtemperatur gären lassen, bis es sich verdo
 	- plus 10 - 15 g für die [[Bassinage]]
 - 12 g Salz
 
-## Hauptteig
+### Hauptteig
 
 Den ==Sauerteig== zusammen mit den ==Mehlen==, dem ==Wasser== in die Küchenmaschine geben.
 
@@ -76,7 +76,7 @@ Weitere **2 Stunden** gehen lassen.
 
 ---
 
-## Formen
+### Formen
 
 Den Teig auf die bemehlte Arbeitsfläche stürzen.
 
@@ -90,7 +90,7 @@ Mit dem Verschluss nach oben in den Gärkorb legen.
 
 ---
 
-## Backen
+### Backen
 
 Den Ofen auf **250 Grad Ober-/Unterhitze** vorheizen.
 

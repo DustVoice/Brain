@@ -1,24 +1,24 @@
 ---
-{"publish":true,"lang":"de","created":"2025-06-09 15:51","modified":"2025-06-10T10:16:20.432+02:00","cssclasses":""}
+{"publish":true,"aliases":"","lang":"de","created":"2025-06-09 15:51","modified":"2025-09-15T14:55:13.612+02:00","cssclasses":""}
 ---
 
 
-# Anleitung
+## Anleitung
 
-## Bedienoberfläche
+### Bedienoberfläche
 
 ![[Attachments/Viofo_1.jpg]]
 
 ![[Attachments/Viofo_2.jpg]]
 
-## Formatieren
+### Formatieren
 
 ![[Attachments/Viofo_3.jpg]]
 
-## Dateisystem
+### Dateisystem
 
 ![[Attachments/Viofo_4.jpg]]
 
-## Firmwareupgrade
+### Firmwareupgrade
 
 ![[Attachments/Viofo_5.jpg]]

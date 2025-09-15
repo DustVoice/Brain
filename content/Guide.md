@@ -1,8 +1,9 @@
 ---
-{"publish":true,"created":"2025-05-30 12:01","modified":"2025-05-31T00:09:29.746+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 12:01","modified":"2025-09-15T14:55:13.847+02:00","cssclasses":""}
 ---
 
-# About
+
+## About
 
 Guides are a pretty linear subset of my notes.
 
@@ -17,11 +18,11 @@ Therefore, they are mainly intended as a set of personal mental crutches and ref
 > - Be wary of utter steaming hot garbage!
 > - Proceed with caution and at your own risk!
 
-# Syntax
+## Syntax
 
 Throughout my guide, I use some special elements to make it easier to retrieve certain information at a glance.
 
-## Prerequisites
+### Prerequisites
 
 At the beginning of a (sub-)section, there might be an **Install** or **Configure** todo section present.
 
@@ -39,7 +40,7 @@ Optional packages are _italicized_.
 > - [[Podman#OS/Fedora]]
 > - _[[Caddy]]_
 
-## Callouts
+### Callouts
 
 I use various callouts.
 Most of them are pretty self-explanatory.
@@ -69,7 +70,7 @@ Nevertheless, I try to stick to a general set of rules for them:
 > [!danger]
 > Negative potential consequences of an action.
 
-## Terminal and Code Blocks
+### Terminal and Code Blocks
 
 I try to enhance the code blocks with some useful information, such as filename, highlighted changes, etc.
 

@@ -1,20 +1,21 @@
 ---
-{"publish":true,"created":"2025-05-07 22:27","modified":"2025-05-31T00:09:29.730+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-07 22:27","modified":"2025-09-15T14:55:13.887+02:00","cssclasses":""}
 ---
 
 
 > [!question] Why as a system package?
 > I installed _Fail2Ban_ as a system package together with a system-wide / `root`-level configuration, because I want a malicious attacker to be stopped as soon as possible, instead of further down the chain.
 > I use, e.g., [[Firewalld\|firewalld]] on a `root`-level, too for the exact same reason.
-# Install
 
-## #OS/Fedora 
+## Install
+
+### #OS/Fedora
 
 ```sh
 sudo dnf install fail2ban
 ```
 
-# Firewalld
+## Firewalld
 
 As I use [[Firewalld\|firewalld]], I make sure `fail2ban-firewalld` was installed together with the main package.
 The default `banaction` under `/etc/fail2ban/jail.d/00-firewalld.local` didn't work for me, as it is ignored on forwarded ports.
@@ -27,19 +28,19 @@ banaction = firewallcmd-ipset
 banaction_allports = firewallcmd-ipset
 ```
 
-# Enable
+## Enable
 
 ```sh
 sudo systemctl enable fail2ban
 ```
 
-# Start
+## Start
 
 ```sh
 sudo systemctl start fail2ban
 ```
 
-# Restart
+## Restart
 
 After any config change, you need to restart Fail2Ban
 
@@ -47,7 +48,7 @@ After any config change, you need to restart Fail2Ban
 sudo systemctl restart fail2ban
 ```
 
-# Defaults
+## Defaults
 
 I set some (further) defaults in `/etc/fail2ban/jail.local` under the `[DEFAULT]` section
 

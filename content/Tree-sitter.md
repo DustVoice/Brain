@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-05-30 15:09","modified":"2025-05-31T00:09:29.733+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 15:09","modified":"2025-09-15T14:55:13.633+02:00","cssclasses":""}
 ---
 
 
@@ -7,15 +7,15 @@ Normally, tree-sitter works as-is, without the need for a specific tool, as long
 
 It's nice to have the binary available, though, just in case.
 
-# Install
+## Install
 
-## #OS/Fedora 
+### #OS/Fedora
 
 ```sh
 sudo dnf install tree-sitter-cli
 ```
 
-## #OS/Arch-Linux 
+### #OS/Arch-Linux
 
 ```sh
 sudo pacman -S tree-sitter-cli

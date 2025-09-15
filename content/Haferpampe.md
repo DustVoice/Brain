@@ -1,13 +1,13 @@
 ---
-{"publish":true,"created":"2025-06-05 22:43","modified":"2025-09-04T17:11:01.174+02:00","tags":["r","e","c","i","p","e"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-05 22:43","modified":"2025-09-15T14:55:13.841+02:00","tags":["recipe"],"cssclasses":""}
 ---
 
 
-# Beschreibung
+## Beschreibung
 
 Pampige Overnight Oats
 
-# Zutaten
+## Zutaten
 
 - 40 g Haferflocken, kernig
 - 5 g Chiasamen
@@ -16,7 +16,7 @@ Pampige Overnight Oats
 - 1 Schuss Vanilleextrakt
 - 1 Schuss Schokotropfen
 
-# Anweisungen
+## Anweisungen
 
 1. Einen verschließbaren Behälter bereithalten, welcher mindestens das doppelte Volumen der Zutaten hat.
 2. Alle Zutaten zusammen in den Behälter geben.

@@ -1,10 +1,8 @@
 ---
-{"publish":true,"created":"2025-06-09 15:43","modified":"2025-06-10T10:16:19.165+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-09 15:43","modified":"2025-09-15T14:54:09.166+02:00","cssclasses":""}
 ---
 
 
-# Manual
+## Manual
 
 ![[Attachments/Free Byrd.pdf]]
-
-

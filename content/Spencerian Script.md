@@ -1,23 +1,23 @@
 ---
-{"publish":true,"created":"2025-06-05 23:25","modified":"2025-06-06T02:32:45.011+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-05 23:25","modified":"2025-09-15T14:55:13.679+02:00","cssclasses":""}
 ---
 
 
-# Inspiration
+## Inspiration
 
-## Simplistic
+### Simplistic
 
 ![[Attachments/Pasted image 20250605232636.png]][^3]
 
-## Rounded
+### Rounded
 
 ![[Attachments/Pasted image 20250605232547.png]][^1]
 
-## Fancy
+### Fancy
 
 ![[Attachments/Pasted image 20250605232653.png]][^4]
 
-## Uppercase Variations
+### Uppercase Variations
 
 ![[Attachments/Pasted image 20250605232616.png]][^2]
 

@@ -1,17 +1,17 @@
 ---
-{"publish":true,"created":"2025-05-30 15:25","modified":"2025-06-26T09:27:31.139+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 15:25","modified":"2025-09-15T14:55:13.773+02:00","cssclasses":""}
 ---
 
 
-# Install
+## Install
 
-## #OS/Fedora 
+### #OS/Fedora
 
 ```sh
 sudo dnf install nu
 ```
 
-# Additional Tools
+## Additional Tools
 
 My specific [[Dotfiles]], use various tools, so it's best to make sure they're available and sfiet up.
 
@@ -24,12 +24,12 @@ My specific [[Dotfiles]], use various tools, so it's best to make sure they're a
 
 > [!info]
 > I am personally often using [Zellij](https://zellij.dev/), despite Nushell recently implementing proper support for background jobs, as outlined in the [corresponding section of the Nushell 0.103.0 patch notes](https://www.nushell.sh/blog/2025-03-18-nushell_0_103_0.html#support-for-background-jobs-toc).
-> 
+>
 > This support adds the `job spawn`, `job list`, `job kill` and `job unfreeze` (for unfreezing `Ctrl + Z` jobs) commands to Nushell.
-> 
+>
 > My dotfiles don't integrate [[pueue]] (utilizing [`task.nu`](https://github.com/nushell/nu_scripts/blob/main/modules/background_task/task.nu)) anymore.
 
-# Login Shell
+## Login Shell
 
 If you remember correctly, we set the login shell to `bash` when creating the custom user, so you might wonder why we didn’t directly set it to `nu`.
 

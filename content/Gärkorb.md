@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-06-24 11:51","modified":"2025-06-24T12:13:22.328+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-24 11:51","modified":"2025-09-15T14:55:13.845+02:00","cssclasses":""}
 ---
 
 
@@ -10,7 +10,7 @@ Hier hilft der Gärkorb, ein breit laufen zu verhindern und stattdessen die Form
 Ein Gärkorb wird vor dem Hereinlegen des Teiglings mit Mehl ausgestaubt, um ein Verkleben des Teiglings mit dem Korb zu verhindern.
 Alternativ wird der Korb mit einem Teigtuch ausgelegt, wobei das Teigtuch oftmals ebenfalls aus oben genannten Grund bestäubt wird.
 
-# Größen
+## Größen
 
 Es gibt verschiedene Größen von Gärkörben.
 Hierbei wird meistens die _Teigmenge_ in Gramm angegeben.
@@ -27,25 +27,25 @@ Eine nützliche Übersicht gibt die Seite [Gaerkorb.com](https://www.gaerkorb.co
 > |Oval|28 x 13 cm|750 – 1000 g|
 > |Länglich|40 x 14 cm|1000 – 2000 g|
 
-# Formen
+## Formen
 
 Es gibt verschiedene Formen von Gärkörben.
 
-## Rund
+### Rund
 
 Diese Körbe haben eine runde Form.
 Sie besitzen die geeignetste Form zum Backen in einem runden Gusseisentopf.
 
-## Länglich
+### Länglich
 
 Diese Körbe haben eine ovale Form.
 Sie besitzen die geeignetste Form zum Backen in einem ovalen Römertopf.
 
-# Materialien
+## Materialien
 
 Es werden unterschiedliche Materialien zur Herstellung von Gärkörben verwendet.
 
-## Rattan / Peddigrohr
+### Rattan / Peddigrohr
 
 Dieses Material ist das häufigst anzutreffende.
 Es gibt dem Brot, sofern es ohne Bezug direkt in den ausgestaubten Gärkorb gelegt wird, eine charakteristische Rillenstruktur, die auch nach dem Backvorgang im ausgebackenen Brot sichtbar ist.
@@ -53,11 +53,10 @@ Die Reinigung ist in der Regel relativ einfach, solange ausreichend ausgestaubt 
 Hierbei wird der Korb nach gründlicher Trocknung mit einer festeren Bürste ausgebürstet.
 Mit Wasser sollte diese Art Korb jedoch nicht gewaschen werden, da dies das Material aufquellen lässt. Zur Desinfizierung kann der Korb für einige Zeit in den heißen Ofen gegeben werden, z. B. während des Abkühlens nach dem Brotbacken.
 
-## Holzschliff
+### Holzschliff
 
 Hierbei handelt es sich um ein Material, welches aus gepressten Holzfasern ausgeschliffen wird.
 Aufgrund der Ähnlichkeit der Herstellungsverfahren sieht das Material ähnlich wie Papier oder Pappmaschee aus.
 Der Vorteil dieses Materials liegt in der guten Feuchtigkeitsregulierung des Teiglings, sowie in der einfachen Reinigung im Vergleich zu der gerillten Beschaffenheit eines Korbes aus [[Gärkorb#Rattan / Peddigrohr]].
 Jedoch sollte auch hier ausreichend ausgestaubt werden, um verklebte Teigreste, die im Zweifel schwerer zu entfernen sind, zu verhindern.
 Diese Körbe sind meistens auf Stapelbarkeit, sowie umweltfreundliche Kompostierung ausgelegt.
-

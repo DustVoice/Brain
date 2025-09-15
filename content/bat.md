@@ -1,11 +1,11 @@
 ---
-{"publish":true,"created":"2025-06-25 15:42","modified":"2025-06-25T20:23:48.736+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-25 15:42","modified":"2025-09-15T14:53:24.996+02:00","cssclasses":""}
 ---
 
 
-# Install
+## Install
 
-## #OS/Fedora 
+### #OS/Fedora
 
 ```sh
 sudo dnf install bat

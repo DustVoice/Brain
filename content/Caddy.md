@@ -1,11 +1,11 @@
 ---
-{"publish":true,"created":"2025-05-02 10:47","modified":"2025-06-12T11:46:45.697+02:00","tags":["OS/Fedora"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-02 10:47","modified":"2025-09-15T14:54:18.364+02:00","tags":["OS/Fedora"],"cssclasses":""}
 ---
 
 
-# Rootless Podman
+## Rootless Podman
 
-## Data directories
+### Data directories
 
 First off, create directories in your home directory, where the Caddy configuration, data, and logs are supposed to be stored.
 
@@ -21,7 +21,7 @@ We then also need to ensure the directory for storing the Podman Quadlet files i
 mkdir -p ~/.config/containers/systemd
 ```
 
-### Static sites
+#### Static sites
 
 If you want to serve a static side from within the Caddy container, also create a directory for each one, following the pattern
 
@@ -39,7 +39,7 @@ You would need to create corresponding entries in your [[Caddy#Caddyfile]] anywa
 mkdir -p ~/containers/caddy/sites
 ```
 
-## Ports
+### Ports
 
 As we're running Podman rootless, the ports `80` (HTTP) and `443` (HTTPS) will certainly not be available.
 There are numerous resolutions.
@@ -67,7 +67,7 @@ And check that everything went as planned
 sudo firewall-cmd --list-all
 ```
 
-## Caddyfile
+### Caddyfile
 
 The `Caddyfile` is used to describe the functionality of the Caddy instance. It is comparable to an `nginx` or `apache` config file.
 
@@ -75,17 +75,17 @@ The [official documentation](https://caddyserver.com/docs/) even provides a [lis
 
 > [!example] Example: Reverse Proxy
 > I mostly utilize this central Caddy instance for reverse proxying.
-> 
+>
 > For example, I might have a second container running a web server on port `5000`.
 > To serve it under the subdomain `service.dustvoice.de`, I would simply populate the Caddyfile under `~/containers/caddy/config/Caddyfile` with
-> 
+>
 > ```text title="~/containers/caddy/config/Caddyfile" /service.dustvoice.de/ /5000/
 > service.dustvoice.de {
 > 	reverse_proxy localhost:5000
 > }
 > ```
 
-### Environment variables
+#### Environment variables
 
 I often use environment variables to, for example, specify domains of my sub-sites (the sites this frontend Caddy instance proxies to), etc.
 For this, I specify an `EnvironmentFile` in the [[Caddy#Quadlet file]].
@@ -110,11 +110,10 @@ I would then use it in, e.g., my Caddyfile like so
 }
 ```
 
-
 > [!tip]
 > If you don't want to use said environment file, you simply need to replace all occurences of a variable (`{$VAR_NAME}`) within the `Caddyfile` with the appropriate value.
 
-### Logging
+#### Logging
 
 I usually insert a `subdomain-log` macro at the top of my `Caddyfile`s, to quickly enable logging within a subdomain section
 
@@ -135,7 +134,7 @@ I can then simply do
 }
 ```
 
-## Quadlet file
+### Quadlet file
 
 We simply need to populate a `caddy.container` file within `~/.config/containers/systemd`:
 
@@ -180,47 +179,47 @@ WantedBy=default.target
 > > [!info] What are the `:z` and `:Z` labels?
 > > These two labels are specific to [SELinux](https://www.redhat.com/en/topics/linux/what-is-selinux), which is enabled by default on Fedora.
 > > Although some people might see it as an inconvenience, you shouldn't simply disable it, especially on a server, as it greatly hardens your system and increases security.
-> > 
+> >
 > > I found a good explanation elaborating these two options a bit in [this blog post](https://blog.ryanmartin.me/selinux-containers).
 
-## Boot it up
+### Boot it up
 
-### Reload
+#### Reload
 
 ![[Podman#Reload the daemon]]
 
-### Start
+#### Start
 
-![[Podman#Start the service]] 
+![[Podman#Start the service]]
 
 > [!todo] Replace
 > - `name` : `caddy`
 
-### Status
+#### Status
 
 ![[Podman#Check the status]]
 
 > [!todo] Replace
 > - `name` : `caddy`
-### Linger
+
+#### Linger
 
 ![[Podman#Keep it running]]
 
-### Debug
+#### Debug
 
 > [!tip]
 > If something doesn't work right away, try checking the statuses of the `caddy`, and the (pod's)  container service(s).
-> 
+>
 > You can also prepend an additional portion in front of all the content to the respective `Caddyfile`s, enabling more verbose error outputs.
-> 
+>
 > ```text
 > {
 > 	debug
 > }
 > ```
 
-
-## Test it
+### Test it
 
 Of course, you can proceed directly with, e.g., setting up a [[Nextcloud]] to test the Caddy setup.
 
@@ -255,9 +254,9 @@ The site should now be accessible through the domain you specified and greet you
 > For security purposes, I would probably remove the `~/containers/caddy/sites/test` folder after testing.
 > Removing the corresponding lines in your `Caddyfile` might be sufficient, but you most likely don't need to test it this way anytime soon again, so why clutter your system.
 
-## Harden
+### Harden
 
-### Don't terminate TLS
+#### Don't terminate TLS
 
 In the current scenario, the frontend caddy consumes TLS and proxies to the backend caddy or caddies.
 

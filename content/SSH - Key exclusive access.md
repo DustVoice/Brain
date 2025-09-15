@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-05-02 14:03","modified":"2025-05-31T00:09:29.692+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-02 14:03","modified":"2025-09-15T14:55:13.681+02:00","cssclasses":""}
 ---
 
 
@@ -22,7 +22,7 @@ ssh -i ~/.ssh/your_private_key username@host
 
 > [!danger]
 > **Make 100% sure you have configured and tested your access to the server using SSH keys sufficiently before proceeding!**
-> 
+>
 > You can most definitely lose access to your server.
 > Especially if you don't have physical access to it.
 > It might be recoverable with the help of your hosting provider, but **it might also be unrecoverable**.
@@ -45,5 +45,3 @@ or even better, restart your system
 ```sh
 sudo systemctl reboot
 ```
-
-

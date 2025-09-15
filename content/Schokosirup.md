@@ -1,8 +1,9 @@
 ---
-{"publish":true,"created":"2025-06-01 16:15","modified":"2025-09-14T23:49:34.821+02:00","tags":["recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-01 16:15","modified":"2025-09-15T14:55:13.704+02:00","tags":["recipes"],"cssclasses":""}
 ---
 
-# Zutaten
+
+## Zutaten
 
 - 50 g Backkakao
 - 100 g Brauner Zucker
@@ -10,7 +11,7 @@
 - 1 TL Bourbon-Vanille-Paste
 - 250 ml Wasser
 
-# Anweisungen
+## Anweisungen
 
 1. ==Alle Zutaten== in einen kleinen Topf geben.
 2. Bei mittel-hoher Hitze unter gelegentlichem Rühren am Topfboden für **5-10 Minuten** auflösen.

@@ -1,18 +1,18 @@
 ---
-{"publish":true,"created":"2025-06-05 22:42","modified":"2025-09-14T23:49:47.711+02:00","tags":["recipes","bread"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-05 22:42","modified":"2025-09-15T14:55:13.699+02:00","tags":["bread","recipes"],"cssclasses":""}
 ---
 
 
 ![[Attachments/Pasted image 20250605231523.png|200]][^1]
 
-# Beschreibung
+## Beschreibung
 
 > [!quote]
-> Mit seiner unverwechselbaren, leicht säuerlichen Note und der goldbraunen, knusprigen Kruste bringt dieses San Francisco Sourdoughbread den authentischen Geschmack der amerikanischen Kultstadt direkt auf deinen Tisch. 
-> 
+> Mit seiner unverwechselbaren, leicht säuerlichen Note und der goldbraunen, knusprigen Kruste bringt dieses San Francisco Sourdoughbread den authentischen Geschmack der amerikanischen Kultstadt direkt auf deinen Tisch.
+>
 > -- [Marcel Paa](https://www.marcelpaa.com/rezepte/san-francisco-sourdoughbread/)
 
-# Zutaten
+## Zutaten
 
 - 8 g [[Anstellgut]]
 - 210 g Wasser
@@ -23,7 +23,7 @@
 - Teigbecken
 - [[Gärkorb#Länglich]], mit Bezug
 
-# Anweisungen
+## Anweisungen
 
 ---
 
@@ -31,7 +31,7 @@
 - 60 g Wasser, 30-60 °C abhängig von der Temperatur des Anstellguts
 - 60 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]]
 
-## Sauerteig
+### Sauerteig
 
 Das ==Wasser== zum ==Anstellgut== in eine Schüssel geben und etwas [[Anstellgut#Aufschlämmen\|aufschlämmen]].
 
@@ -47,7 +47,7 @@ Den Vorteig zudecken und **12-16 Stunden** bei Raumtemperatur gehen lassen.
 	- 110 g = 20 % Reduktion
 - 6 g Salz
 
-## Saltolyse
+### Saltolyse
 
 ==Mehl==, ==Wasser== und ==Salz== in der Küchenmaschine **2-3 Minuten** vermischen.
 
@@ -57,7 +57,7 @@ Dann **2-3 Stunden** quellen lassen.
 
 - 10-15 g Wasser (für die [[Bassinage]])
 
-## Hauptteig
+### Hauptteig
 
 Den Sauerteig-Vorteig zum Saltolyse-Teig in die Küchenmaschine geben.
 
@@ -79,7 +79,7 @@ Weitere **30 Minuten** gehen lassen.
 
 ---
 
-## Formen
+### Formen
 
 Nach der [[Stockgare]], den Teig auf eine bemehlte Arbeitsfläche geben.
 
@@ -102,7 +102,7 @@ Die Teiglinge zudecken und für **24 Stunden** in den Kühlschrank geben.
 
 ---
 
-## Backen
+### Backen
 
 Den Backofen mit einem Backstahl in der unteren Ofenhälfte auf **250 °C Ober-/Unterhitze** vorheizen.
 

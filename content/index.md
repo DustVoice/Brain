@@ -1,10 +1,10 @@
 ---
-{"publish":true,"title":"Brain","created":"2025-04-29","modified":"2025-05-31T00:09:29.791+02:00","cssclasses":""}
+{"publish":true,"aliases":"","title":"Brain","created":"2025-04-29","modified":"2025-09-15T14:55:13.829+02:00","cssclasses":""}
 ---
 
 This is my personal, _Digital Brain_ / [_Digital Garden_](https://maggieappleton.com/garden-history).
 
-> [!NOTE] 
+> [!NOTE]
 > I will refer to this as the **Brain** from now on.
 
 It covers a multitude of [[Topics]] and information [[Categories]], although, as with any _Digital Garden_, I'm not imposing any artificial limit on their extent.
@@ -23,4 +23,3 @@ The aforementioned [[Topics]] page might serve as an entry point into specific a
 > - [[3D-Printing]]
 > - [[Stenography]], mainly using the _[[Deutsche Einheitskurzschrift (DEK)]]_
 > - [[Fountain Pen]]s
-

@@ -1,14 +1,15 @@
 ---
-{"publish":true,"aliases":"YubiKey","created":"2025-05-30 16:33","modified":"2025-06-25T09:39:01.794+02:00","cssclasses":""}
+{"publish":true,"aliases":"YubiKey","created":"2025-05-30 16:33","modified":"2025-09-15T14:55:13.567+02:00","cssclasses":""}
 ---
 
-# SSH key
+
+## SSH key
 
 > [!note] WSL
 > If you're on WSL, make sure, that `ssh-keygen` can access your device.
 > On my WSL setups, I had to create a [[Yubico YubiKey#`udev` rule|udev rule]].
 
-## Generating a key
+### Generating a key
 
 We use `ssh-keygen` for that.
 
@@ -44,7 +45,7 @@ ssh-add ~/.ssh/PRIVATE_KEY_FILE
 > [!todo] Replace
 > - `PRIVATE_KEY_FILE`: The filename you chose previously
 
-## `udev` rule
+### `udev` rule
 
 Add a `udev` rule in the form of a file `/etc/udev/rules.d/99-yubikey.rules`
 
@@ -54,9 +55,9 @@ KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0660", TAG+="uaccess", GROUP="plug
 
 > [!note]
 > You might need to change the vendor and product ID.
-> 
+>
 > You can easily check the IDs using `lsusb`.
-> 
+>
 > Simply locate the YubiKey line in the output, and locate the IDs following the pattern: `[Bus IDs]: ID <vendor>:<product> [Name of the device]`
 
 Subsequently, add your user to the `plugdev` group, restart WSL and you should be good to go.

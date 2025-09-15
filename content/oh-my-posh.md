@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-06-26 16:09","modified":"2025-06-29T22:32:43.390+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-26 16:09","modified":"2025-09-15T14:55:13.780+02:00","cssclasses":""}
 ---
 
 
@@ -7,9 +7,9 @@ A cross-shell prompt toolkit, similar to [[Starship]].
 
 I use it with [[fish]], as it seems to be smoother and with better integration.
 
-# Install
+## Install
 
-## #OS/Fedora 
+### #OS/Fedora
 
 > [!todo] Install
 > - [[unzip]]

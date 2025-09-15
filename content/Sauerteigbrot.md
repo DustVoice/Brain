@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-05-26 22:32","modified":"2025-06-23T14:33:11.115+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-26 22:32","modified":"2025-09-15T14:55:13.708+02:00","cssclasses":""}
 ---
 
 
@@ -20,7 +20,7 @@ Brot, welches mit [[Sauerteig]] gebacken wird, entweder als alleiniges Triebmitt
 > [!tip]
 > Mindestens **1 Stunde** auf einem Gitter gut auskühlen lassen.
 > Man kann es auch natürlich länger auskühlen lassen.
-> 
+>
 > Roggenbrot etwa, schmeckt besser, wenn es etwas liegt (über Nacht).
 > Je länger man wartet und geduldig ist, desto besser der Geschmack.
 > Natürlich nur, bevor es hart wird...

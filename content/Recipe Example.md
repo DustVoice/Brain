@@ -1,33 +1,33 @@
 ---
-{"publish":true,"created":"2025-09-14 21:45","modified":"2025-09-14T23:26:50.212+02:00","tags":["recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-09-14 21:45","modified":"2025-09-15T14:55:13.739+02:00","tags":["recipes"],"cssclasses":""}
 ---
 
-*Image goes here*
+_Image goes here_
 
 [[Templates/Detail Rezept Template\|Deutsche Version]]
 
-# Description
+## Description
 
 > [!cite]
 > This is my favorite recipe for cold winter days.
-> 
+>
 > -- [Amanda's cooking corner](link)
 
 My own comment
 
-# Overview
+## Overview
 
 - 150 g [[Ingredient 1]]
 - 20 g [[Ingredient 2]]
 - wooden bowl
 
-# Directions
+## Directions
 
 ---
 
 - 100 g Ingredient 1, finely minced
 
-## Step 1
+### Step 1
 
 Each instruction.
 
@@ -41,7 +41,7 @@ With an empty line between everything.
 - 20 g Ingredient 2
 	- can be reduced by 50%
 
-## Step 2
+### Step 2
 
 Further instructions.
 

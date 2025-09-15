@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-07-30 17:44","modified":"2025-08-01T12:09:27.385+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-07-30 17:44","modified":"2025-09-15T14:55:13.838+02:00","cssclasses":""}
 ---
 
 
@@ -8,15 +8,15 @@ For easy file editing, I’m currently trying out [Helix](https://helix-editor.c
 I tried out Helix some time ago but didn't find the ecosystem that appealing at that point. As the project matured some more, I found myself drawn to it again.
 It aims to be a no-nonsense approach to LSP and [[Tree-sitter]] integration, coming with sane defaults and batteries included out of the box.
 
-# Install
+## Install
 
-## [[Homebrew]]
+### [[Homebrew]]
 
 ```sh
 brew install helix
 ```
 
-## [[Snap]]
+### [[Snap]]
 
 > [!note]
 > You can add the option `--edge`, to use the _latest/edge_ channel instead of the default _latest/stable_ one.
@@ -25,14 +25,14 @@ brew install helix
 sudo snap install helix --classic
 ```
 
-## [[Flatpak]]
+### [[Flatpak]]
 
 ```sh
 sudo flatpak install flathub com.helix_editor.Helix
 sudo flatpak run com.helix_editor.Helix
 ```
 
-## #OS/Fedora 
+### #OS/Fedora
 
 > [!caution]
 > Unfortunately, the #OS/Fedora package seems to be out of date currently, or at least significantly lacking behind development.
@@ -43,14 +43,15 @@ sudo flatpak run com.helix_editor.Helix
 sudo dnf install helix
 ```
 
-# Usage
+## Usage
 
 > [!info]
 > This section is heavily inspired and/or copied from the [official helix documentation](https://docs.helix-editor.com/registers.html).
 > Therefore, please always refer to the upstream documentation.
 > The only reason I replicate it is for easier referencing for myself, as a previous heavy [[Neovim]] user.
 > I also highlight the rows differing significantly from normal VIM behaviour.
-## Movement
+
+### Movement
 
 > [!note]
 > Unlike Vim, `f`, `F`, `t` and `T` are not confined to the current line.
@@ -83,7 +84,7 @@ sudo dnf install helix
 | **`Ctrl-o`**             | **Jump backward on the jumplist**                      |
 | **`Ctrl-s`**             | **Save the current selection to the jumplist**         |
 
-## Changes
+### Changes
 
 | Key         | Description                                                          |
 | ----------- | -------------------------------------------------------------------- |
@@ -119,7 +120,7 @@ sudo dnf install helix
 | **`Q`**         | **Start/stop macro recording to the selected register (experimental)**   |
 | **`q`**         | **Play back a recorded macro from the selected register (experimental)** |
 
-## Shell
+### Shell
 
 | Key      | Description                                                                      |
 | -------- | -------------------------------------------------------------------------------- |
@@ -129,7 +130,7 @@ sudo dnf install helix
 | **`Alt-!`**  | **Run shell command, appending output after each selection**                         |
 | **`$`**      | **Pipe each selection into shell command, keep selections where command returned 0** |
 
-## Selection
+### Selection
 
 | Key                       | Description                                                       |
 | ------------------------- | ----------------------------------------------------------------- |
@@ -169,7 +170,7 @@ sudo dnf install helix
 | **`Alt-e`**                   | **Move to end of parent node in syntax tree (TS)**                |
 | **`Alt-b`**                   | **Move to start of parent node in syntax tree (TS)**              |
 
-## Search
+### Search
 
 > [!note]
 > Search commands all operate on the `/` register by default. To use a different register, use `"<char>`.
@@ -182,7 +183,8 @@ sudo dnf install helix
 | `N`     | Select previous search match                                                                     |
 | `*`     | Use current selection as the search pattern, automatically wrapping with `\b` on word boundaries |
 | **`Alt-*`** | **Use current selection as the search pattern**                                                      |
-## Registers
+
+### Registers
 
 | Symbol    | Usage                     |
 | --------- | ------------------------- |
@@ -197,7 +199,7 @@ sudo dnf install helix
 | `+`       | System clipboard          |
 | `*`       | Primary clipboard         |
 
-## Surround
+### Surround
 
 | Key Sequence                          | Action                                      |
 | ------------------------------------- | ------------------------------------------- |
@@ -205,7 +207,7 @@ sudo dnf install helix
 | **`mr<char_to_replace><new_char>`**   | **Replace the closest surround characters** |
 | **`md<char_to_delete>`**              | **Delete the closest surround characters**  |
 
-## Text Objects
+### Text Objects
 
 | Prefix   | Selection  |
 | -------- | ---------- |

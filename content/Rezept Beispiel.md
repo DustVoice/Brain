@@ -1,33 +1,33 @@
 ---
-{"publish":true,"created":"2025-09-14 21:45","modified":"2025-09-14T23:26:42.920+02:00","tags":["recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-09-14 21:45","modified":"2025-09-15T14:55:13.730+02:00","tags":["recipes"],"cssclasses":""}
 ---
 
-*Hier Bild einfügen*
+_Hier Bild einfügen_
 
 [[Templates/Detail Recipe Template\|English Version]]
 
-# Beschreibung
+## Beschreibung
 
 > [!cite]
 > Mein Lieblingsrezept für kalte Wintertage
-> 
+>
 > -- [Annelieses Backstube](link)
 
 Eigener Kommentar
 
-# Übersicht
+## Übersicht
 
 - 150 g [[Zutat 1]]
 - 20 g [[Zutat 2]]
 - Holzschüssel
 
-# Anweisungen
+## Anweisungen
 
 ---
 
 - 100 g Zutat 1, fein gehackt
 
-## Schritt 1
+### Schritt 1
 
 Jede Anweisung.
 
@@ -41,7 +41,7 @@ Mit einer Leerzeile zwischen allem.
 - 20 g Zutat 2
 	- kann um 50 % reduziert werden
 
-## Step 2
+### Step 2
 
 Weitere Instruktionen.
 

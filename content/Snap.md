@@ -1,22 +1,22 @@
 ---
-{"publish":true,"created":"2025-08-01 08:56","modified":"2025-08-03T19:13:57.010+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-08-01 08:56","modified":"2025-09-15T14:55:13.692+02:00","cssclasses":""}
 ---
 
 
 Snap is a package manager developed by Canonical, read #OS/Ubuntu.
 It aims to provide an easy installation of self-contained packages across Linux distributions and systems, similar to [[Flatpak]].
 
-# Install
+## Install
 
-## #OS/Fedora 
+### #OS/Fedora
 
 ```sh
 sudo dnf install snap
 ```
 
-# Configure
+## Configure
 
-## Classic
+### Classic
 
 If you need to install snaps with the `--classic` option, you need to make `/snap` available.
 Simply symlink it from `/var/lib/snapd/snap`:
@@ -27,7 +27,7 @@ sudo ln -s /var/lib/snapd/snap /snap
 
 Make sure you also add `/snap/bin` to your `$PATH`.
 
-## Proxy
+### Proxy
 
 If you're behind a proxy, you can use
 
@@ -35,4 +35,3 @@ If you're behind a proxy, you can use
 sudo snap set system proxy.http="$HTTP_PROXY"
 sudo snap set system proxy.https="$HTTPS_PROXY"
 ```
-

@@ -1,16 +1,17 @@
 ---
-{"publish":true,"created":"2025-05-28 11:28","modified":"2025-09-14T23:49:50.609+02:00","tags":["bread","recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-28 11:28","modified":"2025-09-15T14:55:13.602+02:00","tags":["bread","recipes"],"cssclasses":""}
 ---
 
-# Beschreibung
+
+## Beschreibung
 
 Ein reichhaltiges, aber dennoch balanciertes Roggenmischbrot.
 Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine saftige Krume, die nicht zu dicht und fest ist.
 
-# Zutaten
+## Zutaten
 
 - 35-40 g [[Anstellgut]]
-- 500 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]] #buy 
+- 500 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]] #buy
 - 300 g [[Rye Flour (Type 1150)\|Roggenmehl (Typ 1150)]] #buy
 - 200 g [[Whole Wheat Flour\|Weizenvollkornmehl]] #buy
 - 750 g Wasser
@@ -21,7 +22,7 @@ Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine safti
 - Teigbecken
 - [[Gärkorb#Rund]], groß
 
-# Anweisungen
+## Anweisungen
 
 ---
 
@@ -29,7 +30,7 @@ Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine safti
 - 200 g Wasser
 - 200 g Roggenmehl
 
-## Sauerteig-Vorteig
+### Sauerteig-Vorteig
 
 Das ==Anstellgut== mit ==Wasser== in eine Schüssel geben und [[Anstellgut#Aufschlämmen\|aufschlämmen]].
 
@@ -47,7 +48,7 @@ Anschliessend den Vorteig, zudecken und für **8-12 Stunden** bei Raumtemperatur
 - 1 g Kümmel
 - 1 g Fenchelsamen
 
-## Gewürze
+### Gewürze
 
 Die Gewürze in einem Mörser gut verreiben.
 
@@ -60,7 +61,7 @@ Die Gewürze in einem Mörser gut verreiben.
 	- 10 % [[Sauerteigbrot#Zurückhalten]]: 75 g
 - 20 g Salz
 
-## Hauptteig
+### Hauptteig
 
 Die ==Mehle==, das ==Wasser== und das ==Salz== zusammen mit den ==Gewürzen== der Reihe nach in die Küchenmaschine geben.
 
@@ -81,7 +82,7 @@ Weitere **60 Minuten** gehen lassen.
 
 ---
 
-## Formen
+### Formen
 
 Den Teig auf eine leicht bemehlte Arbeitsfläche geben und 2-3 mal über die Arbeitsfläche schleifen, um eine glatte Oberfläche zu bekommen.
 
@@ -101,7 +102,7 @@ Den Teigling zudecken und für **12-16 Stunden** in den Kühlschrank stellen.
 
 ---
 
-## Backen
+### Backen
 
 Den Backofen (Ober-/Unterhitze) mit einer Backplatte in der unteren Ofenhälfte auf **250 °C** vorheizen.
 

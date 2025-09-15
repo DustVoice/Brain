@@ -1,12 +1,13 @@
 ---
-{"publish":true,"created":"2025-05-26 22:20","modified":"2025-05-31T00:09:29.677+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-26 22:20","modified":"2025-09-15T14:55:13.623+02:00","cssclasses":""}
 ---
 
-# About
 
-- **Full Name:** Gärtrud, *a play on the German words*
-	- *gären* (=> fermenting)
-	- *Gertrud* (=> A German woman's name)
+## About
+
+- **Full Name:** Gärtrud, _a play on the German words_
+	- _gären_ (=> fermenting)
+	- _Gertrud_ (=> A German woman's name)
 - **Nickname:** Trudi
 - **Dough Yield:** 150
 - **Activity:** Hyperactive
@@ -14,7 +15,7 @@
 - **Children:** 3
 - **Visited Countries:** Germany, Poland
 
-# Refreshing
+## Refreshing
 
 - 50 g [[Trudi]]
 - 25 g Water

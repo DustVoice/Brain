@@ -1,19 +1,19 @@
 ---
-{"publish":true,"created":"2025-05-30 14:45","modified":"2025-06-10T16:27:17.581+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 14:45","modified":"2025-09-15T14:55:13.796+02:00","cssclasses":""}
 ---
 
 
 For easy file editing, I’m using [neovim](https://neovim.io/), so editing is as simple as calling `nvim` on the file.
 
-# Install
+## Install
 
-## #OS/Fedora 
+### #OS/Fedora
 
 ```sh
 sudo dnf install neovim
 ```
 
-# WSL Clipboard integration
+## WSL Clipboard integration
 
 For Neovim’s clipboard integration, you have to decide whether you want native clipboard integration with Wayland/X11, or not.
 
@@ -22,15 +22,15 @@ As a rough measure, you probably want clipboard integration over Windows if you 
 > [!note]
 > This doesn’t really seem to be the case anymore, as I currently use [[Ghostty]] from within WSL, having no “native” solution installed, but rather [[win32yank]] on the Windows side, with it on my WSL `PATH` and copy/pasting works like a blast.
 
-## Clipboard via Windows
+### Clipboard via Windows
 
 Set up [[win32yank]] and make sure that your Windows `PATH` (or specifically win32yank's path) is available from within WSL.
 
-## Native clipboard
+### Native clipboard
 
 Set up [[Clipboard Handling]].
 
-# [[Copilot]]
+## [[Copilot]]
 
 In my [[Dotfiles]], specifically in my Neovim configuration, I configure [[Copilot]].
 

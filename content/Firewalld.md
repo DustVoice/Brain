@@ -1,23 +1,23 @@
 ---
-{"publish":true,"created":"2025-05-02 12:25","modified":"2025-05-31T00:09:29.688+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-02 12:25","modified":"2025-09-15T14:55:13.878+02:00","cssclasses":""}
 ---
 
 
-# Install
+## Install
 
-## #OS/Fedora 
+### #OS/Fedora
 
 ```sh
 sudo dnf install firewalld
 ```
 
-# Enable
+## Enable
 
 ```sh
 sudo systemctl enable firewalld
 ```
 
-# Start
+## Start
 
 ```sh
 sudo systemctl start firewalld
