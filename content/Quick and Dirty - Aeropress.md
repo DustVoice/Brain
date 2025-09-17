@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-26 11:30","modified":"2025-09-15T14:55:13.737+02:00","tags":["coffee/filter/aeropress","recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-26 11:30","modified":"2025-09-17T12:48:14.610+02:00","tags":["coffee/filter/aeropress","recipes"],"cssclasses":""}
 ---
 
 
@@ -18,8 +18,8 @@ While it might not produce a perfect cup, dialing it in, or rather adjusting to 
 
 ## Directions
 
-1. Boil a kettle of ==water==. During that time, grind your ==coffee==, prepare the Aeropress, etc. for the water to cool down slightly
+1. Boil a kettle of **water**. During that time, grind your **coffee**, prepare the Aeropress, etc. for the water to cool down slightly
 2. Dump in all the brew water, slowing down if you notice too much foam
-3. Stir for **1 min** continuously
-4. Wait for **1 min**
+3. Stir for ==1 min== continuously
+4. Wait for ==1 min==
 5. Press

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-28 11:28","modified":"2025-09-15T14:55:13.602+02:00","tags":["bread","recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-28 11:28","modified":"2025-09-17T12:46:03.418+02:00","tags":["bread","recipes"],"cssclasses":""}
 ---
 
 
@@ -32,11 +32,11 @@ Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine safti
 
 ### Sauerteig-Vorteig
 
-Das ==Anstellgut== mit ==Wasser== in eine Schüssel geben und [[Anstellgut#Aufschlämmen\|aufschlämmen]].
+Das **Anstellgut** mit **Wasser** in eine Schüssel geben und [[Anstellgut#Aufschlämmen\|aufschlämmen]].
 
-Das ==Roggenmehl== dazugeben und alles gründlich miteinander vermischen.
+Das **Roggenmehl** dazugeben und alles gründlich miteinander vermischen.
 
-Anschliessend den Vorteig, zudecken und für **8-12 Stunden** bei Raumtemperatur gären lassen.
+Anschliessend den Vorteig, zudecken und für ==8-12 Stunden== bei Raumtemperatur gären lassen.
 
 > [!NOTE]
 > Der Sauerteig sollte sich nach der angegebenen Zeit verdoppelt haben.
@@ -63,22 +63,22 @@ Die Gewürze in einem Mörser gut verreiben.
 
 ### Hauptteig
 
-Die ==Mehle==, das ==Wasser== und das ==Salz== zusammen mit den ==Gewürzen== der Reihe nach in die Küchenmaschine geben.
+Die **Mehle**, das **Wasser** und das **Salz** zusammen mit den **Gewürzen** der Reihe nach in die Küchenmaschine geben.
 
 > [!warning] Salz
 > Das Salz auf keinen Fall vergessen!
 
-Für **2-3 Minuten** bei kleiner Geschwindigkeit mischen.
+Für ==2-3 Minuten== bei kleiner Geschwindigkeit mischen.
 
-Die Knetgeschwindigkeit erhöhen und den Teig für circa **15 Minuten** kneten.
+Die Knetgeschwindigkeit erhöhen und den Teig für circa ==15 Minuten== kneten.
 
-Das ==Teigbecken== leicht einfetten.
+Das **Teigbecken** leicht einfetten.
 
-Anschließend den Teig in das Teigbecken  geben, zudecken und für **30 Minuten** bei Raumtemperatur aufgehen lassen.
+Anschließend den Teig in das Teigbecken  geben, zudecken und für ==30 Minuten== bei Raumtemperatur aufgehen lassen.
 
 Den Teig einmal [[Dehnen und Falten]].
 
-Weitere **60 Minuten** gehen lassen.
+Weitere ==60 Minuten== gehen lassen.
 
 ---
 
@@ -96,26 +96,26 @@ Es ist von Vorteil, wenn sich dabei im Teig etwas Spannung aufbaut.
 > [!tip]
 > Damit sich die Teigkugel am unteren Ende gut verschliesst, sollte bei diesem Arbeitsschritt kein, bis nur ganz wenig Mehl verwendet werden.
 
-Anschließend den runden, großen ==Gärkorb== großzügig bemehlen und den Teig, mit dem Verschluss nach oben, darin absetzen.
+Anschließend den runden, großen **Gärkorb** großzügig bemehlen und den Teig, mit dem Verschluss nach oben, darin absetzen.
 
-Den Teigling zudecken und für **12-16 Stunden** in den Kühlschrank stellen.
+Den Teigling zudecken und für ==12-16 Stunden== in den Kühlschrank stellen.
 
 ---
 
 ### Backen
 
-Den Backofen (Ober-/Unterhitze) mit einer Backplatte in der unteren Ofenhälfte auf **250 °C** vorheizen.
+Den Backofen (Ober-/Unterhitze) mit einer Backplatte in der unteren Ofenhälfte auf ==250 °C== vorheizen.
 
 Den Teigling aus dem Gärkorb direkt auf einen bemehlten Brotschieber stürzen (Verschluss ist nun unten).
 
 Anschliessend die Teigoberfläche mit einem scharfen Messer viermal einschneiden, so dass ein Quadrat entsteht.
 
-Den Teigling direkt auf die heisse Backplatte im Ofen schieben, die Backtemperatur auf **220 °C** reduzieren und den Ofen bedampfen.
+Den Teigling direkt auf die heisse Backplatte im Ofen schieben, die Backtemperatur auf ==220 °C== reduzieren und den Ofen bedampfen.
 
-**25 Minuten** mit Dampf backen.
+==25 Minuten== mit Dampf backen.
 
 Den Dampf ablassen.
 
-Das Brot weitere **35 Minuten** goldbraun backen.
+Das Brot weitere ==35 Minuten== goldbraun backen.
 
 ![[Sauerteigbrot#Auskühlen]]

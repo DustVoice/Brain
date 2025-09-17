@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-09-14 21:45","modified":"2025-09-15T14:55:13.739+02:00","tags":["recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-09-14 21:45","modified":"2025-09-17T12:50:39.370+02:00","tags":["recipes"],"cssclasses":""}
 ---
 
 _Image goes here_
@@ -45,4 +45,4 @@ With an empty line between everything.
 
 Further instructions.
 
-Stir ==Ingredient 1== and ==Ingredient 2== in a ==wooden bowl== for **1 hour** until everything has **100 °C**.
+Stir **Ingredient 1** and **Ingredient 2** in a **wooden bowl** for ==1 hour== until everything has ==100 °C==.

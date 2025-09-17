@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-26 22:34","modified":"2025-09-15T14:55:13.724+02:00","tags":["bread","recipes"],"cssclasses":"cards"}
+{"publish":true,"aliases":"","created":"2025-05-26 22:34","modified":"2025-09-17T12:39:22.442+02:00","tags":["bread","recipes"],"cssclasses":"cards"}
 ---
 
 ![[Attachments/20250623_201426 1.jpg|400]]
@@ -30,14 +30,14 @@ Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine safti
 
 ### Sauerteig
 
-Das ==Anstellgut== gut mit dem ==Wasser== [[Anstellgut#Aufschlämmen\|aufschlämmen]].
+Das **Anstellgut** gut mit dem **Wasser** [[Anstellgut#Aufschlämmen\|aufschlämmen]].
 
-Das ==Mehl== hinzufügen und gründlich durchmischen.
+Das **Mehl** hinzufügen und gründlich durchmischen.
 Hier bedarf es jedoch keines Knetens.
 
 Die Wände herunter schaben und abdecken.
 
-Für **8-12 Stunden** bei Raumtemperatur gären lassen.
+Für ==8-12 Stunden== bei Raumtemperatur gären lassen.
 
 > [!NOTE]
 > Der Sauerteig sollte sich nach der angegebenen Zeit verdoppelt haben.
@@ -56,20 +56,20 @@ Für **8-12 Stunden** bei Raumtemperatur gären lassen.
 
 Eine Küchenmaschine mit einem Knethaken vorbereiten.
 
-Zuerst das ==Wasser== in die Schüssel geben, gefolgt vom ==Sauerteig== aus dem vorangegangenen Schritt, den ==Mehlen==, sowie dem ==Salz==
+Zuerst das **Wasser** in die Schüssel geben, gefolgt vom **Sauerteig** aus dem vorangegangenen Schritt, den **Mehlen**, sowie dem **Salz**
 
 > [!warning] Salz
 > Das Salz auf keinen Fall vergessen!
 
-Alles auf der niedrigsten Stufe für **5 Minuten** sanft kneten.
+Alles auf der niedrigsten Stufe für ==5 Minuten== sanft kneten.
 
-Den Teig in der Schüssel für **2-3 Stunden** bei Raumtemperatur gehen lassen.
+Den Teig in der Schüssel für ==2-3 Stunden== bei Raumtemperatur gehen lassen.
 
 ---
 
 ### Formen
 
-Die Küchenoberfläche mit dem ==Roggenmehl== bestäuben.
+Die Küchenoberfläche mit dem **Roggenmehl** bestäuben.
 
 Den Teig darauf geben.
 
@@ -78,26 +78,26 @@ Darauf achten, dass bei diesem Schritt nicht zu viel Mehl in den Teig gefaltet w
 
 Den Teigling nun wenden und unter horizontalem Drehen die Seiten unter den Teigling ziehen.
 
-Den Teigling mit dem Schluss nach unten (sprich ohne erneutes Wenden) in den mit dem ==Roggenmehl== bestäubten ==Gärkorb== geben.
+Den Teigling mit dem Schluss nach unten (sprich ohne erneutes Wenden) in den mit dem **Roggenmehl** bestäubten **Gärkorb** geben.
 
-Entweder für **8-12 Stunden** (ist nicht schlimm falls etwas länger) im Kühlschrank, _oder_ für weitere **60-90 Minuten** bei Raumtemperatur gehen und reifen lassen.
+Entweder für ==8-12 Stunden== (ist nicht schlimm falls etwas länger) im Kühlschrank, _oder_ für weitere ==60-90 Minuten== bei Raumtemperatur gehen und reifen lassen.
 
 ---
 
 ### Backen
 
-Den Ofen auf **250 °C (Ober-/Unterhitze)** vorheizen.
+Den Ofen auf ==250 °C (Ober-/Unterhitze)== vorheizen.
 
 Dein Teigling aus dem Gärkörbchen auf eine Backplatte stürzen.
 
 Das Brot in den Ofen schieben und diesen unmittelbar bedampfen.
 
-Für **40 Minuten** backen.
+Für ==40 Minuten== backen.
 
-Den Dampf ablassen und die Ofentemperatur auf **210 °C** reduzieren.
+Den Dampf ablassen und die Ofentemperatur auf ==210 °C== reduzieren.
 
-Für weitere **10-15 Minuten** backen.
+Für weitere ==10-15 Minuten== backen.
 
-Mindestens **1 Stunde** auf einem Gitter auskühlen lassen.
+Mindestens ==1 Stunde== auf einem Gitter auskühlen lassen.
 
 ![[Sauerteigbrot#Auskühlen]]

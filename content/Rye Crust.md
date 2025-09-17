@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-26 22:34","modified":"2025-09-15T14:56:52.973+02:00","tags":["bread","recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-26 22:34","modified":"2025-09-17T12:45:28.334+02:00","tags":["bread","recipes"],"cssclasses":""}
 ---
 
 ![[Attachments/20250606_165659.jpg|400]]
@@ -30,13 +30,13 @@ It has good flavor, a nice crispy crust and a juicy but not too dense inside.
 
 ### Sourdough
 
-Whisk the ==starter== with the ==warm water==, until it gets a little slushy.
+Whisk the **starter** with the **warm water**, until it gets a little slushy.
 
-Add the ==flour==, mix thoroughly, no need to knead.
+Add the **flour**, mix thoroughly, no need to knead.
 
 Scrape the walls, even it out and cover it.
 
-Let it sit for **8-12 hours** at room temperature.
+Let it sit for ==8-12 hours== at room temperature.
 
 > [!NOTE]
 > It should have doubled in size after this time. Wait longer if needed.
@@ -54,14 +54,14 @@ Let it sit for **8-12 hours** at room temperature.
 
 Prepare a kitchen machine with a kneading hook.
 
-Put the ==water== first into the bowl, followed by the ==sourdough== from the previous step, the ==flours==, as well as the ==salt==.
+Put the **water** first into the bowl, followed by the **sourdough** from the previous step, the **flours**, as well as the **salt**.
 
 > [!warning] Salt
 > Don't forget the salt!
 
-Knead everything on the lowest setting gently for **5 minutes**.
+Knead everything on the lowest setting gently for ==5 minutes==.
 
-Let the dough rest in the bowl for **2-3 hours** at room temperature.
+Let the dough rest in the bowl for ==2-3 hours== at room temperature.
 
 ---
 
@@ -75,24 +75,24 @@ Fold the sides and corners into the middle repeatedly. Don't get too much flour 
 
 Turn the dough blob around and work in a circular motion, turning the ball, while pushing the sides into the bottom slightly.
 
-But the dough ball into a lightly dusted ==proofing basket== in the same orientation, with the closure at the bottom.
+But the dough ball into a lightly dusted **proofing basket** in the same orientation, with the closure at the bottom.
 
-Either put it in the fridge for **8-12 hours** (it will be fine if you wait longer), or let it rest for another **60-90 minutes** at room temperature.
+Either put it in the fridge for ==8-12 hours== (it will be fine if you wait longer), or let it rest for another ==60-90 minutes== at room temperature.
 
 ---
 
-**Bake**
+==Bake==
 
-Preheat your oven to **250 °C** (Top/Down Heat).
+Preheat your oven to ==250 °C== (Top/Down Heat).
 
 Turn the bread dough out of the basket onto a baking sheet.
 
 Put your bread into the oven and immediately add steam to the oven.
 
-Bake for **40 minutes** with steam.
+Bake for ==40 minutes== with steam.
 
 Let the steam out of the oven.
 
-Bake for another **10-15 minutes**.
+Bake for another ==10-15 minutes==.
 
 ![[Sourdough Bread#Let it cool]]

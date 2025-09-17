@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-06-16 17:59","modified":"2025-09-15T14:55:13.608+02:00","tags":["recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-16 17:59","modified":"2025-09-17T12:47:25.674+02:00","tags":["recipes"],"cssclasses":""}
 ---
 
 ![[Attachments/Pasted image 20250616175953.png]]
@@ -32,7 +32,7 @@
 
 ### Saaten
 
-Die ==Saaten / Kerne== in einer Pfanne auf dem Herd ca. **10 Minuten** rösten.
+Die **Saaten / Kerne** in einer Pfanne auf dem Herd ca. ==10 Minuten== rösten.
 
 Vor der weiteren Verwendung gut auskühlen lassen.
 
@@ -46,28 +46,28 @@ Vor der weiteren Verwendung gut auskühlen lassen.
 
 ### Hauptteig
 
-Das ==Anstellgut==, das ==Mehl==, das ==Salz== und die im letzten Schritt angerösteten ==Saaten / Kerne== zusammen mit dem ==Wasser== in die Küchenmaschine geben.
+Das **Anstellgut**, das **Mehl**, das **Salz** und die im letzten Schritt angerösteten **Saaten / Kerne** zusammen mit dem **Wasser** in die Küchenmaschine geben.
 
-**2-3 Minuten** auf _kleiner Stufe_ ankneten.
+==2-3 Minuten== auf _kleiner Stufe_ ankneten.
 
-Die Knetgeschwindigkeit erhöhen und bei _mittlerer Geschwindigkeit_ etwa **15 Minuten** kneten.
+Die Knetgeschwindigkeit erhöhen und bei _mittlerer Geschwindigkeit_ etwa ==15 Minuten== kneten.
 
 > [!note] Hinweis
 > So lange kneten, bis sich der (anfangs noch relativ flüssige) Teig vom Kübelrand löst.
 
-In das leicht gefettete ==Teigbecken== geben und zudecken.
+In das leicht gefettete **Teigbecken** geben und zudecken.
 
-**30 Minuten** bei Raumtemperatur gehen lassen.
-
-[[Dehnen und Falten]].
-
-Weitere **30 Minuten** gehen lassen.
+==30 Minuten== bei Raumtemperatur gehen lassen.
 
 [[Dehnen und Falten]].
 
-Weitere **2-3 Stunden** gehen lassen, insgesamt also **3-4 Stunden**.
+Weitere ==30 Minuten== gehen lassen.
 
-Den Teig **12-24 Stunden** im Kühlschrank ruhen lassen.
+[[Dehnen und Falten]].
+
+Weitere ==2-3 Stunden== gehen lassen, insgesamt also ==3-4 Stunden==.
+
+Den Teig ==12-24 Stunden== im Kühlschrank ruhen lassen.
 
 ---
 
@@ -75,7 +75,7 @@ Den Teig **12-24 Stunden** im Kühlschrank ruhen lassen.
 
 Den Teig aus dem Kühlschrank nehmen.
 
-**2-3 Stunden** akklimatisieren lassen.
+==2-3 Stunden== akklimatisieren lassen.
 
 Auf eine bemehlte Arbeitsfläche geben.
 
@@ -83,15 +83,15 @@ Auf eine bemehlte Arbeitsfläche geben.
 
 Den Teigling straff länglich formen.
 
-Mit dem Verschluss nach oben in den länglichen ==Gärkorb== mit Bezug legen und zudecken.
+Mit dem Verschluss nach oben in den länglichen **Gärkorb** mit Bezug legen und zudecken.
 
-**1 Stunde** bei Raumtemperatur gehen lassen.
+==1 Stunde== bei Raumtemperatur gehen lassen.
 
 ---
 
 ### Backen
 
-Den Ofen auf **250 °C Ober-/Unterhitze** mit einem Backstahl oder umgedrehtem Backblech im unteren Bereich vorheizen.
+Den Ofen auf ==250 °C Ober-/Unterhitze== mit einem Backstahl oder umgedrehtem Backblech im unteren Bereich vorheizen.
 
 Den Teigling auf ein zurechtgeschnittenes Backpapier stürzen.
 
@@ -101,12 +101,12 @@ Auf die Backplatte abschieben.
 
 Den Ofen bedampfen.
 
-Die Temperatur auf **220 °C** reduzieren.
+Die Temperatur auf ==220 °C== reduzieren.
 
-**20 Minuten** backen.
+==20 Minuten== backen.
 
 Dampf ablassen.
 
-Weitere **35-40 Minuten** backen.
+Weitere ==35-40 Minuten== backen.
 
 ![[Sauerteigbrot#Auskühlen]]

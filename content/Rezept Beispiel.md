@@ -1,10 +1,10 @@
 ---
-{"publish":true,"aliases":"","created":"2025-09-14 21:45","modified":"2025-09-15T14:55:13.730+02:00","tags":["recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-09-14 21:45","modified":"2025-09-17T12:50:23.038+02:00","tags":["recipes"],"cssclasses":""}
 ---
 
 _Hier Bild einfügen_
 
-[[Templates/Detail Recipe Template\|English Version]]
+[[Recipe Example\|English Version]]
 
 ## Beschreibung
 
@@ -45,4 +45,4 @@ Mit einer Leerzeile zwischen allem.
 
 Weitere Instruktionen.
 
-==Zutat 1== und ==Zutat 2== in einer ==Holzschüssel== **1 Stunde** rühren bis alles **100 °C** hat.
+**Zutat 1** und **Zutat 2** in einer **Holzschüssel** ==1 Stunde== rühren bis alles ==100 °C== hat.

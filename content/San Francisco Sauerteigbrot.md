@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-06-05 22:42","modified":"2025-09-15T14:55:13.699+02:00","tags":["bread","recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-05 22:42","modified":"2025-09-17T12:46:37.498+02:00","tags":["bread","recipes"],"cssclasses":""}
 ---
 
 
@@ -33,11 +33,11 @@
 
 ### Sauerteig
 
-Das ==Wasser== zum ==Anstellgut== in eine Schüssel geben und etwas [[Anstellgut#Aufschlämmen\|aufschlämmen]].
+Das **Wasser** zum **Anstellgut** in eine Schüssel geben und etwas [[Anstellgut#Aufschlämmen\|aufschlämmen]].
 
-Das ==Mehl== hinzugeben und alles klumpenfrei vermischen.
+Das **Mehl** hinzugeben und alles klumpenfrei vermischen.
 
-Den Vorteig zudecken und **12-16 Stunden** bei Raumtemperatur gehen lassen.
+Den Vorteig zudecken und ==12-16 Stunden== bei Raumtemperatur gehen lassen.
 
 ---
 
@@ -49,9 +49,9 @@ Den Vorteig zudecken und **12-16 Stunden** bei Raumtemperatur gehen lassen.
 
 ### Saltolyse
 
-==Mehl==, ==Wasser== und ==Salz== in der Küchenmaschine **2-3 Minuten** vermischen.
+**Mehl**, **Wasser** und **Salz** in der Küchenmaschine ==2-3 Minuten== vermischen.
 
-Dann **2-3 Stunden** quellen lassen.
+Dann ==2-3 Stunden== quellen lassen.
 
 ---
 
@@ -61,21 +61,21 @@ Dann **2-3 Stunden** quellen lassen.
 
 Den Sauerteig-Vorteig zum Saltolyse-Teig in die Küchenmaschine geben.
 
-Alles zusammen ca. **10 Minuten** auf _mittlerer Geschwindigkeit_ kneten.
+Alles zusammen ca. ==10 Minuten== auf _mittlerer Geschwindigkeit_ kneten.
 
-Das ==Wasser== als [[Bassinage]] nach und nach schluckweise unter den Teig kneten, bis es vollständig aufgenommen wurde.
+Das **Wasser** als [[Bassinage]] nach und nach schluckweise unter den Teig kneten, bis es vollständig aufgenommen wurde.
 
-Den Teig in das leicht gefettete ==Teigbecken== geben und zudecken.
+Den Teig in das leicht gefettete **Teigbecken** geben und zudecken.
 
-Bei Raumtemperatur **30 Minuten** gehen lassen.
-
-[[Dehnen und Falten]].
-
-Weitere **30 Minuten** gehen lassen.
+Bei Raumtemperatur ==30 Minuten== gehen lassen.
 
 [[Dehnen und Falten]].
 
-**1 weitere Stunde** gehen lassen.
+Weitere ==30 Minuten== gehen lassen.
+
+[[Dehnen und Falten]].
+
+==1 weitere Stunde== gehen lassen.
 
 ---
 
@@ -96,15 +96,15 @@ Von links und rechts leicht in die Länge ziehen und in die Mitte falten.
 
 Die Teiglinge straff länglich formen.
 
-Mit dem Verschluss nach oben in den länglichen ==Gärkorb== mit bemehltem Bezug legen.
+Mit dem Verschluss nach oben in den länglichen **Gärkorb** mit bemehltem Bezug legen.
 
-Die Teiglinge zudecken und für **24 Stunden** in den Kühlschrank geben.
+Die Teiglinge zudecken und für ==24 Stunden== in den Kühlschrank geben.
 
 ---
 
 ### Backen
 
-Den Backofen mit einem Backstahl in der unteren Ofenhälfte auf **250 °C Ober-/Unterhitze** vorheizen.
+Den Backofen mit einem Backstahl in der unteren Ofenhälfte auf ==250 °C Ober-/Unterhitze== vorheizen.
 
 Nach der [[Stückgare]], den Teigling aus dem Gärkorb direkt auf ein zurechtgeschnittenes Backpapier stürzen (Verschluss ist nun unten).
 
@@ -112,13 +112,13 @@ Die Teigoberfläche mit einem scharfen Messer einmal längs einschneiden, wobei 
 
 Den Teigling direkt auf den heißen Backstahl abschieben.
 
-Die Ofentemperatur auf **220 °C** reduzieren und den Ofen bedampfen.
+Die Ofentemperatur auf ==220 °C== reduzieren und den Ofen bedampfen.
 
-**15 Minuten** mit Dampf backen.
+==15 Minuten== mit Dampf backen.
 
 Den Dampf ablassen.
 
-Weitere **20-25 Minuten** ausbacken.
+Weitere ==20-25 Minuten== ausbacken.
 
 ![[Sauerteigbrot#Auskühlen]]
 
