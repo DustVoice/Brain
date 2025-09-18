@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-26 22:20","modified":"2025-09-15T14:55:13.623+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-26 22:20","modified":"2025-09-18T14:52:51.883+02:00","cssclasses":""}
 ---
 
 
@@ -18,7 +18,7 @@
 ## Refreshing
 
 - 50 g [[Trudi]]
-- 25 g Water
+- 60 g Water
 	- lukewarm if starter is room temperature
 	- 70-80 °C if starter comes out of the fridge
 - 50 g [[Wheat Flour (Type 550)]]
