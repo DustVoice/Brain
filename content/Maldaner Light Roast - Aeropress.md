@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-26 11:35","modified":"2025-09-17T12:49:09.118+02:00","tags":["coffee/filter/aeropress","recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-26 11:35","modified":"2025-09-19T10:52:21.583+02:00","tags":["coffee/filter/aeropress","recipes"],"cssclasses":""}
 ---
 
 

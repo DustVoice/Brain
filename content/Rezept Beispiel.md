@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-09-14 21:45","modified":"2025-09-17T12:50:23.038+02:00","tags":["recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-09-14 21:45","modified":"2025-09-19T10:52:21.410+02:00","tags":["recipes"],"cssclasses":""}
 ---
 
 _Hier Bild einfügen_

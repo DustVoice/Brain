@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-06-10T13:45:36.367+02:00","modified":"2025-09-15T14:54:33.112+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-10T13:45:36.367+02:00","modified":"2025-09-19T10:52:22.143+02:00","cssclasses":""}
 ---
 
 Cargo is [[Rust]]'s superb package manager and can be used both for installing rust packages and managing a crate's dependencies.

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-02 10:47","modified":"2025-09-15T14:54:18.364+02:00","tags":["OS/Fedora"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-02 10:47","modified":"2025-09-19T10:52:22.155+02:00","tags":["OS/Fedora"],"cssclasses":""}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-07-30 17:44","modified":"2025-09-15T14:55:13.838+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-07-30 17:44","modified":"2025-09-19T15:47:15.452+02:00","cssclasses":""}
 ---
 
 
@@ -42,6 +42,42 @@ sudo flatpak run com.helix_editor.Helix
 ```sh
 sudo dnf install helix
 ```
+
+## Steel
+
+[[Steel]] is the backbone of the upcoming plugin system for Helix.
+Detailed and up-to-date install instructions are available in the [fork's `STEEL.md`](https://github.com/mattwparas/helix/blob/steel-event-system/STEEL.md).
+
+Generally you'll need to
+1. Make sure [[perl]] is installed.
+2. Clone the [fork's plugin branch](https://github.com/mattwparas/helix/tree/steel-event-system).
+
+```sh
+git clone --depth 1 -b steel-event-system https://github.com/mattwparas/helix.git
+```
+
+2. Run `cargo xtask steel`, which will install the
+	1. Helix `hx` executable
+	2. Steel Language Server `steel-language-server`
+	3. Steel dylib installer
+	4. Steel Package Manager [[Steel#Forge]].
+
+To use Steel, you'd normally need to setup config files
+- `~/.config/helix/helix.scm`
+	- loaded first at the top level
+	- any exported functions will be available as commands
+- `~/.config/helix/init.scm`
+	- loaded second at the top level
+	- helix content is available at this point
+	- allows interaction with the editor
+
+I include these files with my [[Dotfiles]], though.
+
+### Plugins
+
+Currently I utilize the following plugins in my config:
+
+- [[Scooter#Helix]]
 
 ## Usage
 
@@ -214,16 +250,16 @@ sudo dnf install helix
 | **`ma`** | **Around** |
 | **`mi`** | **Inside** |
 
-| Suffix              | Selection                 |
-| ------------------- | ------------------------- |
-| `w`                 | Word                      |
-| `W`                 | WORD                      |
-| **`p`**                 | **Paragraph**                 |
-| `(`, `[`, `'`, etc. | Specified surround pairs  |
-| **`m`**                 | **The closest surround pair** |
-| **`f`**                 | **Function**                  |
-| **`t`**                 | **Type (or Class)**           |
-| **`a`**                 | **Argument/parameter**        |
-| **`c`**                 | **Comment**                   |
-| **`T`**                 | **Test**                      |
-| **`g`**                 | **Change**                    |
+| Suffix              | Selection                     |
+| ------------------- | ----------------------------- |
+| `w`                 | Word                          |
+| `W`                 | WORD                          |
+| **`p`**             | **Paragraph**                 |
+| `(`, `[`, `'`, etc. | Specified surround pairs      |
+| **`m`**             | **The closest surround pair** |
+| **`f`**             | **Function**                  |
+| **`t`**             | **Type (or Class)**           |
+| **`a`**             | **Argument/parameter**        |
+| **`c`**             | **Comment**                   |
+| **`T`**             | **Test**                      |
+| **`g`**             | **Change**                    |
