@@ -1,11 +1,11 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-26 22:32","modified":"2025-09-19T10:52:21.313+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-26 22:32","modified":"2025-09-23T15:15:02.539+02:00","cssclasses":""}
 ---
 
 
 Bread baked with [[Sourdough]], as either the main source of active yeast, or as a flavoring agent, with additional yeast added.
 
-![[Recipes#Sourdough]]
+![[Recipe Index#Sourdough]]
 
 ## Tips
 

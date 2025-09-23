@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-28 11:28","modified":"2025-09-19T10:52:21.175+02:00","tags":["bread","recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-28 11:28","modified":"2025-09-23T15:17:22.862+02:00","tags":["bread","recipes"],"cssclasses":""}
 ---
 
 
@@ -20,7 +20,7 @@ Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine safti
 - 1 g Kümmel
 - 1 g Fenchelsamen
 - Teigbecken
-- [[Gärkorb#Rund]], groß
+- [[Gärkorb#Rund\|Runder Gärkorb]], groß
 
 ## Anweisungen
 

@@ -1,11 +1,11 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-26 22:32","modified":"2025-09-19T10:52:21.353+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-26 22:32","modified":"2025-09-23T15:15:17.093+02:00","cssclasses":""}
 ---
 
 
 Brot, welches mit [[Sauerteig]] gebacken wird, entweder als alleiniges Triebmittel, oder in Verbindung mit Frischhefe.
 
-![[Recipes#Sourdough]]
+![[Recipe Index#Sourdough]]
 
 ## Tipps
 

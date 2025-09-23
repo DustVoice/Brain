@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-06-05 22:42","modified":"2025-09-19T10:52:21.366+02:00","tags":["bread","recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-05 22:42","modified":"2025-09-23T15:17:10.230+02:00","tags":["bread","recipes"],"cssclasses":""}
 ---
 
 
@@ -21,7 +21,7 @@
 - 300 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]] #buy
 - 6 g Salz
 - Teigbecken
-- [[Gärkorb#Länglich]], mit Bezug
+- [[Gärkorb#Länglich\|Länglicher Gärkorb]], mit Bezug
 
 ## Anweisungen
 

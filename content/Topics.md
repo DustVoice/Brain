@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-04-29","modified":"2025-09-19T10:52:21.245+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-04-29","modified":"2025-09-23T15:13:38.091+02:00","cssclasses":""}
 ---
 
 
@@ -13,4 +13,4 @@ To cite the starting page:
 > It might however still resemble _classical documentation_ a bit more heavily, specifically because I transformed a lot of information contained within these subsets of notes from my previous linear technical documentation(s) (see, e.g., [my old DustWSL documentation](https://github.com/DustVoice/DustWSL)).
 
 - [[System Administration]]
-- [[Recipes]]
+- [[Categories/Recipes]]

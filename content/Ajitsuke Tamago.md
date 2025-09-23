@@ -1,5 +1,5 @@
 ---
-{"publish":true,"lang":"de","created":"<% tp.date.now() %>","modified":"2025-09-23T12:13:04.057+02:00","tags":["recipes"],"cssclasses":""}
+{"publish":true,"lang":"de","created":"<% tp.date.now() %>","modified":"2025-09-23T15:13:44.703+02:00","tags":["recipes"],"cssclasses":""}
 ---
 
 
@@ -18,5 +18,5 @@
 2. Abschrecklen und versichting pellen.
 3. Für die Marinade, die **Sojasauce**, den **Hon-Mirin** und das **Wasser** in einem Gefrierbeutel mischen.
 4. Die Eier hineingeben und alles gut versiegeln.
-5. Für ==12-48 Stunden== in den Kühlschrank legen.
+5. Für ==12 - 48 Stunden== in den Kühlschrank legen.
 6. Die Eier danach aus dem Beutel holen.

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"lang":"de","created":"2025-09-23","modified":"2025-09-23T13:08:51.851+02:00","tags":["recipes"],"cssclasses":""}
+{"publish":true,"lang":"de","created":"2025-09-23","modified":"2025-09-23T15:13:38.480+02:00","tags":["recipes"],"cssclasses":""}
 ---
 
 

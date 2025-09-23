@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-06-16 17:59","modified":"2025-09-19T10:52:21.194+02:00","tags":["recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-16 17:59","modified":"2025-09-23T15:17:53.064+02:00","tags":["recipes"],"cssclasses":""}
 ---
 
 ![[Attachments/Pasted image 20250616175953.png]]
@@ -9,7 +9,7 @@
 > [!cite]
 > Dieses rustikale Vollkorn-Bâtard-Brot vereint kräftige Aromen, gesunde Zutaten und französische Backtradition. Aussen knusprig, innen herrlich saftig – perfekt für bewusste Geniesser und alle, die echtes Brot lieben.
 
-## Zutaten
+## Übersicht
 
 - 150 g Saaten / Kerne, nach Wahl, z.B.: #buy
 	- 50 g Walnusskerne
@@ -22,7 +22,7 @@
 - 450 g Wasser, kalt
 - 10 g Salz
 - Teigbecken
-- [[Gärkorb#Länglich]], mit Bezug
+- [[Gärkorb#Länglich\|Länglicher Gärkorb]], mit Bezug
 
 ## Anweisungen
 
