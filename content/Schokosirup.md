@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-06-01 16:15","modified":"2025-09-23T15:13:37.700+02:00","tags":["recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-01 16:15","modified":"2025-09-19T10:52:21.348+02:00","tags":["recipes"],"cssclasses":""}
 ---
 
 
