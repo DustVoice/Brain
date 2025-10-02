@@ -1,25 +1,7 @@
 ---
-publish: true
-created: 2025-10-01
-tags:
-  - "recipes"
-categories:
-  - "[[Categories/Recipes]]"
-lang: "de"
-author:
-  - "[[REWE]]"
-cuisine:
-  - "Englisches Frühstück"
-rating:
-publisher:
-  - "[[REWE]]"
-source: "https://www.rewe.de/rezepte/porridge-obstsalat/"
-type:
-  - "Frühstück"
-  - "Snacks"
-  - "Mittagessen"
-image: "https://c.rewe-static.de/30888521/6/30888521.png?impolicy=recipe-meta-image"
+{"publish":true,"lang":"de","created":"2025-10-01","modified":"2025-10-02T21:21:47.809+02:00","tags":["recipes"],"cssclasses":"","socialImage":"https://c.rewe-static.de/30888521/6/30888521.png?impolicy=recipe-meta-image"}
 ---
+
 ![[Attachments/30888521.png]]
 
 ## Beschreibung
