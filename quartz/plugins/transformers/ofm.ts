@@ -744,6 +744,12 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
       const js: JSResource[] = []
       const css: CSSResource[] = []
 
+      js.push({
+        src: "https://cdn.jsdelivr.net/npm/chart.js",
+        loadTime: "afterDOMReady",
+        contentType: "external",
+      })
+      
       if (opts.enableCheckbox) {
         js.push({
           script: checkboxScript,
