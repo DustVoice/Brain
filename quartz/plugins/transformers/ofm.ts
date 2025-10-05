@@ -102,21 +102,16 @@ const arrowMapping: Record<string, string> = {
 
 function canonicalizeCallout(calloutName: string): keyof typeof calloutMapping {
   const normalizedCallout = calloutName.toLowerCase() as keyof typeof calloutMapping
-  // if callout is not recognized, make it a custom one
   return calloutMapping[normalizedCallout] ?? calloutName
 }
 
 export const externalLinkRegex = /^https?:\/\//i
-
 export const arrowRegex = new RegExp(/(-{1,2}>|={1,2}>|<-{1,2}|<={1,2})/g)
-
 export const wikilinkRegex = new RegExp(
   /!?\[\[([^\[\]\|\#\\]+)?(#+[^\[\]\|\#\\]+)?(\\?\|[^\[\]\#]+)?\]\]/g,
 )
-
 export const tableRegex = new RegExp(/^\|([^\n])+\|\n(\|)( ?:?-{3,}:? ?\|)+\n(\|([^\n])+\|\n?)+/gm)
 export const tableWikilinkRegex = new RegExp(/(!?\[\[[^\]]*?\]\]|\[\^[^\]]*?\])/g)
-
 const highlightRegex = new RegExp(/==([^=]+)==/g)
 const commentRegex = new RegExp(/%%[\s\S]*?%%/g)
 const calloutRegex = new RegExp(/^\[\!([\w-]+)\|?(.+?)?\]([+-]?)/)
@@ -134,7 +129,6 @@ const wikilinkImageEmbedRegex = new RegExp(
 
 export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>> = (userOpts) => {
   const opts = { ...defaultOptions, ...userOpts }
-
   const mdastToHtml = (ast: PhrasingContent | Paragraph) => {
     const hast = toHast(ast, { allowDangerousHtml: true })!
     return toHtml(hast, { allowDangerousHtml: true })
@@ -149,16 +143,9 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
           const chartBlock = $(el).text();
           let chartData;
           try {
-            // Parse YAML block to JS object
             chartData = yaml.load(chartBlock);
-
-            // Ensure chartData is valid
             if (!chartData || !chartData.labels || !chartData.series) throw new Error("Invalid chart block");
-
-            // Generate unique id for canvas
             const canvasId = `obsidian-chart-${i}-${Date.now()}`;
-
-            // Convert series to Chart.js datasets
             const datasets = chartData.series.map((serie: any) => ({
               label: serie.title,
               data: serie.data,
@@ -166,8 +153,6 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
               backgroundColor: serie.color || undefined,
               fill: false,
             }));
-
-            // Build Chart.js code
             const jsCode = `
               <canvas id="${canvasId}"></canvas>
               <script>
@@ -184,27 +169,20 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
               }
               </script>
             `;
-
-            // Replace code block with chart HTML
             $(el).parent().replaceWith(jsCode);
           } catch (err) {
-            // On error, leave code block as-is for debugging
             $(el).parent().replaceWith(`<div style="color:red">Chart block parse error: ${err}</div>`);
           }
         });
       },
       // --- END CHART BLOCK TRANSFORMER ---
-
-      // ... retain all other htmlTransforms (if any) ...
     ],
     textTransform(_ctx, src) {
       if (opts.comments) {
         src = src.replace(commentRegex, "")
       }
       if (opts.callouts) {
-        src = src.replace(calloutLineRegex, (value) => {
-          return value + "\n> "
-        })
+        src = src.replace(calloutLineRegex, (value) => value + "\n> ")
       }
       if (opts.wikilinks) {
         src = src.replace(tableRegex, (value) => {
@@ -674,7 +652,7 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                             tagName: "path",
                             properties: {
                               fillRule: "evenodd",
-                              d: "M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 [...]
+                              d: "M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z",
                             },
                             children: [],
                           },
