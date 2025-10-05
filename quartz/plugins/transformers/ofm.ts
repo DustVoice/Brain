@@ -139,8 +139,9 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
     htmlTransforms: [
       // --- CHART BLOCK TRANSFORMER ---
       ({ $ }: any) => {
-        $("pre code.language-chart").each((i, el) => {
-          const chartBlock = $(el).text();
+        $('code[data-language="chart"]').each((i, el) => {
+          // Join all <span> lines to form one YAML string
+          const chartBlock = $(el).find('span > span').map((_, s) => $(s).text()).get().join("\n");
           let chartData;
           try {
             chartData = yaml.load(chartBlock);
@@ -154,24 +155,26 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
               fill: false,
             }));
             const jsCode = `
-              <canvas id="${canvasId}"></canvas>
-              <script>
-              if(window.Chart){
-                const ctx = document.getElementById('${canvasId}').getContext('2d');
-                new Chart(ctx, {
-                  type: '${chartData.type}',
-                  data: {
-                    labels: ${JSON.stringify(chartData.labels)},
-                    datasets: ${JSON.stringify(datasets)}
-                  },
-                  options: { responsive: true, plugins: { legend: { display: true } } }
-                });
-              }
-              </script>
+              <div class="obsidian-chart-wrapper">
+                <canvas id="${canvasId}"></canvas>
+                <script>
+                if(window.Chart){
+                  const ctx = document.getElementById('${canvasId}').getContext('2d');
+                  new Chart(ctx, {
+                    type: '${chartData.type}',
+                    data: {
+                      labels: ${JSON.stringify(chartData.labels)},
+                      datasets: ${JSON.stringify(datasets)}
+                    },
+                    options: { responsive: true, plugins: { legend: { display: true } } }
+                  });
+                }
+                </script>
+              </div>
             `;
-            $(el).parent().replaceWith(jsCode);
+            $(el).replaceWith(jsCode);
           } catch (err) {
-            $(el).parent().replaceWith(`<div style="color:red">Chart block parse error: ${err}</div>`);
+            $(el).replaceWith(`<div style="color:red">Chart block parse error: ${err}</div>`);
           }
         });
       },
