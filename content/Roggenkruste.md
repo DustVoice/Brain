@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-26 22:34","modified":"2025-09-23T15:17:03.112+02:00","tags":["bread","recipes"],"cssclasses":"cards"}
+{"publish":true,"aliases":"","created":"2025-05-26 22:34","modified":"2025-10-07T12:13:52.554+02:00","tags":["bread","recipes"],"cssclasses":"cards"}
 ---
 
 ![[Attachments/20250623_201426 1.jpg|400]]
@@ -80,7 +80,7 @@ Den Teigling nun wenden und unter horizontalem Drehen die Seiten unter den Teigl
 
 Den Teigling mit dem Schluss nach unten (sprich ohne erneutes Wenden) in den mit dem **Roggenmehl** bestäubten **Gärkorb** geben.
 
-Entweder für ==8-12 Stunden== (ist nicht schlimm falls etwas länger) im Kühlschrank, _oder_ für weitere ==60-90 Minuten== bei Raumtemperatur gehen und reifen lassen.
+Entweder für ==8-12 Stunden== (ist nicht schlimm falls etwas länger) im Kühlschrank, ==oder== für weitere ==60-90 Minuten== bei Raumtemperatur gehen und reifen lassen.
 
 ---
 

@@ -1,7 +1,9 @@
 ---
-{"publish":true,"lang":"de","created":"2025-09-23","modified":"2025-09-23T22:19:04.590+02:00","tags":["recipes"],"cssclasses":""}
+{"publish":true,"lang":"de","created":"2025-09-23","modified":"2025-10-06T21:11:04.182+02:00","tags":["recipes"],"cssclasses":""}
 ---
 
+
+![[Attachments/IMG_20251005_160617.jpg|400]]
 
 ## Beschreibung
 

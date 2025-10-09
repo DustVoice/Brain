@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-09-19","modified":"2025-10-01T21:43:24.581+02:00","cssclasses":""}
+{"publish":true,"created":"2025-09-19","modified":"2025-10-01T21:34:27.169+02:00","cssclasses":""}
 ---
 
 ![[Attachments/IMG_20251001_213101.jpg|200]]

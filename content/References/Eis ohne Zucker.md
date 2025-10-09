@@ -1,5 +1,5 @@
 ---
-{"publish":true,"lang":"de","created":"2025-10-01","modified":"2025-10-01T21:57:09.313+02:00","tags":["recipes"],"cssclasses":"","socialImage":"https://c.rewe-static.de/30230261/7/30230261.png?impolicy=recipe-meta-image"}
+{"publish":true,"lang":"de","created":"2025-10-01","modified":"2025-10-02T00:54:06.486+02:00","tags":["recipes"],"cssclasses":"","socialImage":"https://c.rewe-static.de/30230261/7/30230261.png?impolicy=recipe-meta-image"}
 ---
 
 ![[Attachments/30230261.png]]
