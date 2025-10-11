@@ -1,5 +1,5 @@
 ---
-{"publish":true,"lang":"de","created":"2025-09-23","modified":"2025-10-09T17:58:17.332+02:00","tags":["recipes"],"cssclasses":""}
+{"publish":true,"lang":"de","created":"2025-09-23","modified":"2025-10-10T20:26:10.289+02:00","tags":["recipes"],"cssclasses":""}
 ---
 
 
@@ -146,9 +146,9 @@ Ganz vorsichtig einmal von links nach rechts und einmal von oben nach unten im Z
 
 > [!note] Hinweis
 > Nach Zugabe des Gerinnungsmittels und dem vorsichtigen Durchrühren sollten relativ zügig Klümpchen aus der Flüssigkeit ausfallen.
-> 
+>
 > Falls nicht, oder falls die zurückbleibende Flüssigkeit nachhaltig milchig verbleibt, wurde entweder zu wenig Gerinnungsmittel verwendet oder die Temperatur war zu niedrig.
-> 
+>
 > Hier kann es helfen, noch etwas Mittel nachzugeben oder alles nochmal etwas zu erwärmen.
 
 Alles für ==10–15 Minuten== zugedeckt ruhen lassen.
@@ -165,9 +165,9 @@ Je nach gewünschter Festigkeit ==15–30 Minuten==, bis sogar mehr als ==2 Stun
 
 > [!tip]
 > Mein absoluter Geheimtipp sind sog. "C-Zwingen".
-> 
+>
 > Sie ermöglichen das Pressen in einer traditionellen Tofu-Presse in nur wenigen Minuten.
-> 
+>
 > Hier hängt dann selbstverständlich die Tofu-Festigkeit wesentlich von der Schraubkraft ab.
 
 Anschließendes Einlegen in kaltes Wasser festigt die Struktur und eliminiert viel des bitteren Geschmacks (==10–20 Minuten== reichen in der Regel aus).
