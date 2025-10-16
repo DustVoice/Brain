@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-02 13:33","modified":"2025-09-19T10:52:21.553+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-02 13:33","modified":"2025-10-16T14:46:54.761+02:00","cssclasses":""}
 ---
 
 
@@ -398,7 +398,7 @@ php occ config:system:set maintenance_window_start --type=integer --value=1
 
 In order for the Nextcloud's crontab to be run regularly, we need to deploy a cronjob on the host side.
 
-Make sure, you have the `crontab` command available, by installing [[Cronie#OS/Fedora]].
+Make sure, you have the `crontab` command available, by installing [[Cronie[[Fedora]]]].
 
 ```sh
 crontab -e

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-07-30 17:44","modified":"2025-09-19T15:47:15.452+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-07-30 17:44","modified":"2025-10-16T14:46:54.567+02:00","cssclasses":""}
 ---
 
 
@@ -32,10 +32,10 @@ sudo flatpak install flathub com.helix_editor.Helix
 sudo flatpak run com.helix_editor.Helix
 ```
 
-### #OS/Fedora
+### [[Fedora]]
 
 > [!caution]
-> Unfortunately, the #OS/Fedora package seems to be out of date currently, or at least significantly lacking behind development.
+> Unfortunately, the [[Fedora]] package seems to be out of date currently, or at least significantly lacking behind development.
 > Also, the [[Rust]] install from source isn't as straightforward as some other packages, where you can simply invoke [[Cargo#binstall]].
 > For these reasons, I recommend the [[Helix#Homebrew]] installation method, at least for now.
 

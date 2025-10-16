@@ -1,11 +1,11 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-30 16:17","modified":"2025-09-19T10:52:21.794+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 16:17","modified":"2025-10-16T14:46:54.798+02:00","cssclasses":""}
 ---
 
 
 ## Install
 
-### #OS/Fedora
+### [[Fedora]]
 
 Either use [[Terra]] or [[Copr]].
 I recently ran into problems with the [[Copr]] version, so I switched to [[Terra]].

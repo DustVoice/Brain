@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-30 14:32","modified":"2025-09-19T10:52:21.788+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 14:32","modified":"2025-10-16T14:46:54.245+02:00","cssclasses":""}
 ---
 
 
@@ -9,7 +9,7 @@ Though the circle closes there, as `jj` uses `git` under the hood.
 
 ## Install
 
-### #OS/Fedora
+### [[Fedora]]
 
 ```sh
 sudo dnf install git

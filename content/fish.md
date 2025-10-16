@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-06-25 06:53","modified":"2025-09-19T10:52:21.829+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-25 06:53","modified":"2025-10-16T14:46:54.488+02:00","cssclasses":""}
 ---
 
 
@@ -18,7 +18,7 @@ And although I ship my custom config with my [[Dotfiles]], requiring [[fish#Addi
 
 ## Install
 
-### #OS/Fedora
+### [[Fedora]]
 
 ```sh
 sudo dnf install fish

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-30 12:01","modified":"2025-09-19T10:52:21.769+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 12:01","modified":"2025-10-16T14:46:54.325+02:00","cssclasses":""}
 ---
 
 
@@ -37,7 +37,7 @@ It makes it easier to see which packages/tools are supposed to be installed at a
 Optional packages are _italicized_.
 
 > [!todo] Install
-> - [[Podman#OS/Fedora]]
+> - [[Podman[[Fedora]]]]
 > - _[[Caddy]]_
 
 ### Callouts

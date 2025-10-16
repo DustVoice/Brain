@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-06-26 16:09","modified":"2025-09-19T10:52:21.513+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-26 16:09","modified":"2025-10-16T14:46:54.542+02:00","cssclasses":""}
 ---
 
 
@@ -9,7 +9,7 @@ I use it with [[fish]], as it seems to be smoother and with better integration.
 
 ## Install
 
-### #OS/Fedora
+### [[Fedora]]
 
 > [!todo] Install
 > - [[unzip]]

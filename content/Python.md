@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-30 14:57","modified":"2025-09-19T10:52:21.438+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 14:57","modified":"2025-10-16T14:46:54.201+02:00","cssclasses":""}
 ---
 
 
@@ -20,7 +20,7 @@ Or as I call it in German
 
 ## Install as a system package
 
-### #OS/Fedora
+### [[Fedora]]
 
 > [!info]
 > Should already be installed by default

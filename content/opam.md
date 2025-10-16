@@ -1,11 +1,11 @@
 ---
-{"publish":true,"aliases":"","created":"2025-08-06 13:52","modified":"2025-09-19T10:52:21.507+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-08-06 13:52","modified":"2025-10-16T14:46:54.191+02:00","cssclasses":""}
 ---
 
 
 ## Install
 
-### #OS/Fedora
+### [[Fedora]]
 
 ```sh
 sudo dnf install ocaml ocaml-findlib opam

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-08-01 12:56","modified":"2025-09-19T10:52:21.612+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-08-01 12:56","modified":"2025-10-16T14:46:54.260+02:00","cssclasses":""}
 ---
 
 
@@ -7,7 +7,7 @@ The better [[Python]] alternative ...
 
 ## Install
 
-### #OS/Fedora
+### [[Fedora]]
 
 ```sh
 sudo dnf install julia

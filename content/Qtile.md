@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-06-10 14:04","modified":"2025-09-19T10:52:21.433+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-10 14:04","modified":"2025-10-16T14:46:54.460+02:00","cssclasses":""}
 ---
 
 
@@ -7,7 +7,7 @@ A Window Manager for both X11 and Wayland, written in Python.
 
 ## Install
 
-### #OS/Fedora
+### [[Fedora]]
 
 ```sh
 sudo dnf install qtile python-pywlroots

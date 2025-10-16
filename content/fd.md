@@ -1,11 +1,11 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-30 14:55","modified":"2025-09-19T10:52:21.867+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 14:55","modified":"2025-10-16T14:46:54.579+02:00","cssclasses":""}
 ---
 
 
 ## Install
 
-### #OS/Fedora
+### [[Fedora]]
 
 ```sh
 sudo dnf install fd

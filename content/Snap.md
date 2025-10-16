@@ -1,14 +1,14 @@
 ---
-{"publish":true,"aliases":"","created":"2025-08-01 08:56","modified":"2025-09-19T10:52:21.325+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-08-01 08:56","modified":"2025-10-16T14:46:54.394+02:00","cssclasses":""}
 ---
 
 
-Snap is a package manager developed by Canonical, read #OS/Ubuntu.
+Snap is a package manager developed by Canonical, read [[Ubuntu]].
 It aims to provide an easy installation of self-contained packages across Linux distributions and systems, similar to [[Flatpak]].
 
 ## Install
 
-### #OS/Fedora
+### [[Fedora]]
 
 ```sh
 sudo dnf install snap

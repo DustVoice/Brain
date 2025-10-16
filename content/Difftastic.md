@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-06-25 08:13","modified":"2025-09-19T10:52:21.909+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-25 08:13","modified":"2025-10-16T14:46:54.349+02:00","cssclasses":""}
 ---
 
 
@@ -8,7 +8,7 @@
 
 ## Install
 
-### #OS/Fedora
+### [[Fedora]]
 
 ```sh
 sudo dnf install difftastic

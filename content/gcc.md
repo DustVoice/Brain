@@ -1,11 +1,11 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-30 17:57","modified":"2025-09-19T10:52:21.797+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 17:57","modified":"2025-10-16T14:46:54.689+02:00","cssclasses":""}
 ---
 
 
 ## Install
 
-### #OS/Fedora
+### [[Fedora]]
 
 > [!note]
 > `gcc` should already be installed, but you sometimes need `gcc-c++`, too, for example for [[Tree-sitter]].

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-08-08 20:08","modified":"2025-09-19T10:52:21.395+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-08-08 20:08","modified":"2025-10-16T14:46:54.127+02:00","cssclasses":""}
 ---
 
 
@@ -11,7 +11,7 @@
 uv add --dev ruff
 ```
 
-### #OS/Fedora
+### [[Fedora]]
 
 ```sh
 sudo dnf install ruff
