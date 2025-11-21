@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-06-25 06:53","modified":"2025-10-16T14:46:54.488+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-25 06:53","modified":"2025-11-11T14:06:14.062+01:00","cssclasses":""}
 ---
 
 
@@ -67,6 +67,7 @@ There's also a plugin manager for fish, called [[Fisher]].
 > - [[fish#Eza]]
 > - [[fish#fzf]]
 > - [[fish#jj]]
+> - [[fish#fish-ai]]
 
 ### Catppuccin
 
@@ -245,6 +246,24 @@ fisher install kapsmudit/plugin-jj
 > |jgrl|jj git remote list|
 > |jrb|jj rebase|
 > |ja|jj abandon|
+
+### fish-ai
+
+[fish-ai](https://github.com/Realiserad/fish-ai) for some [[AI]] integration.
+
+```fish
+fisher install realiserad/fish-ai
+```
+
+> [!note]
+> - Folllow the guide in the README for configuration of the AI provider within the `~/.config/fish-ai.ini`. This is _not_ supplied with my [[Dotfiles]], as it contains a plaintext API key / personal access token!
+> - You can also use the `fish_ai_put_api_key` command to put your API key on a keyring, so you don't have to write it in plain text to the config file! You need to have a config already present, though.
+> - _Could maybe someday be replaced with [[Tabby]] or [[tabby-agent]]? Maybe at least for the model._
+> - You should use it in conjunction with [[fish#Sponge]], as fixing an error sends command history!
+
+> [!info]- Keybinds
+> - Simply press `Ctrl + P` to change comments (preceding `#`) into commands or commands into an explanation.
+> - If the previous command threw an error, pressing the keybind will try to fix the issue.
 
 ### Abbreviation Tips
 

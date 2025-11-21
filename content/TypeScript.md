@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-09-19","modified":"2025-10-16T22:41:57.452+02:00","cssclasses":""}
+{"publish":true,"created":"2025-09-19","modified":"2025-10-18T13:06:39.281+02:00","cssclasses":""}
 ---
 
 [[JavaScript]] with Types, or so I was told.

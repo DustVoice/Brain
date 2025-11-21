@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-01 16:31","modified":"2025-10-05T21:11:28.143+02:00","tags":["coffee/espresso","coffee/filter"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-01 16:31","modified":"2025-11-21T16:33:01.762+01:00","tags":["coffee/espresso","coffee/filter"],"cssclasses":""}
 ---
 
 
@@ -41,7 +41,13 @@ to
 
 - 1L of Distilled Water (H2O)
 
-## Brew Water
+## Brew Water (Legacy)
+
+> [!attention]
+> I currently use distilled water!
+> It's not a huge change from the low ppm water I was already using and my [[Decent DE1XL]] can survive on it. Even better it is recommended for use with this machine.
+>
+> Note though that the majority of machines could and will probably get damaged by pure reverse osmosis water!
 
 My brew water aims to be at around
 - 20 ppm [[Brew Water Recipe#^cea932\|KH]]

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-30 16:17","modified":"2025-10-16T14:46:54.798+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 16:17","modified":"2025-11-11T13:49:59.061+01:00","cssclasses":""}
 ---
 
 
@@ -26,3 +26,22 @@ sudo dnf install ghostty
 ```
 
 I also need to install my currently used font package [[Iosevka]] inside WSL, otherwise Ghostty will fall back to its included [[JetBrains Mono]] font.
+
+## Themes
+
+Themes should come pre-packaged.
+However especially under [[Fedora]], there seems to be some packaging issues.
+The following script should download the missing themes.
+
+```bash title="ghostty-themes.sh"
+#!/bin/bash
+
+mkdir -p ~/.config/ghostty/themes && \
+tmpdir=$(mktemp -d) && \
+git clone --depth 1 --filter=blob:none --sparse https://github.com/mbadolato/iTerm2-Color-Schemes.git "$tmpdir" && \
+cd "$tmpdir" && \
+git sparse-checkout set ghostty && \
+rsync -a ghostty/ ~/.config/ghostty/themes/ && \
+cd ~
+rm -rf "$tmpdir"
+```
