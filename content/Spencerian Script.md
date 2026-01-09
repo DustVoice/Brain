@@ -11,7 +11,7 @@
 
 ### Rounded
 
-![[Attachments/Pasted image 20250605232547.png]][^1]
+![[Pasted image 20250605232547.png]][^1]
 
 ### Fancy
 
