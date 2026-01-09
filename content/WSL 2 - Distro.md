@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-30 13:41","modified":"2025-09-19T10:52:21.121+02:00","cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-30 13:41","modified":"2025-12-11T13:46:43.479+01:00","cssclasses":""}
 ---
 
 
@@ -101,7 +101,7 @@ If you do, however, and want to use the Fedora distro by default, just run the f
 wsl.exe --set-default FedoraLinux-42
 ```
 
-## Just Works™?
+### Just Works™?
 
 > [!note]
 > This should only be neccessary if you’re behind a (corporate) proxy.
@@ -145,3 +145,179 @@ Defaults env_keep += "all_proxy http_proxy https_proxy ftp_proxy no_proxy ALL_PR
 ```
 
 Rerunning the `curl`-command should now produce a response, and your system should update just fine.
+
+## NixOS
+
+In this part, we're setting up _NixOS_ as our WSL distribution.
+
+> [!info]
+> Please also refer to the [Official NixOS-WSL documentation](https://github.com/nix-community/NixOS-WSL/releases/latest).
+
+### Install
+
+First download the latest `nixos.wsl` from the [NixOS-WSL GitHub release page](https://github.com/nix-community/NixOS-WSL/releases/latest).
+
+Simply double click the file or run
+
+```ps "nixos.wsl"
+wsl.exe --install --from-file nixos.wsl
+```
+
+> [!todo] Replace
+> - `nixos.wsl`: Path to your downloaded `nixos.wsl`
+
+Afterwards you get dropped into NixOS.
+
+As the welcome message already tells you, you should update the system and switch to it by using
+
+```sh
+sudo nix-channel --update
+sudo nixos-rebuild switch
+```
+
+^a79d4f
+
+### Set it as the default
+
+If you don't have any other distro installed, you won't have to do anything.
+
+If you do, however, and want to use the NixOS distro by default, just run the following
+
+```ps
+wsl.exe --set-default NixOS
+```
+
+## Useful configuration options
+
+```nix title="/etc/nixos/configuration.nix"
+wsl.startMenuLaunchers = true;
+wsl.usbip.enable = true;
+wsl.useWindowsDriver = true;
+```
+
+### Nix Flakes
+
+Add the following to your `/etc/nixos/flake.nix` file:
+
+```nix title="/etc/nixos/flake.nix"
+{
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
+  };
+
+  outputs = { self, nixpkgs, nixos-wsl, ... }: {
+    nixosConfigurations = {
+      nixos = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          nixos-wsl.nixosModules.default
+          {
+            system.stateVersion = "25.05";
+            wsl.enable = true;
+          }
+        ];
+      };
+    };
+  };
+}
+```
+
+### Just Works™?
+
+> [!note]
+> This should only be neccessary if you’re behind a (corporate) proxy.
+
+As I’m sitting behind a corporate `http` proxy, I initially had no access to the internet.
+
+This can be confirmed by running
+
+```sh
+curl https://nixos.org
+```
+
+Another symptom is that the [[WSL 2 - Distro#^a79d4f\|previous update/switch command(s)]] hang indefinitely.
+
+Theoretically this is a simple config setting. You'd need to insert this into the main module of your NixOS system's config file under `/etc/nixos/configuration.nix` (within the curly braces):
+
+```nix title="/etc/nixos/configuration.nix" "FQDN" "PORT" "PROTOCOL"
+networking.proxy.default = "http://FQDN:PORT";
+networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+```
+
+> [!todo] Replace
+> - `PROTOCOL`: The protocol of the proxy, for example, `http`.
+> - `FQDN`: The [[FQDN\|Fully Qualified Domain Name]] of the proxy.
+> - `PORT`: The port of the proxy.
+
+> [!example] Proxy URL
+> `http://your.domain.de:8080`
+
+The problem is that in order to apply this setting, you need to run the `nixos-rebuild switch` command, which fails because of the missing proxy!
+
+To circumvent this, we (redundantly) export local environment variables first:
+
+```bash "PROXY-URL"
+proxy_url="PROXY-URL"
+export http_proxy="$proxy_url"
+export https_proxy="$proxy_url"
+export HTTP_PROXY="$proxy_url"
+export HTTPS_PROXY="$proxy_url"
+```
+
+Unfortunately there is only a limited set of environment variables which get copied over by `sudo`!
+This might be wise from a security standpoint but is annoying in this case.
+To circumvent this, add `--preserve-env=http_proxy,https_proxy,HTTP_PROXY,HTTPS_PROXY` as an argument to sudo:
+
+> [!example] Modified update/switch commands
+>
+> ```sh
+> sudo --preserve-env=http_proxy,https_proxy,HTTP_PROXY,HTTPS_PROXY nix-channel --update
+> sudo --preserve-env=http_proxy,https_proxy,HTTP_PROXY,HTTPS_PROXY nixos-rebuild switch
+> ```
+
+This should ruln without problem and the proxy environment variables should be correctly set now and after reboots.
+
+## Change username
+
+> [!warning]
+> I currently **don't** do this and just leave it as the default `nixos` user, as it was inconsitent.
+
+To change the username (useful, especially when using a [[Home Manager]] flake, where the username needs to be specified) on your already installed system proceed as follows:
+
+First change the `wsl.defaultUser` config option in `/etc/nixos/configuration.nix`
+
+```nix title="/etc/nixos/configuration.nix" "USERNAME"
+wsl.defaultUser = "USERNAME";
+```
+
+> [!todo] Replace
+> - `USERNAME`: Your desired username.
+
+Apply the configuration **but don't use `switch` to immediately switch to it!**
+
+```sh
+sudo nixos-rebuild boot
+```
+
+`exit` out of NixOS and stop the distro
+
+```ps
+wsl.exe -t Nixos
+```
+
+^99420f
+
+Open a root shell inside NixOS and immediately exit it, to generate the user
+
+```ps
+wsl.exe -d NixOS --user root exit
+```
+
+[[WSL 2 - Distro#^99420f\|Stop the distro again.]]
+
+Open NixOS.
+
+```ps
+wsl.exe -d NixOS
+```
