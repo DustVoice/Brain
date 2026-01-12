@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"Savage Worlds SWADE","created":"2025-09-19","modified":"2026-01-06T13:06:36.165+01:00","tags":["TTRPG"],"cssclasses":""}
+{"publish":true,"aliases":"Savage Worlds SWADE","created":"2025-09-19","modified":"2026-01-11T16:11:28.340+01:00","tags":["TTRPG"],"cssclasses":""}
 ---
 
 Savage Worlds is a game system for [[TTRPG]]s.
@@ -15,6 +15,6 @@ Although the core rules, settings books, companions and more are [available](htt
 SmiteWorks apparently doesn't charge upfront fees and instead shares revenue for developing their modules which results in a faster turnaround time for new releases at the cost of slightly higher purchase prices.
 
 > [!info]
-> For a quick overview and introduction, see my [[SWADE 4 Dummies]] guide.
+> For a quick overview and introduction, see my [[SWADE (ELI5)]] guide.
 >
 > It should be noted, though, that this doesn't intend to replace the [Savage Worlds Adventure Edition Core Rules (SWADE)](https://peginc.com/product/savage-worlds-adventure-edition-core-rules-pdf-swade/) available for purchase in either digital or physical form from [Pinnacle Entertainment Group](https://peginc.com), but is rather intended as a complimentary addition to introduce new players quickly to the system.
