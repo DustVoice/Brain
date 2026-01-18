@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-09-19","modified":"2026-01-18T02:14:57.411+01:00","tags":["TTRPG","Unity"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-09-19","modified":"2026-01-18T02:27:02.112+01:00","tags":["TTRPG","Unity"],"cssclasses":""}
 ---
 
 
@@ -148,7 +148,7 @@ I will use the _Deadlands: Dark Ages_ theme (called "SW- Deadlands Dark Ages") f
 ### Campaign Setup
 
 The first popup you'll be presented with is the _Campaign Setup_ window.
-Please don't just click it away as it is an essential part of joining any campaign, at least for the first part.
+Please don't just click it away as it is an essential part of joining any campaign (at least  the first time).
 
 ![[Attachments/Pasted image 20260117222814.png|400]]
 
@@ -202,22 +202,42 @@ Selecting/Creating a character makes you the _owner_ of it, which is required fo
 > Don't go rogue here!
 > Always discuss character selection **and** creation with your GM and the other players.
 
+![[Attachments/Pasted image 20260118021956.png|400]]
+
 ### General Layout
 
 > [!note]
-> Note that the general layout stays the same but scales differently for different monitor resolution.
-> I would always advise to play using the highest resolution available as that maximizes screen space for windows.
-> The main gripe players have with FG as a VTT, namely screen real estate, can be somewhat effectively mitigated by playing on a moderately sized screen.
+> Note that although the general layout stays the same, it _will_ scale differently for different monitor resolutions.
+> I would always advise to play using the highest resolution available as to maximize the screen space for arranging windows.
+> 
+> The main gripe players have with FG as a VTT is screen real estate.
+> This can definitely be effectively mitigated by playing on a moderately sized screen.
+> 
 > So if you're stuck on a 11" Netbook, maybe get out an HDMI cable ...
 
 When all the "preliminary" windows are closed, you should now get a pretty good overview over the UI layout.
 
 As you already might've noticed, Fantasy Grounds makes heavy use of _windows_.
 Some love it, some hate it.
-You can't change it anyways.
+You can't change it either way so no point in arguing.
 
-Generally every shown part here is _locked_, which means you can't move it around.
-Many parts _can_ be _unlocked_ by right clicking it and choosing _Window -> Unlock Position_.
+> [!tip]
+> You can _minimize_ almost any window by pressing the appropriate button in its title bar
+> 
+> ![[Attachments/Pasted image 20260118022307.png|100]]
+> 
+> This will collapse the window into a (sometimes more, somtimes less) indicative symbol-button you can drag around.
+> To restore the window, simply click on this circle symbol.
+> It will also restore when it would normally be opened from scratch.
+> Hovering over it will also tell you what window it was in the tooltip.
+> 
+> ![[Attachments/Pasted image 20260118022544.png|200]]
+> 
+> **The main benefit is that the position & size will be remembered when minimizing/restoring!**
+> So you don't need to arrange everything anew.
+
+Generally every visible part in this screenshot is _locked_, which means you can't move it around.
+Many parts _can_ be _unlocked_ though by right clicking it and choosing _Window -> Unlock Position_.
 **However**, for the time being, we're gonna leave everything as it is.
 
 ![[Attachments/Pasted image 20260117225016.png]]
