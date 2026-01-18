@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-09-19","modified":"2026-01-18T01:53:38.521+01:00","tags":["TTRPG","Unity"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-09-19","modified":"2026-01-18T01:54:58.959+01:00","tags":["TTRPG","Unity"],"cssclasses":""}
 ---
 
 
@@ -124,16 +124,16 @@ I'll give you a quick overview over the UI, different useful features you as a p
 
 > [!caution]
 > Please keep in mind that the optics can drastically change depending on which skin has been setup for the campaign.
-> 
+>
 > > [!example]- Example: Default Theme
 > > ![[Attachments/Pasted image 20260117220846.png|600]]
-> 
+>
 > > [!example]- Example: "Core" Theme
 > > ![[Attachments/Pasted image 20260117221530.png|600]]
-> 
+>
 > > [!example]- Example: "SW - Deadlands Dark Ages"
 > > ![[Attachments/Pasted image 20260117221722.png|600]]
-> 
+>
 > Also keep in mind that I'll explain the relevant parts of the _Savage Worlds (Adventure Edition)_ ruleset. For example, _Dungeons and Dragons (5E)_ looks completely different.
 
 I will use the _Deadlands: Dark Ages_ theme (called "SW- Deadlands Dark Ages") for the following parts, simply because that will be my next campaign. Apart from the design of some components, the general layout shouldn't really change, if you don't change the ruleset.
@@ -473,14 +473,14 @@ This tab has some general information about your character
 > Normally you always drag the _left_ singular die (button) onto the target.
 > This is the actual attack. The right button (wider) is for the _damage_.
 > If you hit with the _attack_, you can then easily see an entry pop up in the [[Fantasy Grounds (ELI5)#Combat Tracker]].
-> 
+>
 > ![[Attachments/Pasted image 20260118005330.png|400]]
-> 
+>
 > Here you can just double click the obviously designed damage button, to roll for damage and apply it!
 > It also auto detects raises and rolls the bonus damage die with your damage roll where applicable.
-> 
+>
 > ![[Attachments/Pasted image 20260118005427.png|400]]
-> 
+>
 > **Note that the GM has to accept the whole interaction to apply the damage!**
 
 > [!tip]
@@ -580,16 +580,16 @@ This is a _very_ extensive topic so it's best if you ask your GM should anything
 > [!tip] Maximizing the Map
 > Especially during combat it might be cumbersome to always juggle the map window around.
 > You can use the _Increase Size_ button of the map's title bar.
-> 
+>
 > ![[Attachments/Pasted image 20260118014738.png|200]]
-> 
+>
 > If it's increased, you can also _Decrease Size_ with the newly added button
-> 
+>
 > ![[Attachments/Pasted image 20260118014859.png|200]]
-> 
+>
 > There are 4 levels:
 > 1. Normal (default)
 > 2. Map is put into the Background, all windows on top, between the [[Fantasy Grounds (ELI5)#Red Chat Window\|Chat Window]] and the [[Fantasy Grounds (ELI5)#Blue Sidebar\|Sidebar]], but _below_ the [[Fantasy Grounds (ELI5)#Orange Party/Combat Tabletop List\|Tabletop List]]
->    ![[Attachments/Pasted image 20260118015057.png|400]]
+> ![[Attachments/Pasted image 20260118015057.png|400]]
 > 3. Map is now filling all the Background space left of the [[Fantasy Grounds (ELI5)#Blue Sidebar\|Sidebar]], but behind even the [[Fantasy Grounds (ELI5)#Red Chat Window\|Chat Window]]
 > 4. [[Fantasy Grounds (ELI5)#Blue Sidebar\|Sidebar]] and [[Fantasy Grounds (ELI5)#Red Chat Window\|Chat Window]] are hidden and Map fills whole Background space
