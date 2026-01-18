@@ -1,5 +1,9 @@
 ---
-{"publish":true,"aliases":"DEK Steno","created":"2025-06-13 11:37","modified":"2025-12-17T11:15:00.846+01:00","cssclasses":""}
+publish: true
+aliases: DEK Steno
+created: 2025-06-13 11:37
+modified: 2025-12-17T11:15:00.846+01:00
+cssclasses: ""
 ---
 
 

@@ -1,5 +1,9 @@
 ---
-{"publish":true,"aliases":"","created":"2025-07-30 17:44","modified":"2025-10-16T14:46:54.567+02:00","cssclasses":""}
+publish: true
+aliases: ""
+created: 2025-07-30 17:44
+modified: 2025-10-16T14:46:54.567+02:00
+cssclasses: ""
 ---
 
 
@@ -146,8 +150,7 @@ Currently I utilize the following plugins in my config:
 | `"` `<reg>` | Select a register to yank to or paste from                           |
 | `>`         | Indent selection                                                     |
 | `<`         | Unindent selection                                                   |
-| `=`         | Format selection (**LSP**)                                           |
-| `d`         | Delete selection                                                     |
+| d`         | Delete selection                                                     |
 | **`Alt-d`**     | **Delete selection, without yanking**                                    |
 | `c`         | Change selection (delete and enter insert mode)                      |
 | **`Alt-c`**     | **Change selection (delete and enter insert mode, without yanking)**     |

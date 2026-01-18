@@ -1,5 +1,9 @@
 ---
-{"publish":true,"aliases":"YubiKey","created":"2025-05-30 16:33","modified":"2025-09-19T10:52:21.103+02:00","cssclasses":""}
+publish: true
+aliases: YubiKey
+created: 2025-05-30 16:33
+modified: 2025-09-19T10:52:21.103+02:00
+cssclasses: ""
 ---
 
 

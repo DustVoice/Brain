@@ -1,5 +1,12 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-28 11:28","modified":"2026-01-16T16:30:46.497+01:00","tags":["bread","recipes"],"cssclasses":""}
+publish: true
+aliases: ""
+created: 2025-05-28 11:28
+modified: 2026-01-16T16:30:46.497+01:00
+tags:
+  - bread
+  - recipes
+cssclasses: ""
 ---
 
 

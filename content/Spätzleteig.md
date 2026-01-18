@@ -1,5 +1,13 @@
 ---
-{"publish":true,"lang":"de","created":"2025-10-01","modified":"2025-10-12T22:45:22.337+02:00","tags":["recipes","references"],"cssclasses":"","socialImage":"[[Omas-Spaetzle-Rezept-Spaetzleteig-selber-machen-2.jpg]]"}
+publish: true
+lang: de
+created: 2025-10-01
+modified: 2025-10-12T22:45:22.337+02:00
+tags:
+  - recipes
+  - references
+cssclasses: ""
+socialImage: "[[Omas-Spaetzle-Rezept-Spaetzleteig-selber-machen-2.jpg]]"
 ---
 
 ![[Attachments/Omas-Spaetzle-Rezept-Spaetzleteig-selber-machen-2.jpg]]

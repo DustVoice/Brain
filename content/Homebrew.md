@@ -1,5 +1,9 @@
 ---
-{"publish":true,"aliases":"","created":"2025-06-29 22:42","modified":"2025-10-16T14:46:54.370+02:00","cssclasses":""}
+publish: true
+aliases: ""
+created: 2025-06-29 22:42
+modified: 2025-10-16T14:46:54.370+02:00
+cssclasses: ""
 ---
 
 

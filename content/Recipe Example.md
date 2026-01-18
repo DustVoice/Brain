@@ -1,5 +1,11 @@
 ---
-{"publish":true,"aliases":"","created":"2025-09-14 21:45","modified":"2025-09-23T08:13:00.320+02:00","tags":["recipes"],"cssclasses":""}
+publish: true
+aliases: ""
+created: 2025-09-14 21:45
+modified: 2025-09-23T08:13:00.320+02:00
+tags:
+  - recipes
+cssclasses: ""
 ---
 
 _Image goes here_

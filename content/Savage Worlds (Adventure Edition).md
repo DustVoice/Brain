@@ -1,5 +1,11 @@
 ---
-{"publish":true,"aliases":"Savage Worlds SWADE","created":"2025-09-19","modified":"2026-01-11T16:11:28.340+01:00","tags":["TTRPG"],"cssclasses":""}
+publish: true
+aliases: Savage Worlds SWADE
+created: 2025-09-19
+modified: 2026-01-11T16:11:28.340+01:00
+tags:
+  - TTRPG
+cssclasses: ""
 ---
 
 Savage Worlds is a game system for [[TTRPG]]s.

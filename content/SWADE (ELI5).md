@@ -1,5 +1,11 @@
 ---
-{"publish":true,"aliases":"Savage Worlds (ELI5) SWADE 4 Dummies","created":"2025-09-19","modified":"2026-01-16T11:08:12.918+01:00","tags":["TTRPG"],"cssclasses":""}
+publish: true
+aliases: Savage Worlds (ELI5) SWADE 4 Dummies
+created: 2025-09-19
+modified: 2026-01-16T11:08:12.918+01:00
+tags:
+  - TTRPG
+cssclasses: ""
 ---
 
 

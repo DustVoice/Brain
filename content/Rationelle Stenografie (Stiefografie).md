@@ -1,5 +1,9 @@
 ---
-{"publish":true,"aliases":"Stiefo Stiefografie","created":"2025-09-19","modified":"2025-12-18T18:08:25.851+01:00","cssclasses":""}
+publish: true
+aliases: Stiefo Stiefografie
+created: 2025-09-19
+modified: 2025-12-18T18:08:25.851+01:00
+cssclasses: ""
 ---
 
 

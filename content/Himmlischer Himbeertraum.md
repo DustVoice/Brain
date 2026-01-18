@@ -1,5 +1,11 @@
 ---
-{"publish":true,"lang":"de","created":"2025-09-23","modified":"2025-09-23T22:19:04.273+02:00","tags":["recipes"],"cssclasses":""}
+publish: true
+lang: de
+created: 2025-09-23
+modified: 2025-09-23T22:19:04.273+02:00
+tags:
+  - recipes
+cssclasses: ""
 ---
 
 

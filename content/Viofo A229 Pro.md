@@ -1,5 +1,10 @@
 ---
-{"publish":true,"aliases":"","lang":"de","created":"2025-06-09 15:51","modified":"2025-09-19T10:52:21.199+02:00","cssclasses":""}
+publish: true
+aliases: ""
+lang: de
+created: 2025-06-09 15:51
+modified: 2025-09-19T10:52:21.199+02:00
+cssclasses: ""
 ---
 
 

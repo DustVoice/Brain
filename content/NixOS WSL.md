@@ -1,5 +1,11 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-30 11:41","modified":"2025-12-12T18:37:20.872+01:00","tags":["OS/NixOS"],"cssclasses":""}
+publish: true
+aliases: ""
+created: 2025-05-30 11:41
+modified: 2025-12-12T18:37:20.872+01:00
+tags:
+  - OS/NixOS
+cssclasses: ""
 ---
 
 

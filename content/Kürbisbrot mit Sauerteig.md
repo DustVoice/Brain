@@ -1,5 +1,13 @@
 ---
-{"publish":true,"lang":"de","created":"2025-10-18","modified":"2026-01-16T16:33:56.923+01:00","tags":["recipes","references"],"cssclasses":"","socialImage":"[[Kuerbisbrot-rezept-von-marcel-paa.jpg]]"}
+publish: true
+lang: de
+created: 2025-10-18
+modified: 2026-01-16T16:33:56.923+01:00
+tags:
+  - recipes
+  - references
+cssclasses: ""
+socialImage: "[[Kuerbisbrot-rezept-von-marcel-paa.jpg]]"
 ---
 
 l![[Attachments/Kuerbisbrot-rezept-von-marcel-paa.jpg]]
