@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-09-19","modified":"2026-01-18T02:27:02.112+01:00","tags":["TTRPG","Unity"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-09-19","modified":"2026-01-18T02:34:22.031+01:00","tags":["TTRPG","Unity"],"cssclasses":""}
 ---
 
 
@@ -390,7 +390,7 @@ I'll traverso through the list row by row from left to right
   It also has a _Watch Order_ list, so that it is evident in which constellations characters hold watch, e.g., at night.
 - The _Other_ tab features functionality for _Party Allies_ (insted of character specific allies) or notes from the GM.
 
-![[Attachments/Pasted image 20260117235455.png|400]]
+![[Attachments/Pasted image 20260117235455.png|200]]![[Attachments/Pasted image 20260118023103.png|200]]![[Attachments/Pasted image 20260118023149.png|200]]
 
 #### Calendar
 
@@ -404,6 +404,8 @@ Useful to keep track of time (or lack thereof ...)
 This enables customization of the dice (tray)!
 Here you can select your custom dice skin.
 
+![[Attachments/Pasted image 20260118023244.png|400]]
+
 Either simply select a color you like in the top right or, if you have purchased [dice pack(s) from the Fantasy Grounds store](https://www.fantasygrounds.com/store/?sys=-1&pub=-1&typ=17&search=&sort=1)
 
 > [!caution]
@@ -413,7 +415,11 @@ More importantly you can in-/decrease the size of the dice tray and/or rolling d
 
 By clicking on the dice icon(s) above the size modifiers, you can (de-)select the dice available in the dice tray.
 
-To save space I recommend disabling the D20 from the dice tray as it is seldom used in Savage Worlds (apart from table rolls, which are automatic).
+To save space I recommend disabling the **d20** from the dice tray as it is seldom used in Savage Worlds (apart from table rolls, which are automatic).
+
+![[Attachments/Pasted image 20260118023310.png|400]]
+
+![[Attachments/Pasted image 20260118023325.png|400]]
 
 #### Modifiers
 
@@ -424,11 +430,13 @@ To save space I recommend disabling the D20 from the dice tray as it is seldom u
 - Simply click a modifier and you'll see that the modifier has affected the previously discussed [[Fantasy Grounds (ELI5)#Dark Green Modifier(s)]] region.
 	- For example, I clicked on _Called Shot: Hand_, which produced the following
 	  
-	  ![[Attachments/Pasted image 20260118001052.png|400]]
+	  ![[Attachments/Pasted image 20260118001052.png|200]]
 	- As you can see it added the -4 penalty
 	- You can also see a miniscule (unfortunately it's **really god damn** small) dot appeared under the modifier
 	- If you want to get rid of the modifier, you need to click said tiny dot.
 	- You can also simply use the scroll wheel to offset the -4, though technically this doesn't get rid of the modifier.
+
+![[Attachments/Pasted image 20260118023411.png|400]]
 
 #### Effects
 
