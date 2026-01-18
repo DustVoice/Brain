@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-09-19","modified":"2026-01-12T19:24:56.244+01:00","cssclasses":""}
+{"publish":true,"aliases":"Savage Worlds (ELI5) SWADE 4 Dummies","created":"2025-09-19","modified":"2026-01-16T11:08:12.918+01:00","tags":["TTRPG"],"cssclasses":""}
 ---
 
 
@@ -290,7 +290,7 @@ There are 5 [[SWADE Core Rules.pdf#page=31&selection=50,0,50,10|Attributes (p.29
 
 [[SWADE Core Rules.pdf#page=31&selection=144,0,144,6|Skills (p.29)]] are _learned_ abilities!
 
-The same way anyone could theoretically learn anything, with time and effort that is, everyone could hav'de any skills (of course with some limitations). Moreover, it is self-explanatory that some characters should be better at specific skills than others.
+The same way anyone could theoretically learn anything, with time and effort that is, everyone could have any skills (of course with some limitations). Moreover, it is self-explanatory that some characters should be better at specific skills than others.
 
 But compared to a _class system_, you're not locked in forever on a given path, and you're free to advance how **you** want, not the class!
 

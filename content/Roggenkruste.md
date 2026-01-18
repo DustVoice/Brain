@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-26 22:34","modified":"2025-10-07T12:13:52.554+02:00","tags":["bread","recipes"],"cssclasses":"cards"}
+{"publish":true,"aliases":"","created":"2025-05-26 22:34","modified":"2026-01-16T16:04:25.812+01:00","tags":["bread","recipes"],"cssclasses":"cards"}
 ---
 
 ![[Attachments/20250623_201426 1.jpg|400]]
@@ -15,7 +15,7 @@ Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine safti
 
 - 45 g [[Anstellgut]]
 - 410 g Wasser
-- 360 g [[Rye Flour (Type 997)#T 1150\|Roggenmehl (Typ 997)]] #buy
+- 360 g [[Rye Flour (Type 997)\|Roggenmehl (Typ 997)]] #buy
 - 210 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]] #buy
 - 12 g Salz
 - [[Gärkorb#Rund\|Runder Gärkorb]]

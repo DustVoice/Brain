@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-06-16 17:59","modified":"2025-09-23T15:17:53.064+02:00","tags":["recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-06-16 17:59","modified":"2026-01-16T16:30:31.848+01:00","tags":["recipes"],"cssclasses":""}
 ---
 
 ![[Attachments/Pasted image 20250616175953.png]]
@@ -18,7 +18,7 @@
 	- 20 g Leinsamen
 	- 20 g Sesamsamen
 - 90-120 g [[Anstellgut]]
-- 500 g [[Whole Wheat Flour\|Weizenvollkornmehl]] #buy
+- 500 g [[Whole Wheat Flour\|Weizenmehl (Vollkorn)]] #buy
 - 450 g Wasser, kalt
 - 10 g Salz
 - Teigbecken
@@ -39,7 +39,7 @@ Vor der weiteren Verwendung gut auskühlen lassen.
 ---
 
 - 90-120 g [[Anstellgut]]
-- 500 g [[Whole Wheat Flour\|Weizenvollkornmehl]]
+- 500 g [[Whole Wheat Flour\|Weizenmehl (Vollkorn)]]
 - 450 g Wasser, kalt
 	- 10 % [[Sauerteigbrot#Zurückhalten]]: 45 g
 - 10 g Salz

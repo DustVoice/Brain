@@ -1,8 +1,8 @@
 ---
-{"publish":true,"lang":"de","created":"2025-10-18","modified":"2025-10-18T13:09:56.152+02:00","tags":["recipes","references"],"cssclasses":"","socialImage":"[[Kuerbisbrot-rezept-von-marcel-paa.jpg]]"}
+{"publish":true,"lang":"de","created":"2025-10-18","modified":"2026-01-16T16:33:56.923+01:00","tags":["recipes","references"],"cssclasses":"","socialImage":"[[Kuerbisbrot-rezept-von-marcel-paa.jpg]]"}
 ---
 
-![[Attachments/Kuerbisbrot-rezept-von-marcel-paa.jpg]]
+l![[Attachments/Kuerbisbrot-rezept-von-marcel-paa.jpg]]
 
 ## Beschreibung
 
@@ -22,21 +22,16 @@ Geniesse dieses hausgemachte Kürbisbrot mit Sauerteig – saftig, aromatisch un
 
 ## Zutaten
 
-- 100 g Wasser, ca. 35 Grad warm
-- 10 g Sauerteig
-- 100 g Weissmehl ((Weizenmehl Type 550))
-- 150 g Kürbisfruchtfleisch
+- 220 g Wasser, ca. 35 Grad warm
+- 10 g [[Sauerteig]]
+- 500 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]] #buy
+- 150 g [[Kürbis\|Kürbisfruchtfleisch]] #buy
 - 100 g Wasser
-- 80 g Kürbiskerne
-- 120 g Wasser
-- Sauerteig-Vorteig
-- Brühstück
-- Quellstück
-- 400 g Weissmehl ((Weizenmehl Type 550))
-- 20 g Honig
+- 80 g [[Kürbiskerne]] #buy
+	- ein paar Extra zum Wälzen
+- 20 g [[Honig]] #buy
 - 12 g Salz
-- 1 g Kümmel ((optional))
-- Kürbiskerne
+- 1 g Kümmel (optional)
 
 ## Anweisungen
 

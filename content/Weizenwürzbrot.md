@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-05-28 11:28","modified":"2025-09-23T15:17:22.862+02:00","tags":["bread","recipes"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-05-28 11:28","modified":"2026-01-16T16:30:46.497+01:00","tags":["bread","recipes"],"cssclasses":""}
 ---
 
 
@@ -13,7 +13,7 @@ Es hat einen intensiven Geschmack, eine zartsplitternde Kruste, sowie eine safti
 - 35-40 g [[Anstellgut]]
 - 500 g [[Wheat Flour (Type 550)\|Weizenmehl (Typ 550)]] #buy
 - 300 g [[Rye Flour (Type 1150)\|Roggenmehl (Typ 1150)]] #buy
-- 200 g [[Whole Wheat Flour\|Weizenvollkornmehl]] #buy
+- 200 g [[Whole Wheat Flour\|Weizenmehl (Vollkorn)]] #buy
 - 750 g Wasser
 - 20 g Salz
 - 1 g Anis
