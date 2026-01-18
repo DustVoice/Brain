@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-09-19","modified":"2026-01-18T02:04:58.295+01:00","tags":["TTRPG","Unity"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-09-19","modified":"2026-01-18T02:14:57.411+01:00","tags":["TTRPG","Unity"],"cssclasses":""}
 ---
 
 
@@ -28,17 +28,17 @@ This account can and will be used for
 > [!note]
 > Even if you choose to install Fantasy Grounds through [[Fantasy Grounds (ELI5)#Steam]], you'll need the account!
 
-Setting this up beforehand saves you time and frustration when launchint the software, so simply do it before or during [[Fantasy Grounds (ELI5)#Installation]]
+Setting this up beforehand saves you time and frustration when launching the software, so simply do it before or during [[Fantasy Grounds (ELI5)#Installation]]
 1. Simply visit the website under: https://www.fantasygrounds.com/forums/register.php
-2. Input your date of birth. **Thist can't be changed later on!**
-3. Continue.
-4. Input all the remaining details.
-	1. The username is case-sensitive, so MonsterSlayer3000 is not the same as monsterslayer3000!
-	2. If you're located in Germany like me, make sure to correctly set the Time Zone! Default is _GMT_, whereas the correct one is _GMT +1_.
-	3. You can deselect all Email notifications, doesn't matter.
-	4. Agree to the Site Rules.
-5. Complete the registration.
-6. Confirm the Email you'll receive.
+2. Input your date of birth. **This can't be changed later on!**
+3. Continue
+4. Input all the remaining details
+	1. The username is case-sensitive, so `MonsterSlayer3000` is not the same as `monsterslayer3000`!
+	2. If you're located in Germany like me, make sure to correctly set the Time Zone! Default is _GMT_, whereas the correct one should be _GMT +1_
+	3. You can deselect all Email notifications, doesn't matter
+	4. Agree to the Site Rules
+5. Complete the registration
+6. Confirm the Email you'll receive
 
 > [!tip]
 > You can also link your Steam account to your Fantasy Grounds account.
@@ -82,21 +82,24 @@ Even the Steam version installs the [[Fantasy Grounds (ELI5)#Fantasy Grounds Upd
 
 The welcome screen is the central hub of the program.
 Here you can
-	- create and load campaigns
-	- join campaigns
-	- return to the setup / update screen of the [[Fantasy Grounds (ELI5)#Fantasy Grounds Updater]]
+- Create and Load campaigns
+- Join a campaign
+- Return to the setup / update screen of the [[Fantasy Grounds (ELI5)#Fantasy Grounds Updater]]
 
 ![[Attachments/Pasted image 20260117205540.png|400]]
 
 > [!info]
 > You don't need to _own_ any content you're gonna play, as a player.
 > Only the GM/DM needs it to host the game.
-> That means that albeit the following sections deal with the UI of a [[Savage Worlds (Adventure Edition)\|SWADE]] campaign, you can't test this out yourself without _owning_ the _Savage Worlds (Adventure Edition)_ ruleset for FG!
+> 
+> The culprit is that albeit the following sections detailing the different aspects of a [[Savage Worlds (Adventure Edition)\|SWADE]] campaign, you can't test this out yourself without _owning_ the _Savage Worlds (Adventure Edition)_ ruleset for FG, which (in contrast to the D&D 5e ruleset) is **not** included with FG and needs to be purchased seperately for around ten bucks.
+> 
+> **If you don't want to GM Savage Worlds yourself you don't need to buy anything!**
 
 > [!tip] Dice Skins
 > The only exception to the above are dice skins!
 > These are on a per-player basis and can't be shared.
-> There are a handful of "default" dice available (with color customization), but especially dice with effects etc. are a premium purchase for your account.
+> There are a handful of "default" dice available (with color customization), but especially dice with effects are a premium purchase for your account.
 
 ### Joining a game
 
@@ -104,19 +107,23 @@ To join one of my campaigns
 
 1. Click on _Join Campaign_
 2. In the middle part, locate the _join by GM name_ textfield
+   
    ![[Attachments/Pasted image 20260117215907.png|400]]
 3. Input _DustVoice_ (case-sensitive!)
 4. Click on _Start_.
    After clicking start, it will take a while depending on how much of the necessary content of the campaign you _don't own_ and therefore _haven't downloaded_ yet.
    Simply wait for everything to finish and for the campaign to load.
    This will be significantly sped up upon reconnects!
+   
    ![[Attachments/Pasted image 20260117223321.png|400]]
 5. Rejoining a campaign you were a part of already should be easy by utilizing the _History_ section
+   
    ![[Attachments/Pasted image 20260117220239.png|400]]
-6. In case this is a non-public campaign, I'll set a password to prevent unauthorized joining.
+1. In case this is a non-public campaign, I'll set a password to prevent unauthorized joining.
 	1. When this is the case, FG will prompt you for the password
+	   
 	   ![[Attachments/Pasted image 20260117220129.png|400]]
-	2. Input the password and click on _Retry_
+	1. Input the password and click on _Retry_
 
 ## Quickstart (SWADE)
 
@@ -157,27 +164,31 @@ If you feel lost, simply ask your GM, they'll be able to help you out with the s
    This is _absolutely necessary_ or else you won't be able to _use_ said content.
    Your GM should be able to tell you exactly what to activate for a specific campaign.
    To proceed, click the _Modules_ button.
+   
    ![[Attachments/Pasted image 20260117222855.png|400]]
-3. This will present you with a choice of modules the GM has _activated_ for the campaign.
+1. This will present you with a choice of modules the GM has _activated_ for the campaign.
    But **caution**!
    This doesn't mean you should blindly activate everything!
    As I said, ask your GM which items to _Load_!
    This will be remembered upon reconnects, so you only need to do it once
+   
    ![[Attachments/Pasted image 20260117223559.png|400]]
-4. After you're finished, simply close the Window using the _X_.
-5. Clicking on _SWADE Rules_, make sure that every necessary ruleset is loaded indicated by a green checkmark.
+1. After you're finished, simply close the Window using the _X_.
+2. Clicking on _SWADE Rules_, make sure that every necessary ruleset is loaded indicated by a green checkmark.
    Again, ask your GM they'll know.
    In this example I only have one ruleset, some SWADE settings however provide additional modules in this section.
+   
    ![[Attachments/Pasted image 20260117223815.png|400]]
-6. Close the window once you're done
-7. Click on _Next_
-8. In the options you can change only some user-specific campaign settings.
+1. Close the window once you're done
+2. Click on _Next_
+3. In the options you can change only some user-specific campaign settings.
    You can also recall the _Setup_ window we're discussing, if you ever need to open it again.
    None of these settings are necessary right now, though, so we will skip this part.
    If you, however, encounter any gripe or issue during the campaign, you might want to look if it's a user setting and/or ask your GM.
    You can always access the settings menu later through the _Cog_ icon under the _Tool_ category in the sidebar.
+   
    ![[Attachments/Pasted image 20260117224133.png|400]] ^028971
-9. Close the _Options_ and click on _Finish_
+1. Close the _Options_ and click on _Finish_
 
 Now you're done with the setup and should be presented with another window underneath it.
 
@@ -222,6 +233,7 @@ This is the _chat window_.
 - If the story has NPCs talking, it will/should be in here.
 - You as a player can also chat and roleplay as your character.
 - The left drop down above the text field is the _speaking as_ field, which means if you control more than one character (or a character with allies), you can select from which you want to send the message.
+  
   ![[Attachments/Pasted image 20260117230055.png|400]]
 - The right drop down is the language selection.
   If your campaign features more than one language, you can choose which to use.
@@ -274,17 +286,21 @@ This is the _Party Tabletop List_ starting out.
 - With this you can drop stuff on a macro field to make a shortcut.
 - If you have a frequent chat message or command, type it in chat, **don't press return** and drag it into a field.
   Simply pressing the field will issue the message/command.
+  
   ![[Attachments/Pasted image 20260117232523.png|400]]
 - If you have frequent rolls, e.g. an attack or skill, drag it on here
+  
   ![[Attachments/Pasted image 20260117232540.png|400]]
 - If you have, e.g., a rule you always forget, or maybe a description of an Edge, drag it on here
+  
   ![[Attachments/Pasted image 20260117232643.png|400]]
 - The possibilities are endless
 - The best thing: You don't have to click the field. Simply press the **F-Keys**!
   So for the 1st slot, press **F1**, and so on!
 - The even better thing: Try pressing modifier keys! You have completely new slots. So `Ctrl + F1`, `Shift + F1`, `Ald + F1`, `Ctrl + Shift + F1`, `Ctrl + Alt + F1`, `Shift + Alt + F1` and finally `Ctrl + Shift + Alt + F1` are **all different slots**.
   That ought to be enough, don't you think?
-  ![[Attachments/Pasted image 20260117233102.png|250]] or ![[Attachments/Pasted image 20260117233035.png|130]]
+  
+  ![[Attachments/Pasted image 20260117233102.png|250]] ![[Attachments/Pasted image 20260117233035.png|130]]
 
 #### Blue: Sidebar
 
@@ -341,6 +357,7 @@ I'll traverso through the list row by row from left to right
 
 > [!tip]
 > Apart from _dragging_ Bennies, to deflect incoming damage, you can also _hold down `Ctrl`_ while looking at the Combat Tracker, to make a _Soak_ button apper
+> 
 > ![[Attachments/Pasted image 20260118020408.png|400]]
 
 #### Party Sheet
@@ -386,6 +403,7 @@ To save space I recommend disabling the D20 from the dice tray as it is seldom u
 - These are _modifiers_ to a roll and depending on the situation might not be applied automatically.
 - Simply click a modifier and you'll see that the modifier has affected the previously discussed [[Fantasy Grounds (ELI5)#Dark Green Modifier(s)]] region.
 	- For example, I clicked on _Called Shot: Hand_, which produced the following
+	  
 	  ![[Attachments/Pasted image 20260118001052.png|400]]
 	- As you can see it added the -4 penalty
 	- You can also see a miniscule (unfortunately it's **really god damn** small) dot appeared under the modifier
@@ -421,7 +439,9 @@ There are multiple tabs, each serving a specific purpose.
 
 > [!note]
 > Note that normally your character is _locked_, indicated by the red lock symbol in the top button row.
+> 
 > ![[Attachments/Pasted image 20260118002258.png|400]]
+> 
 > This makes it so you can't accidentally change stuff you won't really need to access during normal play.
 > However, there are scenarios necessitating an unlock.
 > Simply press the lock icon, do what you need to do (e.g. choose Skills/Edges/etc. for your advance), then don't forget to lock it again.
@@ -549,6 +569,7 @@ This is a _very_ extensive topic so it's best if you ask your GM should anything
 - Zoom in and out using the scroll wheel
 - Click the scroll wheel (middle mouse button) to pan the map
 - Move by dragging your token or by using the arrow keys. If the GM has turned on _Token Lock_ (often times during an encounter) movement gets _planned_ and needs to be accepted by the GM
+  
   ![[Attachments/Pasted image 20260118012504.png|400]]
 	- If you want to _undo_ a move (segment), hold down `Alt` while retracing the path to delete or modify it.
 	- Press _X_ to dismiss the movement entirely
@@ -556,10 +577,12 @@ This is a _very_ extensive topic so it's best if you ask your GM should anything
 - If _Line of Sight_ has been turned on, you can't see past walls, doors, and more
 - If _Lighting_ has been turned on, you need a light source to see, or have stuff like _Darkvision_
 - There are multiple _Mouse Modes_
+  
   ![[Attachments/Pasted image 20260118012950.png|400]]
   From left to right:
 	- Selection Mode: Select one or multiple tokens
 	- Target Mode: Easily select (multiple) targets for your attacks (can be cleared in the [[Fantasy Grounds (ELI5)#Combat Tracker]] or using the [[Fantasy Grounds (ELI5)#^617f0b\|Clear Targets Button]]). You see targets when hovering over your token
+	  
 	  ![[Attachments/Pasted image 20260118013656.png|200]]
 	- Target Enemy Units: Target all enemy units
 	- Target Friendly Units: Target all friendly units
@@ -594,6 +617,7 @@ This is a _very_ extensive topic so it's best if you ask your GM should anything
 > There are 4 levels:
 > 1. Normal (default)
 > 2. Map is put into the Background, all windows on top, between the [[Fantasy Grounds (ELI5)#Red Chat Window\|Chat Window]] and the [[Fantasy Grounds (ELI5)#Blue Sidebar\|Sidebar]], but _below_ the [[Fantasy Grounds (ELI5)#Orange Party/Combat Tabletop List\|Tabletop List]]
-> ![[Attachments/Pasted image 20260118015057.png|400]]
-> 3. Map is now filling all the Background space left of the [[Fantasy Grounds (ELI5)#Blue Sidebar\|Sidebar]], but behind even the [[Fantasy Grounds (ELI5)#Red Chat Window\|Chat Window]]
-> 4. [[Fantasy Grounds (ELI5)#Blue Sidebar\|Sidebar]] and [[Fantasy Grounds (ELI5)#Red Chat Window\|Chat Window]] are hidden and Map fills whole Background space
+>    
+>    ![[Attachments/Pasted image 20260118015057.png|400]]
+> 1. Map is now filling all the Background space left of the [[Fantasy Grounds (ELI5)#Blue Sidebar\|Sidebar]], but behind even the [[Fantasy Grounds (ELI5)#Red Chat Window\|Chat Window]]
+> 2. [[Fantasy Grounds (ELI5)#Blue Sidebar\|Sidebar]] and [[Fantasy Grounds (ELI5)#Red Chat Window\|Chat Window]] are hidden and Map fills whole Background space
