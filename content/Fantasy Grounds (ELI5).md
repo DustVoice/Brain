@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-09-19","modified":"2026-01-18T02:34:22.031+01:00","tags":["TTRPG","Unity"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-09-19","modified":"2026-01-18T02:40:47.170+01:00","tags":["TTRPG","Unity"],"cssclasses":""}
 ---
 
 
@@ -283,6 +283,9 @@ This is the _Party Tabletop List_ starting out.
 	- If you want to cancel a roll, don't move the mouse and drop the die
 	- To add a die of the same type (e.g., 2d6), simply right click.
 
+> [!tip]
+> If you want to make a roll without it showing up in chat (although discouraged and not used in Savage Worlds, as it is an open-roll system), hold down `Alt` before picking up the dice and hold it until they finish landing.
+
 #### Dark Green: Modifier(s)
 
 - This section features a simple modifier interface enabling quick and on-the-fly modifiers.
@@ -314,10 +317,11 @@ This is the _Party Tabletop List_ starting out.
 - If you have, e.g., a rule you always forget, or maybe a description of an Edge, drag it on here
   
   ![[Attachments/Pasted image 20260117232643.png|400]]
+- Even better, drag some dice from the [[Fantasy Grounds (ELI5)#Light Green Dice Tray\|Dice Tray]] onto here! You can even accumulate dice for a custom roll. For example if you first drag 2d6 and then 1d4 onto the same shortcut, it will produce a 2d6+1d4 roll shortcut!
 - The possibilities are endless
 - The best thing: You don't have to click the field. Simply press the **F-Keys**!
   So for the 1st slot, press **F1**, and so on!
-- The even better thing: Try pressing modifier keys! You have completely new slots. So `Ctrl + F1`, `Shift + F1`, `Ald + F1`, `Ctrl + Shift + F1`, `Ctrl + Alt + F1`, `Shift + Alt + F1` and finally `Ctrl + Shift + Alt + F1` are **all different slots**.
+- The absolutely best thing: Try pressing modifier keys! You have completely new slots. So `Ctrl + F1`, `Shift + F1`, `Ald + F1`, `Ctrl + Shift + F1`, `Ctrl + Alt + F1`, `Shift + Alt + F1` and finally `Ctrl + Shift + Alt + F1` are **all different slots**.
   That ought to be enough, don't you think?
   
   ![[Attachments/Pasted image 20260117233102.png|250]] ![[Attachments/Pasted image 20260117233035.png|130]]
