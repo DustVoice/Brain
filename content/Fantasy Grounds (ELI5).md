@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"","created":"2025-09-19","modified":"2026-01-18T01:54:58.959+01:00","tags":["TTRPG","Unity"],"cssclasses":""}
+{"publish":true,"aliases":"","created":"2025-09-19","modified":"2026-01-18T02:04:58.295+01:00","tags":["TTRPG","Unity"],"cssclasses":""}
 ---
 
 
@@ -338,6 +338,10 @@ I'll traverso through the list row by row from left to right
 - Although some players (which have previously GMed in FG) lament the limited functionality available to players (the GM Combat Tracker is _way_ more advanced and loaded), it has everything a _player_ needs to participate in an encounter!
 
 ![[Attachments/Pasted image 20260117234542.png|400]]
+
+> [!tip]
+> Apart from _dragging_ Bennies, to deflect incoming damage, you can also _hold down `Ctrl`_ while looking at the Combat Tracker, to make a _Soak_ button apper
+> ![[Attachments/Pasted image 20260118020408.png|400]]
 
 #### Party Sheet
 
