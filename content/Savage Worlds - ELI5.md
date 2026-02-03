@@ -2,7 +2,7 @@
 publish: true
 aliases: Savage Worlds (ELI5) SWADE (ELI5) SWADE 4 Dummies
 created: 2025-09-19
-modified: 2026-01-20T01:25:04.186+01:00
+modified: 2026-01-20T18:28:15.266+01:00
 tags:
   - ELI5
   - TTRPG
@@ -17,6 +17,13 @@ This is a quick and therefore non-comprehensive guide to [[Savage Worlds]].
 It's targeted towards players new to Savage Worlds, but not entirely new to [[TTRPG]]s in general.
 It occasionally references the [[SWADE Core Rules.pdf|Savage Worlds Adventure Edition Core Rules]], which need to be purchased from the publisher and copyright holder of the system [Pinnacle Entertainment Group](https://peginc.com), either in digital or physical format.
 The page numbers referenced should be identical between both.
+
+> [!tip]
+> There are two other free resources, which help _majorly_ during combat and/or chases!
+> - The _official_ Combat & Chase Maneuvers Quick Reference Charts, available from [PEGinc](https://peginc.com/product/savage-worlds-combat-chase-maneuvers-quick-reference-charts-pdf-swade/) and [DriveThroughRPG](https://www.drivethrurpg.com/en/product/265465/savage-worlds-adventure-edition-combat-chase-quick-reference-chart)
+> - The _unofficial community-member developed_ [Combat Survival Guide](https://www.dropbox.com/s/y6n0x4n1i4n09cl/Combat%20Survival%20Guide%20v10.pdf?dl=1).
+> 
+> These are invaluable resources for both Players and GMs, so definitely check them out and have them at the ready for your play (if you find them helpful of course).
 
 Of course, there are also countless references to the (arguably more popular) and widespread used TTRPG system [[Dungeons & Dragons]], in order to draw some (probably flawed and biased) comparisons between the two.
 

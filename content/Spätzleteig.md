@@ -2,7 +2,7 @@
 publish: true
 lang: de
 created: 2025-10-01
-modified: 2025-10-12T22:45:22.337+02:00
+modified: 2026-01-28T20:09:41.366+01:00
 tags:
   - recipes
   - references
@@ -47,8 +47,8 @@ Das einfache, gelingsichere Rezept für Omas Spätzleteig. Ein Spätzle Rezept n
   > [!note]
   > Beim Schaben vom Brett muss der Teig noch fester sein!
 
-4. Abgedeckt im Kühlschrank für ungefähr ==15 Minuten== ruhen lassen.
-   Gerne auch länger.
+4. Abgedeckt für ungefähr ==15 Minuten== ruhen lassen.
+   Gerne auch länger (dann aber besser im Kühlschrank).
 5. In einem großen Topf reichlich Wasser mit etwas Salz zum Kochen bringen. Das Wasser sollte jetzt nur noch sieden, maximal leicht köcheln.
 6. Die Spätzle hineinschneiden, schaben, pressen, oder ähnliches.
 7. Wenn die Spätzle gar sind, schwimmen sie oben.
