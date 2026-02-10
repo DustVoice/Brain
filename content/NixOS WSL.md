@@ -2,7 +2,7 @@
 publish: true
 aliases: ""
 created: 2025-05-30 11:41
-modified: 2026-02-01T14:26:39.586+01:00
+modified: 2026-02-03T08:04:47.829+01:00
 tags:
   - OS/NixOS
 cssclasses: ""
@@ -22,7 +22,7 @@ Furthermore, take note of the [[Guide#Syntax]] used.
 
 1. [[WSL 2 - Kernel\|Setup the kernel]]
 2. [[WSL 2 - Distro#NixOS\|Install the Distro]]
-3. Enable flakes by adding 
+3. Enable flakes by adding
 4. Use my [[NixOS dotfile flake]] to setup everything else
 5. Done!
 6. Profit?

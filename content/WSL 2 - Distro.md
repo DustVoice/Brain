@@ -2,7 +2,7 @@
 publish: true
 aliases: ""
 created: 2025-05-30 13:41
-modified: 2025-12-11T13:46:43.479+01:00
+modified: 2026-02-11T00:30:45.321+01:00
 cssclasses: ""
 ---
 
@@ -172,14 +172,8 @@ wsl.exe --install --from-file nixos.wsl
 
 Afterwards you get dropped into NixOS.
 
-As the welcome message already tells you, you should update the system and switch to it by using
-
-```sh
-sudo nix-channel --update
-sudo nixos-rebuild switch
-```
-
-^a79d4f
+> [!tip]
+> When immediately bootstrapping a config like I do with my [[WSL 2 - Distro#Nix(OS) & Home-Manager config]], you don't need to update the system using channels (despite the welcome message telling you)!
 
 ### Set it as the default
 
@@ -191,41 +185,48 @@ If you do, however, and want to use the NixOS distro by default, just run the fo
 wsl.exe --set-default NixOS
 ```
 
-## Useful configuration options
+## Nix(OS) & Home-Manager config
 
-```nix title="/etc/nixos/configuration.nix"
-wsl.startMenuLaunchers = true;
-wsl.usbip.enable = true;
-wsl.useWindowsDriver = true;
-```
+I have my own dendritic [nix-config](https://github.com/DustVoice/nix-config) that manages my complete system and home level configuration for different hosts, users, etc.
 
-### Nix Flakes
+> [!tip]
+> This completely replaces any manual configuration I previously did in my [[Dotfiles]] setup.
 
-Add the following to your `/etc/nixos/flake.nix` file:
+### Bootstrap
 
-```nix title="/etc/nixos/flake.nix"
-{
-  inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
-  };
+1. Rebuild the `boot` instead of directly `switch`ing to it
 
-  outputs = { self, nixpkgs, nixos-wsl, ... }: {
-    nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        modules = [
-          nixos-wsl.nixosModules.default
-          {
-            system.stateVersion = "25.05";
-            wsl.enable = true;
-          }
-        ];
-      };
-    };
-  };
-}
-```
+    ```shell
+    sudo nixos-rebuild boot --flake github:DustVoice/nix-config#hostname
+    ```
+
+	^c10228
+
+> [!todo] Replace
+> - `hostname`: The machine's hostname, defined in [`modules/my/hosts`](https://github.com/DustVoice/nix-config/blob/main/modules/my/hosts.nix)
+
+2. Exit the WSL shell and terminate the distro
+
+    ```postscript
+    wsl.exe -t NixOS
+    ```
+
+3. Start a shell as the `root` user and immediately exit, applying the new generation
+
+    ```postscript
+    wsl.exe -d NixOS --user root exit
+    ```
+
+4. Stop the distro again
+
+    ```postscript
+    wsl.exe -t NixOS
+    ``` 
+
+5. Finally open a WSL shell with (hopefully) everything applied.
+
+> [!NOTE]
+> This of course doesn't transfer any files from the `nixos` user's home directory to the newly created user!
 
 ### Just Works™?
 
@@ -240,24 +241,7 @@ This can be confirmed by running
 curl https://nixos.org
 ```
 
-Another symptom is that the [[WSL 2 - Distro#^a79d4f\|previous update/switch command(s)]] hang indefinitely.
-
-Theoretically this is a simple config setting. You'd need to insert this into the main module of your NixOS system's config file under `/etc/nixos/configuration.nix` (within the curly braces):
-
-```nix title="/etc/nixos/configuration.nix" "FQDN" "PORT" "PROTOCOL"
-networking.proxy.default = "http://FQDN:PORT";
-networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-```
-
-> [!todo] Replace
-> - `PROTOCOL`: The protocol of the proxy, for example, `http`.
-> - `FQDN`: The [[FQDN\|Fully Qualified Domain Name]] of the proxy.
-> - `PORT`: The port of the proxy.
-
-> [!example] Proxy URL
-> `http://your.domain.de:8080`
-
-The problem is that in order to apply this setting, you need to run the `nixos-rebuild switch` command, which fails because of the missing proxy!
+Another symptom is that the [[WSL 2 - Distro#^c10228\|previous bootstrap command]] hangs indefinitely.
 
 To circumvent this, we (redundantly) export local environment variables first:
 
@@ -267,61 +251,20 @@ export http_proxy="$proxy_url"
 export https_proxy="$proxy_url"
 export HTTP_PROXY="$proxy_url"
 export HTTPS_PROXY="$proxy_url"
+export CURL_NIX_FLAGS="-x $proxy_url"
 ```
 
 Unfortunately there is only a limited set of environment variables which get copied over by `sudo`!
 This might be wise from a security standpoint but is annoying in this case.
 To circumvent this, add `--preserve-env=http_proxy,https_proxy,HTTP_PROXY,HTTPS_PROXY` as an argument to sudo:
 
-> [!example] Modified update/switch commands
+> [!example] Modified bootstrap command
 >
 > ```sh
-> sudo --preserve-env=http_proxy,https_proxy,HTTP_PROXY,HTTPS_PROXY nix-channel --update
-> sudo --preserve-env=http_proxy,https_proxy,HTTP_PROXY,HTTPS_PROXY nixos-rebuild switch
+> sudo --preserve-env=http_proxy,https_proxy,HTTP_PROXY,HTTPS_PROXY,CURL_NIX_FLAGS nixos-rebuild switch --flake github:DustVoice/nix-config#hostname
 > ```
 
-This should ruln without problem and the proxy environment variables should be correctly set now and after reboots.
-
-## Change username
-
-> [!warning]
-> I currently **don't** do this and just leave it as the default `nixos` user, as it was inconsitent.
-
-To change the username (useful, especially when using a [[Home Manager]] flake, where the username needs to be specified) on your already installed system proceed as follows:
-
-First change the `wsl.defaultUser` config option in `/etc/nixos/configuration.nix`
-
-```nix title="/etc/nixos/configuration.nix" "USERNAME"
-wsl.defaultUser = "USERNAME";
-```
-
 > [!todo] Replace
-> - `USERNAME`: Your desired username.
+> - `hostname`: The machine's hostname, defined in [`modules/my/hosts`](https://github.com/DustVoice/nix-config/blob/main/modules/my/hosts.nix)
 
-Apply the configuration **but don't use `switch` to immediately switch to it!**
-
-```sh
-sudo nixos-rebuild boot
-```
-
-`exit` out of NixOS and stop the distro
-
-```ps
-wsl.exe -t Nixos
-```
-
-^99420f
-
-Open a root shell inside NixOS and immediately exit it, to generate the user
-
-```ps
-wsl.exe -d NixOS --user root exit
-```
-
-[[WSL 2 - Distro#^99420f\|Stop the distro again.]]
-
-Open NixOS.
-
-```ps
-wsl.exe -d NixOS
-```
+This should run without problem and the proxy environment variables should be correctly set now and after reboots.
