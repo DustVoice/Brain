@@ -2,7 +2,7 @@
 publish: true
 aliases: ""
 created: 2025-05-30 13:41
-modified: 2026-02-11T00:30:45.321+01:00
+modified: 2026-02-11T00:31:32.579+01:00
 cssclasses: ""
 ---
 
@@ -207,19 +207,19 @@ I have my own dendritic [nix-config](https://github.com/DustVoice/nix-config) th
 
 2. Exit the WSL shell and terminate the distro
 
-    ```postscript
+    ```powershell
     wsl.exe -t NixOS
     ```
 
 3. Start a shell as the `root` user and immediately exit, applying the new generation
 
-    ```postscript
+    ```powershell
     wsl.exe -d NixOS --user root exit
     ```
 
 4. Stop the distro again
 
-    ```postscript
+    ```powershell
     wsl.exe -t NixOS
     ``` 
 
