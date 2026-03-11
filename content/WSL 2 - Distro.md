@@ -2,7 +2,7 @@
 publish: true
 aliases: ""
 created: 2025-05-30 13:41
-modified: 2026-02-11T00:31:32.579+01:00
+modified: 2026-03-05T15:48:18.819+01:00
 cssclasses: ""
 ---
 
@@ -243,6 +243,18 @@ curl https://nixos.org
 
 Another symptom is that the [[WSL 2 - Distro#^c10228\|previous bootstrap command]] hangs indefinitely.
 
+#### Environment Variables
+
+> [!caution] Should not be needed!
+> This should not be necessary if the WSL Settings are set correctly.
+> Modern Windows 11 installations should include the _WSL Settings_ application, where you can manage the `%USERPROFILE%\.wslconfig` file graphically.
+>
+> Make sure that the _automatic proxy configuration_ under the _Network_ tab is turned **on**.
+> Alternatively, especially if you're on an older WSL version, where this option isn't enabled by default, you can simply modify the `%USERPROFILE\.wslconfig` to include `autoProxy=true` under the `[wsl]` section.
+>
+> You therefore only need to follow the [[WSL 2 - Distro#Preserve Environment]] section down below once while bootstrapping.
+> After that my config sets correct `env_keep` values.
+
 To circumvent this, we (redundantly) export local environment variables first:
 
 ```bash "PROXY-URL"
@@ -251,20 +263,22 @@ export http_proxy="$proxy_url"
 export https_proxy="$proxy_url"
 export HTTP_PROXY="$proxy_url"
 export HTTPS_PROXY="$proxy_url"
-export CURL_NIX_FLAGS="-x $proxy_url"
 ```
 
+#### Preserve Environment
+
 Unfortunately there is only a limited set of environment variables which get copied over by `sudo`!
+
 This might be wise from a security standpoint but is annoying in this case.
-To circumvent this, add `--preserve-env=http_proxy,https_proxy,HTTP_PROXY,HTTPS_PROXY` as an argument to sudo:
+To circumvent this, add `--preserve-env=http_proxy,https_proxy,HTTP_PROXY,HTTPS_PROXY`, or even simpler `-E` (which preserves _all_ of the user's environment variables, which is fine for this one-time usage) as an argument to sudo:
 
 > [!example] Modified bootstrap command
 >
 > ```sh
-> sudo --preserve-env=http_proxy,https_proxy,HTTP_PROXY,HTTPS_PROXY,CURL_NIX_FLAGS nixos-rebuild switch --flake github:DustVoice/nix-config#hostname
+> sudo -E nixos-rebuild switch --flake github:DustVoice/nix-config#hostname
 > ```
 
 > [!todo] Replace
 > - `hostname`: The machine's hostname, defined in [`modules/my/hosts`](https://github.com/DustVoice/nix-config/blob/main/modules/my/hosts.nix)
 
-This should run without problem and the proxy environment variables should be correctly set now and after reboots.
+This should run without problem and the proxy environment variables should be correctly set now and after reboots, together with the `env_keep` configuration of sudo, so you can emit the `-E` flag down the line.
