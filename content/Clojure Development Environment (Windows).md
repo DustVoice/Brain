@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2025-09-19
-modified: 2026-03-16T23:18:37.606+01:00
+modified: 2026-03-16T23:35:08.307+01:00
 tags:
   - OS/Windows
 cssclasses: ""
@@ -165,7 +165,10 @@ After that, simply open your project folder inside VSCode and Calva should autom
 > You should try to use the "Jack-in" feature for Calva to start a REPL in you project directory, so you can easily evaluate any S-Expression, or in other non-LISPy words, statements enclosed in `()` (so ... everything) using `Alt + Enter`.
 > But as I said: Use the documentation!
 
-## Other Editors
+## Other Editors / IDEs
+
+There are of course alternatives to Calva.
+A non-exhaustive list is provided (the ones I have tried personally), though you should checkout the official [Clojure Editors list](https://clojure.org/guides/editors) for further suggestions.
 
 ### Emacs
 
@@ -181,3 +184,17 @@ Slightly better to run on Windows (natively) compared to [[Clojure Development E
 
 There's a Cider equivalent (more or less) for Neovim called [conjure](https://github.com/Olical/conjure) (fittingly).
 The good thing about it is that is also supports a bunch of other languages within and outside the LISP family!
+
+### Cursive
+
+[Cursive](https://cursive-ide.com) is a Clojure(Script) IDE built on _JetBrains IntelliJ_ (a Java IDE).
+
+It is _not free_, though there exists a [_Personal_ license available for purchase](https://cursive-ide.com/buy.html) that could satisfy your needs:
+
+> ![quote]
+> Available to individuals purchasing the licence for their own use with their own money. May not be purchased or reimbursed by companies, but may be used at work by the named user. This licence is perpetual, with free updates for a year.  
+> ([EULA](https://cursive-ide.com/personal-licence.html))
+> 
+> -- [Cursive purchase page](https://cursive-ide.com/buy.html)
+
+This means you could legally (at least as far as Cursive is concerned) use it in your job.
