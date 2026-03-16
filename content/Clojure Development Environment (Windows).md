@@ -1,33 +1,33 @@
 ---
 publish: true
 created: 2025-09-19
-modified: 2026-03-16T23:41:25.647+01:00
+modified: 2026-03-16T23:58:59.961+01:00
 tags:
   - OS/Windows
 cssclasses: ""
 ---
 
 
-> [!warning] **Deprecation Notice:** Previous Version
+This loose guide is aimed to assist (mainly my coworkers) in setting up a Clojure development environment on Windows, preferably using [[Clojure Development Environment (Windows)#Calva]] (within [[Clojure Development Environment (Windows)#Visual Studio Code]]) serving as a pretty full-fledged **Clojure IDE**!
+
+> [!warning]- **Deprecation Notice** (for the previous version)
 > The previous version of this guide was extremely manual in nature.
 > It involved installing the JDK manually, together with Git, and _much more_.
 >
 > It turns out that actually using [[Scoop]] after all, makes this whole process way more streamlined and neat.
 > In addition, using [[Clojure Development Environment (Windows)#neil]] instead of the barebones [[Clojure Development Environment (Windows)#deps-new]], is way easier for making the experience non-hair-pulling.
 > Especially things like the easy addition of an _nREPL_, or `:build` alias, together with easy dependency addition and updating, makes _neil_ a really nice tool!
-> Together with [[Clojure Development Environment (Windows)#Babashka]], this completely replaced my need for [[Clojure Development Environment (Windows)#Leiningen]]!
-
-This loose guide is aimed to assist (mainly my coworkers) in setting up a Clojure development environment on Windows, preferably using Calva (within Visual Studio Code) serving as a pretty full-fledged **Clojure IDE**!
+> Together with [[Clojure Development Environment (Windows)#Babashka]], this completely replaced my need for [Leiningen](https://leiningen.org)!
 
 ## Scoop
 
 ![[Scoop]]
 
-## Dependencies
+## Requirements
 
 Now that we have setup Scoop, we need to install a couple of dependencies for both [[Clojure Development Environment (Windows)#Clojure]], as well as [[Clojure Development Environment (Windows)#Calva]] later on in the guide.
 
-> [!info]- Source
+> [!info]
 > The following part was largely adopted from the [scoop-clojure Project's GitHub page](https://github.com/littleli/scoop-clojure).
 
 ### Git
@@ -35,9 +35,9 @@ Now that we have setup Scoop, we need to install a couple of dependencies for bo
 [[Git]] _is required by Calva_ and also often times the recommended VCS (Version Control System).
 Install it using scoop:
 
-![[Git#Scoop]]
+![[Git#Scoop\|Install git]]
 
-> [!hint]- Excursion - Yet another VCS
+> [!hint]- **Excursion:** Yet another VCS
 > When developing a real project, I found Git to have some short-comings in conflict resolution and branch philosophy.
 > I found them to be completely mitigated by [[Jujutsu]] (jj)!
 > It uses Git under the hood, so it is completely possible to share jj repositories with other (git) users, or simply use it on existing Git repositories.
@@ -45,9 +45,9 @@ Install it using scoop:
 
 ### Java
 
-As Clojure runs on the JVM (Java Virtual Machine), we obviously need to install Java, specifically a JDK (Java Development Kit).
+As Clojure runs on the _JVM (Java Virtual Machine)_, we obviously need to install Java, specifically a _JDK (Java Development Kit)_.
 
-> [!attention]- JDK vs. JRE (and different vendors)
+> [!attention]- **Excursion:** JDK vs. JRE (+ different vendors)
 > Note the difference between a **JRE** (Java _Runtime_ Environment) and a **JDK** (Java _Development_ Kit)!
 >
 > Many PCs probably have a JRE version installed, which will commonly be referred to an installed _Java version_.
@@ -61,8 +61,11 @@ As Clojure runs on the JVM (Java Virtual Machine), we obviously need to install 
 > Be it the Oracle JDK, OpenJDK, Eclipse Adoptium Temurin, and many more.
 > For me Temurin is one of the more hassle-free open-source non-sucky variants (on Windows).
 
-The most pain-free approach is to install it using scoop, too!
-_(You can also do a more manual approach, by [downloading it](https://adoptium.net/download), installing it and making sure `JAVA_HOME` is correctly set)._
+The most pain-free approach is to install it, too, using Scoop!
+
+> [!hint]
+> You can, of course, also do a more manual approach, by [downloading it](https://adoptium.net/download), installing it and making sure `JAVA_HOME` is correctly set.
+> But as stated previously, scoop just _Makes-It-Work™_.
 
 For that you simply have to add the [`java` bucket](https://github.com/ScoopInstaller/Java) and install the (TCK certified) Java runtime and compiler:
 
@@ -83,7 +86,7 @@ Under Windows the config file should be located (or not created) in your User di
 
 Populate the file with, or add merge with already present sections (the relevant lines have been highlighted):
 
-```xml title="~/.m2/settings.xml" 2-8 "proxy.domain.de" "8080"
+```xml title="~/.m2/settings.xml" {2-8} "proxy.domain.de" "8080"
 <settings>
     <proxies>
         <proxy>
