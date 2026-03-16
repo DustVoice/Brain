@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2025-09-19
-modified: 2026-03-16T23:58:59.961+01:00
+modified: 2026-03-17T00:02:44.053+01:00
 tags:
   - OS/Windows
 cssclasses: ""
@@ -141,7 +141,7 @@ Refer to the official `README.md` section for [creating an application](https
 
 ## Visual Studio Code
 
-Our editor will be [Visual Studio Code (or VSCode)](https://code.visualstudio.com/download) and also what we will install [[Clojure Development Environment (Windows)#Calva]] in (which is actually _just_ an extension).
+Our editor will be [Visual Studio Code (or VS Code)](https://code.visualstudio.com/download) and also what we will install [[Clojure Development Environment (Windows)#Calva]] in (which is actually _just_ an extension).
 Simply download and install it from either the Microsoft Website using their installer, or using Scoop:
 
 ![[Visual Studio Code#Scoop]]
@@ -150,22 +150,26 @@ Simply download and install it from either the Microsoft Website using their ins
 
 Of course, we want a nice development environment for Clojure.
 This is why we'll use [Calva](https://github.com/BetterThanTomorrow/calva).
-It's a very nice batteries-included framework for Clojure development within VSCode.
+It's a very nice batteries-included framework for Clojure development within VS Code.
 
 To install it:
-1. Open VSCode
-2. Go to `File -> Preferences -> Extensions`
+1. Open VS Code
+2. Go to (in the menu bar)
+	1. `File`
+	2. `Preferences`
+	3. `Extensions`
 3. Search for `Calva`
 4. Select `Calva: Clojure & ClojureScript`
 5. Click on `Install`
 
-After that, simply open your project folder inside VSCode and Calva should automagically start everything, including `clojure-lsp` as the LSP server, their formatter and much more.
+After that, simply open your project folder inside VS Code and Calva should automagically start everything, including `clojure-lsp` as the LSP server, their formatter and much more.
 
 > [!tip]
 > As for keybinds and generell development workflow, please refer to the [upstream Calva documentation](https://calva.io)!
-> Generally, though, you should be able to use `Ctrl + Alt + C` for some Calva-specific commands, or use the general VSCode command palette/search using `Ctrl + Shift + P`.
+> 
+> Generally, though, you should be able to use `Ctrl+Alt+C` for some Calva-specific commands, or use the general VS Code command palette/search using `Ctrl+Shift+P`.
 >
-> You should try to use the "Jack-in" feature for Calva to start a REPL in you project directory, so you can easily evaluate any S-Expression, or in other non-LISPy words, statements enclosed in `()` (so ... everything) using `Alt + Enter`.
+> You should try to use the "Jack-in" feature for Calva to start a REPL in you project directory, so you can easily evaluate any S-Expression, or in other non-LISPy words, statements enclosed in `(...)` (so, ... everything really!) using `Alt+Enter`.
 > But as I said: Use the documentation!
 
 ## Other Editors / IDEs
