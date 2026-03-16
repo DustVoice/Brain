@@ -2,7 +2,11 @@
 publish: true
 aliases: ""
 created: 2025-08-01 11:31
-modified: 2026-03-16T22:30:30.492+01:00
+modified: 2026-03-17T00:28:16.516+01:00
+tags:
+  - programming/functional
+  - programming/language
+  - programming/lisp
 cssclasses: ""
 ---
 

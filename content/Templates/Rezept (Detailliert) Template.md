@@ -1,8 +1,8 @@
 ---
 publish: true
 lang: de
-created: 2025-10-18
-modified: 2025-10-18T13:02:57.836+02:00
+created: <% tp.date.now() %>
+modified: 2026-03-17T00:23:08.013+01:00
 tags:
   - recipes
 cssclasses: ""

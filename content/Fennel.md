@@ -1,7 +1,11 @@
 ---
 publish: true
-created: 2025-09-19
-modified: 2026-03-16T23:39:30.228+01:00
+created: 2026-03-17
+modified: 2026-03-17T00:29:45.554+01:00
+tags:
+  - programming/functional
+  - programming/language
+  - programming/lisp
 cssclasses: ""
 ---
 
@@ -16,4 +20,4 @@ cssclasses: ""
 > 
 > Anywhere you can run Lua code, you can run Fennel code.
 >
-> -- [Fennel website](https://fennel-lang.org)
+> -- [Official Fennel website](https://fennel-lang.org)

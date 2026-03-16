@@ -2,7 +2,9 @@
 publish: true
 aliases: ""
 created: 2025-05-30 15:37
-modified: 2025-10-16T14:46:54.704+02:00
+modified: 2026-03-17T00:27:50.070+01:00
+tags:
+  - programming/language
 cssclasses: ""
 ---
 

@@ -2,7 +2,6 @@
 publish: true
 aliases: ""
 created: 2025-07-30 17:44
-modified: 2025-10-16T14:46:54.567+02:00
 cssclasses: ""
 ---
 
