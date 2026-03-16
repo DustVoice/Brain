@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2025-09-19
-modified: 2026-03-16T23:35:08.307+01:00
+modified: 2026-03-16T23:41:25.647+01:00
 tags:
   - OS/Windows
 cssclasses: ""
@@ -121,9 +121,9 @@ deps-new should be installed as a _clojure tool_, so execute
 Refer to the official `README.md` section for [creating an application](https://github.com/seancorfield/deps-new?tab=readme-ov-file#create-an-application) or a [minimal scratch project](https://github.com/seancorfield/deps-new?tab=readme-ov-file#create-a-minimal-scratch-project).
 
 > Tip
-> 
+>
 > If you’re unfamiliar with clojure, the application template is pretty convoluted. Instead I’d recommend to use the _minimal scratch template_ while getting started.
-> 
+>
 > Look inside `src/scratch.clj` for some hints on running your first commands.
 
 #### Babashka
@@ -161,7 +161,7 @@ After that, simply open your project folder inside VSCode and Calva should autom
 > [!tip]
 > As for keybinds and generell development workflow, please refer to the [upstream Calva documentation](https://calva.io)!
 > Generally, though, you should be able to use `Ctrl + Alt + C` for some Calva-specific commands, or use the general VSCode command palette/search using `Ctrl + Shift + P`.
-> 
+>
 > You should try to use the "Jack-in" feature for Calva to start a REPL in you project directory, so you can easily evaluate any S-Expression, or in other non-LISPy words, statements enclosed in `()` (so ... everything) using `Alt + Enter`.
 > But as I said: Use the documentation!
 
@@ -183,7 +183,11 @@ Cider is one of the most feature-complete implementations of a true LISP agnosti
 Slightly better to run on Windows (natively) compared to [[Clojure Development Environment (Windows)#Emacs]].
 
 There's a Cider equivalent (more or less) for Neovim called [conjure](https://github.com/Olical/conjure) (fittingly).
-The good thing about it is that is also supports a bunch of other languages within and outside the LISP family!
+The good thing about it is that is also supports a bunch of other languages within and outside the LISP family, including but not limited to:
+- [[Python]] (and [[Basilisp]])
+- [[Fennel]] ([[Lua]] compatible Lisp)
+- [[Elixir]]
+- 
 
 ### Cursive
 
@@ -192,9 +196,9 @@ The good thing about it is that is also supports a bunch of other languages with
 It is _not free_, though there exists a [_Personal_ license available for purchase](https://cursive-ide.com/buy.html) that could satisfy your needs:
 
 > ![quote]
-> Available to individuals purchasing the licence for their own use with their own money. May not be purchased or reimbursed by companies, but may be used at work by the named user. This licence is perpetual, with free updates for a year.  
+> Available to individuals purchasing the licence for their own use with their own money. May not be purchased or reimbursed by companies, but may be used at work by the named user. This licence is perpetual, with free updates for a year.
 > ([EULA](https://cursive-ide.com/personal-licence.html))
-> 
+>
 > -- [Cursive purchase page](https://cursive-ide.com/buy.html)
 
 This means you could legally (at least as far as Cursive is concerned) use it in your job.
