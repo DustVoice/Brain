@@ -2,12 +2,13 @@
 publish: true
 lang: de
 created: 2025-09-23
-modified: 2025-09-23T22:19:04.350+02:00
+modified: 2026-03-14T12:53:19.906+01:00
 tags:
   - recipes
 cssclasses: ""
 ---
 
+m
 
 ## Zutaten
 

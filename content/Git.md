@@ -2,7 +2,7 @@
 publish: true
 aliases: ""
 created: 2025-05-30 14:32
-modified: 2025-10-16T14:46:54.245+02:00
+modified: 2026-03-16T22:01:22.443+01:00
 cssclasses: ""
 ---
 
@@ -12,6 +12,12 @@ I, however, find many aspects of it cumbersome, so I try to use [[Jujutsu]] wher
 Though the circle closes there, as `jj` uses `git` under the hood.
 
 ## Install
+
+### [[Scoop]]
+
+```sh
+scoop install git
+```
 
 ### [[Fedora]]
 
