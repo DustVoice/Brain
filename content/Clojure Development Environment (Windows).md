@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2025-09-19
-modified: 2026-03-17T00:04:15.080+01:00
+modified: 2026-03-17T00:08:43.282+01:00
 tags:
   - OS/Windows
 cssclasses: ""
@@ -21,36 +21,7 @@ This loose guide is aimed to assist (mainly my coworkers) in setting up a Clojur
 
 ## Scoop
 
-
-Scoop is an easy to use command-line installer for Windows.
-It significantly streamlines the experience of installing and managing software (especially for development purposes)!
-And the best thing? It lives in user-space as much as possible!
-
-> [!note]
-> It is always recommended to reference up-to-date documentation, particularly [Scoop's own website](https://scoop.sh) when installing!
-
-## Install
-
-Simply run the following command(s) from a PowerShell terminal:
-
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-```
-
-This will automagically install scoop!
-
-## Install a package
-
-Generally a simple `scoop install <package>` will suffice!
-
-It could however be that the package is not contained within the default _bucket_.
-Buckets are collections of packages, organized by categories, or even supplied by external repositories.
-One of the most utilized buckets would be `extras`, for example.
-To add a bucket, simply do `scoop bucket add <bucket>`.
-
-Finally, to search for a package, you can do `scoop search <package>` and it will even show you what bucket it belongs to!
-
+![[Scoop]]
 
 ## Requirements
 
@@ -64,12 +35,7 @@ Now that we have setup Scoop, we need to install a couple of dependencies for bo
 [[Git]] _is required by Calva_ and also often times the recommended VCS (Version Control System).
 Install it using scoop:
 
-### [[Scoop]]
-
-```sh
-scoop install git
-```
-
+![[Git#Scoop]]
 
 > [!hint]- **Excursion:** Yet another VCS
 > When developing a real project, I found Git to have some short-comings in conflict resolution and branch philosophy.
@@ -103,30 +69,13 @@ The most pain-free approach is to install it, too, using Scoop!
 
 For that you simply have to add the [`java` bucket](https://github.com/ScoopInstaller/Java) and install the (TCK certified) Java runtime and compiler:
 
-### [[Scoop]]
-
-```sh
-scoop bucket add java
-scoop install temurin-lts-jdk
-```
-
+![[Temurin#Scoop]]
 
 ## Clojure
 
 Now we can finally install the official clojure tools!
 
-### [[Scoop]]
-
-- The `extra` bucket is needed, as `clj-deps` depends on the `vcredist2022` (Microsoft Visual C++ 2022 Redistributable) available within it!
-- `clj-deps` and many other [Clojure software packages](https://github.com/littleli/scoop-clojure#other-tools-available-in-this-bucket) (e.g., [[Babashka]]) are available from the [scoop-clojure](https://github.com/littleli/scoop-clojure) bucket/repository.
-
-```sh
-scoop bucket add extra
-scoop bucket add scoop-clojure https://github.com/littleli/scoop-clojure
-scoop install clj-deps
-scoop update clj-deps
-```
-
+![[Clojure#Scoop]]
 
 ### Proxy
 
@@ -170,7 +119,9 @@ As it uses the default clojure tools, [[Clojure Development Environment (Windows
 
 deps-new should be installed as a _clojure tool_, so execute
 
-`clojure -Ttools install-latest :lib io.github.seancorfield/deps-new :as new`
+```sh
+clojure -Ttools install-latest :lib io.github.seancorfield/deps-new :as new
+```
 
 Refer to the official `README.md` section for [creating an application](https://github.com/seancorfield/deps-new?tab=readme-ov-file#create-an-application) or a [minimal scratch project](https://github.com/seancorfield/deps-new?tab=readme-ov-file#create-a-minimal-scratch-project).
 
@@ -182,53 +133,20 @@ Refer to the official `README.md` section for [creating an application](https
 
 #### Babashka
 
-## Why tho?
+![[Babashka#Why tho?]]
 
-As Clojure runs on the JVM it also bears the cross of this behemoth.
-The JVM is famously slow to start up and can sometimes be a bit of a resource-hog.
-Especially for small scripts and tooling this seems and _is_ often times overkill.
-
-And that's exactly where [[Babashka]] comes to the rescue!
-It runs on the GraalVM, a very slim and performance-mindful runtime, which gives it superb startup time.
-Babashka also has very adequate tooling and included batteries that make it perfect for all (at least my) scripting needs, especially as it often times doesn't even need a dedicated project directory/structure.
-Keep in mind though, that not every Clojure language feature/library/etc. is available in Babashka and easy/native Java interoperability is not a goal (in contrast to Clojure)!
-
-Doesn't hurt to have it installed, though!
-
-
-### [[Scoop]]
-
-```sh
-scoop bucket add scoop-clojure https://github.com/littleli/scoop-clojure
-scoop install babashka
-```
-
+![[Babashka#Scoop]]
 
 #### neil
 
-### [[Scoop]]
-
-> [!note]
-> You have to have [[Babashka]] installed and available!
-
-```sh
-scoop bucket add scoop-clojure https://github.com/littleli/scoop-clojure
-scoop install neil
-```
-
+![[neil#Scoop]]
 
 ## Visual Studio Code
 
 Our editor will be [Visual Studio Code (or VS Code)](https://code.visualstudio.com/download) and also what we will install [[Clojure Development Environment (Windows)#Calva]] in (which is actually _just_ an extension).
 Simply download and install it from either the Microsoft Website using their installer, or using Scoop:
 
-### [[Scoop]]
-
-```sh
-scoop bucket add extras
-scoop install vscode
-```
-
+![[Visual Studio Code#Scoop]]
 
 ### Calva
 
