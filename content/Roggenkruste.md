@@ -1,12 +1,11 @@
 ---
 publish: true
-aliases: ""
 created: 2025-05-26 22:34
-modified: 2026-01-16T16:04:25.812+01:00
 tags:
   - bread
   - recipes
-cssclasses: cards
+cssclasses:
+  - cards
 ---
 
 ![[Attachments/20250623_201426 1.jpg|400]]

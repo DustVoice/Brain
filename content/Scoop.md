@@ -1,10 +1,8 @@
 ---
 publish: true
 created: 2025-09-19
-modified: 2026-03-16T22:11:44.670+01:00
 tags:
   - OS/Windows
-cssclasses: ""
 ---
 
 Scoop is an easy to use command-line installer for Windows.

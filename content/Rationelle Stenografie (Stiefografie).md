@@ -1,9 +1,9 @@
 ---
 publish: true
-aliases: Stiefo Stiefografie
+aliases:
+  - Stiefo
+  - Stiefografie
 created: 2025-09-19
-modified: 2025-12-18T18:08:25.851+01:00
-cssclasses: ""
 ---
 
 
@@ -38,16 +38,16 @@ Doppelkonsonanten werden einfach geschrieben. Bei Verwechslungsgefahr kann hier 
 
 ### Vokale
 
-![[Attachments/IMG_20251217_125740.jpg|100]]
+![[IMG_20251217_125740.jpg\|100]]
 
 ### Konsonanten
 
-![[Attachments/IMG_20251217_125801.jpg|300]]
+![[IMG_20251217_125801.jpg\|300]]
 
 ### Kürzel, Vor-/Nachsilben
 
-![[Attachments/IMG_20251217_125704.jpg|400]]
-![[Attachments/IMG_20251217_125640.jpg|305]]
+![[IMG_20251217_125704.jpg\|400]]
+![[IMG_20251217_125640.jpg\|305]]
 
 ## Schreibmaterial
 

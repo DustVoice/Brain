@@ -2,11 +2,9 @@
 publish: true
 lang: de
 created: 2025-10-01
-modified: 2025-10-12T22:45:24.576+02:00
 tags:
   - recipes
   - references
-cssclasses: ""
 socialImage: https://c.rewe-static.de/36173076/2/36173076.png?impolicy=recipe-meta-image
 ---
 

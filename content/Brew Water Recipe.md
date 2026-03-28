@@ -1,12 +1,9 @@
 ---
 publish: true
-aliases: ""
 created: 2025-05-01 16:31
-modified: 2025-11-21T16:33:01.762+01:00
 tags:
   - coffee/espresso
   - coffee/filter
-cssclasses: ""
 ---
 
 

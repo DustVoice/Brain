@@ -1,11 +1,8 @@
 ---
 publish: true
-aliases: ""
 created: 2025-05-30 11:41
-modified: 2026-02-03T08:04:47.829+01:00
 tags:
   - OS/NixOS
-cssclasses: ""
 ---
 
 

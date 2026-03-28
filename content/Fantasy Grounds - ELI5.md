@@ -1,12 +1,9 @@
 ---
 publish: true
-aliases: ""
 created: 2025-09-19
-modified: 2026-01-20T01:25:03.192+01:00
 tags:
   - ELI5
   - TTRPG
-cssclasses: ""
 ---
 
 

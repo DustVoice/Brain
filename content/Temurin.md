@@ -1,9 +1,9 @@
 ---
 publish: true
-aliases: Adoptium Temurin Eclipse Temurin
+aliases:
+  - Adoptium Temurin
+  - Eclipse Temurin
 created: 2026-03-17
-modified: 2026-03-17T00:25:09.173+01:00
-cssclasses: ""
 ---
 
 

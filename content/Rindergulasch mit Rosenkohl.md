@@ -2,10 +2,8 @@
 publish: true
 lang: de
 created: 2025-09-23
-modified: 2025-10-06T21:11:04.182+02:00
 tags:
   - recipes
-cssclasses: ""
 ---
 
 

@@ -1,12 +1,9 @@
 ---
 publish: true
-aliases: ""
 created: 2025-08-06 13:21
-modified: 2026-03-17T00:28:29.563+01:00
 tags:
   - programming/functional
   - programming/language
-cssclasses: ""
 ---
 
 

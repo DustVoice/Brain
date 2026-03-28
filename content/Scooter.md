@@ -1,8 +1,6 @@
 ---
 publish: true
 created: 2025-09-19
-modified: 2025-09-22T10:07:04.476+02:00
-cssclasses: ""
 ---
 
 Scooter is an interactive Search and Replace tool for the terminal, written in [[Rust]].

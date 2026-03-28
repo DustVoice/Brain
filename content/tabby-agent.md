@@ -1,8 +1,6 @@
 ---
 publish: true
 created: 2025-09-19
-modified: 2025-11-04T17:34:00.948+01:00
-cssclasses: ""
 ---
 
 Agent for communcating with a [[Tabby]] server, acting like an [[LSP]].

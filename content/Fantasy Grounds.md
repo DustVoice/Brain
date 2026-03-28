@@ -1,11 +1,14 @@
 ---
 publish: true
-aliases: Fantasy Grounds Unity Fantasy Grounds VTT FG FGU FGVTT
+aliases:
+  - Fantasy Grounds Unity
+  - Fantasy Grounds VTT
+  - FG
+  - FGU
+  - FGVTT
 created: 2025-09-19
-modified: 2026-01-20T01:22:12.352+01:00
 tags:
   - TTRPG
-cssclasses: ""
 ---
 
 A [[Virtual Tabletop]], developed by _SmiteWorks USA LLC_, for a huge amount of game systems, with a metric fckton of (official!) content available in either their [store](https://www.fantasygrounds.com/store/) or even on [Steam](https://store.steampowered.com/franchise/SmiteWorks).

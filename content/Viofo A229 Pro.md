@@ -1,10 +1,7 @@
 ---
 publish: true
-aliases: ""
 lang: de
 created: 2025-06-09 15:51
-modified: 2025-09-19T10:52:21.199+02:00
-cssclasses: ""
 ---
 
 
@@ -12,18 +9,18 @@ cssclasses: ""
 
 ### Bedienoberfläche
 
-![[Attachments/Viofo_1.jpg]]
+![[Viofo_1.jpg]]
 
-![[Attachments/Viofo_2.jpg]]
+![[Viofo_2.jpg]]
 
 ### Formatieren
 
-![[Attachments/Viofo_3.jpg]]
+![[Viofo_3.jpg]]
 
 ### Dateisystem
 
-![[Attachments/Viofo_4.jpg]]
+![[Viofo_4.jpg]]
 
 ### Firmwareupgrade
 
-![[Attachments/Viofo_5.jpg]]
+![[Viofo_5.jpg]]

@@ -1,11 +1,8 @@
 ---
 publish: true
-aliases: ""
 created: 2025-05-30 14:57
-modified: 2026-03-17T00:29:47.282+01:00
 tags:
   - programming/language
-cssclasses: ""
 ---
 
 
@@ -20,9 +17,7 @@ Or as I call it in German
 > Die Eierlegende Wollmilchsau
 
 > [!info]
-> For example for generating 3D models programmatically, [CadQuery](https://github.com/CadQuery/cadquery?tab=readme-ov-file) is the most viable contender for me, especially considering I don’t want to suffer from [OpenSCAD](https://openscad.org/) induced vomiting.
->
-> Not giving up on my lispy dreams though, I’m trying out [Hy](https://hylang.org/) here and there, too.
+> Not giving up on my lispy dreams though, I’m trying out [Hy](https://hylang.org/) and [[Basilisp]] here and there, too.
 
 ## Install as a system package
 

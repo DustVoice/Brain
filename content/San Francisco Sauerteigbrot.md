@@ -1,12 +1,9 @@
 ---
 publish: true
-aliases: ""
 created: 2025-06-05 22:42
-modified: 2025-09-23T15:17:10.230+02:00
 tags:
   - bread
   - recipes
-cssclasses: ""
 ---
 
 

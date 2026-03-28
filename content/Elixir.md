@@ -1,10 +1,8 @@
 ---
 publish: true
 created: 2026-03-17
-modified: 2026-03-17T00:27:39.240+01:00
 tags:
   - programming/language
-cssclasses: ""
 ---
 
 

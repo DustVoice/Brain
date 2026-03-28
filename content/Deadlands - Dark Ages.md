@@ -1,10 +1,8 @@
 ---
 publish: true
 created: 2025-09-19
-modified: 2026-01-20T18:17:49.840+01:00
 tags:
   - TTRPG
-cssclasses: ""
 ---
 
 [Deadlands®: Dark Ages](https://peginc.com/product/deadlands-dark-ages/) is set in medieval Britain.

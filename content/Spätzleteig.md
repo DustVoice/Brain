@@ -2,11 +2,9 @@
 publish: true
 lang: de
 created: 2025-10-01
-modified: 2026-01-28T20:09:41.366+01:00
 tags:
   - recipes
   - references
-cssclasses: ""
 socialImage: "[[Omas-Spaetzle-Rezept-Spaetzleteig-selber-machen-2.jpg]]"
 ---
 

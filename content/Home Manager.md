@@ -1,8 +1,6 @@
 ---
 publish: true
 created: 2025-09-19
-modified: 2025-12-11T20:37:44.053+01:00
-cssclasses: ""
 ---
 
 

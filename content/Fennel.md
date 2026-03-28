@@ -1,12 +1,10 @@
 ---
 publish: true
 created: 2026-03-17
-modified: 2026-03-17T00:29:45.554+01:00
 tags:
   - programming/functional
   - programming/language
   - programming/lisp
-cssclasses: ""
 ---
 
 

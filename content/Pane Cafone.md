@@ -1,11 +1,8 @@
 ---
 publish: true
-aliases: ""
 created: 2025-06-05 22:43
-modified: 2025-09-19T10:52:21.491+02:00
 tags:
   - recipes
-cssclasses: ""
 ---
 
 ![[Attachments/20250718_232151.jpg|400]]

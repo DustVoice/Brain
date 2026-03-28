@@ -1,11 +1,14 @@
 ---
 publish: true
-aliases: "Savage World: Adventure Edition Savage Worlds Savage Worlds (Adventure Edition) Savage Worlds Adventure Edition SWADE"
+aliases:
+  - "Savage World: Adventure Edition"
+  - Savage Worlds
+  - Savage Worlds (Adventure Edition)
+  - Savage Worlds Adventure Edition
+  - SWADE
 created: 2025-09-19
-modified: 2026-01-20T01:25:01.212+01:00
 tags:
   - TTRPG
-cssclasses: ""
 ---
 
 Savage Worlds is a game system for [[TTRPG]]s.

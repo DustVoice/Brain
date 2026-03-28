@@ -1,8 +1,6 @@
 ---
 publish: true
 created: 2025-09-19
-modified: 2025-09-22T10:07:03.895+02:00
-cssclasses: ""
 ---
 
 [Steel](https://github.com/mattwparas/steel) is an embedded scheme interpreter for Rust. It's most prominent use is as the  backbone for [[Helix]]'s upcoming plugin system.

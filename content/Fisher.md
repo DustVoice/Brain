@@ -1,9 +1,6 @@
 ---
 publish: true
-aliases: ""
 created: 2025-06-25 12:47
-modified: 2025-09-19T10:52:21.823+02:00
-cssclasses: ""
 ---
 
 

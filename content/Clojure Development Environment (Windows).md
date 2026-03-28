@@ -1,10 +1,8 @@
 ---
 publish: true
 created: 2025-09-19
-modified: 2026-03-17T00:08:43.282+01:00
 tags:
   - OS/Windows
-cssclasses: ""
 ---
 
 
@@ -144,6 +142,9 @@ Refer to the official `README.md` section for [creating an application](https
 ## Visual Studio Code
 
 Our editor will be [Visual Studio Code (or VS Code)](https://code.visualstudio.com/download) and also what we will install [[Clojure Development Environment (Windows)#Calva]] in (which is actually _just_ an extension).
+
+It has really nice feature, like an integrated terminal pane, versatile extensions and plugins, great LSP support and so much more that makes it a great IDE.
+
 Simply download and install it from either the Microsoft Website using their installer, or using Scoop:
 
 ![[Visual Studio Code#Scoop]]
@@ -166,12 +167,18 @@ To install it:
 
 After that, simply open your project folder inside VS Code and Calva should automagically start everything, including `clojure-lsp` as the LSP server, their formatter and much more.
 
-> [!tip]
+> [!tip] How do I use this thing?!
 > As for keybinds and generell development workflow, please refer to the [upstream Calva documentation](https://calva.io)!
 >
-> Generally, though, you should be able to use `Ctrl+Alt+C` for some Calva-specific commands, or use the general VS Code command palette/search using `Ctrl+Shift+P`.
+> Generally, though, you should be able to use `Ctrl+Alt+C` for some Calva-specific commands (needs to be followed by command specific keys!), or use the general VS Code command palette/search using `Ctrl+Shift+P`!
 >
 > You should try to use the "Jack-in" feature for Calva to start a REPL in you project directory, so you can easily evaluate any S-Expression, or in other non-LISPy words, statements enclosed in `(...)` (so, ... everything really!) using `Alt+Enter`.
+>
+> _(Using the command palette, it's called `Calva: Start a Project REPL and Connect`)_
+>
+> Also you might wonder why it auto inserts brackets and doesn't let you delete it?!
+> Well as you might've guessed when looking at some Clojure source code, keeping track of the right number of parentheses is hard! So that's why many use systems to keep track for them. Utilize the right keybinds/commands for that! For example search for `slurp` and `barf` commands (`Ctrl+Shift+.` and `Ctrl+Shift+,`) in the command palette and see what happens.
+>
 > But as I said: Use the documentation!
 
 ## Other Editors / IDEs
@@ -196,7 +203,6 @@ The good thing about it is that is also supports a bunch of other languages with
 - [[Python]] (and [[Basilisp]])
 - [[Fennel]] ([[Lua]] compatible Lisp)
 - [[Elixir]]
-- 
 
 ### Cursive
 

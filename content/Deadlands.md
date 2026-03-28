@@ -1,10 +1,8 @@
 ---
 publish: true
 created: 2025-09-19
-modified: 2026-01-20T13:58:56.106+01:00
 tags:
   - TTRPG
-cssclasses: ""
 ---
 
 The **Deadlands®** settings line (you could almost say genre), is one of Pinnacle's and therefore [[Savage Worlds]]' absolute staples!

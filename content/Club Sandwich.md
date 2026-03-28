@@ -1,12 +1,9 @@
 ---
 publish: true
-aliases: ""
 lang: de
 created: 2025-09-18
-modified: 2025-09-19T10:52:21.990+02:00
 tags:
   - recipes
-cssclasses: ""
 ---
 
 ![[Attachments/IMG_20250917_195438.jpg|400]]

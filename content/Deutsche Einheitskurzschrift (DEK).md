@@ -1,9 +1,9 @@
 ---
 publish: true
-aliases: DEK Steno
+aliases:
+  - DEK
+  - Steno
 created: 2025-06-13 11:37
-modified: 2026-02-03T15:12:29.525+01:00
-cssclasses: ""
 ---
 
 

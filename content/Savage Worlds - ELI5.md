@@ -1,12 +1,13 @@
 ---
 publish: true
-aliases: Savage Worlds (ELI5) SWADE (ELI5) SWADE 4 Dummies
+aliases:
+  - Savage Worlds (ELI5)
+  - SWADE (ELI5)
+  - SWADE 4 Dummies
 created: 2025-09-19
-modified: 2026-01-20T18:28:15.266+01:00
 tags:
   - ELI5
   - TTRPG
-cssclasses: ""
 ---
 
 

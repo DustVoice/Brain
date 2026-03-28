@@ -1,13 +1,10 @@
 ---
 publish: true
-aliases: ""
 created: 2025-08-01 11:31
-modified: 2026-03-17T00:28:16.516+01:00
 tags:
   - programming/functional
   - programming/language
   - programming/lisp
-cssclasses: ""
 ---
 
 A versatile and dynamically typed LISP language.
@@ -19,11 +16,11 @@ Also you should choose a build system. Either install and use [[clj-tools\|deps.
 
 ### [[Scoop]]
 
-- The `extra` bucket is needed, as `clj-deps` depends on the `vcredist2022` (Microsoft Visual C++ 2022 Redistributable) available within it!
+- The `extras` bucket is needed, as `clj-deps` depends on the `vcredist2022` (Microsoft Visual C++ 2022 Redistributable) available within it!
 - `clj-deps` and many other [Clojure software packages](https://github.com/littleli/scoop-clojure#other-tools-available-in-this-bucket) (e.g., [[Babashka]]) are available from the [scoop-clojure](https://github.com/littleli/scoop-clojure) bucket/repository.
 
 ```sh
-scoop bucket add extra
+scoop bucket add extras
 scoop bucket add scoop-clojure https://github.com/littleli/scoop-clojure
 scoop install clj-deps
 scoop update clj-deps
