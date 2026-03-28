@@ -248,6 +248,7 @@ plugins:
         - modified
         - last
         - title
+        - socialImage
       hidePropertiesView: false
       delimiters: ---
       language: yaml
