@@ -176,7 +176,7 @@ plugins:
       position: beforeBody
       priority: 20
   - source: github:quartz-community/tag-list
-    enabled: true
+    enabled: false
     layout:
       position: beforeBody
       priority: 30
