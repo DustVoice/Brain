@@ -11,6 +11,7 @@ configuration:
   ignorePatterns:
     - private
     - templates
+    - Templates
     - .obsidian
   theme:
     fontOrigin: googleFonts
@@ -113,7 +114,7 @@ plugins:
   - source: github:quartz-community/encrypted-pages
     enabled: true
   - source: github:quartz-community/stacked-pages
-    enabled: false
+    enabled: true
     layout:
       position: afterBody
       priority: 50
@@ -141,7 +142,8 @@ plugins:
     enabled: true
   - source: github:quartz-community/explorer
     enabled: true
-    title: Neurons
+    options:
+      title: Neurons
     layout:
       position: left
       priority: 50
@@ -240,7 +242,12 @@ plugins:
         - aliases
         - source
         - lang
-      excludedProperties: []
+      excludedProperties:
+        - publish
+        - created
+        - modified
+        - last
+        - title
       hidePropertiesView: false
       delimiters: ---
       language: yaml
