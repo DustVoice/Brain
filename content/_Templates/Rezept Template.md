@@ -1,7 +1,7 @@
 ---
 publish: true
 lang: de
-created: <% tp.date.now() %>
+created: 2026-03-29
 tags:
   - recipes
 ---
